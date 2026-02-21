@@ -4,10 +4,9 @@ import SwiftUI
 
 /// Landing screen. Entry point for new games.
 struct HomeView: View {
-    @State private var isSnakePulsing = false
     @State private var showingHistory = false
+    @State private var showingSettings = false
     @State private var coordinator = GameNavigationCoordinator()
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @ScaledMetric(relativeTo: .largeTitle) private var displayFontSize: CGFloat = 52
 
     var body: some View {
@@ -17,20 +16,33 @@ struct HomeView: View {
                     .scaleTexture()
                 SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
+                // Gear icon — top-right corner
+                VStack {
+                    HStack {
+                        Spacer()
+                        Button {
+                            SnakesssHaptic.light()
+                            showingSettings = true
+                        } label: {
+                            Image(systemName: "gearshape.fill")
+                                .font(.system(size: 22))
+                                .foregroundStyle(SnakesssTheme.textMuted)
+                        }
+                        .accessibilityLabel("Settings")
+                        .padding(.top, SnakesssSpacing.spacing6)
+                        .padding(.trailing, SnakesssSpacing.screenPadding)
+                    }
+                    Spacer()
+                }
+
                 VStack(spacing: 0) {
                     Spacer()
 
                     // Logo section
                     VStack(spacing: SnakesssSpacing.spacing4) {
-                        // Snake emoji with breathing pulse (1.0 ↔ 0.97, 2s loop)
                         Text("🐍")
                             .font(.system(size: 80))
                             .shadow(color: SnakesssTheme.accentPrimary.opacity(0.4), radius: 24)
-                            .scaleEffect(isSnakePulsing ? 0.97 : 1.0)
-                            .animation(
-                                .easeInOut(duration: 2.0).repeatForever(autoreverses: true),
-                                value: isSnakePulsing
-                            )
 
                         Text("Snakesss")
                             .font(.system(size: displayFontSize, weight: .black, design: .rounded))
@@ -77,9 +89,12 @@ struct HomeView: View {
                 }
             }
             .navigationBarHidden(true)
-            .onAppear { if !reduceMotion { isSnakePulsing = true } }
             .sheet(isPresented: $showingHistory) {
                 HistoryView()
+            }
+            .sheet(isPresented: $showingSettings) {
+                SettingsView()
+                    .presentationBackground(SnakesssTheme.bgBase)
             }
         }
         .environment(coordinator)

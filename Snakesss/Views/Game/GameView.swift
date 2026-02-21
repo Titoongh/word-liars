@@ -47,6 +47,7 @@ struct GameView: View {
                 playerIndex: playerIndex,
                 totalPlayers: viewModel.players.count,
                 roundNumber: viewModel.currentRound,
+                totalRounds: viewModel.totalRounds,
                 onDone: { viewModel.revealNextRole(currentIndex: playerIndex) }
             )
 
@@ -82,6 +83,7 @@ struct GameView: View {
                 DiscussionTimerView(
                     question: question,
                     timeRemaining: viewModel.discussionTimeRemaining,
+                    timerDuration: viewModel.timerDuration,
                     mongooseName: mongooseName,
                     onSkip: { viewModel.skipDiscussion() }
                 )
@@ -101,7 +103,7 @@ struct GameView: View {
                 RoundResultsView(
                     result: result,
                     players: viewModel.players,
-                    isLastRound: viewModel.currentRound >= GameViewModel.totalRounds,
+                    isLastRound: viewModel.currentRound >= viewModel.totalRounds,
                     onNext: { viewModel.nextRound() }
                 )
             }

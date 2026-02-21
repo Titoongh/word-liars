@@ -6,6 +6,7 @@ struct Question: Codable, Identifiable {
     let choices: Choices
     let answer: String
     let funFact: String?
+    let category: String?
 
     struct Choices: Codable {
         let a: String

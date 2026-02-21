@@ -27,14 +27,28 @@ final class QuestionService {
     }
 
     var remainingCount: Int {
-        allQuestions.filter { !usedQuestionIDs.contains($0.id) }.count
+        filteredPool().filter { !usedQuestionIDs.contains($0.id) }.count
+    }
+
+    /// Questions filtered by SettingsManager.enabledCategories.
+    /// Questions without a category are always included.
+    private func filteredPool() -> [Question] {
+        let enabled = SettingsManager.shared.enabledCategories
+        return allQuestions.filter { q in
+            guard let cat = q.category else { return true }
+            return enabled.contains(cat)
+        }
     }
 
     func getQuestion() -> Question? {
-        let available = allQuestions.filter { !usedQuestionIDs.contains($0.id) }
+        let pool = filteredPool()
+        let available = pool.filter { !usedQuestionIDs.contains($0.id) }
         if available.isEmpty {
-            resetPool()
-            if let question = allQuestions.randomElement() {
+            // Reset used IDs within the filtered pool only
+            let poolIDs = Set(pool.map(\.id))
+            usedQuestionIDs.subtract(poolIDs)
+            persistUsedIDs()
+            if let question = pool.randomElement() {
                 markUsed(question.id)
                 return question
             }

@@ -9,6 +9,7 @@ struct RoleRevealView: View {
     let playerIndex: Int
     let totalPlayers: Int
     let roundNumber: Int
+    let totalRounds: Int
     let onDone: () -> Void
 
     @State private var isRevealed = false
@@ -207,7 +208,7 @@ struct RoleRevealView: View {
 
     private var roundBadge: some View {
         VStack(spacing: SnakesssSpacing.spacing2) {
-            Text("Round \(roundNumber) of \(GameViewModel.totalRounds)")
+            Text("Round \(roundNumber) of \(totalRounds)")
                 .microStyle(color: SnakesssTheme.textMuted)
 
             Text("Player \(playerIndex + 1) of \(totalPlayers)")

@@ -7,6 +7,7 @@ import SwiftUI
 struct DiscussionTimerView: View {
     let question: Question
     let timeRemaining: Int
+    let timerDuration: Int
     let mongooseName: String
     let onSkip: () -> Void
 
@@ -163,7 +164,7 @@ struct DiscussionTimerView: View {
     // MARK: - Computed
 
     private var progress: CGFloat {
-        CGFloat(timeRemaining) / 120.0
+        CGFloat(timeRemaining) / CGFloat(timerDuration)
     }
 
     private var timerColor: Color {

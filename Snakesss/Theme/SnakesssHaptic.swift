@@ -5,22 +5,26 @@ import CoreHaptics
 
 /// Centralized haptic feedback patterns for Snakesss.
 /// Uses UIKit generators for standard patterns and CoreHaptics for complex sequences.
+/// All calls check SettingsManager.shared.hapticsEnabled before firing.
 enum SnakesssHaptic {
 
     // MARK: - Standard Impact Haptics
 
     /// Light impact — button press, list item tap
     static func light() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
     }
 
     /// Medium impact — phase transitions, pass-phone handoff
     static func medium() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
     }
 
     /// Heavy impact — role reveal, snake reveal
     static func heavy() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
     }
 
@@ -28,11 +32,13 @@ enum SnakesssHaptic {
 
     /// Success pattern — correct answer, winning round
     static func success() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         UINotificationFeedbackGenerator().notificationOccurred(.success)
     }
 
     /// Error pattern — wrong answer, invalid action
     static func error() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         UINotificationFeedbackGenerator().notificationOccurred(.error)
     }
 
@@ -41,6 +47,7 @@ enum SnakesssHaptic {
     /// Timer warning — fired at 30-second mark.
     /// Distinct transient pop to alert players discussion is ending.
     static func timerWarning() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else {
             UIImpactFeedbackGenerator(style: .medium).impactOccurred()
             return
@@ -65,6 +72,7 @@ enum SnakesssHaptic {
     /// Timer end — fired when countdown reaches 0.
     /// Rising urgency: triple tap pattern to signal time's up.
     static func timerEnd() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else {
             UINotificationFeedbackGenerator().notificationOccurred(.warning)
             return
@@ -96,6 +104,7 @@ enum SnakesssHaptic {
     /// Celebration — fired on winner reveal.
     /// Triple-tap triumph pattern with escalating intensity.
     static func celebration() {
+        guard SettingsManager.shared.hapticsEnabled else { return }
         guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else {
             UINotificationFeedbackGenerator().notificationOccurred(.success)
             return

@@ -1,0 +1,326 @@
+import SwiftUI
+
+// MARK: - SettingsView
+
+/// Game settings screen with Serpentine Dark styling.
+/// Presented as a sheet from HomeView via gear icon.
+struct SettingsView: View {
+    @Environment(\.dismiss) private var dismiss
+    private var settings = SettingsManager.shared
+
+    var body: some View {
+        ZStack {
+            SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture()
+            SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
+
+            ScrollView {
+                VStack(spacing: SnakesssSpacing.spacing6) {
+                    // Header
+                    header
+
+                    // Rounds section
+                    settingsSection(title: "Rounds") {
+                        roundCountPicker
+                    }
+
+                    // Timer section
+                    settingsSection(title: "Discussion Timer") {
+                        timerDurationPicker
+                    }
+
+                    // Audio & Haptics section
+                    settingsSection(title: "Feedback") {
+                        feedbackToggles
+                    }
+
+                    // Categories section
+                    settingsSection(title: "Question Categories") {
+                        categoriesSection
+                    }
+
+                    // Reset button
+                    resetButton
+                        .padding(.top, SnakesssSpacing.spacing2)
+                        .padding(.bottom, SnakesssSpacing.spacing12)
+                }
+                .padding(.horizontal, SnakesssSpacing.screenPadding)
+                .padding(.top, SnakesssSpacing.spacing6)
+            }
+        }
+    }
+
+    // MARK: - Header
+
+    private var header: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: SnakesssSpacing.spacing1) {
+                Text("Settings")
+                    .font(SnakesssTypography.headline)
+                    .foregroundStyle(SnakesssTheme.textPrimary)
+                Text("Customize your game")
+                    .font(SnakesssTypography.caption)
+                    .foregroundStyle(SnakesssTheme.textSecondary)
+            }
+            Spacer()
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.system(size: 28))
+                    .foregroundStyle(SnakesssTheme.textMuted)
+            }
+            .accessibilityLabel("Close settings")
+        }
+    }
+
+    // MARK: - Section Container
+
+    private func settingsSection<Content: View>(
+        title: String,
+        @ViewBuilder content: () -> Content
+    ) -> some View {
+        VStack(alignment: .leading, spacing: SnakesssSpacing.spacing3) {
+            Text(title)
+                .microStyle(color: SnakesssTheme.textSecondary)
+
+            content()
+        }
+    }
+
+    // MARK: - Round Count Picker
+
+    private var roundCountPicker: some View {
+        HStack(spacing: SnakesssSpacing.spacing2) {
+            ForEach(SettingsManager.roundCountOptions, id: \.self) { count in
+                let isActive = settings.roundCount == count
+                Button {
+                    SnakesssHaptic.light()
+                    withAnimation(SnakesssAnimation.bouncy) {
+                        settings.roundCount = count
+                    }
+                } label: {
+                    Text("\(count)")
+                        .font(SnakesssTypography.bodyLarge)
+                        .fontWeight(isActive ? .heavy : .semibold)
+                        .foregroundStyle(isActive ? SnakesssTheme.accentPrimary : SnakesssTheme.textMuted)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 48)
+                        .background(
+                            Capsule()
+                                .fill(SnakesssTheme.bgElevated)
+                                .overlay(
+                                    Capsule()
+                                        .strokeBorder(
+                                            isActive ? SnakesssTheme.accentPrimary : SnakesssTheme.borderSubtle,
+                                            lineWidth: 2
+                                        )
+                                )
+                        )
+                        .shadow(color: isActive ? SnakesssTheme.accentGlow : .clear, radius: 12)
+                }
+                .scaleEffect(isActive ? 1.05 : 1.0)
+                .animation(SnakesssAnimation.bouncy, value: settings.roundCount)
+                .accessibilityLabel("\(count) rounds")
+                .accessibilityAddTraits(isActive ? .isSelected : [])
+            }
+        }
+    }
+
+    // MARK: - Timer Duration Picker
+
+    private var timerDurationPicker: some View {
+        HStack(spacing: SnakesssSpacing.spacing2) {
+            ForEach(SettingsManager.timerDurationOptions, id: \.self) { duration in
+                let isActive = settings.timerDuration == duration
+                Button {
+                    SnakesssHaptic.light()
+                    withAnimation(SnakesssAnimation.bouncy) {
+                        settings.timerDuration = duration
+                    }
+                } label: {
+                    Text(SettingsManager.timerLabel(for: duration))
+                        .font(SnakesssTypography.label)
+                        .fontWeight(isActive ? .heavy : .semibold)
+                        .foregroundStyle(isActive ? SnakesssTheme.accentPrimary : SnakesssTheme.textMuted)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 48)
+                        .background(
+                            Capsule()
+                                .fill(SnakesssTheme.bgElevated)
+                                .overlay(
+                                    Capsule()
+                                        .strokeBorder(
+                                            isActive ? SnakesssTheme.accentPrimary : SnakesssTheme.borderSubtle,
+                                            lineWidth: 2
+                                        )
+                                )
+                        )
+                        .shadow(color: isActive ? SnakesssTheme.accentGlow : .clear, radius: 12)
+                }
+                .scaleEffect(isActive ? 1.05 : 1.0)
+                .animation(SnakesssAnimation.bouncy, value: settings.timerDuration)
+                .accessibilityLabel(SettingsManager.timerLabel(for: duration))
+                .accessibilityAddTraits(isActive ? .isSelected : [])
+            }
+        }
+    }
+
+    // MARK: - Feedback Toggles
+
+    private var feedbackToggles: some View {
+        VStack(spacing: SnakesssSpacing.spacing2) {
+            settingsToggleRow(
+                label: "Sound Effects",
+                icon: "speaker.wave.2.fill",
+                isOn: Binding(
+                    get: { settings.soundEnabled },
+                    set: { settings.soundEnabled = $0 }
+                )
+            )
+            Divider()
+                .overlay(SnakesssTheme.borderSubtle)
+            settingsToggleRow(
+                label: "Haptics",
+                icon: "hand.tap.fill",
+                isOn: Binding(
+                    get: { settings.hapticsEnabled },
+                    set: { settings.hapticsEnabled = $0 }
+                )
+            )
+        }
+        .padding(SnakesssSpacing.cardPadding)
+        .background(
+            RoundedRectangle(cornerRadius: SnakesssRadius.radiusLg)
+                .fill(SnakesssTheme.bgElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: SnakesssRadius.radiusLg)
+                        .strokeBorder(SnakesssTheme.borderSubtle, lineWidth: 1)
+                )
+        )
+    }
+
+    private func settingsToggleRow(label: String, icon: String, isOn: Binding<Bool>) -> some View {
+        HStack(spacing: SnakesssSpacing.spacing3) {
+            Image(systemName: icon)
+                .font(.system(size: 18))
+                .foregroundStyle(SnakesssTheme.accentPrimary)
+                .frame(width: 28)
+
+            Text(label)
+                .font(SnakesssTypography.body)
+                .foregroundStyle(SnakesssTheme.textPrimary)
+
+            Spacer()
+
+            Toggle("", isOn: isOn)
+                .labelsHidden()
+                .tint(SnakesssTheme.accentPrimary)
+                .onChange(of: isOn.wrappedValue) { _, _ in
+                    SnakesssHaptic.light()
+                }
+        }
+    }
+
+    // MARK: - Categories Section
+
+    private var categoriesSection: some View {
+        VStack(spacing: 0) {
+            ForEach(Array(SettingsManager.allCategories.enumerated()), id: \.element) { index, category in
+                VStack(spacing: 0) {
+                    categoryRow(category: category)
+                    if index < SettingsManager.allCategories.count - 1 {
+                        Divider()
+                            .overlay(SnakesssTheme.borderSubtle)
+                            .padding(.leading, 52)
+                    }
+                }
+            }
+        }
+        .background(
+            RoundedRectangle(cornerRadius: SnakesssRadius.radiusLg)
+                .fill(SnakesssTheme.bgElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: SnakesssRadius.radiusLg)
+                        .strokeBorder(SnakesssTheme.borderSubtle, lineWidth: 1)
+                )
+        )
+    }
+
+    private func categoryRow(category: String) -> some View {
+        let isEnabled = settings.enabledCategories.contains(category)
+        return Button {
+            SnakesssHaptic.light()
+            withAnimation(SnakesssAnimation.bouncy) {
+                if isEnabled {
+                    // Prevent disabling all categories
+                    if settings.enabledCategories.count > 1 {
+                        settings.enabledCategories.remove(category)
+                    }
+                } else {
+                    settings.enabledCategories.insert(category)
+                }
+            }
+        } label: {
+            HStack(spacing: SnakesssSpacing.spacing3) {
+                ZStack {
+                    Circle()
+                        .fill(isEnabled ? SnakesssTheme.accentPrimary.opacity(0.15) : SnakesssTheme.bgCard)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    isEnabled ? SnakesssTheme.accentPrimary : SnakesssTheme.borderSubtle,
+                                    lineWidth: 1.5
+                                )
+                        )
+                        .frame(width: 28, height: 28)
+                    if isEnabled {
+                        Image(systemName: "checkmark")
+                            .font(.system(size: 12, weight: .bold))
+                            .foregroundStyle(SnakesssTheme.accentPrimary)
+                    }
+                }
+
+                Text(category)
+                    .font(SnakesssTypography.body)
+                    .foregroundStyle(isEnabled ? SnakesssTheme.textPrimary : SnakesssTheme.textMuted)
+
+                Spacer()
+            }
+            .padding(.horizontal, SnakesssSpacing.cardPadding)
+            .padding(.vertical, SnakesssSpacing.spacing3)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(category)
+        .accessibilityValue(isEnabled ? "enabled" : "disabled")
+        .accessibilityAddTraits(isEnabled ? .isSelected : [])
+    }
+
+    // MARK: - Reset Button
+
+    private var resetButton: some View {
+        Button {
+            SnakesssHaptic.medium()
+            withAnimation(SnakesssAnimation.standard) {
+                settings.resetToDefaults()
+            }
+        } label: {
+            Text("Reset to Defaults")
+                .font(SnakesssTypography.label)
+                .fontWeight(.bold)
+                .foregroundStyle(SnakesssTheme.accentPrimary)
+                .frame(maxWidth: .infinity)
+                .frame(height: 48)
+                .background(
+                    Capsule()
+                        .strokeBorder(SnakesssTheme.borderActive, lineWidth: 2)
+                )
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+#Preview {
+    SettingsView()
+}

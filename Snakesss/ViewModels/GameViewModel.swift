@@ -25,7 +25,7 @@ final class GameViewModel {
     var phase: GamePhase = .setup
     var currentQuestion: Question?
     var roundResults: [RoundResult] = []
-    var discussionTimeRemaining: Int = 120
+    var discussionTimeRemaining: Int
 
     // MARK: - Private State
 
@@ -42,9 +42,13 @@ final class GameViewModel {
 
     private var timerTask: Task<Void, Never>?
 
-    // MARK: - Constants
+    // MARK: - Settings-driven Constants
 
-    static let totalRounds = 6
+    /// Total rounds — read once from SettingsManager at game start.
+    let totalRounds: Int
+
+    /// Discussion timer duration — read once from SettingsManager at game start.
+    let timerDuration: Int
 
     // MARK: - Init
 
@@ -54,6 +58,10 @@ final class GameViewModel {
         roleService: any RoleAssigning = RoleService(),
         scoringService: ScoringService = ScoringService()
     ) {
+        let settings = SettingsManager.shared
+        self.totalRounds = settings.roundCount
+        self.timerDuration = settings.timerDuration
+        self.discussionTimeRemaining = settings.timerDuration
         self.players = players
         self.questionService = questionService
         self.roleService = roleService
@@ -142,7 +150,7 @@ final class GameViewModel {
         }
     }
 
-    /// Start the 2-minute discussion timer and enter discussion phase.
+    /// Start the discussion timer and enter discussion phase.
     func startDiscussion() {
         phase = .discussion
         startTimer()
@@ -216,7 +224,7 @@ final class GameViewModel {
 
     /// After viewing results: start next round or end the game.
     func nextRound() {
-        if currentRound >= Self.totalRounds {
+        if currentRound >= totalRounds {
             phase = .gameEnd
             SnakesssHaptic.celebration()
         } else {
@@ -247,7 +255,7 @@ final class GameViewModel {
     }
 
     func startTimer() {
-        discussionTimeRemaining = 120
+        discussionTimeRemaining = timerDuration
         timerTask?.cancel()
         timerTask = Task { @MainActor in
             while !Task.isCancelled && discussionTimeRemaining > 0 {
