@@ -7,11 +7,13 @@ import SwiftUI
 struct QuestionView: View {
     let question: Question
     let roundNumber: Int
+    let mongooseName: String
     let onContinue: () -> Void
 
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture()
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: 0) {
@@ -50,8 +52,12 @@ struct QuestionView: View {
 
                 Spacer()
 
+                // Mongoose chip (persistent reminder)
+                MongooseChipView(mongooseName: mongooseName)
+                    .padding(.bottom, SnakesssSpacing.spacing4)
+
                 // Instructions
-                Text("Discuss the question, then Snakes will secretly see the answer.")
+                Text("📵 Place phone in the center\nDiscuss before voting begins")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .multilineTextAlignment(.center)

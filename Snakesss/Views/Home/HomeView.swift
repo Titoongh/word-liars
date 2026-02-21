@@ -4,22 +4,30 @@ import SwiftUI
 
 /// Landing screen. Entry point for new games.
 struct HomeView: View {
-    @State private var navigateToSetup = false
+    @State private var isSnakePulsing = false
+    @State private var showingHistory = false
 
     var body: some View {
         NavigationStack {
             ZStack {
                 SnakesssTheme.bgBase.ignoresSafeArea()
+                    .scaleTexture()
                 SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
                 VStack(spacing: 0) {
                     Spacer()
 
-                    // Logo
+                    // Logo section
                     VStack(spacing: SnakesssSpacing.spacing4) {
+                        // Snake emoji with breathing pulse (1.0 ↔ 0.97, 2s loop)
                         Text("🐍")
                             .font(.system(size: 80))
                             .shadow(color: SnakesssTheme.accentPrimary.opacity(0.4), radius: 24)
+                            .scaleEffect(isSnakePulsing ? 0.97 : 1.0)
+                            .animation(
+                                .easeInOut(duration: 2.0).repeatForever(autoreverses: true),
+                                value: isSnakePulsing
+                            )
 
                         Text("Snakesss")
                             .font(SnakesssTypography.display)
@@ -32,7 +40,15 @@ struct HomeView: View {
 
                     Spacer()
 
-                    // Buttons
+                    // Role badge pills
+                    HStack(spacing: SnakesssSpacing.spacing3) {
+                        RoleBadgeView(role: .human)
+                        RoleBadgeView(role: .snake)
+                        RoleBadgeView(role: .mongoose)
+                    }
+                    .padding(.bottom, SnakesssSpacing.spacing8)
+
+                    // Action buttons
                     VStack(spacing: SnakesssSpacing.spacing3) {
                         NavigationLink(destination: PlayerSetupView()) {
                             Text("New Game")
@@ -40,15 +56,28 @@ struct HomeView: View {
                         }
                         .buttonStyle(SnakesssPrimaryButtonStyle())
 
-                        Text("4–8 players · Pass-and-play · ~30 min")
-                            .font(SnakesssTypography.caption)
-                            .foregroundStyle(SnakesssTheme.textMuted)
+                        Button {
+                            showingHistory = true
+                        } label: {
+                            Text("Game History")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(SnakesssSecondaryButtonStyle())
                     }
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
-                    .padding(.bottom, SnakesssSpacing.spacing12)
+
+                    // Studio stamp
+                    Text("GOBC GAMES")
+                        .microStyle(color: SnakesssTheme.textMuted.opacity(0.5))
+                        .padding(.top, SnakesssSpacing.spacing6)
+                        .padding(.bottom, SnakesssSpacing.spacing12)
                 }
             }
             .navigationBarHidden(true)
+            .onAppear { isSnakePulsing = true }
+            .sheet(isPresented: $showingHistory) {
+                HistoryView()
+            }
         }
     }
 }

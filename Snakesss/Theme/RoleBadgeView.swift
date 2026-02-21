@@ -88,6 +88,34 @@ extension Role {
     }
 }
 
+// MARK: - Mongoose Announcement Chip
+
+/// Amber chip shown persistently on screens where the Mongoose's identity is public.
+/// Displays: "🦦 [Name] is the Truth Mongoose"
+struct MongooseChipView: View {
+    let mongooseName: String
+
+    var body: some View {
+        HStack(spacing: SnakesssSpacing.spacing2) {
+            Text("🦦")
+                .font(.system(size: 14))
+            Text("\(mongooseName) is the Truth Mongoose")
+                .font(SnakesssTypography.label)
+                .foregroundStyle(SnakesssTheme.mongooseColor)
+        }
+        .padding(.horizontal, SnakesssSpacing.spacing4)
+        .padding(.vertical, SnakesssSpacing.spacing2)
+        .background(
+            Capsule()
+                .fill(SnakesssTheme.mongooseColor.opacity(0.10))
+                .overlay(
+                    Capsule()
+                        .strokeBorder(SnakesssTheme.mongooseColor.opacity(0.30), lineWidth: 1)
+                )
+        )
+    }
+}
+
 // MARK: - Preview
 
 #Preview("Role Badges") {

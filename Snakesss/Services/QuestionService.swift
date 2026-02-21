@@ -2,14 +2,19 @@ import Foundation
 
 final class QuestionService {
     private var allQuestions: [Question]
-    private var usedQuestionIDs: Set<String> = []
+    private(set) var usedQuestionIDs: Set<String>
+
+    private static let usedIDsKey = "usedQuestionIDs"
 
     init() {
         self.allQuestions = Self.loadFromBundle()
+        let saved = UserDefaults.standard.stringArray(forKey: Self.usedIDsKey) ?? []
+        self.usedQuestionIDs = Set(saved)
     }
 
     init(questions: [Question]) {
         self.allQuestions = questions
+        self.usedQuestionIDs = []
     }
 
     private static func loadFromBundle() -> [Question] {
@@ -38,9 +43,15 @@ final class QuestionService {
 
     func markUsed(_ id: String) {
         usedQuestionIDs.insert(id)
+        persistUsedIDs()
     }
 
     func resetPool() {
         usedQuestionIDs.removeAll()
+        persistUsedIDs()
+    }
+
+    private func persistUsedIDs() {
+        UserDefaults.standard.set(Array(usedQuestionIDs), forKey: Self.usedIDsKey)
     }
 }

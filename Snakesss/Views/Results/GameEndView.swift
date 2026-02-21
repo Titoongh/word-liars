@@ -7,6 +7,7 @@ struct GameEndView: View {
     let players: [Player]
     let results: [RoundResult]
     let onPlayAgain: () -> Void
+    let onNewGame: () -> Void
     let onHome: () -> Void
 
     @State private var isAnimating = false
@@ -24,6 +25,9 @@ struct GameEndView: View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
             SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
+
+            // Confetti particle system
+            ConfettiView()
 
             ScrollView {
                 VStack(spacing: SnakesssSpacing.spacing8) {
@@ -45,6 +49,7 @@ struct GameEndView: View {
             withAnimation(SnakesssAnimation.celebration) {
                 isAnimating = true
             }
+            SnakesssHaptic.celebration()
         }
     }
 
@@ -53,23 +58,26 @@ struct GameEndView: View {
     private var winnerSection: some View {
         VStack(spacing: SnakesssSpacing.spacing4) {
             Text("🏆")
-                .font(.system(size: 80))
+                .font(.system(size: 72))
                 .scaleEffect(isAnimating ? 1.0 : 0.3)
                 .shadow(color: SnakesssTheme.truthGold.opacity(0.5), radius: 30)
                 .goldGlow()
 
-            Text("Game Over!")
-                .microStyle(color: SnakesssTheme.textMuted)
+            Text("WINNER")
+                .microStyle(color: SnakesssTheme.truthGold)
 
             if winners.count == 1 {
                 VStack(spacing: SnakesssSpacing.spacing2) {
                     Text(winners[0].name)
-                        .font(SnakesssTypography.title)
+                        .font(SnakesssTypography.playerName)
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .goldGlow()
-                    Text("wins with \(winners[0].totalScore) points!")
-                        .font(SnakesssTypography.bodyLarge)
-                        .foregroundStyle(SnakesssTheme.textSecondary)
+                        .scaleEffect(isAnimating ? 1.0 : 0.8)
+
+                    Text("\(winners[0].totalScore) pts")
+                        .font(SnakesssTypography.score)
+                        .foregroundStyle(SnakesssTheme.truthGold)
+                        .contentTransition(.numericText())
                 }
             } else {
                 VStack(spacing: SnakesssSpacing.spacing2) {
@@ -78,11 +86,13 @@ struct GameEndView: View {
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .goldGlow()
                     Text(winners.map(\.name).joined(separator: " & "))
+                        .font(SnakesssTypography.playerName)
+                        .foregroundStyle(SnakesssTheme.truthGold)
+                        .goldGlow()
+                    Text("\(winners[0].totalScore) pts each")
                         .font(SnakesssTypography.bodyLarge)
                         .foregroundStyle(SnakesssTheme.textSecondary)
-                    Text("all won with \(winners[0].totalScore) points!")
-                        .font(SnakesssTypography.body)
-                        .foregroundStyle(SnakesssTheme.textMuted)
+                        .contentTransition(.numericText())
                 }
             }
         }
@@ -131,6 +141,7 @@ struct GameEndView: View {
             Text("\(player.totalScore)")
                 .font(SnakesssTypography.headline)
                 .foregroundStyle(isWinner ? SnakesssTheme.truthGold : SnakesssTheme.textPrimary)
+                .contentTransition(.numericText())
                 .goldGlow()
         }
         .padding(.vertical, SnakesssSpacing.spacing2)
@@ -145,10 +156,17 @@ struct GameEndView: View {
             }
             .buttonStyle(SnakesssPrimaryButtonStyle())
 
-            Button("Back to Home") {
-                onHome()
+            Button("New Game") {
+                onNewGame()
             }
             .buttonStyle(SnakesssSecondaryButtonStyle())
+
+            Button("Home") {
+                onHome()
+            }
+            .font(SnakesssTypography.label)
+            .foregroundStyle(SnakesssTheme.textMuted)
+            .padding(.top, SnakesssSpacing.spacing2)
         }
     }
 
@@ -161,5 +179,66 @@ struct GameEndView: View {
         case 3: return "🥉"
         default: return "\(rank)."
         }
+    }
+}
+
+// MARK: - Confetti Particle System
+
+private struct ConfettiView: View {
+    struct Particle {
+        let startX: Double       // 0–1 normalized
+        let color: Color
+        let size: Double
+        let speed: Double        // pts/sec falling
+        let drift: Double        // pts horizontal drift over 3s
+        let spinRate: Double     // degrees/sec
+        let delay: Double        // seconds before appearing
+    }
+
+    private let particles: [Particle] = (0..<60).map { i in
+        Particle(
+            startX: Double.random(in: 0.05...0.95),
+            color: i % 3 == 0 ? ColorPrimitive.gold500 : ColorPrimitive.green400,
+            size: Double.random(in: 5...10),
+            speed: Double.random(in: 120...280),
+            drift: Double.random(in: -40...40),
+            spinRate: Double.random(in: 90...360),
+            delay: Double.random(in: 0...0.8)
+        )
+    }
+
+    @State private var startDate = Date.now
+
+    var body: some View {
+        TimelineView(.animation) { timeline in
+            let elapsed = timeline.date.timeIntervalSince(startDate)
+            Canvas { context, size in
+                for p in particles {
+                    let t = elapsed - p.delay
+                    guard t > 0 && t < 3.5 else { continue }
+                    let x = p.startX * Double(size.width) + t * p.drift
+                    let y = t * p.speed
+                    let rotation = p.spinRate * t
+                    let fade = min(1.0, (3.5 - t) / 0.5)
+
+                    let rect = CGRect(
+                        x: x - p.size / 2,
+                        y: y - p.size / 2,
+                        width: p.size,
+                        height: p.size * 0.5
+                    )
+                    let transform = CGAffineTransform(translationX: x, y: y)
+                        .rotated(by: rotation * .pi / 180)
+                        .translatedBy(x: -x, y: -y)
+
+                    context.fill(
+                        Path(rect).applying(transform),
+                        with: .color(p.color.opacity(fade))
+                    )
+                }
+            }
+        }
+        .allowsHitTesting(false)
+        .ignoresSafeArea()
     }
 }

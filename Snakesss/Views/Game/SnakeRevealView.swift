@@ -3,7 +3,7 @@ import SwiftUI
 // MARK: - SnakeRevealView
 
 /// Eyes-closed secret reveal for one Snake. Shows correct answer + other snake names.
-/// Pass-and-play pattern: prompt to pass, then reveal on tap.
+/// Pass-and-play pattern: eyes-closed prompt → pass → reveal on tap → eyes-open (last snake).
 struct SnakeRevealView: View {
     let snake: Player
     let snakeIndex: Int
@@ -13,28 +13,93 @@ struct SnakeRevealView: View {
     let question: Question?
     let onDone: () -> Void
 
-    @State private var isRevealed = false
+    private enum RevealPhase { case closedEyes, passing, revealed, openEyes }
+
+    @State private var revealPhase: RevealPhase
+
+    init(snake: Player, snakeIndex: Int, totalSnakes: Int, allSnakeNames: [String],
+         correctAnswer: String, question: Question?, onDone: @escaping () -> Void) {
+        self.snake = snake
+        self.snakeIndex = snakeIndex
+        self.totalSnakes = totalSnakes
+        self.allSnakeNames = allSnakeNames
+        self.correctAnswer = correctAnswer
+        self.question = question
+        self.onDone = onDone
+        // Show "close your eyes" prompt only for the first snake
+        _revealPhase = State(initialValue: snakeIndex == 0 ? .closedEyes : .passing)
+    }
+
+    private var isLastSnake: Bool { snakeIndex + 1 == totalSnakes }
 
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
-            if isRevealed {
+            switch revealPhase {
+            case .closedEyes:
+                closedEyesView
+                    .transition(.opacity)
+            case .passing:
+                snakePassOverlay
+                    .transition(.opacity)
+            case .revealed:
                 revealedContent
                     .transition(.opacity.combined(with: .scale(scale: 0.92)))
-            } else {
-                snakePassOverlay
+            case .openEyes:
+                openEyesView
                     .transition(.opacity)
             }
         }
-        .animation(SnakesssAnimation.reveal, value: isRevealed)
+        .animation(SnakesssAnimation.reveal, value: revealPhase)
         .onChange(of: snake.id) { _, _ in
-            isRevealed = false
+            revealPhase = snakeIndex == 0 ? .closedEyes : .passing
         }
     }
 
-    // MARK: - Pass Overlay (eyes closed prompt)
+    // MARK: - Eyes Closed Prompt (State A)
+
+    private var closedEyesView: some View {
+        ZStack {
+            SnakesssTheme.overlayScrim.ignoresSafeArea()
+
+            VStack(spacing: SnakesssSpacing.spacing6) {
+                Spacer()
+
+                Image(systemName: "eye.slash.fill")
+                    .font(.system(size: 64))
+                    .foregroundStyle(SnakesssTheme.textMuted)
+
+                Text("Everyone close your eyes")
+                    .font(SnakesssTypography.headline)
+                    .foregroundStyle(SnakesssTheme.textPrimary)
+                    .multilineTextAlignment(.center)
+
+                Text("Snakes: wait for your tap cue")
+                    .font(SnakesssTypography.body)
+                    .foregroundStyle(SnakesssTheme.textSecondary)
+                    .multilineTextAlignment(.center)
+
+                Spacer()
+
+                Text("HOST: Tap when ready →")
+                    .font(SnakesssTypography.caption)
+                    .foregroundStyle(SnakesssTheme.textMuted)
+                    .padding(.bottom, SnakesssSpacing.spacing12)
+            }
+            .padding(.horizontal, SnakesssSpacing.screenPadding)
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            SnakesssHaptic.medium()
+            withAnimation(SnakesssAnimation.reveal) {
+                revealPhase = .passing
+            }
+        }
+    }
+
+    // MARK: - Pass Overlay (State B)
 
     private var snakePassOverlay: some View {
         ZStack {
@@ -43,9 +108,6 @@ struct SnakeRevealView: View {
 
             VStack(spacing: SnakesssSpacing.spacing4) {
                 Spacer()
-
-                Text("All players — close your eyes")
-                    .microStyle(color: SnakesssTheme.textSecondary)
 
                 Text("🐍")
                     .font(.system(size: 64))
@@ -73,12 +135,12 @@ struct SnakeRevealView: View {
         .onTapGesture {
             SnakesssHaptic.heavy()
             withAnimation(SnakesssAnimation.reveal) {
-                isRevealed = true
+                revealPhase = .revealed
             }
         }
     }
 
-    // MARK: - Revealed Content
+    // MARK: - Revealed Content (State C)
 
     private var revealedContent: some View {
         VStack(spacing: 0) {
@@ -97,9 +159,8 @@ struct SnakeRevealView: View {
 
                 // Correct answer card
                 VStack(spacing: SnakesssSpacing.spacing2) {
-                    Text("The correct answer is")
-                        .font(SnakesssTypography.caption)
-                        .foregroundStyle(SnakesssTheme.textMuted)
+                    Text("CORRECT ANSWER")
+                        .microStyle(color: SnakesssTheme.textMuted)
 
                     Text(answerLabel)
                         .font(SnakesssTypography.title)
@@ -127,9 +188,8 @@ struct SnakeRevealView: View {
                 // Other snakes
                 if allSnakeNames.count > 1 {
                     VStack(spacing: SnakesssSpacing.spacing2) {
-                        Text("Your fellow snakes:")
-                            .font(SnakesssTypography.caption)
-                            .foregroundStyle(SnakesssTheme.textMuted)
+                        Text("YOUR FELLOW SNAKES")
+                            .microStyle(color: SnakesssTheme.textMuted)
 
                         let otherSnakes = allSnakeNames.filter { $0 != snake.name }
                         ForEach(otherSnakes, id: \.self) { name in
@@ -140,10 +200,15 @@ struct SnakeRevealView: View {
                     }
                 }
 
-                Text("Lead the humans astray. Vote 'Snake' during voting.")
-                    .font(SnakesssTypography.caption)
-                    .foregroundStyle(SnakesssTheme.textMuted)
-                    .multilineTextAlignment(.center)
+                VStack(spacing: SnakesssSpacing.spacing1) {
+                    Text("Remember: vote \"Snake\" only.")
+                        .font(SnakesssTypography.caption)
+                        .foregroundStyle(SnakesssTheme.snakeColor)
+                    Text("Any other vote = lose points.")
+                        .font(SnakesssTypography.caption)
+                        .foregroundStyle(SnakesssTheme.danger)
+                }
+                .multilineTextAlignment(.center)
             }
             .padding(SnakesssSpacing.cardPadding)
             .background(
@@ -154,24 +219,68 @@ struct SnakeRevealView: View {
                             .strokeBorder(SnakesssTheme.snakeColor.opacity(0.25), lineWidth: 1.5)
                     )
             )
-            .snakesssGlow(SnakessssShadow.glowAccent)
+            .snakesssGlow(SnakesssShadow.glowAccent)
             .padding(.horizontal, SnakesssSpacing.screenPadding)
 
             Spacer()
 
-            Button("Done — Hide screen") {
+            Button("Done — Hide This Screen") {
                 SnakesssHaptic.medium()
                 withAnimation(SnakesssAnimation.standard) {
-                    isRevealed = false
+                    if isLastSnake {
+                        revealPhase = .openEyes
+                    } else {
+                        revealPhase = .passing
+                    }
                 }
-                Task { @MainActor in
-                    try? await Task.sleep(for: .milliseconds(200))
-                    onDone()
+                if !isLastSnake {
+                    Task { @MainActor in
+                        try? await Task.sleep(for: .milliseconds(200))
+                        onDone()
+                    }
                 }
             }
             .buttonStyle(SnakesssPrimaryButtonStyle())
             .padding(.horizontal, SnakesssSpacing.screenPadding)
             .padding(.bottom, SnakesssSpacing.spacing12)
+        }
+    }
+
+    // MARK: - Open Eyes Prompt (State D — last snake only)
+
+    private var openEyesView: some View {
+        ZStack {
+            SnakesssTheme.overlayScrim.ignoresSafeArea()
+
+            VStack(spacing: SnakesssSpacing.spacing6) {
+                Spacer()
+
+                Image(systemName: "eye.fill")
+                    .font(.system(size: 64))
+                    .foregroundStyle(SnakesssTheme.accentPrimary)
+                    .accentGlow()
+
+                Text("Everyone open your eyes")
+                    .font(SnakesssTypography.headline)
+                    .foregroundStyle(SnakesssTheme.textPrimary)
+                    .multilineTextAlignment(.center)
+
+                Text("Snakes know the answer.\nThe discussion begins.")
+                    .font(SnakesssTypography.body)
+                    .foregroundStyle(SnakesssTheme.textSecondary)
+                    .multilineTextAlignment(.center)
+
+                Spacer()
+
+                Button("Start Discussion →") {
+                    SnakesssHaptic.medium()
+                    onDone()
+                }
+                .buttonStyle(SnakesssPrimaryButtonStyle())
+                .padding(.horizontal, SnakesssSpacing.screenPadding)
+                .padding(.bottom, SnakesssSpacing.spacing12)
+            }
+            .padding(.horizontal, SnakesssSpacing.screenPadding)
         }
     }
 

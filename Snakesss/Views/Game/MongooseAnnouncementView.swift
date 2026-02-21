@@ -12,7 +12,7 @@ struct MongooseAnnouncementView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
-            SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
+            SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: SnakesssSpacing.spacing8) {
                 Spacer()
@@ -36,15 +36,17 @@ struct MongooseAnnouncementView: View {
                         .scaleEffect(isAnimating ? 1.0 : 0.8)
                 }
 
-                Text("Everyone can see who the Mongoose is.\nSnakes — don't let them find the truth.")
+                // Amber chip — identity confirmation
+                MongooseChipView(mongooseName: mongooseName)
+
+                Text("Everyone can verify this.")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, SnakesssSpacing.spacing8)
 
                 Spacer()
 
-                Button("Show the Question") {
+                Button("See the Question →") {
                     onContinue()
                 }
                 .buttonStyle(SnakesssPrimaryButtonStyle())

@@ -8,6 +8,7 @@ import SwiftUI
 /// - Breathing pulse: player name scales 1.0 ↔ 0.97, 2s easeInOut loop
 struct PassPhoneOverlay: View {
     let playerName: String
+    var caption: String = "Tap to reveal your role"
     let onTap: () -> Void
 
     @State private var isPulsing = false
@@ -44,7 +45,7 @@ struct PassPhoneOverlay: View {
                 Spacer()
 
                 // "Tap to reveal" caption
-                Text("Tap to reveal your role")
+                Text(caption)
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .padding(.bottom, SnakesssSpacing.spacing12)

@@ -125,35 +125,48 @@ struct RoundResultsView: View {
         let role = roleFor(playerIndex)
         let vote = voteFor(playerIndex)
         let points = pointsFor(playerIndex)
+        let isSnakeVote = vote == .some(.snake)
         let isCorrect = voteIsCorrect(vote)
+        let stripeColor: Color = isSnakeVote ? SnakesssTheme.snakeColor :
+                                 isCorrect    ? SnakesssTheme.accentPrimary :
+                                               SnakesssTheme.danger
 
-        return HStack(spacing: SnakesssSpacing.spacing3) {
-            // Player name
-            Text(player.name)
-                .font(SnakesssTypography.bodyLarge)
-                .foregroundStyle(SnakesssTheme.textPrimary)
-                .frame(maxWidth: .infinity, alignment: .leading)
+        return HStack(spacing: 0) {
+            // Left accent stripe
+            Rectangle()
+                .fill(stripeColor)
+                .frame(width: 3)
+                .clipShape(RoundedRectangle(cornerRadius: 2))
 
-            // Role badge
-            if let r = role {
-                RoleBadgeView(role: r)
+            HStack(spacing: SnakesssSpacing.spacing3) {
+                // Player name
+                Text(player.name)
+                    .font(SnakesssTypography.bodyLarge)
+                    .foregroundStyle(SnakesssTheme.textPrimary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                // Role badge
+                if let r = role {
+                    RoleBadgeView(role: r)
+                }
+
+                // Vote
+                if let v = vote {
+                    Text(voteLabel(v))
+                        .font(SnakesssTypography.label)
+                        .foregroundStyle(isCorrect ? SnakesssTheme.truthGold : SnakesssTheme.danger)
+                }
+
+                // Points
+                Text("+\(points)")
+                    .font(SnakesssTypography.bodyLarge)
+                    .foregroundStyle(points > 0 ? SnakesssTheme.accentPrimary : SnakesssTheme.textMuted)
+                    .frame(minWidth: 40, alignment: .trailing)
+                    .contentTransition(.numericText())
             }
-
-            // Vote
-            if let v = vote {
-                Text(voteLabel(v))
-                    .font(SnakesssTypography.label)
-                    .foregroundStyle(isCorrect ? SnakesssTheme.truthGold : SnakesssTheme.danger)
-            }
-
-            // Points
-            Text("+\(points)")
-                .font(SnakesssTypography.bodyLarge)
-                .foregroundStyle(points > 0 ? SnakesssTheme.accentPrimary : SnakesssTheme.textMuted)
-                .frame(minWidth: 40, alignment: .trailing)
+            .padding(.horizontal, SnakesssSpacing.spacing4)
+            .padding(.vertical, SnakesssSpacing.spacing3)
         }
-        .padding(.horizontal, SnakesssSpacing.spacing4)
-        .padding(.vertical, SnakesssSpacing.spacing3)
         .background(
             RoundedRectangle(cornerRadius: SnakesssRadius.radiusMd)
                 .fill(SnakesssTheme.bgElevated)
@@ -162,6 +175,7 @@ struct RoundResultsView: View {
                         .strokeBorder(SnakesssTheme.borderSubtle, lineWidth: 1)
                 )
         )
+        .clipShape(RoundedRectangle(cornerRadius: SnakesssRadius.radiusMd))
     }
 
     // MARK: - Scoreboard
@@ -181,6 +195,7 @@ struct RoundResultsView: View {
                     Text("\(player.totalScore) pts")
                         .font(SnakesssTypography.bodyLarge)
                         .foregroundStyle(SnakesssTheme.accentPrimary)
+                        .contentTransition(.numericText())
                 }
                 .padding(.horizontal, SnakesssSpacing.spacing4)
                 .padding(.vertical, SnakesssSpacing.spacing2)

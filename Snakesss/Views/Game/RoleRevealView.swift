@@ -47,6 +47,7 @@ struct RoleRevealView: View {
             // Header
             roundBadge
                 .padding(.top, SnakesssSpacing.spacing8)
+                .onAppear { SnakesssHaptic.heavy() }
 
             Spacer()
 
@@ -95,8 +96,11 @@ struct RoleRevealView: View {
             if let role = player.role {
                 VStack(spacing: SnakesssSpacing.spacing4) {
                     Text(role.emoji)
-                        .font(.system(size: 80))
+                        .font(.system(size: 72))
                         .shadow(color: role.glowColor, radius: 24)
+
+                    Text("YOUR ROLE")
+                        .microStyle(color: SnakesssTheme.textMuted)
 
                     Text(role.displayName.uppercased())
                         .font(SnakesssTypography.title)

@@ -24,6 +24,7 @@ struct VotingView: View {
             } else {
                 PassPhoneOverlay(
                     playerName: player.name,
+                    caption: "Tap to begin voting",
                     onTap: {
                         withAnimation(SnakesssAnimation.reveal) {
                             isRevealed = true

@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 // MARK: - GameView (Phase Router)
 
@@ -6,6 +7,7 @@ import SwiftUI
 struct GameView: View {
     @State var viewModel: GameViewModel
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var modelContext
 
     var body: some View {
         ZStack {
@@ -18,6 +20,11 @@ struct GameView: View {
                 ))
         }
         .animation(SnakesssAnimation.standard, value: viewModel.phase)
+        .onChange(of: viewModel.phase) { _, newPhase in
+            if newPhase == .gameEnd {
+                viewModel.saveGame(to: modelContext)
+            }
+        }
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -61,6 +68,7 @@ struct GameView: View {
                 QuestionView(
                     question: question,
                     roundNumber: viewModel.currentRound,
+                    mongooseName: mongooseName,
                     onContinue: { viewModel.startSnakeReveal() }
                 )
             }
@@ -81,6 +89,7 @@ struct GameView: View {
                 DiscussionTimerView(
                     question: question,
                     timeRemaining: viewModel.discussionTimeRemaining,
+                    mongooseName: mongooseName,
                     onSkip: { viewModel.skipDiscussion() }
                 )
             }
@@ -109,6 +118,7 @@ struct GameView: View {
                 players: viewModel.players,
                 results: viewModel.roundResults,
                 onPlayAgain: { restartGame() },
+                onNewGame: { dismiss() },
                 onHome: { dismiss() }
             )
         }

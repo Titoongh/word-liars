@@ -197,7 +197,7 @@ struct SnakesssGlow {
     let y: CGFloat
 }
 
-enum SnakessssShadow {
+enum SnakesssShadow {
     /// Resting cards: 0 2 8 rgba(0,0,0,0.3)
     static let shadowSubtle = SnakesssGlow(
         color: Color.black.opacity(0.30),
@@ -242,7 +242,7 @@ enum SnakessssShadow {
 // MARK: - View Modifier Helpers
 
 extension View {
-    /// Apply a shadow/glow from SnakessssShadow
+    /// Apply a shadow/glow from SnakesssShadow
     func snakesssGlow(_ glow: SnakesssGlow) -> some View {
         self.shadow(color: glow.color, radius: glow.radius, x: glow.x, y: glow.y)
     }

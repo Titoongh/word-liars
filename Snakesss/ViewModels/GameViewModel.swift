@@ -1,4 +1,5 @@
 import Foundation
+import SwiftData
 
 // MARK: - RoleAssigning Protocol
 
@@ -222,6 +223,21 @@ final class GameViewModel {
         }
     }
 
+    // MARK: - Persistence
+
+    /// Creates a GameRecord and inserts it into the SwiftData model context.
+    /// Call once when transitioning to .gameEnd phase.
+    func saveGame(to modelContext: ModelContext) {
+        let record = GameRecord(
+            date: Date(),
+            playerNames: players.map(\.name),
+            finalScores: players.map(\.totalScore),
+            winnerNames: winners.map(\.name),
+            roundCount: currentRound
+        )
+        modelContext.insert(record)
+    }
+
     // MARK: - Timer
 
     func startTimer() {
@@ -234,8 +250,8 @@ final class GameViewModel {
                 discussionTimeRemaining -= 1
                 if discussionTimeRemaining == 30 {
                     SnakesssHaptic.timerWarning()
-                } else if discussionTimeRemaining == 10 {
-                    SnakesssHaptic.timerWarning()
+                } else if discussionTimeRemaining <= 10 && discussionTimeRemaining > 0 {
+                    SnakesssHaptic.medium()
                 }
             }
             if !Task.isCancelled {

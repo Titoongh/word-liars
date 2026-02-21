@@ -51,6 +51,8 @@
 		AA00000000000000000007BB /* RoundResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003BB /* RoundResultsView.swift */; };
 		AA00000000000000000007CB /* GameEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003CB /* GameEndView.swift */; };
 		AA00000000000000000007DB /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003DB /* GameViewModelTests.swift */; };
+		/* STORY-019 */
+		AA000000000000000000080C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000081C /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		AA00000000000000000003BB /* RoundResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundResultsView.swift; sourceTree = "<group>"; };
 		AA00000000000000000003CB /* GameEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndView.swift; sourceTree = "<group>"; };
 		AA00000000000000000003DB /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
+		/* STORY-019 */
+		AA000000000000000000081C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -183,6 +187,7 @@
 				AA00000000000000000004FD /* Setup */,
 				AA00000000000000000004FE /* Game */,
 				AA00000000000000000004FF /* Results */,
+				AA000000000000000000082C /* History */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +229,14 @@
 				AA00000000000000000003CB /* GameEndView.swift */,
 			);
 			path = Results;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000082C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000081C /* HistoryView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		AA000000000000000000045A /* Resources */ = {
@@ -411,6 +424,8 @@
 				AA00000000000000000007AB /* VotingView.swift in Sources */,
 				AA00000000000000000007BB /* RoundResultsView.swift in Sources */,
 				AA00000000000000000007CB /* GameEndView.swift in Sources */,
+				/* STORY-019 */
+				AA000000000000000000080C /* HistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

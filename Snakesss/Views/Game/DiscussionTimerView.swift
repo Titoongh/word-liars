@@ -7,7 +7,10 @@ import SwiftUI
 struct DiscussionTimerView: View {
     let question: Question
     let timeRemaining: Int
+    let mongooseName: String
     let onSkip: () -> Void
+
+    @State private var isGlowPulsing = false
 
     var body: some View {
         ZStack {
@@ -30,6 +33,10 @@ struct DiscussionTimerView: View {
                 // Question recap (for easy reference during discussion)
                 questionRecap
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
+                    .padding(.bottom, SnakesssSpacing.spacing4)
+
+                // Mongoose chip (persistent reminder)
+                MongooseChipView(mongooseName: mongooseName)
                     .padding(.bottom, SnakesssSpacing.spacing6)
 
                 // Skip button
@@ -41,6 +48,14 @@ struct DiscussionTimerView: View {
                 .padding(.bottom, SnakesssSpacing.spacing12)
             }
         }
+        .onChange(of: timeRemaining) { _, newValue in
+            // Trigger glow pulse when entering danger zone
+            if newValue == 10 {
+                withAnimation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
+                    isGlowPulsing = true
+                }
+            }
+        }
     }
 
     // MARK: - Timer Display
@@ -49,20 +64,24 @@ struct DiscussionTimerView: View {
         ZStack {
             // Background ring
             Circle()
-                .stroke(SnakesssTheme.bgElevated, lineWidth: 12)
-                .frame(width: 200, height: 200)
+                .stroke(SnakesssTheme.bgElevated, lineWidth: 8)
+                .frame(width: 220, height: 220)
 
             // Progress ring
             Circle()
                 .trim(from: 0, to: progress)
                 .stroke(
                     timerColor,
-                    style: StrokeStyle(lineWidth: 12, lineCap: .round)
+                    style: StrokeStyle(lineWidth: 8, lineCap: .round)
                 )
-                .frame(width: 200, height: 200)
+                .frame(width: 220, height: 220)
                 .rotationEffect(.degrees(-90))
                 .animation(SnakesssAnimation.standard, value: timeRemaining)
-                .shadow(color: timerColor.opacity(0.4), radius: 12)
+                // Glow pulse at ≤10s
+                .shadow(
+                    color: timerColor.opacity(isGlowPulsing ? 0.6 : 0.3),
+                    radius: isGlowPulsing ? 20 : 8
+                )
 
             // Time digits
             VStack(spacing: 2) {
