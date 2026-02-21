@@ -23,8 +23,10 @@ final class GameSetupViewModel {
     var playerNames: [String] = Array(repeating: "", count: 4)
 
     var isValid: Bool {
-        playerNames.count == playerCount &&
-        playerNames.allSatisfy { !$0.trimmingCharacters(in: .whitespaces).isEmpty }
+        let trimmed = playerNames.map { $0.trimmingCharacters(in: .whitespaces) }
+        return trimmed.count == playerCount &&
+               trimmed.allSatisfy { !$0.isEmpty } &&
+               Set(trimmed).count == playerCount
     }
 
     func createPlayers() -> [Player] {

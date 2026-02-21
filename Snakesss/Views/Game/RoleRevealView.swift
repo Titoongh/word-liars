@@ -3,7 +3,7 @@ import SwiftUI
 // MARK: - RoleRevealView
 
 /// Pass-and-play role reveal for one player. Shows a "pass to [name]" screen first,
-/// then reveals role on tap. Transitions to next player or mongoose announcement.
+/// then reveals role via hold-to-reveal gesture. Role auto-hides on release.
 struct RoleRevealView: View {
     let player: Player
     let playerIndex: Int
@@ -13,9 +13,15 @@ struct RoleRevealView: View {
 
     @State private var isRevealed = false
 
+    // M3 + S8: Hold-to-reveal card flip state
+    @GestureState private var isHolding = false
+    @State private var cardFlipX: CGFloat = 1.0
+    @State private var showRoleFace = false
+
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             if isRevealed {
@@ -35,8 +41,11 @@ struct RoleRevealView: View {
         }
         .animation(SnakesssAnimation.reveal, value: isRevealed)
         .onChange(of: player.id) { _, _ in
-            // Reset reveal state when player changes
             isRevealed = false
+            resetFlip()
+        }
+        .onChange(of: isHolding) { _, holding in
+            handleHold(holding)
         }
     }
 
@@ -47,25 +56,31 @@ struct RoleRevealView: View {
             // Header
             roundBadge
                 .padding(.top, SnakesssSpacing.spacing8)
-                .onAppear { SnakesssHaptic.heavy() }
+                .onAppear { SnakesssHaptic.medium() }
 
             Spacer()
 
-            // Role card
-            roleCard
+            // Hold-to-reveal role card (M3 + S8)
+            holdableRoleCard
 
             Spacer()
+
+            // Hint label
+            Text("Hold to reveal · Release to hide")
+                .font(SnakesssTypography.micro)
+                .foregroundStyle(SnakesssTheme.textMuted)
+                .tracking(1)
+                .padding(.bottom, SnakesssSpacing.spacing2)
 
             // Continue button
             Button("Done — Pass the phone") {
                 SnakesssHaptic.medium()
                 withAnimation(SnakesssAnimation.standard) {
                     isRevealed = false
-                    // Small delay so the hide animation plays first
                 }
-                // Slight delay to let hide animate
                 Task { @MainActor in
                     try? await Task.sleep(for: .milliseconds(200))
+                    resetFlip()
                     onDone()
                 }
             }
@@ -75,24 +90,47 @@ struct RoleRevealView: View {
         }
     }
 
-    private var roundBadge: some View {
-        VStack(spacing: SnakesssSpacing.spacing2) {
-            Text("Round \(roundNumber) of \(GameViewModel.totalRounds)")
-                .microStyle(color: SnakesssTheme.textMuted)
+    // MARK: - Holdable Role Card (M3 + S8)
 
-            Text("Player \(playerIndex + 1) of \(totalPlayers)")
-                .microStyle(color: SnakesssTheme.textSecondary)
+    private var holdableRoleCard: some View {
+        ZStack {
+            if showRoleFace {
+                roleFaceContent
+            } else {
+                blankCardFace
+            }
         }
+        .scaleEffect(x: cardFlipX, y: 1.0, anchor: .center)
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .updating($isHolding) { _, state, _ in state = true }
+        )
+        .padding(.horizontal, SnakesssSpacing.screenPadding)
     }
 
-    private var roleCard: some View {
+    private var blankCardFace: some View {
         VStack(spacing: SnakesssSpacing.spacing6) {
-            // Player name
-            Text(player.name)
-                .font(SnakesssTypography.headline)
-                .foregroundStyle(SnakesssTheme.textSecondary)
+            Text("👁‍🗨")
+                .font(.system(size: 48))
+                .foregroundStyle(SnakesssTheme.textMuted)
 
-            // Role emoji + name
+            Text("HOLD TO REVEAL")
+                .microStyle(color: SnakesssTheme.textMuted)
+        }
+        .frame(maxWidth: .infinity)
+        .padding(SnakesssSpacing.spacing16)
+        .background(
+            RoundedRectangle(cornerRadius: SnakesssRadius.radiusLargeCard) // M2
+                .fill(SnakesssTheme.bgCard)
+                .overlay(
+                    RoundedRectangle(cornerRadius: SnakesssRadius.radiusLargeCard) // M2
+                        .strokeBorder(SnakesssTheme.borderSubtle, lineWidth: 2)
+                )
+        )
+    }
+
+    private var roleFaceContent: some View {
+        Group {
             if let role = player.role {
                 VStack(spacing: SnakesssSpacing.spacing4) {
                     Text(role.emoji)
@@ -113,18 +151,67 @@ struct RoleRevealView: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, SnakesssSpacing.spacing8)
                 }
+                .frame(maxWidth: .infinity)
                 .padding(SnakesssSpacing.spacing8)
                 .background(
-                    RoundedRectangle(cornerRadius: SnakesssRadius.radiusCard)
+                    RoundedRectangle(cornerRadius: SnakesssRadius.radiusLargeCard) // M2
                         .fill(SnakesssTheme.bgCard)
                         .overlay(
-                            RoundedRectangle(cornerRadius: SnakesssRadius.radiusCard)
-                                .strokeBorder(role.color.opacity(0.30), lineWidth: 1.5)
+                            RoundedRectangle(cornerRadius: SnakesssRadius.radiusLargeCard) // M2
+                                .strokeBorder(role.color.opacity(0.40), lineWidth: 2)
                         )
                 )
                 .shadow(color: role.glowColor, radius: 24)
-                .padding(.horizontal, SnakesssSpacing.screenPadding)
             }
+        }
+    }
+
+    // MARK: - Flip Helpers
+
+    private func handleHold(_ holding: Bool) {
+        if holding {
+            // Phase 1: scaleX → 0 (mid-flip)
+            withAnimation(.linear(duration: 0.15)) {
+                cardFlipX = 0
+            }
+            // Phase 2: switch to role face, scaleX → 1 (reveal)
+            Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(150))
+                showRoleFace = true
+                SnakesssHaptic.heavy()
+                withAnimation(SnakesssAnimation.reveal) {
+                    cardFlipX = 1
+                }
+            }
+        } else {
+            // Hide: quick flip back to blank
+            withAnimation(.linear(duration: 0.1)) {
+                cardFlipX = 0
+            }
+            Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(100))
+                showRoleFace = false
+                withAnimation(.linear(duration: 0.12)) {
+                    cardFlipX = 1
+                }
+            }
+        }
+    }
+
+    private func resetFlip() {
+        cardFlipX = 1.0
+        showRoleFace = false
+    }
+
+    // MARK: - Round Badge
+
+    private var roundBadge: some View {
+        VStack(spacing: SnakesssSpacing.spacing2) {
+            Text("Round \(roundNumber) of \(GameViewModel.totalRounds)")
+                .microStyle(color: SnakesssTheme.textMuted)
+
+            Text("Player \(playerIndex + 1) of \(totalPlayers)")
+                .microStyle(color: SnakesssTheme.textSecondary)
         }
     }
 }

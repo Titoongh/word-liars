@@ -6,6 +6,7 @@ import SwiftUI
 struct HomeView: View {
     @State private var isSnakePulsing = false
     @State private var showingHistory = false
+    @State private var coordinator = GameNavigationCoordinator()
 
     var body: some View {
         NavigationStack {
@@ -79,6 +80,7 @@ struct HomeView: View {
                 HistoryView()
             }
         }
+        .environment(coordinator)
     }
 }
 

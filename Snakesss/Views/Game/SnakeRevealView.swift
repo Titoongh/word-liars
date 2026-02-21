@@ -35,6 +35,7 @@ struct SnakeRevealView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             switch revealPhase {
@@ -104,6 +105,7 @@ struct SnakeRevealView: View {
     private var snakePassOverlay: some View {
         ZStack {
             SnakesssTheme.overlayScrim.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: SnakesssSpacing.spacing4) {

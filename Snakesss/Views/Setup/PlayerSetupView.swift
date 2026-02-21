@@ -7,6 +7,8 @@ struct PlayerSetupView: View {
     @State private var setupVM = GameSetupViewModel()
     @State private var navigateToGame = false
     @FocusState private var focusedField: Int?
+    @Environment(GameNavigationCoordinator.self) private var coordinator
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         ZStack {
@@ -64,6 +66,9 @@ struct PlayerSetupView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .onChange(of: coordinator.shouldReturnHome) { _, newValue in
+            if newValue { dismiss() }
+        }
     }
 
     // MARK: - Player Count Picker
@@ -170,5 +175,6 @@ struct PlayerSetupView: View {
 #Preview {
     NavigationStack {
         PlayerSetupView()
+            .environment(GameNavigationCoordinator())
     }
 }

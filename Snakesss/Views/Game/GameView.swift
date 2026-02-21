@@ -8,6 +8,7 @@ struct GameView: View {
     @State var viewModel: GameViewModel
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
+    @Environment(GameNavigationCoordinator.self) private var coordinator
 
     var body: some View {
         ZStack {
@@ -26,17 +27,9 @@ struct GameView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                if viewModel.phase == .setup {
-                    Button("← Back") { dismiss() }
-                        .font(SnakesssTypography.caption)
-                        .foregroundStyle(SnakesssTheme.textSecondary)
-                }
-            }
-        }
-        .onAppear {
-            viewModel.startRound()
+        .gesture(DragGesture()) // Blocks interactive swipe-back during active game
+        .onDisappear {
+            viewModel.cancelTimer()
         }
     }
 
@@ -119,7 +112,10 @@ struct GameView: View {
                 results: viewModel.roundResults,
                 onPlayAgain: { restartGame() },
                 onNewGame: { dismiss() },
-                onHome: { dismiss() }
+                onHome: {
+                    coordinator.shouldReturnHome = true
+                    dismiss()
+                }
             )
         }
     }
@@ -134,11 +130,9 @@ struct GameView: View {
     }
 
     private func restartGame() {
-        // Reset to a fresh game with the same players
         let freshPlayers = viewModel.players.map { p in
             Player(id: UUID(), name: p.name, role: nil, totalScore: 0, currentVote: nil)
         }
         viewModel = GameViewModel(players: freshPlayers)
-        viewModel.startRound()
     }
 }

@@ -14,6 +14,7 @@ struct HistoryView: View {
         NavigationStack {
             ZStack {
                 SnakesssTheme.bgBase.ignoresSafeArea()
+                    .scaleTexture() // M1
 
                 Group {
                     if games.isEmpty {

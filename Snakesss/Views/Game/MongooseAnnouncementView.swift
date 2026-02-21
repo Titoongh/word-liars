@@ -12,6 +12,7 @@ struct MongooseAnnouncementView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: SnakesssSpacing.spacing8) {

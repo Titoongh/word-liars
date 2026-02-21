@@ -9,14 +9,18 @@ struct RoundResultsView: View {
     let isLastRound: Bool
     let onNext: () -> Void
 
+    // S1: Staggered reveal state
+    @State private var visibleStep = 0
+
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             ScrollView {
                 VStack(spacing: SnakesssSpacing.spacing6) {
-                    // Header
+                    // Header (step 2: 300ms)
                     VStack(spacing: SnakesssSpacing.spacing2) {
                         Text("Round \(result.roundNumber) Results")
                             .microStyle(color: SnakesssTheme.textMuted)
@@ -26,39 +30,92 @@ struct RoundResultsView: View {
                             .font(SnakesssTypography.headline)
                             .foregroundStyle(SnakesssTheme.textPrimary)
                     }
+                    .opacity(visibleStep >= 2 ? 1 : 0)
+                    .offset(y: visibleStep >= 2 ? 0 : 8)
 
-                    // Correct answer card
+                    // Correct answer card (step 1: 0ms)
                     correctAnswerCard
+                        .opacity(visibleStep >= 1 ? 1 : 0)
+                        .offset(y: visibleStep >= 1 ? 0 : -20)
 
                     // Fun fact
                     if let fact = result.question.funFact {
                         funFactCard(fact)
+                            .opacity(visibleStep >= 2 ? 1 : 0)
                     }
 
-                    // Player breakdown
+                    // Player breakdown (rows stagger at step 3+, 80ms each)
                     VStack(spacing: SnakesssSpacing.spacing2) {
                         Text("How Everyone Did")
                             .font(SnakesssTypography.label)
                             .foregroundStyle(SnakesssTheme.textSecondary)
+                            .opacity(visibleStep >= 3 ? 1 : 0)
 
                         ForEach(Array(players.enumerated()), id: \.offset) { index, player in
                             playerResultRow(playerIndex: index, player: player)
+                                .opacity(visibleStep >= (4 + index) ? 1 : 0)
+                                .offset(x: visibleStep >= (4 + index) ? 0 : 24)
                         }
                     }
 
-                    // Scoreboard
+                    // Scoreboard (step after all rows)
+                    let scoreStep = 4 + players.count
                     scoreboardCard
+                        .opacity(visibleStep >= scoreStep ? 1 : 0)
+                        .offset(y: visibleStep >= scoreStep ? 0 : 20)
 
-                    // Continue button
+                    // Continue button (fades in last)
+                    let buttonStep = scoreStep + 1
                     Button(isLastRound ? "See Final Results" : "Next Round →") {
                         onNext()
                     }
                     .buttonStyle(SnakesssPrimaryButtonStyle())
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
                     .padding(.bottom, SnakesssSpacing.spacing12)
+                    .opacity(visibleStep >= buttonStep ? 1 : 0)
                 }
                 .padding(.horizontal, SnakesssSpacing.screenPadding)
             }
+        }
+        .onAppear {
+            runStaggeredReveal()
+        }
+    }
+
+    // MARK: - S1: Staggered Reveal
+
+    private func runStaggeredReveal() {
+        // Step 1: correct answer card — 0ms
+        withAnimation(SnakesssAnimation.reveal) { visibleStep = 1 }
+
+        // Step 2: header — 300ms
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation(SnakesssAnimation.standard) { visibleStep = 2 }
+        }
+
+        // Step 3: "How Everyone Did" label — 400ms
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+            withAnimation(SnakesssAnimation.standard) { visibleStep = 3 }
+        }
+
+        // Steps 4+: result rows — starting at 400ms, 80ms between each
+        for i in 0..<players.count {
+            let delay = 0.4 + Double(i) * 0.08
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                withAnimation(SnakesssAnimation.reveal) { visibleStep = 4 + i }
+            }
+        }
+
+        // Score card — after last row
+        let scoreDelay = 0.4 + Double(players.count) * 0.08 + 0.1
+        DispatchQueue.main.asyncAfter(deadline: .now() + scoreDelay) {
+            withAnimation(SnakesssAnimation.reveal) { visibleStep = 4 + players.count }
+        }
+
+        // Button — ~900ms
+        let buttonDelay = max(0.9, scoreDelay + 0.2)
+        DispatchQueue.main.asyncAfter(deadline: .now() + buttonDelay) {
+            withAnimation(SnakesssAnimation.standard) { visibleStep = 4 + players.count + 1 }
         }
     }
 
@@ -154,7 +211,11 @@ struct RoundResultsView: View {
                 if let v = vote {
                     Text(voteLabel(v))
                         .font(SnakesssTypography.label)
-                        .foregroundStyle(isCorrect ? SnakesssTheme.truthGold : SnakesssTheme.danger)
+                        .foregroundStyle(
+                            isSnakeVote ? SnakesssTheme.snakeColor :
+                            isCorrect   ? SnakesssTheme.truthGold :
+                                          SnakesssTheme.danger
+                        )
                 }
 
                 // Points

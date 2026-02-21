@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AA000000000000000000030A /* SnakesssApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000010A /* SnakesssApp.swift */; };
 		AA000000000000000000031A /* GameRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000011A /* GameRecord.swift */; };
-		AA000000000000000000032A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000012A /* ContentView.swift */; };
 		AA000000000000000000033A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000013A /* Assets.xcassets */; };
 		AA000000000000000000034A /* SnakesssTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000014A /* SnakesssTests.swift */; };
 		AA000000000000000000035A /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000015A /* Role.swift */; };
@@ -39,6 +38,7 @@
 		/* STORY-011 new files */
 		AA000000000000000000070B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000030B /* GameViewModel.swift */; };
 		AA000000000000000000071B /* GameSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000031B /* GameSetupViewModel.swift */; };
+		AA000000000000000000091A /* GameNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000090A /* GameNavigationCoordinator.swift */; };
 		AA000000000000000000072B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000032B /* HomeView.swift */; };
 		AA000000000000000000073B /* PlayerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000033B /* PlayerSetupView.swift */; };
 		AA000000000000000000074B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000034B /* GameView.swift */; };
@@ -70,7 +70,6 @@
 		AA000000000000000000021A /* SnakesssTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakesssTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA000000000000000000010A /* SnakesssApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesssApp.swift; sourceTree = "<group>"; };
 		AA000000000000000000011A /* GameRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRecord.swift; sourceTree = "<group>"; };
-		AA000000000000000000012A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA000000000000000000013A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA000000000000000000014A /* SnakesssTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesssTests.swift; sourceTree = "<group>"; };
 		AA000000000000000000015A /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
@@ -100,6 +99,7 @@
 		/* STORY-011 new file refs */
 		AA000000000000000000030B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		AA000000000000000000031B /* GameSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000090A /* GameNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNavigationCoordinator.swift; sourceTree = "<group>"; };
 		AA000000000000000000032B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AA000000000000000000033B /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
 		AA000000000000000000034B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -167,6 +167,7 @@
 			children = (
 				AA000000000000000000030B /* GameViewModel.swift */,
 				AA000000000000000000031B /* GameSetupViewModel.swift */,
+				AA000000000000000000090A /* GameNavigationCoordinator.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -182,7 +183,6 @@
 		AA000000000000000000044A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AA000000000000000000012A /* ContentView.swift */,
 				AA00000000000000000004FC /* Home */,
 				AA00000000000000000004FD /* Setup */,
 				AA00000000000000000004FE /* Game */,
@@ -389,7 +389,6 @@
 			files = (
 				AA000000000000000000030A /* SnakesssApp.swift in Sources */,
 				AA000000000000000000031A /* GameRecord.swift in Sources */,
-				AA000000000000000000032A /* ContentView.swift in Sources */,
 				AA000000000000000000035A /* Role.swift in Sources */,
 				AA000000000000000000036A /* GamePhase.swift in Sources */,
 				AA000000000000000000037A /* Vote.swift in Sources */,
@@ -413,6 +412,7 @@
 				/* STORY-011 */
 				AA000000000000000000070B /* GameViewModel.swift in Sources */,
 				AA000000000000000000071B /* GameSetupViewModel.swift in Sources */,
+				AA000000000000000000091A /* GameNavigationCoordinator.swift in Sources */,
 				AA000000000000000000072B /* HomeView.swift in Sources */,
 				AA000000000000000000073B /* PlayerSetupView.swift in Sources */,
 				AA000000000000000000074B /* GameView.swift in Sources */,

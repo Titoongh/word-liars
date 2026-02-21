@@ -33,7 +33,7 @@ final class ScoringService {
 
         let incorrectNonSnakeCount = players.indices.filter { i in
             let role = roleByIndex[i] ?? .human
-            let vote = voteByIndex[i]
+            guard let vote = voteByIndex[i] else { return false }
             return role != .snake && vote != correctVote
         }.count
 

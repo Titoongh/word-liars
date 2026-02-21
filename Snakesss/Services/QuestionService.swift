@@ -34,7 +34,11 @@ final class QuestionService {
         let available = allQuestions.filter { !usedQuestionIDs.contains($0.id) }
         if available.isEmpty {
             resetPool()
-            return allQuestions.randomElement()
+            if let question = allQuestions.randomElement() {
+                markUsed(question.id)
+                return question
+            }
+            return nil
         }
         let question = available.randomElement()!
         markUsed(question.id)

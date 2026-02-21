@@ -11,6 +11,9 @@ struct GameEndView: View {
     let onHome: () -> Void
 
     @State private var isAnimating = false
+    @State private var trophyScale: CGFloat = 0  // S7: 0→1.3→1.0 overshoot
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @ScaledMetric(relativeTo: .largeTitle) private var scoreFontSize: CGFloat = 64
 
     var winners: [Player] {
         guard let maxScore = players.map(\.totalScore).max() else { return [] }
@@ -24,6 +27,7 @@ struct GameEndView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             // Confetti particle system
@@ -46,8 +50,22 @@ struct GameEndView: View {
             }
         }
         .onAppear {
-            withAnimation(SnakesssAnimation.celebration) {
-                isAnimating = true
+            if reduceMotion {
+                withAnimation(SnakesssAnimation.celebration) {
+                    isAnimating = true
+                    trophyScale = 1.0
+                }
+            } else {
+                // S7: Trophy overshoot — 0 → 1.3 → 1.0
+                withAnimation(.spring(duration: 0.4, bounce: 0.3)) {
+                    trophyScale = 1.3
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                    withAnimation(SnakesssAnimation.celebration) {
+                        trophyScale = 1.0
+                        isAnimating = true
+                    }
+                }
             }
             SnakesssHaptic.celebration()
         }
@@ -59,7 +77,7 @@ struct GameEndView: View {
         VStack(spacing: SnakesssSpacing.spacing4) {
             Text("🏆")
                 .font(.system(size: 72))
-                .scaleEffect(isAnimating ? 1.0 : 0.3)
+                .scaleEffect(trophyScale) // S7: 0→1.3→1.0 overshoot
                 .shadow(color: SnakesssTheme.truthGold.opacity(0.5), radius: 30)
                 .goldGlow()
 

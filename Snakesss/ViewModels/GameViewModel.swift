@@ -58,6 +58,7 @@ final class GameViewModel {
         self.questionService = questionService
         self.roleService = roleService
         self.scoringService = scoringService
+        startRound()
     }
 
     // MARK: - Computed Helpers
@@ -239,6 +240,11 @@ final class GameViewModel {
     }
 
     // MARK: - Timer
+
+    func cancelTimer() {
+        timerTask?.cancel()
+        timerTask = nil
+    }
 
     func startTimer() {
         discussionTimeRemaining = 120
