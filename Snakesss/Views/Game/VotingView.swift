@@ -16,6 +16,7 @@ struct VotingView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             if isRevealed {
@@ -46,13 +47,19 @@ struct VotingView: View {
 
     private var votingContent: some View {
         VStack(spacing: 0) {
-            // Header
+            // S2: 3-line header with playerName typography
             VStack(spacing: SnakesssSpacing.spacing2) {
-                Text("Voting — \(playerIndex + 1) of \(totalPlayers)")
+                // Line 1: "NOW VOTING" — micro
+                Text("NOW VOTING")
                     .microStyle(color: SnakesssTheme.textMuted)
+                // Line 2: player name — playerName typography (32pt Heavy)
                 Text(player.name)
-                    .font(SnakesssTypography.headline)
+                    .font(SnakesssTypography.playerName)
                     .foregroundStyle(SnakesssTheme.textPrimary)
+                // Line 3: "Player X of Y" — caption, muted
+                Text("Player \(playerIndex + 1) of \(totalPlayers)")
+                    .font(SnakesssTypography.caption)
+                    .foregroundStyle(SnakesssTheme.textMuted)
             }
             .padding(.top, SnakesssSpacing.spacing8)
 
@@ -115,6 +122,7 @@ struct VotingView: View {
             VoteButtonContent(letter: letter, answer: text)
         }
         .buttonStyle(SnakesssVoteButtonStyle(isSelected: selectedVote == vote))
+        .accessibilityLabel("Vote \(letter): \(text)")
     }
 
     // MARK: - Snake Voting (forced)
@@ -148,6 +156,7 @@ struct VotingView: View {
                 .padding(SnakesssSpacing.spacing8)
             }
             .buttonStyle(SnakesssVoteButtonStyle(isSelected: selectedVote == .snake))
+            .accessibilityLabel("Vote Snake")
             .padding(.horizontal, SnakesssSpacing.screenPadding)
         }
     }

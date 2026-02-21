@@ -7,10 +7,13 @@ struct PlayerSetupView: View {
     @State private var setupVM = GameSetupViewModel()
     @State private var navigateToGame = false
     @FocusState private var focusedField: Int?
+    @Environment(GameNavigationCoordinator.self) private var coordinator
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: 0) {
@@ -64,9 +67,12 @@ struct PlayerSetupView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .onChange(of: coordinator.shouldReturnHome) { _, newValue in
+            if newValue { dismiss() }
+        }
     }
 
-    // MARK: - Player Count Picker
+    // MARK: - Player Count Picker (M5)
 
     private var playerCountPicker: some View {
         VStack(spacing: SnakesssSpacing.spacing2) {
@@ -76,6 +82,7 @@ struct PlayerSetupView: View {
 
             HStack(spacing: SnakesssSpacing.spacing2) {
                 ForEach(4...8, id: \.self) { count in
+                    let isActive = setupVM.playerCount == count
                     Button("\(count)") {
                         SnakesssHaptic.light()
                         withAnimation(SnakesssAnimation.bouncy) {
@@ -83,27 +90,36 @@ struct PlayerSetupView: View {
                         }
                     }
                     .font(SnakesssTypography.bodyLarge)
+                    .fontWeight(isActive ? .heavy : .semibold)
                     .foregroundStyle(
-                        setupVM.playerCount == count
-                            ? SnakesssTheme.bgBase
-                            : SnakesssTheme.accentPrimary
+                        isActive
+                            ? SnakesssTheme.accentPrimary
+                            : SnakesssTheme.textMuted // M5: inactive → textMuted
                     )
                     .frame(width: 44, height: 44)
                     .background(
-                        Circle()
-                            .fill(
-                                setupVM.playerCount == count
-                                    ? SnakesssTheme.accentPrimary
-                                    : SnakesssTheme.bgElevated
-                            )
+                        Capsule() // M5: Circle → Capsule
+                            .fill(SnakesssTheme.bgElevated)
                             .overlay(
-                                Circle()
-                                    .strokeBorder(SnakesssTheme.borderActive, lineWidth: 1)
+                                Capsule() // M5: Circle → Capsule
+                                    .strokeBorder(
+                                        isActive
+                                            ? SnakesssTheme.accentPrimary // M5: active → accentPrimary
+                                            : SnakesssTheme.borderSubtle, // M5: inactive → borderSubtle
+                                        lineWidth: 2 // M5: 2pt border
+                                    )
                             )
                     )
-                    .contentShape(Circle())
-                    .scaleEffect(setupVM.playerCount == count ? 1.1 : 1.0)
+                    // M5: 12px glow on active
+                    .shadow(
+                        color: isActive ? SnakesssTheme.accentGlow : .clear,
+                        radius: 12, x: 0, y: 0
+                    )
+                    .contentShape(Capsule())
+                    .scaleEffect(isActive ? 1.1 : 1.0)
                     .animation(SnakesssAnimation.bouncy, value: setupVM.playerCount)
+                    .accessibilityLabel("\(count) players")
+                    .accessibilityAddTraits(isActive ? .isSelected : [])
                 }
             }
         }
@@ -170,5 +186,6 @@ struct PlayerSetupView: View {
 #Preview {
     NavigationStack {
         PlayerSetupView()
+            .environment(GameNavigationCoordinator())
     }
 }

@@ -11,10 +11,13 @@ struct DiscussionTimerView: View {
     let onSkip: () -> Void
 
     @State private var isGlowPulsing = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @ScaledMetric(relativeTo: .largeTitle) private var timerFontSize: CGFloat = 64
 
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: 0) {
@@ -49,11 +52,25 @@ struct DiscussionTimerView: View {
             }
         }
         .onChange(of: timeRemaining) { _, newValue in
-            // Trigger glow pulse when entering danger zone
-            if newValue == 10 {
+            // M4: Haptic triggers
+            if newValue == 30 {
+                SnakesssHaptic.light() // .light at 30s mark
+            }
+            if newValue <= 10 && newValue > 0 {
+                SnakesssHaptic.medium() // .medium every second 10s → 1s
+            }
+            if newValue == 0 {
+                SnakesssHaptic.timerEnd() // timerEnd at 0s
+            }
+            // Trigger glow pulse when entering danger zone (skip when Reduce Motion is on)
+            if newValue == 10 && !reduceMotion {
                 withAnimation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
                     isGlowPulsing = true
                 }
+            }
+            // Post VoiceOver announcement every 30s
+            if newValue % 30 == 0 && newValue > 0 {
+                AccessibilityNotification.Announcement(timerAccessibilityLabel).post()
             }
         }
     }
@@ -67,7 +84,7 @@ struct DiscussionTimerView: View {
                 .stroke(SnakesssTheme.bgElevated, lineWidth: 8)
                 .frame(width: 220, height: 220)
 
-            // Progress ring
+            // Progress ring — S4: use .linear animation for stroke
             Circle()
                 .trim(from: 0, to: progress)
                 .stroke(
@@ -76,7 +93,7 @@ struct DiscussionTimerView: View {
                 )
                 .frame(width: 220, height: 220)
                 .rotationEffect(.degrees(-90))
-                .animation(SnakesssAnimation.standard, value: timeRemaining)
+                .animation(.linear(duration: 1.0), value: timeRemaining) // S4: linear
                 // Glow pulse at ≤10s
                 .shadow(
                     color: timerColor.opacity(isGlowPulsing ? 0.6 : 0.3),
@@ -86,7 +103,7 @@ struct DiscussionTimerView: View {
             // Time digits
             VStack(spacing: 2) {
                 Text(timeString)
-                    .font(SnakesssTypography.timer)
+                    .font(.system(size: timerFontSize, weight: .bold, design: .monospaced))
                     .foregroundStyle(timerColor)
                     .monospacedDigit()
                     .contentTransition(.numericText())
@@ -98,6 +115,8 @@ struct DiscussionTimerView: View {
                     .tracking(2)
             }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(timerAccessibilityLabel)
     }
 
     // MARK: - Question Recap
@@ -157,5 +176,17 @@ struct DiscussionTimerView: View {
         let mins = timeRemaining / 60
         let secs = timeRemaining % 60
         return String(format: "%d:%02d", mins, secs)
+    }
+
+    private var timerAccessibilityLabel: String {
+        let mins = timeRemaining / 60
+        let secs = timeRemaining % 60
+        if mins > 0 {
+            let minPart = "\(mins) minute\(mins == 1 ? "" : "s")"
+            let secPart = secs > 0 ? " \(secs) second\(secs == 1 ? "" : "s")" : ""
+            return "\(minPart)\(secPart) remaining"
+        } else {
+            return "\(secs) second\(secs == 1 ? "" : "s") remaining"
+        }
     }
 }

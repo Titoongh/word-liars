@@ -11,6 +11,8 @@ struct GameEndView: View {
     let onHome: () -> Void
 
     @State private var isAnimating = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @ScaledMetric(relativeTo: .largeTitle) private var scoreFontSize: CGFloat = 64
 
     var winners: [Player] {
         guard let maxScore = players.map(\.totalScore).max() else { return [] }
@@ -26,8 +28,8 @@ struct GameEndView: View {
             SnakesssTheme.bgBase.ignoresSafeArea()
             SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
-            // Confetti particle system
-            ConfettiView()
+            // Confetti particle system (skipped when Reduce Motion is on)
+            if !reduceMotion { ConfettiView() }
 
             ScrollView {
                 VStack(spacing: SnakesssSpacing.spacing8) {
@@ -46,8 +48,12 @@ struct GameEndView: View {
             }
         }
         .onAppear {
-            withAnimation(SnakesssAnimation.celebration) {
+            if reduceMotion {
                 isAnimating = true
+            } else {
+                withAnimation(SnakesssAnimation.celebration) {
+                    isAnimating = true
+                }
             }
             SnakesssHaptic.celebration()
         }
@@ -75,7 +81,7 @@ struct GameEndView: View {
                         .scaleEffect(isAnimating ? 1.0 : 0.8)
 
                     Text("\(winners[0].totalScore) pts")
-                        .font(SnakesssTypography.score)
+                        .font(.system(size: scoreFontSize, weight: .black, design: .rounded))
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .contentTransition(.numericText())
                 }
@@ -208,9 +214,10 @@ private struct ConfettiView: View {
     }
 
     @State private var startDate = Date.now
+    @State private var confettiDone = false
 
     var body: some View {
-        TimelineView(.animation) { timeline in
+        TimelineView(.animation(minimumInterval: 1/60, paused: confettiDone)) { timeline in
             let elapsed = timeline.date.timeIntervalSince(startDate)
             Canvas { context, size in
                 for p in particles {
@@ -240,5 +247,9 @@ private struct ConfettiView: View {
         }
         .allowsHitTesting(false)
         .ignoresSafeArea()
+        .task {
+            try? await Task.sleep(for: .seconds(4.5))
+            confettiDone = true
+        }
     }
 }

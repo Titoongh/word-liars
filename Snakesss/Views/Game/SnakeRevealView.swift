@@ -97,6 +97,12 @@ struct SnakeRevealView: View {
                 revealPhase = .passing
             }
         }
+        .accessibilityAddTraits(.isButton)
+        .accessibilityLabel("Everyone close your eyes. Snakes: wait for your tap cue. HOST: Tap when ready")
+        .accessibilityAction {
+            SnakesssHaptic.medium()
+            withAnimation(SnakesssAnimation.reveal) { revealPhase = .passing }
+        }
     }
 
     // MARK: - Pass Overlay (State B)
@@ -137,6 +143,12 @@ struct SnakeRevealView: View {
             withAnimation(SnakesssAnimation.reveal) {
                 revealPhase = .revealed
             }
+        }
+        .accessibilityAddTraits(.isButton)
+        .accessibilityLabel("Pass to \(snake.name). Snake \(snakeIndex + 1) of \(totalSnakes). Tap to reveal secret")
+        .accessibilityAction {
+            SnakesssHaptic.heavy()
+            withAnimation(SnakesssAnimation.reveal) { revealPhase = .revealed }
         }
     }
 
@@ -191,7 +203,9 @@ struct SnakeRevealView: View {
                         Text("YOUR FELLOW SNAKES")
                             .microStyle(color: SnakesssTheme.textMuted)
 
-                        let otherSnakes = allSnakeNames.filter { $0 != snake.name }
+                        let otherSnakes = allSnakeNames.indices
+                            .filter { $0 != snakeIndex }
+                            .map { allSnakeNames[$0] }
                         ForEach(otherSnakes, id: \.self) { name in
                             Text("🐍 \(name)")
                                 .font(SnakesssTypography.bodyLarge)

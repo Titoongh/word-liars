@@ -12,6 +12,7 @@ struct PassPhoneOverlay: View {
     let onTap: () -> Void
 
     @State private var isPulsing = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     var body: some View {
         ZStack {
@@ -56,8 +57,15 @@ struct PassPhoneOverlay: View {
             SnakesssHaptic.medium()
             onTap()
         }
+        .accessibilityAddTraits(.isButton)
+        .accessibilityLabel("Pass to \(playerName)")
+        .accessibilityHint(caption)
+        .accessibilityAction {
+            SnakesssHaptic.medium()
+            onTap()
+        }
         .onAppear {
-            isPulsing = true
+            if !reduceMotion { isPulsing = true }
         }
     }
 }
