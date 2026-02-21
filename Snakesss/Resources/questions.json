@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q001",
+    "question": "Which planet has the most moons?",
+    "choices": { "a": "Jupiter", "b": "Saturn", "c": "Uranus" },
+    "answer": "B",
+    "funFact": "Saturn has 146 confirmed moons as of 2024."
+  },
+  {
+    "id": "q002",
+    "question": "What is the chemical symbol for gold?",
+    "choices": { "a": "Go", "b": "Gd", "c": "Au" },
+    "answer": "C",
+    "funFact": "Au comes from the Latin word 'aurum', meaning gold."
+  },
+  {
+    "id": "q003",
+    "question": "Which country invented the World Wide Web?",
+    "choices": { "a": "United States", "b": "United Kingdom", "c": "Switzerland" },
+    "answer": "C",
+    "funFact": "Tim Berners-Lee invented the Web at CERN in Switzerland in 1989."
+  },
+  {
+    "id": "q004",
+    "question": "How many bones are in the adult human body?",
+    "choices": { "a": "206", "b": "213", "c": "196" },
+    "answer": "A",
+    "funFact": "Babies are born with about 270 bones, which fuse into 206 as they grow."
+  },
+  {
+    "id": "q005",
+    "question": "What is the fastest land animal?",
+    "choices": { "a": "Lion", "b": "Cheetah", "c": "Pronghorn" },
+    "answer": "B",
+    "funFact": "A cheetah can reach speeds of up to 112 km/h (70 mph) in short bursts."
+  },
+  {
+    "id": "q006",
+    "question": "In which year did the Berlin Wall fall?",
+    "choices": { "a": "1987", "b": "1991", "c": "1989" },
+    "answer": "C",
+    "funFact": "The Berlin Wall fell on November 9, 1989, ending the division of East and West Germany."
+  },
+  {
+    "id": "q007",
+    "question": "What is the largest ocean on Earth?",
+    "choices": { "a": "Atlantic Ocean", "b": "Indian Ocean", "c": "Pacific Ocean" },
+    "answer": "C",
+    "funFact": "The Pacific Ocean covers more than 165 million km², more than all land on Earth combined."
+  },
+  {
+    "id": "q008",
+    "question": "Who painted the Mona Lisa?",
+    "choices": { "a": "Michelangelo", "b": "Leonardo da Vinci", "c": "Raphael" },
+    "answer": "B",
+    "funFact": "Leonardo da Vinci painted the Mona Lisa between 1503 and 1519."
+  },
+  {
+    "id": "q009",
+    "question": "What is the smallest country in the world?",
+    "choices": { "a": "Monaco", "b": "San Marino", "c": "Vatican City" },
+    "answer": "C",
+    "funFact": "Vatican City covers just 0.44 km² and has fewer than 800 residents."
+  },
+  {
+    "id": "q010",
+    "question": "What gas do plants absorb from the atmosphere during photosynthesis?",
+    "choices": { "a": "Oxygen", "b": "Carbon Dioxide", "c": "Nitrogen" },
+    "answer": "B",
+    "funFact": "Plants convert CO2 and water into glucose and oxygen using sunlight."
+  }
+]
