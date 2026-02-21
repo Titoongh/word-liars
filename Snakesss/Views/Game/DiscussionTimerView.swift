@@ -15,6 +15,7 @@ struct DiscussionTimerView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: 0) {
@@ -49,6 +50,10 @@ struct DiscussionTimerView: View {
             }
         }
         .onChange(of: timeRemaining) { _, newValue in
+            // M4: Haptic triggers
+            if newValue == 30 { SnakesssHaptic.light() }
+            if newValue <= 10 && newValue > 0 { SnakesssHaptic.medium() }
+            if newValue == 0 { SnakesssHaptic.timerEnd() }
             // Trigger glow pulse when entering danger zone
             if newValue == 10 {
                 withAnimation(.easeInOut(duration: 1.0).repeatForever(autoreverses: true)) {
@@ -76,7 +81,7 @@ struct DiscussionTimerView: View {
                 )
                 .frame(width: 220, height: 220)
                 .rotationEffect(.degrees(-90))
-                .animation(SnakesssAnimation.standard, value: timeRemaining)
+                .animation(.linear(duration: 1.0), value: timeRemaining) // S4: linear for ring stroke
                 // Glow pulse at ≤10s
                 .shadow(
                     color: timerColor.opacity(isGlowPulsing ? 0.6 : 0.3),

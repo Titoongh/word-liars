@@ -16,6 +16,7 @@ struct VotingView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             if isRevealed {
@@ -46,13 +47,16 @@ struct VotingView: View {
 
     private var votingContent: some View {
         VStack(spacing: 0) {
-            // Header
+            // S2: 3-line header — micro + playerName + caption
             VStack(spacing: SnakesssSpacing.spacing2) {
-                Text("Voting — \(playerIndex + 1) of \(totalPlayers)")
+                Text("NOW VOTING")
                     .microStyle(color: SnakesssTheme.textMuted)
                 Text(player.name)
-                    .font(SnakesssTypography.headline)
+                    .font(SnakesssTypography.playerName)
                     .foregroundStyle(SnakesssTheme.textPrimary)
+                Text("Player \(playerIndex + 1) of \(totalPlayers)")
+                    .font(SnakesssTypography.caption)
+                    .foregroundStyle(SnakesssTheme.textMuted)
             }
             .padding(.top, SnakesssSpacing.spacing8)
 
