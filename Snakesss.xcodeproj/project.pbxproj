@@ -20,9 +20,11 @@
 		AA00000000000000000003BA /* RoundResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001BA /* RoundResult.swift */; };
 		AA00000000000000000003CA /* QuestionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001CA /* QuestionService.swift */; };
 		AA00000000000000000003DA /* RoleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001DA /* RoleService.swift */; };
+		AA00000000000000000003EA /* ScoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001EA /* ScoringService.swift */; };
 		AA00000000000000000003FA /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001FA /* questions.json */; };
 		AA000000000000000000055A /* QuestionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000022A /* QuestionServiceTests.swift */; };
 		AA000000000000000000056A /* RoleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000023A /* RoleServiceTests.swift */; };
+		AA000000000000000000057A /* ScoringServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000024A /* ScoringServiceTests.swift */; };
 		AA000000000000000000058A /* SnakesssTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000025A /* SnakesssTheme.swift */; };
 		AA000000000000000000059A /* SnakesssTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000026A /* SnakesssTypography.swift */; };
 		AA00000000000000000005AA /* SnakesssAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000027A /* SnakesssAnimation.swift */; };
@@ -62,9 +64,11 @@
 		AA00000000000000000001BA /* RoundResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundResult.swift; sourceTree = "<group>"; };
 		AA00000000000000000001CA /* QuestionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionService.swift; sourceTree = "<group>"; };
 		AA00000000000000000001DA /* RoleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleService.swift; sourceTree = "<group>"; };
+		AA00000000000000000001EA /* ScoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringService.swift; sourceTree = "<group>"; };
 		AA00000000000000000001FA /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		AA000000000000000000022A /* QuestionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionServiceTests.swift; sourceTree = "<group>"; };
 		AA000000000000000000023A /* RoleServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleServiceTests.swift; sourceTree = "<group>"; };
+		AA000000000000000000024A /* ScoringServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringServiceTests.swift; sourceTree = "<group>"; };
 		AA000000000000000000025A /* SnakesssTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesssTheme.swift; sourceTree = "<group>"; };
 		AA000000000000000000026A /* SnakesssTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesssTypography.swift; sourceTree = "<group>"; };
 		AA000000000000000000027A /* SnakesssAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesssAnimation.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			children = (
 				AA00000000000000000001CA /* QuestionService.swift */,
 				AA00000000000000000001DA /* RoleService.swift */,
+				AA00000000000000000001EA /* ScoringService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				AA000000000000000000014A /* SnakesssTests.swift */,
 				AA000000000000000000022A /* QuestionServiceTests.swift */,
 				AA000000000000000000023A /* RoleServiceTests.swift */,
+				AA000000000000000000024A /* ScoringServiceTests.swift */,
 			);
 			path = SnakesssTests;
 			sourceTree = "<group>";
@@ -295,6 +301,7 @@
 				AA00000000000000000003BA /* RoundResult.swift in Sources */,
 				AA00000000000000000003CA /* QuestionService.swift in Sources */,
 				AA00000000000000000003DA /* RoleService.swift in Sources */,
+				AA00000000000000000003EA /* ScoringService.swift in Sources */,
 				AA000000000000000000058A /* SnakesssTheme.swift in Sources */,
 				AA000000000000000000059A /* SnakesssTypography.swift in Sources */,
 				AA00000000000000000005AA /* SnakesssAnimation.swift in Sources */,
@@ -316,6 +323,7 @@
 				AA000000000000000000034A /* SnakesssTests.swift in Sources */,
 				AA000000000000000000055A /* QuestionServiceTests.swift in Sources */,
 				AA000000000000000000056A /* RoleServiceTests.swift in Sources */,
+				AA000000000000000000057A /* ScoringServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
