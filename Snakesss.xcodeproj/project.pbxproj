@@ -36,6 +36,21 @@
 		AA000000000000000000066A /* ScaleTextureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000002DA /* ScaleTextureModifier.swift */; };
 		AA000000000000000000067A /* PassPhoneOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000002EA /* PassPhoneOverlay.swift */; };
 		AA000000000000000000068A /* RoleBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000002FA /* RoleBadgeView.swift */; };
+		/* STORY-011 new files */
+		AA000000000000000000070B /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000030B /* GameViewModel.swift */; };
+		AA000000000000000000071B /* GameSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000031B /* GameSetupViewModel.swift */; };
+		AA000000000000000000072B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000032B /* HomeView.swift */; };
+		AA000000000000000000073B /* PlayerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000033B /* PlayerSetupView.swift */; };
+		AA000000000000000000074B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000034B /* GameView.swift */; };
+		AA000000000000000000075B /* RoleRevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000035B /* RoleRevealView.swift */; };
+		AA000000000000000000076B /* MongooseAnnouncementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000036B /* MongooseAnnouncementView.swift */; };
+		AA000000000000000000077B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000037B /* QuestionView.swift */; };
+		AA000000000000000000078B /* SnakeRevealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000038B /* SnakeRevealView.swift */; };
+		AA000000000000000000079B /* DiscussionTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000039B /* DiscussionTimerView.swift */; };
+		AA00000000000000000007AB /* VotingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003AB /* VotingView.swift */; };
+		AA00000000000000000007BB /* RoundResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003BB /* RoundResultsView.swift */; };
+		AA00000000000000000007CB /* GameEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003CB /* GameEndView.swift */; };
+		AA00000000000000000007DB /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003DB /* GameViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +95,21 @@
 		AA00000000000000000002DA /* ScaleTextureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleTextureModifier.swift; sourceTree = "<group>"; };
 		AA00000000000000000002EA /* PassPhoneOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassPhoneOverlay.swift; sourceTree = "<group>"; };
 		AA00000000000000000002FA /* RoleBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleBadgeView.swift; sourceTree = "<group>"; };
+		/* STORY-011 new file refs */
+		AA000000000000000000030B /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000031B /* GameSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupViewModel.swift; sourceTree = "<group>"; };
+		AA000000000000000000032B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA000000000000000000033B /* PlayerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSetupView.swift; sourceTree = "<group>"; };
+		AA000000000000000000034B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		AA000000000000000000035B /* RoleRevealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleRevealView.swift; sourceTree = "<group>"; };
+		AA000000000000000000036B /* MongooseAnnouncementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongooseAnnouncementView.swift; sourceTree = "<group>"; };
+		AA000000000000000000037B /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		AA000000000000000000038B /* SnakeRevealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeRevealView.swift; sourceTree = "<group>"; };
+		AA000000000000000000039B /* DiscussionTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionTimerView.swift; sourceTree = "<group>"; };
+		AA00000000000000000003AB /* VotingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingView.swift; sourceTree = "<group>"; };
+		AA00000000000000000003BB /* RoundResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundResultsView.swift; sourceTree = "<group>"; };
+		AA00000000000000000003CB /* GameEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndView.swift; sourceTree = "<group>"; };
+		AA00000000000000000003DB /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -97,6 +127,7 @@
 			children = (
 				AA000000000000000000042A /* App */,
 				AA000000000000000000048A /* Models */,
+				AA00000000000000000004EB /* ViewModels */,
 				AA00000000000000000004CA /* Services */,
 				AA000000000000000000043A /* Persistence */,
 				AA000000000000000000044A /* Views */,
@@ -127,6 +158,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AA00000000000000000004EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000030B /* GameViewModel.swift */,
+				AA000000000000000000031B /* GameSetupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		AA000000000000000000043A /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,8 +179,51 @@
 			isa = PBXGroup;
 			children = (
 				AA000000000000000000012A /* ContentView.swift */,
+				AA00000000000000000004FC /* Home */,
+				AA00000000000000000004FD /* Setup */,
+				AA00000000000000000004FE /* Game */,
+				AA00000000000000000004FF /* Results */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AA00000000000000000004FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000032B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AA00000000000000000004FD /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000033B /* PlayerSetupView.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		AA00000000000000000004FE /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000034B /* GameView.swift */,
+				AA000000000000000000035B /* RoleRevealView.swift */,
+				AA000000000000000000036B /* MongooseAnnouncementView.swift */,
+				AA000000000000000000037B /* QuestionView.swift */,
+				AA000000000000000000038B /* SnakeRevealView.swift */,
+				AA000000000000000000039B /* DiscussionTimerView.swift */,
+				AA00000000000000000003AB /* VotingView.swift */,
+				AA00000000000000000003BB /* RoundResultsView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		AA00000000000000000004FF /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				AA00000000000000000003CB /* GameEndView.swift */,
+			);
+			path = Results;
 			sourceTree = "<group>";
 		};
 		AA000000000000000000045A /* Resources */ = {
@@ -169,6 +252,7 @@
 				AA000000000000000000022A /* QuestionServiceTests.swift */,
 				AA000000000000000000023A /* RoleServiceTests.swift */,
 				AA000000000000000000024A /* ScoringServiceTests.swift */,
+				AA00000000000000000003DB /* GameViewModelTests.swift */,
 			);
 			path = SnakesssTests;
 			sourceTree = "<group>";
@@ -313,6 +397,20 @@
 				AA000000000000000000066A /* ScaleTextureModifier.swift in Sources */,
 				AA000000000000000000067A /* PassPhoneOverlay.swift in Sources */,
 				AA000000000000000000068A /* RoleBadgeView.swift in Sources */,
+				/* STORY-011 */
+				AA000000000000000000070B /* GameViewModel.swift in Sources */,
+				AA000000000000000000071B /* GameSetupViewModel.swift in Sources */,
+				AA000000000000000000072B /* HomeView.swift in Sources */,
+				AA000000000000000000073B /* PlayerSetupView.swift in Sources */,
+				AA000000000000000000074B /* GameView.swift in Sources */,
+				AA000000000000000000075B /* RoleRevealView.swift in Sources */,
+				AA000000000000000000076B /* MongooseAnnouncementView.swift in Sources */,
+				AA000000000000000000077B /* QuestionView.swift in Sources */,
+				AA000000000000000000078B /* SnakeRevealView.swift in Sources */,
+				AA000000000000000000079B /* DiscussionTimerView.swift in Sources */,
+				AA00000000000000000007AB /* VotingView.swift in Sources */,
+				AA00000000000000000007BB /* RoundResultsView.swift in Sources */,
+				AA00000000000000000007CB /* GameEndView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +422,7 @@
 				AA000000000000000000055A /* QuestionServiceTests.swift in Sources */,
 				AA000000000000000000056A /* RoleServiceTests.swift in Sources */,
 				AA000000000000000000057A /* ScoringServiceTests.swift in Sources */,
+				AA00000000000000000007DB /* GameViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

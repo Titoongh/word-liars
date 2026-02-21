@@ -5,7 +5,7 @@ import SwiftData
 struct SnakesssApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
         .modelContainer(for: GameRecord.self)
     }
