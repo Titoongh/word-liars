@@ -72,7 +72,7 @@ struct PlayerSetupView: View {
         }
     }
 
-    // MARK: - Player Count Picker
+    // MARK: - Player Count Picker (M5)
 
     private var playerCountPicker: some View {
         VStack(spacing: SnakesssSpacing.spacing2) {
@@ -82,6 +82,7 @@ struct PlayerSetupView: View {
 
             HStack(spacing: SnakesssSpacing.spacing2) {
                 ForEach(4...8, id: \.self) { count in
+                    let isActive = setupVM.playerCount == count
                     Button("\(count)") {
                         SnakesssHaptic.light()
                         withAnimation(SnakesssAnimation.bouncy) {
@@ -89,9 +90,9 @@ struct PlayerSetupView: View {
                         }
                     }
                     .font(SnakesssTypography.bodyLarge)
-                    .fontWeight(setupVM.playerCount == count ? .heavy : .semibold)
+                    .fontWeight(isActive ? .heavy : .semibold)
                     .foregroundStyle(
-                        setupVM.playerCount == count
+                        isActive
                             ? SnakesssTheme.accentPrimary   // M5: active → accentPrimary
                             : SnakesssTheme.textMuted        // M5: inactive → textMuted
                     )
@@ -102,21 +103,23 @@ struct PlayerSetupView: View {
                             .overlay(
                                 Capsule() // M5: Capsule border
                                     .strokeBorder(
-                                        setupVM.playerCount == count
-                                            ? SnakesssTheme.accentPrimary  // M5: active border
-                                            : SnakesssTheme.borderSubtle,  // M5: inactive → subtle
-                                        lineWidth: 2
+                                        isActive
+                                            ? SnakesssTheme.accentPrimary  // M5: active → accentPrimary
+                                            : SnakesssTheme.borderSubtle,  // M5: inactive → borderSubtle
+                                        lineWidth: 2 // M5: 2pt border
                                     )
                             )
                     )
                     // M5: 12px glow on active
                     .shadow(
-                        color: setupVM.playerCount == count ? SnakesssTheme.accentGlow : .clear,
+                        color: isActive ? SnakesssTheme.accentGlow : .clear,
                         radius: 12, x: 0, y: 0
                     )
                     .contentShape(Capsule())
-                    .scaleEffect(setupVM.playerCount == count ? 1.1 : 1.0)
+                    .scaleEffect(isActive ? 1.1 : 1.0)
                     .animation(SnakesssAnimation.bouncy, value: setupVM.playerCount)
+                    .accessibilityLabel("\(count) players")
+                    .accessibilityAddTraits(isActive ? .isSelected : [])
                 }
             }
         }

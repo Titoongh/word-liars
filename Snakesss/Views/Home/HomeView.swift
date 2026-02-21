@@ -7,6 +7,8 @@ struct HomeView: View {
     @State private var isSnakePulsing = false
     @State private var showingHistory = false
     @State private var coordinator = GameNavigationCoordinator()
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @ScaledMetric(relativeTo: .largeTitle) private var displayFontSize: CGFloat = 52
 
     var body: some View {
         NavigationStack {
@@ -31,7 +33,7 @@ struct HomeView: View {
                             )
 
                         Text("Snakesss")
-                            .font(SnakesssTypography.display)
+                            .font(.system(size: displayFontSize, weight: .black, design: .rounded))
                             .foregroundStyle(SnakesssTheme.accentPrimary)
                             .accentGlow()
 
@@ -75,7 +77,7 @@ struct HomeView: View {
                 }
             }
             .navigationBarHidden(true)
-            .onAppear { isSnakePulsing = true }
+            .onAppear { if !reduceMotion { isSnakePulsing = true } }
             .sheet(isPresented: $showingHistory) {
                 HistoryView()
             }

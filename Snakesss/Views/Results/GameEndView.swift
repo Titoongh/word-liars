@@ -30,8 +30,8 @@ struct GameEndView: View {
                 .scaleTexture() // M1
             SnakesssTheme.goldRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
-            // Confetti particle system
-            ConfettiView()
+            // Confetti particle system (skipped when Reduce Motion is on)
+            if !reduceMotion { ConfettiView() }
 
             ScrollView {
                 VStack(spacing: SnakesssSpacing.spacing8) {
@@ -51,10 +51,9 @@ struct GameEndView: View {
         }
         .onAppear {
             if reduceMotion {
-                withAnimation(SnakesssAnimation.celebration) {
-                    isAnimating = true
-                    trophyScale = 1.0
-                }
+                // Skip overshoot animation — jump straight to final state
+                isAnimating = true
+                trophyScale = 1.0
             } else {
                 // S7: Trophy overshoot — 0 → 1.3 → 1.0
                 withAnimation(.spring(duration: 0.4, bounce: 0.3)) {
@@ -93,7 +92,7 @@ struct GameEndView: View {
                         .scaleEffect(isAnimating ? 1.0 : 0.8)
 
                     Text("\(winners[0].totalScore) pts")
-                        .font(SnakesssTypography.score)
+                        .font(.system(size: scoreFontSize, weight: .black, design: .rounded))
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .contentTransition(.numericText())
                 }
@@ -226,9 +225,10 @@ private struct ConfettiView: View {
     }
 
     @State private var startDate = Date.now
+    @State private var confettiDone = false
 
     var body: some View {
-        TimelineView(.animation) { timeline in
+        TimelineView(.animation(minimumInterval: 1/60, paused: confettiDone)) { timeline in
             let elapsed = timeline.date.timeIntervalSince(startDate)
             Canvas { context, size in
                 for p in particles {
@@ -258,5 +258,9 @@ private struct ConfettiView: View {
         }
         .allowsHitTesting(false)
         .ignoresSafeArea()
+        .task {
+            try? await Task.sleep(for: .seconds(4.5))
+            confettiDone = true
+        }
     }
 }

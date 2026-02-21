@@ -60,7 +60,7 @@ enum ColorPrimitive {
     // Neutrals
     static let ivory100 = Color(hex: "#EAE8E0") // Warm white (primary text)
     static let sage400  = Color(hex: "#7A9E80") // Muted sage (secondary text)
-    static let sage600  = Color(hex: "#4D6B52") // Dark sage (tertiary/muted text)
+    static let sage600  = Color(hex: "#6B8F72") // Muted sage (tertiary text) — WCAG AA compliant on bgBase
 }
 
 // MARK: - Tier 2: Semantic Tokens
