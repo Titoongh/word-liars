@@ -67,6 +67,7 @@ struct GameEndView: View {
                 }
             }
             SnakesssHaptic.celebration()
+            AudioService.shared.playSound(.celebration)  // STORY-025
         }
     }
 

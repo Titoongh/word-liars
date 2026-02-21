@@ -28,8 +28,12 @@ struct GameView: View {
         }
         .navigationBarBackButtonHidden(true)
         .gesture(DragGesture()) // Blocks interactive swipe-back during active game
+        .onAppear {
+            AudioService.shared.playBackgroundMusic()  // STORY-025
+        }
         .onDisappear {
             viewModel.cancelTimer()
+            AudioService.shared.stopBackgroundMusic()  // STORY-025
         }
     }
 

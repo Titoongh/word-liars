@@ -77,6 +77,7 @@ struct VotingView: View {
             Button("Confirm Vote") {
                 guard let vote = selectedVote else { return }
                 SnakesssHaptic.medium()
+                AudioService.shared.playSound(.voteConfirm)  // STORY-025
                 withAnimation(SnakesssAnimation.standard) {
                     isRevealed = false
                 }

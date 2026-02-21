@@ -180,6 +180,7 @@ struct RoleRevealView: View {
                 try? await Task.sleep(for: .milliseconds(150))
                 showRoleFace = true
                 SnakesssHaptic.heavy()
+                AudioService.shared.playSound(.roleReveal)  // STORY-025
                 withAnimation(SnakesssAnimation.reveal) {
                     cardFlipX = 1
                 }

@@ -53,6 +53,8 @@
 		AA00000000000000000007DB /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000003DB /* GameViewModelTests.swift */; };
 		AA000000000000000000080C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000081C /* HistoryView.swift */; };
 		AA000000000000000000091A /* GameNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000090A /* GameNavigationCoordinator.swift */; };
+		/* STORY-024 Sound */
+		AA000000000000000000082E /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000083E /* AudioService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		AA000000000000000000081C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		AA000000000000000000090A /* GameNavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameNavigationCoordinator.swift; sourceTree = "<group>"; };
 		FD538664AC20873006030C43 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		/* STORY-024 Sound */
+		AA000000000000000000083E /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -320,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				1781DD971062EC4A2981A5E0 /* SettingsManager.swift */,
+				AA000000000000000000083E /* AudioService.swift */,
 			);
 			name = Services;
 			path = Services;
@@ -464,6 +469,7 @@
 				AA000000000000000000080C /* HistoryView.swift in Sources */,
 				6BEB879868E484A5F30ED612 /* SettingsManager.swift in Sources */,
 				5B857D1DD3B3302DDFAFA936 /* SettingsView.swift in Sources */,
+				AA000000000000000000082E /* AudioService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

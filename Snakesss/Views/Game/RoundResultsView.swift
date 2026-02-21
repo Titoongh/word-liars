@@ -78,6 +78,7 @@ struct RoundResultsView: View {
             }
         }
         .onAppear {
+            AudioService.shared.playSound(.resultsReveal)  // STORY-025
             runStaggeredReveal()
         }
     }

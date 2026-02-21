@@ -225,6 +225,7 @@ final class GameViewModel {
     /// After viewing results: start next round or end the game.
     func nextRound() {
         if currentRound >= totalRounds {
+            AudioService.shared.stopBackgroundMusic()  // STORY-025
             phase = .gameEnd
             SnakesssHaptic.celebration()
         } else {
@@ -264,8 +265,10 @@ final class GameViewModel {
                 discussionTimeRemaining -= 1
                 if discussionTimeRemaining == 30 {
                     SnakesssHaptic.timerWarning()
+                    AudioService.shared.playSound(.timerWarning)  // STORY-025
                 } else if discussionTimeRemaining <= 10 && discussionTimeRemaining > 0 {
                     SnakesssHaptic.medium()
+                    AudioService.shared.playSound(.timerTick)     // STORY-025
                 }
             }
             if !Task.isCancelled {
