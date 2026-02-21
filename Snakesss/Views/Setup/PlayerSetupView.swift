@@ -13,6 +13,7 @@ struct PlayerSetupView: View {
     var body: some View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
+                .scaleTexture() // M1
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: 0) {
@@ -88,25 +89,32 @@ struct PlayerSetupView: View {
                         }
                     }
                     .font(SnakesssTypography.bodyLarge)
+                    .fontWeight(setupVM.playerCount == count ? .heavy : .semibold)
                     .foregroundStyle(
                         setupVM.playerCount == count
-                            ? SnakesssTheme.bgBase
-                            : SnakesssTheme.accentPrimary
+                            ? SnakesssTheme.accentPrimary   // M5: active → accentPrimary
+                            : SnakesssTheme.textMuted        // M5: inactive → textMuted
                     )
                     .frame(width: 44, height: 44)
                     .background(
-                        Circle()
-                            .fill(
-                                setupVM.playerCount == count
-                                    ? SnakesssTheme.accentPrimary
-                                    : SnakesssTheme.bgElevated
-                            )
+                        Capsule() // M5: Circle → Capsule
+                            .fill(SnakesssTheme.bgElevated)
                             .overlay(
-                                Circle()
-                                    .strokeBorder(SnakesssTheme.borderActive, lineWidth: 1)
+                                Capsule() // M5: Capsule border
+                                    .strokeBorder(
+                                        setupVM.playerCount == count
+                                            ? SnakesssTheme.accentPrimary  // M5: active border
+                                            : SnakesssTheme.borderSubtle,  // M5: inactive → subtle
+                                        lineWidth: 2
+                                    )
                             )
                     )
-                    .contentShape(Circle())
+                    // M5: 12px glow on active
+                    .shadow(
+                        color: setupVM.playerCount == count ? SnakesssTheme.accentGlow : .clear,
+                        radius: 12, x: 0, y: 0
+                    )
+                    .contentShape(Capsule())
                     .scaleEffect(setupVM.playerCount == count ? 1.1 : 1.0)
                     .animation(SnakesssAnimation.bouncy, value: setupVM.playerCount)
                 }
