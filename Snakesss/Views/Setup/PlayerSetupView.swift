@@ -44,10 +44,21 @@ struct PlayerSetupView: View {
                     )
                 ) {
                     Text("Start Game →")
+                        .font(SnakesssTypography.bodyLarge)
+                        .foregroundStyle(SnakesssTheme.bgBase)
                         .frame(maxWidth: .infinity)
+                        .frame(minHeight: 56)
+                        .background(
+                            Capsule()
+                                .fill(SnakesssTheme.buttonPrimaryGradient)
+                        )
+                        .shadow(
+                            color: SnakesssTheme.accentGlow,
+                            radius: 16, x: 0, y: 4
+                        )
                 }
-                .buttonStyle(SnakesssPrimaryButtonStyle())
                 .disabled(!setupVM.isValid)
+                .opacity(setupVM.isValid ? 1.0 : 0.4)
                 .padding(.horizontal, SnakesssSpacing.screenPadding)
                 .padding(.bottom, SnakesssSpacing.spacing12)
             }
@@ -90,6 +101,7 @@ struct PlayerSetupView: View {
                                     .strokeBorder(SnakesssTheme.borderActive, lineWidth: 1)
                             )
                     )
+                    .contentShape(Circle())
                     .scaleEffect(setupVM.playerCount == count ? 1.1 : 1.0)
                     .animation(SnakesssAnimation.bouncy, value: setupVM.playerCount)
                 }
