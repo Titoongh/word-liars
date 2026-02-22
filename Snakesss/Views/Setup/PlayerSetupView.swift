@@ -14,6 +14,7 @@ struct PlayerSetupView: View {
         ZStack {
             SnakesssTheme.bgBase.ignoresSafeArea()
                 .scaleTexture() // M1
+                .onTapGesture { focusedField = nil }
             SnakesssTheme.greenRadialOverlay.ignoresSafeArea().allowsHitTesting(false)
 
             VStack(spacing: 0) {
@@ -37,6 +38,7 @@ struct PlayerSetupView: View {
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
                     .padding(.top, SnakesssSpacing.spacing4)
                 }
+                .scrollDismissesKeyboard(.interactively)
 
                 Spacer()
 
