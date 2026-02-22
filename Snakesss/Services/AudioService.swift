@@ -1,4 +1,5 @@
 import AVFoundation
+import os.log
 
 // MARK: - AudioService
 
@@ -41,27 +42,42 @@ final class AudioService {
     // MARK: - Public API
 
     func playSound(_ effect: SoundEffect) {
-        guard SettingsManager.shared.soundEnabled else { return }
+        guard SettingsManager.shared.soundEnabled else {
+            AppLogger.audio.info("playSound skipped — sound disabled: \(effect.rawValue)")
+            return
+        }
         ensureEngineRunning()
-        guard let buffer = buffers[effect] else { return }
+        guard let buffer = buffers[effect] else {
+            AppLogger.audio.error("playSound: no buffer for effect \(effect.rawValue)")
+            return
+        }
 
         // Reuse or create a player node
         let player = availablePlayer()
         player.scheduleBuffer(buffer, at: nil, options: [], completionHandler: nil)
         player.play()
+        AppLogger.audio.info("Playing SFX: \(effect.rawValue)")
     }
 
     func playBackgroundMusic() {
-        guard SettingsManager.shared.soundEnabled else { return }
+        guard SettingsManager.shared.soundEnabled else {
+            AppLogger.audio.info("playBackgroundMusic skipped — sound disabled")
+            return
+        }
         ensureEngineRunning()
-        guard let buffer = bgMusicBuffer else { return }
+        guard let buffer = bgMusicBuffer else {
+            AppLogger.audio.error("playBackgroundMusic: bgMusicBuffer is nil")
+            return
+        }
         bgMusicPlayer.volume = 0.08
         bgMusicPlayer.scheduleBuffer(buffer, at: nil, options: .loops, completionHandler: nil)
         bgMusicPlayer.play()
+        AppLogger.audio.info("Background music started")
     }
 
     func stopBackgroundMusic() {
         bgMusicPlayer.stop()
+        AppLogger.audio.info("Background music stopped")
     }
 
     // MARK: - Audio Session

@@ -1,5 +1,6 @@
 import Foundation
 import SwiftData
+import os.log
 
 // MARK: - RoleAssigning Protocol
 
@@ -104,6 +105,7 @@ final class GameViewModel {
         // Derive snake indices for later (snake-reveal phase)
         snakeIndices = players.indices.filter { roles[$0] == .snake }
 
+        AppLogger.game.info("Round \(self.currentRound) started — \(self.players.count) players")
         phase = .roleReveal(playerIndex: 0)
         SnakesssHaptic.medium()
     }
@@ -115,6 +117,7 @@ final class GameViewModel {
             phase = .roleReveal(playerIndex: nextIndex)
             SnakesssHaptic.medium()
         } else {
+            AppLogger.game.info("Phase transition: roleReveal → mongooseAnnouncement (round \(self.currentRound))")
             phase = .mongooseAnnouncement
             SnakesssHaptic.heavy()
         }
@@ -122,8 +125,12 @@ final class GameViewModel {
 
     /// Transition from mongoose announcement to question display.
     func showQuestion() {
-        guard let q = questionService.getQuestion() else { return }
+        guard let q = questionService.getQuestion() else {
+            AppLogger.game.error("showQuestion: no question available in round \(self.currentRound)")
+            return
+        }
         currentQuestion = q
+        AppLogger.game.info("Phase transition: mongooseAnnouncement → question (round \(self.currentRound))")
         phase = .question
         SnakesssHaptic.medium()
     }
@@ -131,9 +138,10 @@ final class GameViewModel {
     /// Begin snake reveal phase (snakeIndex 0).
     func startSnakeReveal() {
         if snakeIndices.isEmpty {
-            // No snakes (edge case) — skip straight to discussion
+            AppLogger.game.info("No snakes — skipping snakeReveal to discussion (round \(self.currentRound))")
             startDiscussion()
         } else {
+            AppLogger.game.info("Phase transition: question → snakeReveal (round \(self.currentRound), \(self.snakeIndices.count) snake(s))")
             phase = .snakeReveal(snakeIndex: 0)
             SnakesssHaptic.heavy()
         }
@@ -146,12 +154,14 @@ final class GameViewModel {
             phase = .snakeReveal(snakeIndex: nextSnakeIndex)
             SnakesssHaptic.medium()
         } else {
+            AppLogger.game.info("Phase transition: snakeReveal → discussion (round \(self.currentRound))")
             startDiscussion()
         }
     }
 
     /// Start the discussion timer and enter discussion phase.
     func startDiscussion() {
+        AppLogger.game.info("Phase transition: → discussion, timer=\(self.timerDuration)s (round \(self.currentRound))")
         phase = .discussion
         startTimer()
         SnakesssHaptic.medium()
@@ -159,6 +169,7 @@ final class GameViewModel {
 
     /// Cancel the timer early and jump straight to voting.
     func skipDiscussion() {
+        AppLogger.game.info("Discussion skipped at \(self.discussionTimeRemaining)s remaining (round \(self.currentRound))")
         timerTask?.cancel()
         timerTask = nil
         startVoting()
@@ -166,6 +177,7 @@ final class GameViewModel {
 
     /// Begin pass-and-play voting starting with player 0.
     func startVoting() {
+        AppLogger.game.info("Phase transition: → voting (round \(self.currentRound))")
         phase = .voting(playerIndex: 0)
         SnakesssHaptic.medium()
     }
@@ -185,7 +197,10 @@ final class GameViewModel {
 
     /// Calculate scores via ScoringService, create RoundResult, update running totals.
     func showResults() {
-        guard let question = currentQuestion else { return }
+        guard let question = currentQuestion else {
+            AppLogger.game.error("showResults: currentQuestion is nil in round \(self.currentRound)")
+            return
+        }
 
         let roles: [(playerIndex: Int, role: Role)] = players.indices.compactMap { i in
             guard let role = players[i].role else { return nil }
@@ -209,6 +224,8 @@ final class GameViewModel {
             players[entry.playerIndex].totalScore += entry.points
         }
 
+        AppLogger.scoring.info("Round \(self.currentRound) scores: \(pointsEarned.map { "(p\($0.playerIndex): \($0.points)pts)" }.joined(separator: ", "))")
+
         let result = RoundResult(
             roundNumber: currentRound,
             question: question,
@@ -218,6 +235,7 @@ final class GameViewModel {
         )
         roundResults.append(result)
 
+        AppLogger.game.info("Phase transition: voting → roundResults (round \(self.currentRound))")
         phase = .roundResults
         SnakesssHaptic.success()
     }
@@ -225,6 +243,7 @@ final class GameViewModel {
     /// After viewing results: start next round or end the game.
     func nextRound() {
         if currentRound >= totalRounds {
+            AppLogger.game.info("Phase transition: roundResults → gameEnd (all \(self.totalRounds) rounds complete)")
             AudioService.shared.stopBackgroundMusic()  // STORY-025
             phase = .gameEnd
             SnakesssHaptic.celebration()
@@ -246,6 +265,7 @@ final class GameViewModel {
             roundCount: currentRound
         )
         modelContext.insert(record)
+        AppLogger.game.info("Game saved: \(self.currentRound) rounds, \(self.players.count) players")
     }
 
     // MARK: - Timer
@@ -272,6 +292,7 @@ final class GameViewModel {
                 }
             }
             if !Task.isCancelled {
+                AppLogger.game.info("Discussion timer expired — transitioning to voting (round \(self.currentRound))")
                 SnakesssHaptic.timerEnd()
                 startVoting()
             }

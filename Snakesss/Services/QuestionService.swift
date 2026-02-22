@@ -1,5 +1,6 @@
 import Foundation
 
+@MainActor
 final class QuestionService {
     private var allQuestions: [Question]
     private(set) var usedQuestionIDs: Set<String>

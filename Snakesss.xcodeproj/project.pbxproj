@@ -55,6 +55,11 @@
 		AA000000000000000000091A /* GameNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000090A /* GameNavigationCoordinator.swift */; };
 		/* STORY-024 Sound */
 		AA000000000000000000082E /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000083E /* AudioService.swift */; };
+		/* STORY-048 Logging */
+		AA000000000000000000085E /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000084E /* AppLogger.swift */; };
+		/* STORY-045 Tests */
+		AA000000000000000000088E /* SettingsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000087E /* SettingsManagerTests.swift */; };
+		AA00000000000000000008AE /* AudioServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000089E /* AudioServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +123,11 @@
 		FD538664AC20873006030C43 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		/* STORY-024 Sound */
 		AA000000000000000000083E /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		/* STORY-048 Logging */
+		AA000000000000000000084E /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		/* STORY-045 Tests */
+		AA000000000000000000087E /* SettingsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManagerTests.swift; sourceTree = "<group>"; };
+		AA000000000000000000089E /* AudioServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -160,8 +170,17 @@
 				AA000000000000000000044A /* Views */,
 				AA000000000000000000045A /* Resources */,
 				AA00000000000000000004DA /* Theme */,
+				AA000000000000000000086E /* Utilities */,
 			);
 			path = Snakesss;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000086E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000084E /* AppLogger.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		AA000000000000000000042A /* App */ = {
@@ -209,6 +228,8 @@
 				AA000000000000000000023A /* RoleServiceTests.swift */,
 				AA000000000000000000024A /* ScoringServiceTests.swift */,
 				AA00000000000000000003DB /* GameViewModelTests.swift */,
+				AA000000000000000000087E /* SettingsManagerTests.swift */,
+				AA000000000000000000089E /* AudioServiceTests.swift */,
 			);
 			path = SnakesssTests;
 			sourceTree = "<group>";
@@ -470,6 +491,7 @@
 				6BEB879868E484A5F30ED612 /* SettingsManager.swift in Sources */,
 				5B857D1DD3B3302DDFAFA936 /* SettingsView.swift in Sources */,
 				AA000000000000000000082E /* AudioService.swift in Sources */,
+				AA000000000000000000085E /* AppLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +504,8 @@
 				AA000000000000000000056A /* RoleServiceTests.swift in Sources */,
 				AA000000000000000000057A /* ScoringServiceTests.swift in Sources */,
 				AA00000000000000000007DB /* GameViewModelTests.swift in Sources */,
+				AA000000000000000000088E /* SettingsManagerTests.swift in Sources */,
+				AA00000000000000000008AE /* AudioServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +541,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gobcgames.Snakesss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -543,6 +568,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gobcgames.Snakesss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

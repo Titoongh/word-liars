@@ -14,7 +14,8 @@ final class GameViewModelTests: XCTestCase {
             question: "Test question?",
             choices: Question.Choices(a: "Alpha", b: "Beta", c: "Gamma"),
             answer: answer,
-            funFact: nil
+            funFact: nil,
+            category: nil
         )
     }
 
@@ -53,8 +54,8 @@ final class GameViewModelTests: XCTestCase {
     // MARK: - startRound()
 
     func testStartRoundSetsPhaseToRoleReveal() {
+        // GameViewModel.init() calls startRound() automatically — round 1 begins immediately.
         let vm = makeVM()
-        vm.startRound()
         XCTAssertEqual(vm.phase, .roleReveal(playerIndex: 0))
         XCTAssertEqual(vm.currentRound, 1)
     }
@@ -199,8 +200,8 @@ final class GameViewModelTests: XCTestCase {
 
     func testShowResultsCreatesRoundResult() {
         let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        // init auto-starts round 1; no explicit startRound needed
         let vm = makeVM(roles: roles, answer: "A")
-        vm.startRound()
         vm.showQuestion()
         vm.startVoting()
         vm.submitVote(.a, voterIndex: 0)
@@ -355,8 +356,8 @@ final class GameViewModelTests: XCTestCase {
 
     func testNextRoundIncrementsRound() {
         let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        // init auto-starts round 1
         let vm = makeVM(roles: roles)
-        vm.startRound()
         vm.showQuestion()
         vm.startVoting()
         vm.submitVote(.a, voterIndex: 0)
@@ -365,7 +366,7 @@ final class GameViewModelTests: XCTestCase {
         vm.submitVote(.a, voterIndex: 3)
 
         XCTAssertEqual(vm.currentRound, 1)
-        vm.nextRound()
+        vm.nextRound()  // starts round 2
         XCTAssertEqual(vm.currentRound, 2)
         XCTAssertEqual(vm.phase, .roleReveal(playerIndex: 0))
     }

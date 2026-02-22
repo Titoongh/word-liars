@@ -1,6 +1,7 @@
 import XCTest
 @testable import Snakesss
 
+@MainActor
 final class QuestionServiceTests: XCTestCase {
 
     private func makeSampleQuestions(count: Int) -> [Question] {
@@ -10,7 +11,8 @@ final class QuestionServiceTests: XCTestCase {
                 question: "Question \(i)?",
                 choices: Question.Choices(a: "Option A", b: "Option B", c: "Option C"),
                 answer: "A",
-                funFact: nil
+                funFact: nil,
+                category: nil
             )
         }
     }
