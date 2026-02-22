@@ -81,7 +81,7 @@ struct GameEndView: View {
                 .shadow(color: SnakesssTheme.truthGold.opacity(0.5), radius: 30)
                 .goldGlow()
 
-            Text("WINNER")
+            Text("gameEnd.winner.label")
                 .microStyle(color: SnakesssTheme.truthGold)
 
             if winners.count == 1 {
@@ -92,14 +92,14 @@ struct GameEndView: View {
                         .goldGlow()
                         .scaleEffect(isAnimating ? 1.0 : 0.8)
 
-                    Text("\(winners[0].totalScore) pts")
+                    Text(String(localized: "gameEnd.winnerPts \(winners[0].totalScore)"))
                         .font(.system(size: scoreFontSize, weight: .black, design: .rounded))
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .contentTransition(.numericText())
                 }
             } else {
                 VStack(spacing: SnakesssSpacing.spacing2) {
-                    Text("It's a Tie!")
+                    Text("gameEnd.tie.headline")
                         .font(SnakesssTypography.title)
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .goldGlow()
@@ -107,7 +107,7 @@ struct GameEndView: View {
                         .font(SnakesssTypography.playerName)
                         .foregroundStyle(SnakesssTheme.truthGold)
                         .goldGlow()
-                    Text("\(winners[0].totalScore) pts each")
+                    Text(String(localized: "gameEnd.ptsEach \(winners[0].totalScore)"))
                         .font(SnakesssTypography.bodyLarge)
                         .foregroundStyle(SnakesssTheme.textSecondary)
                         .contentTransition(.numericText())
@@ -121,7 +121,7 @@ struct GameEndView: View {
 
     private var scoreboardSection: some View {
         VStack(spacing: SnakesssSpacing.spacing3) {
-            Text("Final Scores")
+            Text("gameEnd.finalScores.label")
                 .font(SnakesssTypography.label)
                 .foregroundStyle(SnakesssTheme.textSecondary)
 
@@ -169,17 +169,17 @@ struct GameEndView: View {
 
     private var actionButtons: some View {
         VStack(spacing: SnakesssSpacing.spacing3) {
-            Button("Play Again (Same Players)") {
+            Button(LocalizedStringKey("gameEnd.playAgain.button")) {
                 onPlayAgain()
             }
             .buttonStyle(SnakesssPrimaryButtonStyle())
 
-            Button("New Game") {
+            Button(LocalizedStringKey("gameEnd.newGame.button")) {
                 onNewGame()
             }
             .buttonStyle(SnakesssSecondaryButtonStyle())
 
-            Button("Home") {
+            Button(LocalizedStringKey("gameEnd.home.button")) {
                 onHome()
             }
             .font(SnakesssTypography.label)

@@ -27,6 +27,8 @@
 		AA00000000000000000003DA /* RoleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001DA /* RoleService.swift */; };
 		AA00000000000000000003EA /* ScoringService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001EA /* ScoringService.swift */; };
 		AA00000000000000000003FA /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = AA00000000000000000001FA /* questions.json */; };
+		LOCL00000000000000000002 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = LOCL00000000000000000001 /* Localizable.xcstrings */; };
+		LOCL00000000000000000004 /* questions_en.json in Resources */ = {isa = PBXBuildFile; fileRef = LOCL00000000000000000003 /* questions_en.json */; };
 		AA000000000000000000055A /* QuestionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000022A /* QuestionServiceTests.swift */; };
 		AA000000000000000000056A /* RoleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000023A /* RoleServiceTests.swift */; };
 		AA000000000000000000057A /* ScoringServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000024A /* ScoringServiceTests.swift */; };
@@ -96,6 +98,8 @@
 		AA00000000000000000001DA /* RoleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleService.swift; sourceTree = "<group>"; };
 		AA00000000000000000001EA /* ScoringService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringService.swift; sourceTree = "<group>"; };
 		AA00000000000000000001FA /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		LOCL00000000000000000001 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		LOCL00000000000000000003 /* questions_en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions_en.json; sourceTree = "<group>"; };
 		AA000000000000000000020A /* Snakesss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snakesss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA000000000000000000021A /* SnakesssTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakesssTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA000000000000000000022A /* QuestionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionServiceTests.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 			children = (
 				AA000000000000000000013A /* Assets.xcassets */,
 				AA00000000000000000001FA /* questions.json */,
+				LOCL00000000000000000003 /* questions_en.json */,
+				LOCL00000000000000000001 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -441,8 +447,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				fr,
 				Base,
 			);
+			developmentRegion = fr;
 			mainGroup = AA000000000000000000040A;
 			productRefGroup = AA000000000000000000047A /* Products */;
 			projectDirPath = "";
@@ -461,6 +469,8 @@
 			files = (
 				AA000000000000000000033A /* Assets.xcassets in Resources */,
 				AA00000000000000000003FA /* questions.json in Resources */,
+				LOCL00000000000000000004 /* questions_en.json in Resources */,
+				LOCL00000000000000000002 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

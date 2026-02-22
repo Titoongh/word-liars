@@ -26,7 +26,7 @@ struct MongooseAnnouncementView: View {
 
                 // Announcement text
                 VStack(spacing: SnakesssSpacing.spacing3) {
-                    Text("The Truth Mongoose is...")
+                    Text("mongoose.announcement.label")
                         .font(SnakesssTypography.label)
                         .foregroundStyle(SnakesssTheme.textSecondary)
 
@@ -40,14 +40,14 @@ struct MongooseAnnouncementView: View {
                 // Amber chip — identity confirmation
                 MongooseChipView(mongooseName: mongooseName)
 
-                Text("Everyone can verify this.")
+                Text("mongoose.verifyCaption")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .multilineTextAlignment(.center)
 
                 Spacer()
 
-                Button("See the Question →") {
+                Button(LocalizedStringKey("mongoose.seeQuestion.button")) {
                     onContinue()
                 }
                 .buttonStyle(SnakesssPrimaryButtonStyle())

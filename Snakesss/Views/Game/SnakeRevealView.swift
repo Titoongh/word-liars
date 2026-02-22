@@ -72,19 +72,19 @@ struct SnakeRevealView: View {
                     .font(.system(size: 64))
                     .foregroundStyle(SnakesssTheme.textMuted)
 
-                Text("Everyone close your eyes")
+                Text("snakeReveal.closeEyes.headline")
                     .font(SnakesssTypography.headline)
                     .foregroundStyle(SnakesssTheme.textPrimary)
                     .multilineTextAlignment(.center)
 
-                Text("Snakes: wait for your tap cue")
+                Text("snakeReveal.closeEyes.body")
                     .font(SnakesssTypography.body)
                     .foregroundStyle(SnakesssTheme.textSecondary)
                     .multilineTextAlignment(.center)
 
                 Spacer()
 
-                Text("HOST: Tap when ready →")
+                Text("snakeReveal.hostTap.caption")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .padding(.bottom, SnakesssSpacing.spacing12)
@@ -99,7 +99,7 @@ struct SnakeRevealView: View {
             }
         }
         .accessibilityAddTraits(.isButton)
-        .accessibilityLabel("Everyone close your eyes. Snakes: wait for your tap cue. HOST: Tap when ready")
+        .accessibilityLabel(String(localized: "snakeReveal.closeEyes.accessibility"))
         .accessibilityAction {
             SnakesssHaptic.medium()
             withAnimation(SnakesssAnimation.reveal) { revealPhase = .passing }
@@ -120,20 +120,20 @@ struct SnakeRevealView: View {
                 Text("🐍")
                     .font(.system(size: 64))
 
-                Text("Pass to")
+                Text("passPhone.passTo.label")
                     .microStyle(color: SnakesssTheme.textMuted)
 
                 Text(snake.name)
                     .font(SnakesssTypography.playerName)
                     .foregroundStyle(SnakesssTheme.textPrimary)
 
-                Text("Snake \(snakeIndex + 1) of \(totalSnakes)")
+                Text(String(localized: "snakeReveal.snakeBadge \(snakeIndex + 1) \(totalSnakes)"))
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
 
                 Spacer()
 
-                Text("Tap to reveal secret")
+                Text("snakeReveal.tapToReveal.caption")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .padding(.bottom, SnakesssSpacing.spacing12)
@@ -147,7 +147,7 @@ struct SnakeRevealView: View {
             }
         }
         .accessibilityAddTraits(.isButton)
-        .accessibilityLabel("Pass to \(snake.name). Snake \(snakeIndex + 1) of \(totalSnakes). Tap to reveal secret")
+        .accessibilityLabel(String(localized: "snakeReveal.pass.accessibility \(snake.name) \(snakeIndex + 1) \(totalSnakes)"))
         .accessibilityAction {
             SnakesssHaptic.heavy()
             withAnimation(SnakesssAnimation.reveal) { revealPhase = .revealed }
@@ -166,14 +166,14 @@ struct SnakeRevealView: View {
                     Text(snake.name)
                         .font(SnakesssTypography.headline)
                         .foregroundStyle(SnakesssTheme.textPrimary)
-                    Text("You are a Snake 🐍")
+                    Text("snakeReveal.youAreSnake.label")
                         .font(SnakesssTypography.label)
                         .foregroundStyle(SnakesssTheme.snakeColor)
                 }
 
                 // Correct answer card
                 VStack(spacing: SnakesssSpacing.spacing2) {
-                    Text("CORRECT ANSWER")
+                    Text("snakeReveal.correctAnswer.label")
                         .microStyle(color: SnakesssTheme.textMuted)
 
                     Text(answerLabel)
@@ -202,7 +202,7 @@ struct SnakeRevealView: View {
                 // Other snakes
                 if allSnakeNames.count > 1 {
                     VStack(spacing: SnakesssSpacing.spacing2) {
-                        Text("YOUR FELLOW SNAKES")
+                        Text("snakeReveal.fellowSnakes.label")
                             .microStyle(color: SnakesssTheme.textMuted)
 
                         let otherSnakes = allSnakeNames.indices
@@ -217,10 +217,10 @@ struct SnakeRevealView: View {
                 }
 
                 VStack(spacing: SnakesssSpacing.spacing1) {
-                    Text("Remember: vote \"Snake\" only.")
+                    Text("snakeReveal.reminder.vote")
                         .font(SnakesssTypography.caption)
                         .foregroundStyle(SnakesssTheme.snakeColor)
-                    Text("Any other vote = lose points.")
+                    Text("snakeReveal.reminder.losePoints")
                         .font(SnakesssTypography.caption)
                         .foregroundStyle(SnakesssTheme.danger)
                 }
@@ -240,7 +240,7 @@ struct SnakeRevealView: View {
 
             Spacer()
 
-            Button("Done — Hide This Screen") {
+            Button(LocalizedStringKey("snakeReveal.done.button")) {
                 SnakesssHaptic.medium()
                 withAnimation(SnakesssAnimation.standard) {
                     if isLastSnake {
@@ -276,19 +276,19 @@ struct SnakeRevealView: View {
                     .foregroundStyle(SnakesssTheme.accentPrimary)
                     .accentGlow()
 
-                Text("Everyone open your eyes")
+                Text("snakeReveal.openEyes.headline")
                     .font(SnakesssTypography.headline)
                     .foregroundStyle(SnakesssTheme.textPrimary)
                     .multilineTextAlignment(.center)
 
-                Text("Snakes know the answer.\nThe discussion begins.")
+                Text("snakeReveal.openEyes.body")
                     .font(SnakesssTypography.body)
                     .foregroundStyle(SnakesssTheme.textSecondary)
                     .multilineTextAlignment(.center)
 
                 Spacer()
 
-                Button("Start Discussion →") {
+                Button(LocalizedStringKey("snakeReveal.startDiscussion.button")) {
                     SnakesssHaptic.medium()
                     onDone()
                 }

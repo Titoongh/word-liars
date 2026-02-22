@@ -23,7 +23,7 @@ struct DiscussionTimerView: View {
 
             VStack(spacing: 0) {
                 // Header
-                Text("Discussion")
+                Text("discussion.header")
                     .microStyle(color: SnakesssTheme.textMuted)
                     .padding(.top, SnakesssSpacing.spacing8)
 
@@ -44,7 +44,7 @@ struct DiscussionTimerView: View {
                     .padding(.bottom, SnakesssSpacing.spacing6)
 
                 // Skip button
-                Button("Skip Discussion → Vote") {
+                Button(LocalizedStringKey("discussion.skip.button")) {
                     onSkip()
                 }
                 .buttonStyle(SnakesssSecondaryButtonStyle())
@@ -110,7 +110,7 @@ struct DiscussionTimerView: View {
                     .contentTransition(.numericText())
                     .animation(SnakesssAnimation.standard, value: timeRemaining)
 
-                Text("remaining")
+                Text("discussion.remaining.label")
                     .font(SnakesssTypography.micro)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .tracking(2)

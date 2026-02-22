@@ -18,7 +18,7 @@ struct QuestionView: View {
 
             VStack(spacing: 0) {
                 // Round badge
-                Text("Round \(roundNumber) — Question")
+                Text(String(localized: "question.roundBadge \(roundNumber)"))
                     .microStyle(color: SnakesssTheme.textMuted)
                     .padding(.top, SnakesssSpacing.spacing8)
 
@@ -57,14 +57,14 @@ struct QuestionView: View {
                     .padding(.bottom, SnakesssSpacing.spacing4)
 
                 // Instructions
-                Text("📵 Place phone in the center\nDiscuss before voting begins")
+                Text("question.placePhone.instructions")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, SnakesssSpacing.spacing8)
                     .padding(.bottom, SnakesssSpacing.spacing4)
 
-                Button("Snakes — Close Your Eyes") {
+                Button(LocalizedStringKey("question.snakesCloseEyes.button")) {
                     onContinue()
                 }
                 .buttonStyle(SnakesssPrimaryButtonStyle())

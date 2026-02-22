@@ -67,14 +67,14 @@ struct RoleRevealView: View {
             Spacer()
 
             // Hint label
-            Text("Hold to reveal · Release to hide")
+            Text("roleReveal.holdHint")
                 .font(SnakesssTypography.micro)
                 .foregroundStyle(SnakesssTheme.textMuted)
                 .tracking(1)
                 .padding(.bottom, SnakesssSpacing.spacing2)
 
             // Continue button
-            Button("Done — Pass the phone") {
+            Button(LocalizedStringKey("roleReveal.done.button")) {
                 SnakesssHaptic.medium()
                 withAnimation(SnakesssAnimation.standard) {
                     isRevealed = false
@@ -115,7 +115,7 @@ struct RoleRevealView: View {
                 .font(.system(size: 48))
                 .foregroundStyle(SnakesssTheme.textMuted)
 
-            Text("HOLD TO REVEAL")
+            Text("roleReveal.holdToReveal")
                 .microStyle(color: SnakesssTheme.textMuted)
         }
         .frame(maxWidth: .infinity)
@@ -138,7 +138,7 @@ struct RoleRevealView: View {
                         .font(.system(size: 72))
                         .shadow(color: role.glowColor, radius: 24)
 
-                    Text("YOUR ROLE")
+                    Text("roleReveal.yourRole.label")
                         .microStyle(color: SnakesssTheme.textMuted)
 
                     Text(role.displayName.uppercased())
@@ -180,7 +180,7 @@ struct RoleRevealView: View {
                 try? await Task.sleep(for: .milliseconds(150))
                 showRoleFace = true
                 SnakesssHaptic.heavy()
-                AudioService.shared.playSound(.roleReveal)  // STORY-025
+                AudioService.shared.playSound(.roleReveal)
                 withAnimation(SnakesssAnimation.reveal) {
                     cardFlipX = 1
                 }
@@ -209,10 +209,10 @@ struct RoleRevealView: View {
 
     private var roundBadge: some View {
         VStack(spacing: SnakesssSpacing.spacing2) {
-            Text("Round \(roundNumber) of \(totalRounds)")
+            Text(String(localized: "roleReveal.roundBadge \(roundNumber) \(totalRounds)"))
                 .microStyle(color: SnakesssTheme.textMuted)
 
-            Text("Player \(playerIndex + 1) of \(totalPlayers)")
+            Text(String(localized: "roleReveal.playerBadge \(playerIndex + 1) \(totalPlayers)"))
                 .microStyle(color: SnakesssTheme.textSecondary)
         }
     }

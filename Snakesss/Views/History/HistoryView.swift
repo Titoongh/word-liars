@@ -24,13 +24,13 @@ struct HistoryView: View {
                     }
                 }
             }
-            .navigationTitle("Game History")
+            .navigationTitle(Text("history.title"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(SnakesssTheme.bgSurface, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { dismiss() }
+                    Button(String(localized: "history.done.button")) { dismiss() }
                         .font(SnakesssTypography.caption)
                         .foregroundStyle(SnakesssTheme.accentPrimary)
                 }
@@ -46,12 +46,12 @@ struct HistoryView: View {
                 .font(.system(size: 72))
 
             VStack(spacing: SnakesssSpacing.spacing2) {
-                Text("No games played yet")
+                Text("history.empty.headline")
                     .font(SnakesssTypography.headline)
                     .foregroundStyle(SnakesssTheme.textPrimary)
                     .multilineTextAlignment(.center)
 
-                Text("Start your first game!")
+                Text("history.empty.body")
                     .font(SnakesssTypography.body)
                     .foregroundStyle(SnakesssTheme.textSecondary)
             }
@@ -70,7 +70,7 @@ struct HistoryView: View {
                             Button(role: .destructive) {
                                 modelContext.delete(game)
                             } label: {
-                                Label("Delete", systemImage: "trash")
+                                Label(String(localized: "history.delete.button"), systemImage: "trash")
                             }
                         }
                 }
@@ -87,7 +87,7 @@ private struct HistoryRowView: View {
     let game: GameRecord
 
     private var winnerDisplay: String {
-        guard !game.winnerNames.isEmpty else { return "No winner" }
+        guard !game.winnerNames.isEmpty else { return String(localized: "history.noWinner") }
         return game.winnerNames.joined(separator: " & ")
     }
 
@@ -107,7 +107,7 @@ private struct HistoryRowView: View {
 
                 Spacer()
 
-                Text("\(game.roundCount) rounds · \(game.playerNames.count) players")
+                Text(String(localized: "history.rounds \(game.roundCount) \(game.playerNames.count)"))
                     .microStyle(color: SnakesssTheme.textMuted)
             }
 
@@ -123,7 +123,7 @@ private struct HistoryRowView: View {
                         .goldGlow()
 
                     if let score = winnerScore {
-                        Text("\(score) pts")
+                        Text(String(localized: "history.pts \(score)"))
                             .font(SnakesssTypography.caption)
                             .foregroundStyle(SnakesssTheme.textSecondary)
                     }

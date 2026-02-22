@@ -3,12 +3,9 @@ import SwiftUI
 // MARK: - Pass Phone Overlay
 
 /// Full-screen interstitial overlay for passing the phone to the next player.
-/// - Layout: "PASS TO" micro label + player name (playerName style, breathing pulse) + "Tap to reveal" caption
-/// - Uses overlayScrim background with scale texture
-/// - Breathing pulse: player name scales 1.0 ↔ 0.97, 2s easeInOut loop
 struct PassPhoneOverlay: View {
     let playerName: String
-    var caption: String = "Tap to reveal your role"
+    var caption: LocalizedStringKey = "passPhone.tapToRevealRole.caption"
     let onTap: () -> Void
 
     @State private var isPulsing = false
@@ -30,7 +27,7 @@ struct PassPhoneOverlay: View {
                 Spacer()
 
                 // "PASS TO" label
-                Text("Pass to")
+                Text("passPhone.passTo.label")
                     .microStyle(color: SnakesssTheme.textSecondary)
 
                 // Player name with breathing pulse animation
@@ -45,7 +42,7 @@ struct PassPhoneOverlay: View {
 
                 Spacer()
 
-                // "Tap to reveal" caption
+                // Caption
                 Text(caption)
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
@@ -58,8 +55,8 @@ struct PassPhoneOverlay: View {
             onTap()
         }
         .accessibilityAddTraits(.isButton)
-        .accessibilityLabel("Pass to \(playerName)")
-        .accessibilityHint(caption)
+        .accessibilityLabel(String(localized: "passPhone.passTo.accessibility \(playerName)"))
+        .accessibilityHint(Text(caption))
         .accessibilityAction {
             SnakesssHaptic.medium()
             onTap()

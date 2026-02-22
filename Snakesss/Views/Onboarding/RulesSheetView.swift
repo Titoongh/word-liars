@@ -13,7 +13,10 @@ struct RulesSheetView: View {
             ScrollView {
                 VStack(spacing: SnakesssSpacing.spacing8) {
                     // Roles section
-                    RulesSectionHeader(title: "THE ROLES", subtitle: "Who are you playing as?")
+                    RulesSectionHeader(
+                        title: String(localized: "rules.roles.section.label"),
+                        subtitle: String(localized: "rules.roles.subtitle")
+                    )
 
                     VStack(spacing: SnakesssSpacing.spacing3) {
                         ForEach([Role.human, .snake, .mongoose], id: \.self) { role in
@@ -30,15 +33,18 @@ struct RulesSheetView: View {
                         .accessibilityHidden(true)
 
                     // Round flow section
-                    RulesSectionHeader(title: "EACH ROUND", subtitle: "6 phases per round")
+                    RulesSectionHeader(
+                        title: String(localized: "rules.rounds.section.label"),
+                        subtitle: String(localized: "rules.rounds.subtitle")
+                    )
 
                     let phases: [(icon: String, title: String, description: String)] = [
-                        ("person.fill",            "Role Reveal",     "Each player secretly sees their role card."),
-                        ("questionmark.circle",    "Question",        "A trivia question is shown to everyone."),
-                        ("eye.slash.fill",         "Snake Reveal",    "Snakes secretly learn the correct answer."),
-                        ("timer",                  "Discussion",      "2 minutes to discuss and debate answers."),
-                        ("hand.point.up.left.fill","Voting",          "Each player votes for their chosen answer."),
-                        ("trophy.fill",            "Results",         "Votes, roles, and points are revealed."),
+                        ("person.fill",            String(localized: "phase.roleReveal.title"),   String(localized: "phase.roleReveal.description")),
+                        ("questionmark.circle",    String(localized: "phase.question.title"),     String(localized: "phase.question.description")),
+                        ("eye.slash.fill",         String(localized: "phase.snakeReveal.title"),  String(localized: "phase.snakeReveal.description")),
+                        ("timer",                  String(localized: "phase.discussion.title"),   String(localized: "phase.discussion.description")),
+                        ("hand.point.up.left.fill",String(localized: "phase.voting.title"),       String(localized: "phase.voting.description")),
+                        ("trophy.fill",            String(localized: "phase.results.title"),      String(localized: "phase.results.description")),
                     ]
 
                     VStack(spacing: 0) {
@@ -70,13 +76,16 @@ struct RulesSheetView: View {
                         .accessibilityHidden(true)
 
                     // Scoring section
-                    RulesSectionHeader(title: "SCORING", subtitle: "How to earn points")
+                    RulesSectionHeader(
+                        title: String(localized: "rules.scoring.section.label"),
+                        subtitle: String(localized: "rules.scoring.subtitle")
+                    )
 
                     let scoringRules: [(points: String, label: String, description: String, color: Color)] = [
-                        ("+4", "Correct Vote",   "Human or Mongoose votes the right answer.",       SnakesssTheme.truthGold),
-                        ("+1", "Snake Vote",     "Snakes automatically earn 1 point per round.",    SnakesssTheme.snakeColor),
-                        ("+2", "Mongoose Bonus", "Mongoose earns extra points for a correct vote.", SnakesssTheme.mongooseColor),
-                        ("+0", "Wrong Vote",     "No points for incorrect answers.",                SnakesssTheme.textMuted),
+                        ("+4", String(localized: "scoring.correctVote.label"),   String(localized: "scoring.correctVote.description"),   SnakesssTheme.truthGold),
+                        ("+1", String(localized: "scoring.snakeVote.label"),     String(localized: "scoring.snakeVote.description"),     SnakesssTheme.snakeColor),
+                        ("+2", String(localized: "scoring.mongooseBonus.label"), String(localized: "scoring.mongooseBonus.description"), SnakesssTheme.mongooseColor),
+                        ("+0", String(localized: "scoring.wrongVote.label"),     String(localized: "scoring.wrongVote.description"),     SnakesssTheme.textMuted),
                     ]
 
                     VStack(spacing: 0) {
@@ -105,19 +114,19 @@ struct RulesSheetView: View {
                         SnakesssHaptic.light()
                         dismiss()
                     } label: {
-                        Text("Got it!")
+                        Text("rules.gotIt.button")
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(SnakesssPrimaryButtonStyle())
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
                     .padding(.bottom, SnakesssSpacing.spacing12)
-                    .accessibilityLabel("Dismiss rules sheet")
+                    .accessibilityLabel(String(localized: "rules.dismiss.accessibility"))
                 }
                 .padding(.top, SnakesssSpacing.spacing6)
             }
             .scrollIndicators(.hidden)
             .background(SnakesssTheme.bgBase.ignoresSafeArea())
-            .navigationTitle("How to Play")
+            .navigationTitle(String(localized: "rules.title"))
             .navigationBarTitleDisplayMode(.large)
             .toolbarBackground(SnakesssTheme.bgBase, for: .navigationBar)
             .toolbarColorScheme(.dark, for: .navigationBar)
@@ -131,7 +140,7 @@ struct RulesSheetView: View {
                             .font(.system(size: 22))
                             .foregroundStyle(SnakesssTheme.textMuted)
                     }
-                    .accessibilityLabel("Close How to Play")
+                    .accessibilityLabel(String(localized: "rules.close.accessibility"))
                 }
             }
         }
@@ -165,9 +174,9 @@ private struct RulesRoleCard: View {
 
     private var description: String {
         switch role {
-        case .human:    return "You don't know the answer. Listen carefully, find clues, and vote for what you believe is correct."
-        case .snake:    return "You know the correct answer — but keep it secret! Mislead the group and vote snake to earn points."
-        case .mongoose: return "You don't know the answer, but your identity is public. You're a trusted ally helping humans find the truth."
+        case .human:    return String(localized: "role.human.description")
+        case .snake:    return String(localized: "role.snake.description")
+        case .mongoose: return String(localized: "role.mongoose.description")
         }
     }
 
