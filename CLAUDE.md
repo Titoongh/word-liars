@@ -75,9 +75,23 @@ setup → roleReveal(playerIndex) → mongooseAnnouncement → question
 
 ## Documentation
 All project documentation lives in `/docs/` at this repo's root:
-- `/docs/features/` — Feature documentation (how to use, files involved)
-- `/docs/postmortem/` — Post-mortem notes (bugs, root causes, prevention)
-- `/docs/architecture/` — Architecture decisions and diagrams
+
+### Feature Docs (`/docs/features/`)
+- `game-engine.md` — GameViewModel state machine, phase transitions, timer logic
+- `role-system.md` — RoleService, distribution table (4–8 players), RoleAssigning protocol
+- `question-system.md` — QuestionService loading, filtering, deduplication, bilingual routing
+- `scoring.md` — ScoringService round score calculation rules
+- `settings.md` — SettingsManager singleton, all preferences and defaults
+- `audio.md` — AudioService PCM synthesis, sound effects, background music
+- `onboarding.md` — 4-page tutorial flow, completion gating, RulesSheetView
+- `localization.md` — French/English support, String Catalog, language switching
+
+### Architecture (`/docs/architecture/`)
+- `overview.md` — MVVM layers, service descriptions, data flow, persistence
+
+### Post-mortems (`/docs/postmortem/`)
+(Added after story reviews)
+
 Keep this section up to date when adding new docs.
 
 ## MAESTRO Context
