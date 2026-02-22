@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "en_001",
+    "question": "What element has the chemical symbol 'Au'?",
+    "choices": { "a": "Gold", "b": "Silver", "c": "Copper" },
+    "answer": "A",
+    "funFact": "Gold's symbol comes from the Latin word 'aurum'. It has been prized for thousands of years and never tarnishes.",
+    "category": "Science"
+  },
+  {
+    "id": "en_002",
+    "question": "How many bones does an adult human body have?",
+    "choices": { "a": "206", "b": "300", "c": "186" },
+    "answer": "A",
+    "funFact": "Babies are born with about 270 bones, which gradually fuse. Adults end up with exactly 206.",
+    "category": "Science"
+  },
+  {
+    "id": "en_003",
+    "question": "What is the speed of light in a vacuum?",
+    "choices": { "a": "300,000 km/s", "b": "30,000 km/s", "c": "3,000 km/s" },
+    "answer": "A",
+    "funFact": "Light travels so fast it could circle Earth about 7.5 times in just one second.",
+    "category": "Science"
+  },
+  {
+    "id": "en_004",
+    "question": "Which planet has the most moons in our solar system?",
+    "choices": { "a": "Jupiter", "b": "Saturn", "c": "Uranus" },
+    "answer": "B",
+    "funFact": "Saturn has over 146 confirmed moons — overtaking Jupiter in 2023. Many are tiny captured asteroids.",
+    "category": "Science"
+  },
+  {
+    "id": "en_005",
+    "question": "What gas do plants absorb during photosynthesis?",
+    "choices": { "a": "Oxygen", "b": "Carbon dioxide", "c": "Nitrogen" },
+    "answer": "B",
+    "funFact": "Plants absorb CO₂ and release oxygen as a byproduct. A single tree can absorb up to 48 pounds of CO₂ per year.",
+    "category": "Science"
+  },
+  {
+    "id": "en_006",
+    "question": "What is the hardest natural substance on Earth?",
+    "choices": { "a": "Quartz", "b": "Corundum", "c": "Diamond" },
+    "answer": "C",
+    "funFact": "Diamond scores 10 on the Mohs hardness scale — the only thing that can scratch a diamond is another diamond.",
+    "category": "Science"
+  },
+  {
+    "id": "en_007",
+    "question": "How many chromosomes do humans have in each cell?",
+    "choices": { "a": "46", "b": "23", "c": "48" },
+    "answer": "A",
+    "funFact": "Humans have 23 pairs of chromosomes (46 total). Chimpanzees actually have 24 pairs — one more than us!",
+    "category": "Science"
+  },
+  {
+    "id": "en_008",
+    "question": "Which is the nearest star to Earth besides the Sun?",
+    "choices": { "a": "Sirius", "b": "Betelgeuse", "c": "Proxima Centauri" },
+    "answer": "C",
+    "funFact": "Proxima Centauri is 4.24 light-years away. Travelling at the speed of light, it would still take over 4 years to arrive.",
+    "category": "Science"
+  },
+  {
+    "id": "en_009",
+    "question": "Which organ in the human body produces insulin?",
+    "choices": { "a": "Liver", "b": "Kidneys", "c": "Pancreas" },
+    "answer": "C",
+    "funFact": "The pancreas regulates blood sugar by producing insulin. Type 1 diabetes occurs when it stops making insulin entirely.",
+    "category": "Science"
+  },
+  {
+    "id": "en_010",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "choices": { "a": "Oxygen", "b": "Nitrogen", "c": "Carbon dioxide" },
+    "answer": "B",
+    "funFact": "Nitrogen makes up about 78% of the atmosphere. Oxygen is second at 21%. CO₂ is less than 0.05%.",
+    "category": "Science"
+  },
+  {
+    "id": "en_011",
+    "question": "How long does it take Earth to orbit the Sun?",
+    "choices": { "a": "365.25 days", "b": "354 days", "c": "400 days" },
+    "answer": "A",
+    "funFact": "The extra 0.25 day is why we add a leap day every 4 years — otherwise our calendar would drift out of sync with the seasons.",
+    "category": "Science"
+  },
+  {
+    "id": "en_012",
+    "question": "What is the most common blood type worldwide?",
+    "choices": { "a": "Type A", "b": "Type O", "c": "Type AB" },
+    "answer": "B",
+    "funFact": "Type O positive is the most common blood type worldwide. Type O negative is the universal donor for red blood cells.",
+    "category": "Science"
+  },
+  {
+    "id": "en_013",
+    "question": "Which blood type is considered the universal donor?",
+    "choices": { "a": "O negative", "b": "AB positive", "c": "O positive" },
+    "answer": "A",
+    "funFact": "O negative red blood cells can be given to anyone regardless of blood type — making it precious in emergencies.",
+    "category": "Science"
+  },
+  {
+    "id": "en_014",
+    "question": "What is the powerhouse of the cell?",
+    "choices": { "a": "Nucleus", "b": "Ribosome", "c": "Mitochondria" },
+    "answer": "C",
+    "funFact": "Mitochondria produce ATP, the molecule that powers almost every function in your cells. They have their own DNA.",
+    "category": "Science"
+  },
+  {
+    "id": "en_015",
+    "question": "What does DNA stand for?",
+    "choices": { "a": "Deoxyribonucleic acid", "b": "Diribonucleic acid", "c": "Dynamic nucleic acid" },
+    "answer": "A",
+    "funFact": "Each human cell contains about 2 meters of DNA — coiled and packed into a nucleus just 6 micrometres wide.",
+    "category": "Science"
+  },
+  {
+    "id": "en_016",
+    "question": "Who developed the theory of relativity?",
+    "choices": { "a": "Isaac Newton", "b": "Albert Einstein", "c": "Niels Bohr" },
+    "answer": "B",
+    "funFact": "Einstein's theory of relativity changed our understanding of space, time, and gravity — and led to the famous equation E=mc².",
+    "category": "Science"
+  },
+  {
+    "id": "en_017",
+    "question": "On which planet does a day last longer than its year?",
+    "choices": { "a": "Mars", "b": "Mercury", "c": "Venus" },
+    "answer": "C",
+    "funFact": "Venus rotates so slowly that a day there lasts 243 Earth days, while its year is only 225 Earth days.",
+    "category": "Science"
+  },
+  {
+    "id": "en_018",
+    "question": "Which of the Seven Wonders of the Ancient World still stands today?",
+    "choices": { "a": "The Hanging Gardens of Babylon", "b": "The Colossus of Rhodes", "c": "The Great Pyramid of Giza" },
+    "answer": "C",
+    "funFact": "The Great Pyramid of Giza is the only ancient wonder still intact — built around 2560 BCE, it stood as the tallest structure for 3,800 years.",
+    "category": "History"
+  },
+  {
+    "id": "en_019",
+    "question": "In what year did World War II end?",
+    "choices": { "a": "1944", "b": "1945", "c": "1946" },
+    "answer": "B",
+    "funFact": "World War II ended in 1945 — in Europe on May 8 (V-E Day) and in the Pacific on September 2 (V-J Day).",
+    "category": "History"
+  },
+  {
+    "id": "en_020",
+    "question": "Who was the first person to walk on the Moon?",
+    "choices": { "a": "Buzz Aldrin", "b": "Neil Armstrong", "c": "Yuri Gagarin" },
+    "answer": "B",
+    "funFact": "Neil Armstrong took his first steps on July 20, 1969, saying: 'That's one small step for man, one giant leap for mankind.'",
+    "category": "History"
+  },
+  {
+    "id": "en_021",
+    "question": "Which ancient civilization built Machu Picchu?",
+    "choices": { "a": "Aztec", "b": "Maya", "c": "Inca" },
+    "answer": "C",
+    "funFact": "Machu Picchu was built in the 15th century by the Inca emperor Pachacuti. It was abandoned and unknown to outsiders until 1911.",
+    "category": "History"
+  },
+  {
+    "id": "en_022",
+    "question": "Who painted the Mona Lisa?",
+    "choices": { "a": "Michelangelo", "b": "Raphael", "c": "Leonardo da Vinci" },
+    "answer": "C",
+    "funFact": "Leonardo painted the Mona Lisa between 1503 and 1519. It now hangs in the Louvre, Paris, behind bulletproof glass.",
+    "category": "History"
+  },
+  {
+    "id": "en_023",
+    "question": "In what year did the Berlin Wall fall?",
+    "choices": { "a": "1987", "b": "1989", "c": "1991" },
+    "answer": "B",
+    "funFact": "The Berlin Wall fell on November 9, 1989, after East Germany opened its borders following massive public protests.",
+    "category": "History"
+  },
+  {
+    "id": "en_024",
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "choices": { "a": "Marie Curie", "b": "Bertha von Suttner", "c": "Dorothy Hodgkin" },
+    "answer": "A",
+    "funFact": "Marie Curie won the Nobel Prize in Physics in 1903, then Chemistry in 1911 — the only person to win in two scientific fields.",
+    "category": "History"
+  },
+  {
+    "id": "en_025",
+    "question": "Who is credited as the principal author of the US Declaration of Independence?",
+    "choices": { "a": "George Washington", "b": "Benjamin Franklin", "c": "Thomas Jefferson" },
+    "answer": "C",
+    "funFact": "Thomas Jefferson was the principal author. Franklin and Adams also contributed, but Jefferson wrote the famous first draft.",
+    "category": "History"
+  },
+  {
+    "id": "en_026",
+    "question": "The Hundred Years' War was fought between which two countries?",
+    "choices": { "a": "England and Spain", "b": "England and France", "c": "France and Germany" },
+    "answer": "B",
+    "funFact": "The Hundred Years' War actually lasted 116 years (1337–1453). It featured Joan of Arc as a key French leader.",
+    "category": "History"
+  },
+  {
+    "id": "en_027",
+    "question": "In what year did the Titanic sink?",
+    "choices": { "a": "1912", "b": "1909", "c": "1915" },
+    "answer": "A",
+    "funFact": "The Titanic struck an iceberg on April 14, 1912, and sank in under 3 hours. About 1,500 lives were lost.",
+    "category": "History"
+  },
+  {
+    "id": "en_028",
+    "question": "Who was Napoleon Bonaparte's first wife?",
+    "choices": { "a": "Marie-Louise", "b": "Joséphine", "c": "Catherine the Great" },
+    "answer": "B",
+    "funFact": "Joséphine de Beauharnais married Napoleon in 1796. He later divorced her in 1809 because she had produced no heir.",
+    "category": "History"
+  },
+  {
+    "id": "en_029",
+    "question": "Which country was first to grant women the right to vote?",
+    "choices": { "a": "USA", "b": "New Zealand", "c": "United Kingdom" },
+    "answer": "B",
+    "funFact": "New Zealand granted women the right to vote in 1893, making it the first self-governing country in the world to do so.",
+    "category": "History"
+  },
+  {
+    "id": "en_030",
+    "question": "In what year did the French Revolution begin?",
+    "choices": { "a": "1789", "b": "1776", "c": "1799" },
+    "answer": "A",
+    "funFact": "The French Revolution began in 1789 with the storming of the Bastille on July 14 — now celebrated as Bastille Day in France.",
+    "category": "History"
+  },
+  {
+    "id": "en_031",
+    "question": "Who was the first Roman Emperor?",
+    "choices": { "a": "Julius Caesar", "b": "Augustus", "c": "Nero" },
+    "answer": "B",
+    "funFact": "Augustus (Octavian) became the first Roman Emperor in 27 BCE after defeating Mark Antony and Cleopatra.",
+    "category": "History"
+  },
+  {
+    "id": "en_032",
+    "question": "Which civilization developed the world's first known writing system?",
+    "choices": { "a": "Ancient Egypt", "b": "Sumerian civilization", "c": "Ancient China" },
+    "answer": "B",
+    "funFact": "The Sumerians of ancient Mesopotamia (modern Iraq) developed cuneiform writing around 3200–3000 BCE.",
+    "category": "History"
+  },
+  {
+    "id": "en_033",
+    "question": "What was the first artificial satellite launched into space?",
+    "choices": { "a": "Explorer 1", "b": "Vostok", "c": "Sputnik 1" },
+    "answer": "C",
+    "funFact": "Sputnik 1 was launched by the Soviet Union on October 4, 1957, kick-starting the Space Age and the space race.",
+    "category": "History"
+  },
+  {
+    "id": "en_034",
+    "question": "In which battle was Napoleon Bonaparte finally defeated in 1815?",
+    "choices": { "a": "Battle of Austerlitz", "b": "Battle of Waterloo", "c": "Battle of Trafalgar" },
+    "answer": "B",
+    "funFact": "Napoleon's defeat at Waterloo ended his rule. The phrase 'meeting your Waterloo' now means facing a decisive defeat.",
+    "category": "History"
+  },
+  {
+    "id": "en_035",
+    "question": "What is the capital of Australia?",
+    "choices": { "a": "Sydney", "b": "Melbourne", "c": "Canberra" },
+    "answer": "C",
+    "funFact": "Many assume Sydney is the capital, but Canberra was chosen as a compromise between Sydney and Melbourne in 1908.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_036",
+    "question": "Which is the longest river in the world?",
+    "choices": { "a": "Amazon", "b": "Nile", "c": "Yangtze" },
+    "answer": "B",
+    "funFact": "The Nile stretches about 6,650 km through northeastern Africa. The Amazon rivals it in length but wins for water volume.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_037",
+    "question": "How many countries are there in Africa?",
+    "choices": { "a": "54", "b": "48", "c": "62" },
+    "answer": "A",
+    "funFact": "Africa has 54 recognized countries — the most of any continent. Nigeria is the most populous with over 200 million people.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_038",
+    "question": "What is the smallest country in the world by area?",
+    "choices": { "a": "Monaco", "b": "Vatican City", "c": "San Marino" },
+    "answer": "B",
+    "funFact": "Vatican City covers just 0.44 km² inside Rome. It has its own postal service, radio station, and railway.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_039",
+    "question": "Which country has the most natural lakes?",
+    "choices": { "a": "Russia", "b": "USA", "c": "Canada" },
+    "answer": "C",
+    "funFact": "Canada has over 60% of the world's fresh water lakes — more than any other country on Earth.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_040",
+    "question": "In which ocean is the Mariana Trench located?",
+    "choices": { "a": "Atlantic", "b": "Pacific", "c": "Indian" },
+    "answer": "B",
+    "funFact": "The Mariana Trench reaches a depth of about 11 km — deeper than Mount Everest is tall. It's the deepest point on Earth.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_041",
+    "question": "What is the capital of Canada?",
+    "choices": { "a": "Toronto", "b": "Ottawa", "c": "Montreal" },
+    "answer": "B",
+    "funFact": "Ottawa has been Canada's capital since 1857 — chosen by Queen Victoria partly for its defensive location.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_042",
+    "question": "Which country has the longest coastline in the world?",
+    "choices": { "a": "Norway", "b": "Russia", "c": "Canada" },
+    "answer": "C",
+    "funFact": "Canada's coastline stretches over 202,000 km — more than any other country. It borders three oceans.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_043",
+    "question": "What is the largest continent by area?",
+    "choices": { "a": "Africa", "b": "Asia", "c": "North America" },
+    "answer": "B",
+    "funFact": "Asia covers about 44.6 million km² — nearly 30% of Earth's land surface and home to 60% of the world's population.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_044",
+    "question": "What is the capital of Brazil?",
+    "choices": { "a": "Rio de Janeiro", "b": "São Paulo", "c": "Brasília" },
+    "answer": "C",
+    "funFact": "Brasília replaced Rio de Janeiro as Brazil's capital in 1960 — it was purpose-built from scratch in just 41 months.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_045",
+    "question": "Which country owns the Canary Islands?",
+    "choices": { "a": "Portugal", "b": "Morocco", "c": "Spain" },
+    "answer": "C",
+    "funFact": "Despite being closer to Africa, the Canary Islands are an autonomous community of Spain. They were named after dogs (canis).",
+    "category": "Geography"
+  },
+  {
+    "id": "en_046",
+    "question": "Which desert is the largest in the world by area?",
+    "choices": { "a": "Sahara", "b": "Gobi", "c": "Antarctic Desert" },
+    "answer": "C",
+    "funFact": "Antarctica is technically the world's largest desert (14.2 million km²). The Sahara is the largest hot desert.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_047",
+    "question": "In which country is Machu Picchu located?",
+    "choices": { "a": "Bolivia", "b": "Colombia", "c": "Peru" },
+    "answer": "C",
+    "funFact": "Machu Picchu sits at 2,430 meters in the Peruvian Andes. American historian Hiram Bingham brought it to global attention in 1911.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_048",
+    "question": "What is the official language of Brazil?",
+    "choices": { "a": "Spanish", "b": "Portuguese", "c": "English" },
+    "answer": "B",
+    "funFact": "Brazil is the world's largest Portuguese-speaking country. Almost every other South American nation speaks Spanish.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_049",
+    "question": "What is the capital of Japan?",
+    "choices": { "a": "Kyoto", "b": "Osaka", "c": "Tokyo" },
+    "answer": "C",
+    "funFact": "Tokyo became Japan's capital in 1869. Its metropolitan area has over 37 million people — the world's most populous urban area.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_050",
+    "question": "Which mountain range contains Mount Everest?",
+    "choices": { "a": "Andes", "b": "Himalayas", "c": "Alps" },
+    "answer": "B",
+    "funFact": "The Himalayas span five countries and contain all 14 of the world's 8,000-metre-plus peaks.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_051",
+    "question": "What is the nickname of New York City?",
+    "choices": { "a": "The Windy City", "b": "The Big Apple", "c": "The City of Angels" },
+    "answer": "B",
+    "funFact": "New York has been called 'The Big Apple' since the 1920s. 'The Windy City' is Chicago; 'City of Angels' is Los Angeles.",
+    "category": "Geography"
+  },
+  {
+    "id": "en_052",
+    "question": "What is the fastest land animal?",
+    "choices": { "a": "Lion", "b": "Cheetah", "c": "Ostrich" },
+    "answer": "B",
+    "funFact": "Cheetahs can accelerate from 0 to 100 km/h in about 3 seconds — faster than most sports cars.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_053",
+    "question": "How many hearts does an octopus have?",
+    "choices": { "a": "1", "b": "2", "c": "3" },
+    "answer": "C",
+    "funFact": "An octopus has 3 hearts: two pump blood to the gills, one to the body. Its blood is blue due to copper-based haemocyanin.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_054",
+    "question": "What is the largest land animal on Earth?",
+    "choices": { "a": "Hippopotamus", "b": "White rhino", "c": "African elephant" },
+    "answer": "C",
+    "funFact": "African elephants can weigh up to 7 tonnes. Their trunks contain over 40,000 muscles and no bones.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_055",
+    "question": "Which animal has the best sense of smell of any land animal?",
+    "choices": { "a": "Dog", "b": "Bear", "c": "Bloodhound" },
+    "answer": "B",
+    "funFact": "Bears have up to 2,100 times better sense of smell than humans — about 7 times more sensitive than a bloodhound.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_056",
+    "question": "What is the only mammal capable of true, sustained flight?",
+    "choices": { "a": "Flying squirrel", "b": "Bat", "c": "Sugar glider" },
+    "answer": "B",
+    "funFact": "Flying squirrels and sugar gliders only glide. Bats are the sole mammals with wings for powered flight.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_057",
+    "question": "How many legs does a spider have?",
+    "choices": { "a": "6", "b": "8", "c": "10" },
+    "answer": "B",
+    "funFact": "Spiders have 8 legs, which distinguishes them from insects (6 legs). They're arachnids, not insects.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_058",
+    "question": "What is the tallest living animal?",
+    "choices": { "a": "Elephant", "b": "Giraffe", "c": "Ostrich" },
+    "answer": "B",
+    "funFact": "Giraffes can grow up to 6 metres tall. Their hearts weigh about 11 kg to pump blood 3 metres up to the brain.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_059",
+    "question": "Approximately what percentage of Earth's oceans have been explored?",
+    "choices": { "a": "About 20%", "b": "About 50%", "c": "About 80%" },
+    "answer": "A",
+    "funFact": "We know more about the surface of Mars than the ocean floor. About 80% of Earth's oceans remain unmapped.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_060",
+    "question": "How many eyes does a bee have?",
+    "choices": { "a": "2", "b": "3", "c": "5" },
+    "answer": "C",
+    "funFact": "Bees have 5 eyes: 2 large compound eyes for detecting movement and colour, and 3 simple eyes (ocelli) for light detection.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_061",
+    "question": "Which is the world's largest reptile?",
+    "choices": { "a": "Nile crocodile", "b": "Saltwater crocodile", "c": "Komodo dragon" },
+    "answer": "B",
+    "funFact": "Saltwater crocodiles can exceed 6 metres in length and weigh over 1,000 kg. They're found across Southeast Asia and northern Australia.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_062",
+    "question": "What is the world's smallest bird?",
+    "choices": { "a": "Bee hummingbird", "b": "Goldcrest", "c": "Pygmy nuthatch" },
+    "answer": "A",
+    "funFact": "The bee hummingbird of Cuba is just 5–6 cm long and weighs about 2 grams — lighter than a coin.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_063",
+    "question": "How long does it typically take a plastic bottle to decompose?",
+    "choices": { "a": "100 years", "b": "450 years", "c": "50 years" },
+    "answer": "B",
+    "funFact": "Plastic bottles can take 450+ years to fully break down, which is why plastic pollution is such a persistent global issue.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_064",
+    "question": "Which tree species includes the world's oldest known individual living organism?",
+    "choices": { "a": "Giant Sequoia", "b": "Olive tree", "c": "Bristlecone pine" },
+    "answer": "C",
+    "funFact": "Methuselah, a bristlecone pine in California, is about 5,000 years old — making it the world's oldest known living tree.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_065",
+    "question": "What percentage of Earth's surface is covered by water?",
+    "choices": { "a": "50%", "b": "71%", "c": "90%" },
+    "answer": "B",
+    "funFact": "Earth is about 71% water — but only 3% of that is fresh water, and most of that is locked in ice.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_066",
+    "question": "Which is the world's largest mammal?",
+    "choices": { "a": "African elephant", "b": "Hippopotamus", "c": "Blue whale" },
+    "answer": "C",
+    "funFact": "Blue whales are the largest animals ever known to have existed — reaching 30 metres and 200 tonnes.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_067",
+    "question": "What is the national animal of Scotland?",
+    "choices": { "a": "Red deer", "b": "Golden eagle", "c": "Unicorn" },
+    "answer": "C",
+    "funFact": "The unicorn has been Scotland's national animal since the 12th century — symbolising purity, power, and independence.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_068",
+    "question": "Which bird is known for its ability to mimic human speech most accurately?",
+    "choices": { "a": "Mynah bird", "b": "Parrot", "c": "African grey parrot" },
+    "answer": "C",
+    "funFact": "African grey parrots have cognitive abilities similar to a 5-year-old child and can learn hundreds of words.",
+    "category": "Nature"
+  },
+  {
+    "id": "en_069",
+    "question": "How many players from each team are on a basketball court at a time?",
+    "choices": { "a": "5", "b": "6", "c": "7" },
+    "answer": "A",
+    "funFact": "Five players per team are on the court in basketball. NBA teams can have up to 15 players on their roster.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_070",
+    "question": "In which city were the first modern Olympic Games held?",
+    "choices": { "a": "Paris", "b": "Athens", "c": "London" },
+    "answer": "B",
+    "funFact": "The first modern Olympics were held in Athens, Greece in 1896 — 1,503 years after the ancient Olympics were last held.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_071",
+    "question": "What does 'love' mean in tennis scoring?",
+    "choices": { "a": "30 points", "b": "0 points", "c": "15 points" },
+    "answer": "B",
+    "funFact": "The word 'love' for zero may come from the French 'l'œuf' (egg), because a zero looks like an egg.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_072",
+    "question": "How many times has Brazil won the FIFA World Cup?",
+    "choices": { "a": "3", "b": "4", "c": "5" },
+    "answer": "C",
+    "funFact": "Brazil won in 1958, 1962, 1970, 1994, and 2002 — making them the most successful World Cup team in history.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_073",
+    "question": "How many rings are on the Olympic flag?",
+    "choices": { "a": "4", "b": "5", "c": "6" },
+    "answer": "B",
+    "funFact": "The five rings represent the five inhabited continents. At least one of the six flag colors appears in every national flag.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_074",
+    "question": "What is the maximum score possible in a single dart turn (3 throws)?",
+    "choices": { "a": "60", "b": "100", "c": "180" },
+    "answer": "C",
+    "funFact": "Three triple-20s scores the maximum 180. Professional players call this a 'maximum' — it's extremely rare.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_075",
+    "question": "How many holes are in a standard round of golf?",
+    "choices": { "a": "9", "b": "18", "c": "16" },
+    "answer": "B",
+    "funFact": "An 18-hole round became standard when St Andrews reduced its course from 22 holes in 1764.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_076",
+    "question": "Who is credited with coining the phrase 'the beautiful game'?",
+    "choices": { "a": "Franz Beckenbauer", "b": "Johan Cruyff", "c": "Pelé" },
+    "answer": "C",
+    "funFact": "Pelé, the Brazilian legend who won three World Cups, popularised calling football 'the beautiful game'.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_077",
+    "question": "In which country was the martial art of judo invented?",
+    "choices": { "a": "China", "b": "Korea", "c": "Japan" },
+    "answer": "C",
+    "funFact": "Judo was created by Jigoro Kano in Japan in 1882. It became an Olympic sport at the 1964 Tokyo Games.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_078",
+    "question": "How many points is a touchdown worth in American football?",
+    "choices": { "a": "6", "b": "7", "c": "3" },
+    "answer": "A",
+    "funFact": "A touchdown is 6 points. Teams can then attempt a 1-point conversion kick or a 2-point conversion play.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_079",
+    "question": "What is the highest possible break in snooker?",
+    "choices": { "a": "144", "b": "147", "c": "155" },
+    "answer": "B",
+    "funFact": "A maximum break of 147 means potting all 15 reds with blacks, then all the colours. It's called a 'maximum'.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_080",
+    "question": "In what year were women first allowed to compete in the Olympics?",
+    "choices": { "a": "1900", "b": "1920", "c": "1948" },
+    "answer": "A",
+    "funFact": "Women first competed at the 1900 Paris Games, in tennis and golf. They were absent from the first 1896 Games.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_081",
+    "question": "What sport uses a 'puck'?",
+    "choices": { "a": "Field hockey", "b": "Lacrosse", "c": "Ice hockey" },
+    "answer": "C",
+    "funFact": "Ice hockey's rubber puck measures 3 inches in diameter and weighs 6 ounces. Pucks are frozen before games to reduce bouncing.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_082",
+    "question": "Which country hosted the 2012 Summer Olympics?",
+    "choices": { "a": "USA", "b": "France", "c": "United Kingdom" },
+    "answer": "C",
+    "funFact": "The 2012 Summer Olympics were held in London — the first city to host the modern Olympics three times (1908, 1948, 2012).",
+    "category": "Sports"
+  },
+  {
+    "id": "en_083",
+    "question": "What does a 'hat-trick' mean in cricket?",
+    "choices": { "a": "Scoring 100 runs", "b": "Three wickets in three consecutive balls", "c": "Catching three catches" },
+    "answer": "B",
+    "funFact": "A hat-trick in cricket means three wickets with three consecutive deliveries — extremely rare and highly celebrated.",
+    "category": "Sports"
+  },
+  {
+    "id": "en_084",
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "choices": { "a": "Charles Dickens", "b": "William Shakespeare", "c": "Jane Austen" },
+    "answer": "B",
+    "funFact": "Shakespeare wrote Romeo and Juliet around 1594–96. It remains one of the most performed plays in the world.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_085",
+    "question": "Which artist famously cut off part of his own ear?",
+    "choices": { "a": "Pablo Picasso", "b": "Vincent van Gogh", "c": "Salvador Dalí" },
+    "answer": "B",
+    "funFact": "Van Gogh cut off part of his left ear in December 1888 during a mental health episode in Arles, France.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_086",
+    "question": "Who directed the film 'Jurassic Park' (1993)?",
+    "choices": { "a": "James Cameron", "b": "George Lucas", "c": "Steven Spielberg" },
+    "answer": "C",
+    "funFact": "Spielberg's Jurassic Park used groundbreaking CGI that revolutionised filmmaking. The dinosaur roar is a blend of animal sounds.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_087",
+    "question": "Who wrote the 'Harry Potter' series?",
+    "choices": { "a": "Roald Dahl", "b": "J.K. Rowling", "c": "Stephenie Meyer" },
+    "answer": "B",
+    "funFact": "J.K. Rowling wrote Harry Potter while a single mother in Edinburgh. The manuscript was rejected by 12 publishers.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_088",
+    "question": "Who composed 'Für Elise'?",
+    "choices": { "a": "Wolfgang Amadeus Mozart", "b": "Johann Sebastian Bach", "c": "Ludwig van Beethoven" },
+    "answer": "C",
+    "funFact": "Beethoven composed Für Elise in 1810, though it wasn't published until 40 years after his death.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_089",
+    "question": "Which band performed 'Bohemian Rhapsody'?",
+    "choices": { "a": "The Beatles", "b": "Led Zeppelin", "c": "Queen" },
+    "answer": "C",
+    "funFact": "Queen's Bohemian Rhapsody (1975) features six distinct sections. It's been named the greatest song of all time by multiple polls.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_090",
+    "question": "Who painted the Sistine Chapel ceiling?",
+    "choices": { "a": "Leonardo da Vinci", "b": "Raphael", "c": "Michelangelo" },
+    "answer": "C",
+    "funFact": "Michelangelo painted the Sistine Chapel ceiling between 1508 and 1512, working on scaffolding while looking upward.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_091",
+    "question": "Which novel opens with the line 'Call me Ishmael'?",
+    "choices": { "a": "The Old Man and the Sea", "b": "Robinson Crusoe", "c": "Moby-Dick" },
+    "answer": "C",
+    "funFact": "Moby-Dick by Herman Melville (1851) has one of the most famous opening lines in literature. Melville dedicated it to Nathaniel Hawthorne.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_092",
+    "question": "Who sang the 1982 hit 'Thriller'?",
+    "choices": { "a": "Prince", "b": "Michael Jackson", "c": "Stevie Wonder" },
+    "answer": "B",
+    "funFact": "Michael Jackson's Thriller is the best-selling album of all time with over 70 million copies sold worldwide.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_093",
+    "question": "In which country is the fashion house Gucci based?",
+    "choices": { "a": "France", "b": "Spain", "c": "Italy" },
+    "answer": "C",
+    "funFact": "Gucci was founded in Florence, Italy in 1921 by Guccio Gucci. It's now one of the world's most valuable luxury brands.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_094",
+    "question": "Who painted 'The Starry Night'?",
+    "choices": { "a": "Claude Monet", "b": "Vincent van Gogh", "c": "Paul Gauguin" },
+    "answer": "B",
+    "funFact": "Van Gogh painted The Starry Night in 1889 while staying at the Saint-Paul-de-Mausole asylum in southern France.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_095",
+    "question": "Which country has the most UNESCO World Heritage Sites?",
+    "choices": { "a": "France", "b": "China", "c": "Italy" },
+    "answer": "C",
+    "funFact": "Italy leads the list of UNESCO World Heritage Sites — from the Colosseum to Pompeii to the Amalfi Coast.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_096",
+    "question": "Who created the character of Sherlock Holmes?",
+    "choices": { "a": "Agatha Christie", "b": "Edgar Allan Poe", "c": "Arthur Conan Doyle" },
+    "answer": "C",
+    "funFact": "Arthur Conan Doyle first published Sherlock Holmes in 1887. The detective has appeared in over 200 film and TV adaptations.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_097",
+    "question": "What is considered the best-selling novel of all time (excluding religious texts)?",
+    "choices": { "a": "Don Quixote", "b": "A Tale of Two Cities", "c": "The Lord of the Rings" },
+    "answer": "A",
+    "funFact": "Don Quixote by Cervantes (1605) has sold an estimated 500 million copies. It's often called the first modern novel.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_098",
+    "question": "What nationality was Pablo Picasso?",
+    "choices": { "a": "French", "b": "Spanish", "c": "Italian" },
+    "answer": "B",
+    "funFact": "Picasso was born in Málaga, Spain in 1881. He spent most of his adult life in France and co-founded Cubism.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_099",
+    "question": "In which city is the Louvre Museum located?",
+    "choices": { "a": "London", "b": "Paris", "c": "Rome" },
+    "answer": "B",
+    "funFact": "The Louvre in Paris is the world's most visited art museum, welcoming around 9 million visitors a year.",
+    "category": "Culture"
+  },
+  {
+    "id": "en_100",
+    "question": "What is the main ingredient in guacamole?",
+    "choices": { "a": "Tomato", "b": "Avocado", "c": "Jalapeño" },
+    "answer": "B",
+    "funFact": "The word 'guacamole' comes from Aztec Nahuatl meaning 'avocado sauce'. Avocados ripen only after they're picked.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_101",
+    "question": "Which country invented champagne?",
+    "choices": { "a": "Italy", "b": "Germany", "c": "France" },
+    "answer": "C",
+    "funFact": "Champagne must legally come from the Champagne region of France. Sparkling wine from elsewhere cannot be called champagne.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_102",
+    "question": "What is the most expensive spice in the world by weight?",
+    "choices": { "a": "Vanilla", "b": "Saffron", "c": "Cardamom" },
+    "answer": "B",
+    "funFact": "Saffron costs up to $5,000 per kg. Each crocus flower produces only 3 stigmas, all of which must be hand-picked.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_103",
+    "question": "Which country is the world's largest producer of coffee?",
+    "choices": { "a": "Vietnam", "b": "Colombia", "c": "Brazil" },
+    "answer": "C",
+    "funFact": "Brazil has been the world's top coffee producer for over 150 years, growing about a third of the global supply.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_104",
+    "question": "What is currently recognised as the world's hottest chili pepper?",
+    "choices": { "a": "Habanero", "b": "Carolina Reaper", "c": "Ghost pepper" },
+    "answer": "B",
+    "funFact": "The Carolina Reaper averages over 1.6 million Scoville Heat Units. A jalapeño, by comparison, is about 5,000 SHU.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_105",
+    "question": "Where was pizza originally invented?",
+    "choices": { "a": "Rome", "b": "Milan", "c": "Naples" },
+    "answer": "C",
+    "funFact": "Pizza originates from Naples in the 18th century. The classic Margherita was named after Queen Margherita of Savoy in 1889.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_106",
+    "question": "What alcoholic beverage is made by fermenting honey with water?",
+    "choices": { "a": "Mead", "b": "Sake", "c": "Cider" },
+    "answer": "A",
+    "funFact": "Mead is one of the oldest known alcoholic beverages, dating back over 9,000 years. It's often called 'honey wine'.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_107",
+    "question": "Which is the most consumed beverage in the world after water?",
+    "choices": { "a": "Coffee", "b": "Beer", "c": "Tea" },
+    "answer": "C",
+    "funFact": "Tea is the second most consumed beverage after water. Over 3 billion cups are consumed globally every single day.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_108",
+    "question": "In which country did ramen noodles originate?",
+    "choices": { "a": "Japan", "b": "Korea", "c": "China" },
+    "answer": "C",
+    "funFact": "Ramen originated in China and was introduced to Japan in the early 20th century. Japan now has hundreds of regional ramen styles.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_109",
+    "question": "Where did the croissant originally come from?",
+    "choices": { "a": "France", "b": "Austria", "c": "Germany" },
+    "answer": "B",
+    "funFact": "The croissant evolved from the Austrian Kipferl. It was brought to France in the 1830s and became a Parisian breakfast icon.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_110",
+    "question": "How many teaspoons are in a tablespoon?",
+    "choices": { "a": "2", "b": "3", "c": "4" },
+    "answer": "B",
+    "funFact": "One tablespoon equals exactly 3 teaspoons — a handy kitchen conversion used in both US and UK measurements.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_111",
+    "question": "Which fruit is technically a berry, botanically speaking?",
+    "choices": { "a": "Strawberry", "b": "Banana", "c": "Raspberry" },
+    "answer": "B",
+    "funFact": "Bananas, grapes, and tomatoes are all botanical berries. Strawberries and raspberries are technically 'aggregate fruits'.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_112",
+    "question": "Which fruit floats on water because it is about 25% air?",
+    "choices": { "a": "Apple", "b": "Pear", "c": "Orange" },
+    "answer": "A",
+    "funFact": "Apples are about 25% air by volume, which is why they float — and why bobbing for apples works!",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_113",
+    "question": "What is the most consumed meat in the world?",
+    "choices": { "a": "Chicken", "b": "Pork", "c": "Beef" },
+    "answer": "B",
+    "funFact": "Pork is the most widely consumed meat globally, eaten by about 36% of the world's population.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_114",
+    "question": "Which country is the world's largest producer of olive oil?",
+    "choices": { "a": "Italy", "b": "Greece", "c": "Spain" },
+    "answer": "C",
+    "funFact": "Spain produces about 45% of the world's olive oil. The Jaén province alone produces more oil than Greece.",
+    "category": "Food & Drink"
+  },
+  {
+    "id": "en_115",
+    "question": "What does 'WWW' stand for?",
+    "choices": { "a": "World Wide Web", "b": "Wide World Web", "c": "Worldwide Website" },
+    "answer": "A",
+    "funFact": "Tim Berners-Lee invented the World Wide Web in 1989 at CERN in Switzerland. He never patented it, keeping it free for all.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_116",
+    "question": "Which company created the Windows operating system?",
+    "choices": { "a": "Apple", "b": "IBM", "c": "Microsoft" },
+    "answer": "C",
+    "funFact": "Microsoft released its first version of Windows in 1985. Windows is now used on about 75% of desktop computers worldwide.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_117",
+    "question": "Who invented the World Wide Web?",
+    "choices": { "a": "Bill Gates", "b": "Steve Jobs", "c": "Tim Berners-Lee" },
+    "answer": "C",
+    "funFact": "Tim Berners-Lee proposed the WWW in 1989 to share information between scientists. He deliberately kept it open-source.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_118",
+    "question": "What does 'CPU' stand for?",
+    "choices": { "a": "Central Process Unit", "b": "Central Processing Unit", "c": "Computer Processor Unit" },
+    "answer": "B",
+    "funFact": "The CPU is the brain of a computer, executing instructions and processing data. Modern CPUs can perform billions of operations per second.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_119",
+    "question": "Which company created the Android operating system?",
+    "choices": { "a": "Apple", "b": "Samsung", "c": "Google" },
+    "answer": "C",
+    "funFact": "Google acquired Android Inc. in 2005 for about $50 million. Android is now the world's most widely used mobile operating system.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_120",
+    "question": "What programming language was created by Guido van Rossum?",
+    "choices": { "a": "Java", "b": "Ruby", "c": "Python" },
+    "answer": "C",
+    "funFact": "Guido van Rossum created Python in 1991 and named it after 'Monty Python's Flying Circus'. It's now one of the most popular languages.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_121",
+    "question": "How many bits are in a byte?",
+    "choices": { "a": "4", "b": "8", "c": "16" },
+    "answer": "B",
+    "funFact": "A byte is 8 bits, allowing it to represent 256 different values (2⁸). The word 'byte' was coined in 1956.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_122",
+    "question": "What was the first commercially successful video game?",
+    "choices": { "a": "Space Invaders", "b": "Pong", "c": "Tetris" },
+    "answer": "B",
+    "funFact": "Pong was released by Atari in 1972 and became the first commercially successful arcade game. Its simple paddle mechanic was revolutionary.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_123",
+    "question": "Who co-founded Apple alongside Steve Jobs?",
+    "choices": { "a": "Bill Gates", "b": "Paul Allen", "c": "Steve Wozniak" },
+    "answer": "C",
+    "funFact": "Steve Wozniak designed Apple's first computers. He and Jobs founded Apple in 1976, initially in Jobs's garage.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_124",
+    "question": "What does 'AI' stand for in technology?",
+    "choices": { "a": "Automated Intelligence", "b": "Artificial Intelligence", "c": "Advanced Integration" },
+    "answer": "B",
+    "funFact": "The term 'Artificial Intelligence' was coined in 1956 by John McCarthy. Today's AI powers everything from search engines to medical diagnosis.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_125",
+    "question": "Who co-founded Microsoft alongside Bill Gates?",
+    "choices": { "a": "Steve Ballmer", "b": "Paul Allen", "c": "Gordon Moore" },
+    "answer": "B",
+    "funFact": "Paul Allen and Gates founded Microsoft in 1975. Allen came up with the company name and brought crucial early vision.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_126",
+    "question": "In what decade was the World Wide Web invented?",
+    "choices": { "a": "1970s", "b": "1980s", "c": "1990s" },
+    "answer": "B",
+    "funFact": "Tim Berners-Lee proposed the WWW in 1989, making it an 1980s invention — though it launched publicly in 1991.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_127",
+    "question": "What does 'GPS' stand for?",
+    "choices": { "a": "General Positioning System", "b": "Global Precision Satellite", "c": "Global Positioning System" },
+    "answer": "C",
+    "funFact": "GPS was developed by the US military and became available for civilian use in the 1980s. It uses at least 24 orbiting satellites.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_128",
+    "question": "Which company launched the first App Store for smartphones?",
+    "choices": { "a": "Google", "b": "Samsung", "c": "Apple" },
+    "answer": "C",
+    "funFact": "Apple launched the App Store on July 10, 2008, with 500 apps. Today it hosts over 1.8 million apps.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_129",
+    "question": "What web language is primarily used to structure and display web pages?",
+    "choices": { "a": "Python", "b": "Java", "c": "HTML" },
+    "answer": "C",
+    "funFact": "HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991. Every web page you see is built on HTML.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_130",
+    "question": "Approximately how many transistors does a modern smartphone chip contain?",
+    "choices": { "a": "1 million", "b": "1 billion", "c": "10 billion+" },
+    "answer": "C",
+    "funFact": "Modern chips like Apple's M-series contain over 10–20 billion transistors, each smaller than a virus.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_131",
+    "question": "What is the most widely used social media platform in the world?",
+    "choices": { "a": "Instagram", "b": "Facebook", "c": "TikTok" },
+    "answer": "B",
+    "funFact": "Facebook (Meta) has over 3 billion monthly active users — about 37% of the world's population logs in each month.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_132",
+    "question": "In which year was the first iPhone released?",
+    "choices": { "a": "2005", "b": "2007", "c": "2009" },
+    "answer": "B",
+    "funFact": "Steve Jobs unveiled the first iPhone on January 9, 2007. It sold 6.1 million units in its first year.",
+    "category": "Technology"
+  },
+  {
+    "id": "en_133",
+    "question": "Which programming language is most commonly used for front-end web development?",
+    "choices": { "a": "Python", "b": "JavaScript", "c": "PHP" },
+    "answer": "B",
+    "funFact": "JavaScript was created in just 10 days in 1995 by Brendan Eich. It's now the most widely used programming language in the world.",
+    "category": "Technology"
+  }
+]
