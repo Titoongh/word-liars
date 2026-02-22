@@ -10,7 +10,8 @@ final class QuestionServiceTests: XCTestCase {
                 question: "Question \(i)?",
                 choices: Question.Choices(a: "Option A", b: "Option B", c: "Option C"),
                 answer: "A",
-                funFact: nil
+                funFact: nil,
+                category: nil
             )
         }
     }

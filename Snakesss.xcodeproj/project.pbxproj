@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC000000000000000000002A /* GameFlowIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC000000000000000000001A /* GameFlowIntegrationTests.swift */; };
 		BB000000000000000000005A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000002A /* OnboardingView.swift */; };
 		BB000000000000000000006A /* OnboardingPageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000003A /* OnboardingPageContent.swift */; };
 		BB000000000000000000007A /* RulesSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB000000000000000000004A /* RulesSheetView.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC000000000000000000001A /* GameFlowIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFlowIntegrationTests.swift; sourceTree = "<group>"; };
 		BB000000000000000000002A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		BB000000000000000000003A /* OnboardingPageContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageContent.swift; sourceTree = "<group>"; };
 		BB000000000000000000004A /* RulesSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesSheetView.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				AA000000000000000000014A /* SnakesssTests.swift */,
+				CC000000000000000000001A /* GameFlowIntegrationTests.swift */,
 				AA000000000000000000022A /* QuestionServiceTests.swift */,
 				AA000000000000000000023A /* RoleServiceTests.swift */,
 				AA000000000000000000024A /* ScoringServiceTests.swift */,
@@ -498,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA000000000000000000034A /* SnakesssTests.swift in Sources */,
+					CC000000000000000000002A /* GameFlowIntegrationTests.swift in Sources */,
 				AA000000000000000000055A /* QuestionServiceTests.swift in Sources */,
 				AA000000000000000000056A /* RoleServiceTests.swift in Sources */,
 				AA000000000000000000057A /* ScoringServiceTests.swift in Sources */,
