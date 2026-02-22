@@ -34,8 +34,13 @@ struct SettingsView: View {
                         feedbackToggles
                     }
 
+                    // Difficulty section
+                    settingsSection(title: String(localized: "Difficulty")) {
+                        difficultySection
+                    }
+
                     // Categories section
-                    settingsSection(title: "Question Categories") {
+                    settingsSection(title: String(localized: "Question Categories")) {
                         categoriesSection
                     }
 
@@ -220,6 +225,79 @@ struct SettingsView: View {
                     SnakesssHaptic.light()
                 }
         }
+    }
+
+    // MARK: - Difficulty Section
+
+    private var difficultySection: some View {
+        VStack(spacing: 0) {
+            ForEach(Array(SettingsManager.difficultyOptions.enumerated()), id: \.element) { index, option in
+                VStack(spacing: 0) {
+                    difficultyRow(option: option)
+                    if index < SettingsManager.difficultyOptions.count - 1 {
+                        Divider()
+                            .overlay(SnakesssTheme.borderSubtle)
+                            .padding(.leading, 52)
+                    }
+                }
+            }
+        }
+        .background(
+            RoundedRectangle(cornerRadius: SnakesssRadius.radiusLg)
+                .fill(SnakesssTheme.bgElevated)
+                .overlay(
+                    RoundedRectangle(cornerRadius: SnakesssRadius.radiusLg)
+                        .strokeBorder(SnakesssTheme.borderSubtle, lineWidth: 1)
+                )
+        )
+    }
+
+    private func difficultyRow(option: String) -> some View {
+        let isSelected = settings.difficulty == option
+        return Button {
+            SnakesssHaptic.light()
+            withAnimation(SnakesssAnimation.bouncy) {
+                settings.difficulty = option
+            }
+        } label: {
+            HStack(spacing: SnakesssSpacing.spacing3) {
+                ZStack {
+                    Circle()
+                        .fill(isSelected ? SnakesssTheme.accentPrimary.opacity(0.15) : SnakesssTheme.bgCard)
+                        .overlay(
+                            Circle()
+                                .strokeBorder(
+                                    isSelected ? SnakesssTheme.accentPrimary : SnakesssTheme.borderSubtle,
+                                    lineWidth: 1.5
+                                )
+                        )
+                        .frame(width: 28, height: 28)
+                    if isSelected {
+                        Image(systemName: "checkmark")
+                            .font(.system(size: 12, weight: .bold))
+                            .foregroundStyle(SnakesssTheme.accentPrimary)
+                    }
+                }
+
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(SettingsManager.difficultyLabel(for: option))
+                        .font(SnakesssTypography.body)
+                        .foregroundStyle(isSelected ? SnakesssTheme.textPrimary : SnakesssTheme.textMuted)
+                    Text(SettingsManager.difficultyDescription(for: option))
+                        .font(SnakesssTypography.caption)
+                        .foregroundStyle(SnakesssTheme.textMuted)
+                }
+
+                Spacer()
+            }
+            .padding(.horizontal, SnakesssSpacing.cardPadding)
+            .padding(.vertical, SnakesssSpacing.spacing3)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(SettingsManager.difficultyLabel(for: option))
+        .accessibilityValue(isSelected ? "selected" : "")
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     // MARK: - Categories Section

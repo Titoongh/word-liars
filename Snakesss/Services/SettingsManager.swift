@@ -23,12 +23,14 @@ final class SettingsManager {
         static let soundEnabled       = "snakesss.settings.soundEnabled"
         static let hapticsEnabled     = "snakesss.settings.hapticsEnabled"
         static let enabledCategories  = "snakesss.settings.enabledCategories"
+        static let difficulty         = "snakesss.settings.difficulty"
     }
 
     // MARK: - Available Values
 
     nonisolated static let roundCountOptions:    [Int] = [3, 6, 9]
     nonisolated static let timerDurationOptions: [Int] = [60, 90, 120, 180]
+    nonisolated static let difficultyOptions:    [String] = ["easy", "medium", "hard", "mixed"]
 
     /// All question categories available in the question pool.
     nonisolated static let allCategories: [String] = [
@@ -50,6 +52,7 @@ final class SettingsManager {
         static let soundEnabled      = true
         static let hapticsEnabled    = true
         static let enabledCategories = Set(SettingsManager.allCategories)
+        static let difficulty        = "mixed"
     }
 
     // MARK: - Store
@@ -98,6 +101,14 @@ final class SettingsManager {
         }
     }
 
+    /// Selected difficulty: "easy", "medium", "hard", or "mixed". Default: "mixed".
+    var difficulty: String {
+        didSet {
+            store.set(difficulty, forKey: Keys.difficulty)
+            AppLogger.settings.info("difficulty changed to \(self.difficulty)")
+        }
+    }
+
     // MARK: - Init
 
     private init() {
@@ -107,6 +118,7 @@ final class SettingsManager {
         self.soundEnabled = Self.loadBool(forKey: Keys.soundEnabled, default: Defaults.soundEnabled, from: .standard)
         self.hapticsEnabled = Self.loadBool(forKey: Keys.hapticsEnabled, default: Defaults.hapticsEnabled, from: .standard)
         self.enabledCategories = Self.loadEnabledCategories(from: .standard)
+        self.difficulty = Self.loadDifficulty(from: .standard)
     }
 
     /// Internal init for testing — accepts a custom UserDefaults store.
@@ -117,6 +129,7 @@ final class SettingsManager {
         self.soundEnabled = Self.loadBool(forKey: Keys.soundEnabled, default: Defaults.soundEnabled, from: store)
         self.hapticsEnabled = Self.loadBool(forKey: Keys.hapticsEnabled, default: Defaults.hapticsEnabled, from: store)
         self.enabledCategories = Self.loadEnabledCategories(from: store)
+        self.difficulty = Self.loadDifficulty(from: store)
     }
 
     // MARK: - Reset
@@ -128,6 +141,7 @@ final class SettingsManager {
         soundEnabled      = Defaults.soundEnabled
         hapticsEnabled    = Defaults.hapticsEnabled
         enabledCategories = Defaults.enabledCategories
+        difficulty        = Defaults.difficulty
         AppLogger.settings.info("Settings reset to defaults")
     }
 
@@ -162,6 +176,13 @@ final class SettingsManager {
         return Defaults.enabledCategories
     }
 
+    private static func loadDifficulty(from store: UserDefaults) -> String {
+        let saved = store.string(forKey: Keys.difficulty) ?? ""
+        return difficultyOptions.contains(saved) ? saved : Defaults.difficulty
+    }
+
+    // MARK: - Labels
+
     /// Human-readable label for a timer duration value.
     nonisolated static func timerLabel(for seconds: Int) -> String {
         switch seconds {
@@ -170,6 +191,28 @@ final class SettingsManager {
         case 120: return "2 min"
         case 180: return "3 min"
         default:  return "\(seconds)s"
+        }
+    }
+
+    /// Human-readable label for a difficulty value.
+    nonisolated static func difficultyLabel(for value: String) -> String {
+        switch value {
+        case "easy":   return String(localized: "Easy")
+        case "medium": return String(localized: "Medium")
+        case "hard":   return String(localized: "Hard")
+        case "mixed":  return String(localized: "Mixed")
+        default:       return value.capitalized
+        }
+    }
+
+    /// Short description for each difficulty option shown in SettingsView.
+    nonisolated static func difficultyDescription(for value: String) -> String {
+        switch value {
+        case "easy":   return String(localized: "Accessible for everyone")
+        case "medium": return String(localized: "Standard trivia difficulty")
+        case "hard":   return String(localized: "Obscure & specialized facts")
+        case "mixed":  return String(localized: "Varied difficulty each round")
+        default:       return ""
         }
     }
 }
