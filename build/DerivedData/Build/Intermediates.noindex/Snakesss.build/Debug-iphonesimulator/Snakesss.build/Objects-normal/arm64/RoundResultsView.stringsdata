@@ -1,0 +1,72 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/RoundResultsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "results.roundBadge %lld",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.theAnswer.headline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.howEveryoneDid.label",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.correct.label",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "💡",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "+%lld",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 223
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.scoresAfterRound.label %lld",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 247
+        }
+      },
+      {
+        "comment": "",
+        "key": "results.pts %lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 257
+        }
+      }
+    ]
+  },
+  "version": 1
+}

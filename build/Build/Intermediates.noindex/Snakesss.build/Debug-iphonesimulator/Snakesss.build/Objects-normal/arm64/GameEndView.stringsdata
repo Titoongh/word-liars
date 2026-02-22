@@ -1,0 +1,88 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Results/GameEndView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "🏆",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.winner.label",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.winnerPts %lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.tie.headline",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.ptsEach %lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.finalScores.label",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.playAgain.button",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.newGame.button",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "gameEnd.home.button",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 182
+        }
+      }
+    ]
+  },
+  "version": 1
+}

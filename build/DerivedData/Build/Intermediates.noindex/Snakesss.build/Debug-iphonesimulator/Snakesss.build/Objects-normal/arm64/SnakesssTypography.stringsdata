@@ -1,0 +1,112 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssTypography.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Display — App Name",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Title — Screen Title",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Headline — Section Header",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Question — Center Table Question Text",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Answer — A/B/C Choices",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Body Large — Button Labels",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Body — Standard Text",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Label — UI Labels",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Caption — Hints and Instructions",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "MICRO — CATEGORY LABELS",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Score: 42",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "1:28",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      },
+      {
+        "comment": "",
+        "key": "Player Name — Alice",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 65
+        }
+      }
+    ]
+  },
+  "version": 1
+}

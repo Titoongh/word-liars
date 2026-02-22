@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>discussion.header</key>
+	<string>Discussion</string>
+	<key>discussion.remaining.label</key>
+	<string>remaining</string>
+	<key>discussion.skip.button</key>
+	<string>Skip Discussion → Vote</string>
+	<key>gameEnd.finalScores.label</key>
+	<string>Final Scores</string>
+	<key>gameEnd.home.button</key>
+	<string>Home</string>
+	<key>gameEnd.newGame.button</key>
+	<string>New Game</string>
+	<key>gameEnd.playAgain.button</key>
+	<string>Play Again (Same Players)</string>
+	<key>gameEnd.ptsEach %lld</key>
+	<string>%lld pts each</string>
+	<key>gameEnd.tie.headline</key>
+	<string>It's a Tie!</string>
+	<key>gameEnd.winner.label</key>
+	<string>WINNER</string>
+	<key>gameEnd.winnerPts %lld</key>
+	<string>%lld pts</string>
+	<key>history.delete.button</key>
+	<string>Delete</string>
+	<key>history.done.button</key>
+	<string>Done</string>
+	<key>history.empty.body</key>
+	<string>Start your first game!</string>
+	<key>history.empty.headline</key>
+	<string>No games played yet</string>
+	<key>history.noWinner</key>
+	<string>No winner</string>
+	<key>history.pts %lld</key>
+	<string>%lld pts</string>
+	<key>history.rounds %lld %lld</key>
+	<string>%lld rounds · %lld players</string>
+	<key>history.title</key>
+	<string>Game History</string>
+	<key>home.gameHistory.button</key>
+	<string>Game History</string>
+	<key>home.howToPlay.accessibility</key>
+	<string>How to Play — open rules reference</string>
+	<key>home.howToPlay.button</key>
+	<string>How to Play</string>
+	<key>home.newGame.button</key>
+	<string>New Game</string>
+	<key>home.settings.accessibility</key>
+	<string>Settings</string>
+	<key>home.studioStamp</key>
+	<string>GOBC GAMES</string>
+	<key>home.tagline</key>
+	<string>TRUST NOBODY</string>
+	<key>mongoose.announcement.label</key>
+	<string>The Truth Mongoose is...</string>
+	<key>mongoose.chip.label %@</key>
+	<string>%@ is the Truth Mongoose</string>
+	<key>mongoose.seeQuestion.button</key>
+	<string>See the Question →</string>
+	<key>mongoose.verifyCaption</key>
+	<string>Everyone can verify this.</string>
+	<key>onboarding.letsPlay.button</key>
+	<string>Let's Play! 🐍</string>
+	<key>onboarding.next.accessibility %lld %lld</key>
+	<string>Next page, page %lld of %lld</string>
+	<key>onboarding.next.button</key>
+	<string>Next</string>
+	<key>onboarding.page1.body</key>
+	<string>Answer trivia questions, vote on the right answer — but watch out. Some players secretly know the truth and will try to lead you astray.</string>
+	<key>onboarding.page1.headline</key>
+	<string>Trivia meets Social Deduction</string>
+	<key>onboarding.page1.section.label</key>
+	<string>WHAT IS THIS GAME?</string>
+	<key>onboarding.page2.section.label</key>
+	<string>THE ROLES</string>
+	<key>onboarding.page2.subtitle</key>
+	<string>Who are you playing as?</string>
+	<key>onboarding.page3.section.label</key>
+	<string>EACH ROUND</string>
+	<key>onboarding.page3.subtitle</key>
+	<string>6 phases per round</string>
+	<key>onboarding.page4.section.label</key>
+	<string>SCORING</string>
+	<key>onboarding.page4.subtitle</key>
+	<string>How to earn points</string>
+	<key>onboarding.pageDots.accessibility %lld %lld</key>
+	<string>Page %lld of %lld</string>
+	<key>onboarding.skip.accessibility</key>
+	<string>Skip onboarding introduction</string>
+	<key>onboarding.skip.button</key>
+	<string>Skip</string>
+	<key>passPhone.passTo.accessibility %@</key>
+	<string>Pass to %@</string>
+	<key>passPhone.passTo.label</key>
+	<string>Pass to</string>
+	<key>passPhone.tapToRevealRole.caption</key>
+	<string>Tap to reveal your role</string>
+	<key>passPhone.tapToVote.caption</key>
+	<string>Tap to begin voting</string>
+	<key>phase.discussion.description</key>
+	<string>2 minutes to discuss and debate answers.</string>
+	<key>phase.discussion.title</key>
+	<string>Discussion</string>
+	<key>phase.question.description</key>
+	<string>A trivia question is shown to everyone.</string>
+	<key>phase.question.title</key>
+	<string>Question</string>
+	<key>phase.results.description</key>
+	<string>Votes, roles, and points are revealed.</string>
+	<key>phase.results.title</key>
+	<string>Results</string>
+	<key>phase.roleReveal.description</key>
+	<string>Each player secretly sees their role card.</string>
+	<key>phase.roleReveal.title</key>
+	<string>Role Reveal</string>
+	<key>phase.snakeReveal.description</key>
+	<string>Snakes secretly learn the correct answer.</string>
+	<key>phase.snakeReveal.title</key>
+	<string>Snake Reveal</string>
+	<key>phase.voting.description</key>
+	<string>Each player votes for their chosen answer.</string>
+	<key>phase.voting.title</key>
+	<string>Voting</string>
+	<key>question.placePhone.instructions</key>
+	<string>📵 Place phone in the center
+Discuss before voting begins</string>
+	<key>question.roundBadge %lld</key>
+	<string>Round %lld — Question</string>
+	<key>question.snakesCloseEyes.button</key>
+	<string>Snakes — Close Your Eyes</string>
+	<key>results.correct.label</key>
+	<string>Correct:</string>
+	<key>results.howEveryoneDid.label</key>
+	<string>How Everyone Did</string>
+	<key>results.nextRound.button</key>
+	<string>Next Round →</string>
+	<key>results.pts %lld</key>
+	<string>%lld pts</string>
+	<key>results.roundBadge %lld</key>
+	<string>Round %lld Results</string>
+	<key>results.scoresAfterRound.label %lld</key>
+	<string>Scores After Round %lld</string>
+	<key>results.seeFinalResults.button</key>
+	<string>See Final Results</string>
+	<key>results.theAnswer.headline</key>
+	<string>The Answer</string>
+	<key>role.human.description</key>
+	<string>You don't know the answer. Listen carefully, find clues, and vote for what you believe is correct.</string>
+	<key>role.human.displayName</key>
+	<string>Human</string>
+	<key>role.human.flavorText</key>
+	<string>You don't know the answer.
+Find the truth.</string>
+	<key>role.mongoose.description</key>
+	<string>You don't know the answer, but your identity is public. You're a trusted ally helping humans find the truth.</string>
+	<key>role.mongoose.displayName</key>
+	<string>Mongoose</string>
+	<key>role.mongoose.flavorText</key>
+	<string>You don't know the answer.
+Your identity is public.</string>
+	<key>role.snake.description</key>
+	<string>You know the correct answer — but keep it secret! Mislead the group and vote snake to earn points.</string>
+	<key>role.snake.displayName</key>
+	<string>Snake</string>
+	<key>role.snake.flavorText</key>
+	<string>You know the answer.
+Lead them astray.</string>
+	<key>roleReveal.done.button</key>
+	<string>Done — Pass the phone</string>
+	<key>roleReveal.holdHint</key>
+	<string>Hold to reveal · Release to hide</string>
+	<key>roleReveal.holdToReveal</key>
+	<string>HOLD TO REVEAL</string>
+	<key>roleReveal.playerBadge %lld %lld</key>
+	<string>Player %lld of %lld</string>
+	<key>roleReveal.roundBadge %lld %lld</key>
+	<string>Round %lld of %lld</string>
+	<key>roleReveal.yourRole.label</key>
+	<string>YOUR ROLE</string>
+	<key>rules.close.accessibility</key>
+	<string>Close How to Play</string>
+	<key>rules.dismiss.accessibility</key>
+	<string>Dismiss rules sheet</string>
+	<key>rules.gotIt.button</key>
+	<string>Got it!</string>
+	<key>rules.roles.section.label</key>
+	<string>THE ROLES</string>
+	<key>rules.roles.subtitle</key>
+	<string>Who are you playing as?</string>
+	<key>rules.rounds.section.label</key>
+	<string>EACH ROUND</string>
+	<key>rules.rounds.subtitle</key>
+	<string>6 phases per round</string>
+	<key>rules.scoring.section.label</key>
+	<string>SCORING</string>
+	<key>rules.scoring.subtitle</key>
+	<string>How to earn points</string>
+	<key>rules.title</key>
+	<string>How to Play</string>
+	<key>scoring.correctVote.description</key>
+	<string>Human or Mongoose votes the right answer.</string>
+	<key>scoring.correctVote.label</key>
+	<string>Correct Vote</string>
+	<key>scoring.mongooseBonus.description</key>
+	<string>Mongoose earns extra points for a correct vote.</string>
+	<key>scoring.mongooseBonus.label</key>
+	<string>Mongoose Bonus</string>
+	<key>scoring.snakeVote.description</key>
+	<string>Snakes automatically earn 1 point per round.</string>
+	<key>scoring.snakeVote.label</key>
+	<string>Snake Vote</string>
+	<key>scoring.wrongVote.description</key>
+	<string>No points for incorrect answers.</string>
+	<key>scoring.wrongVote.label</key>
+	<string>Wrong Vote</string>
+	<key>settings.categories.section</key>
+	<string>Question Categories</string>
+	<key>settings.category.disabled</key>
+	<string>disabled</string>
+	<key>settings.category.enabled</key>
+	<string>enabled</string>
+	<key>settings.close.accessibility</key>
+	<string>Close settings</string>
+	<key>settings.feedback.section</key>
+	<string>Feedback</string>
+	<key>settings.haptics.label</key>
+	<string>Haptics</string>
+	<key>settings.language.auto.description</key>
+	<string>Follow device language</string>
+	<key>settings.language.auto.label</key>
+	<string>Auto</string>
+	<key>settings.language.section</key>
+	<string>Language</string>
+	<key>settings.reset.button</key>
+	<string>Reset to Defaults</string>
+	<key>settings.rounds.accessibility %lld</key>
+	<string>%lld rounds</string>
+	<key>settings.rounds.section</key>
+	<string>Rounds</string>
+	<key>settings.soundEffects.label</key>
+	<string>Sound Effects</string>
+	<key>settings.subtitle</key>
+	<string>Customize your game</string>
+	<key>settings.timer.1min</key>
+	<string>1 min</string>
+	<key>settings.timer.1min30</key>
+	<string>1:30</string>
+	<key>settings.timer.2min</key>
+	<string>2 min</string>
+	<key>settings.timer.3min</key>
+	<string>3 min</string>
+	<key>settings.timer.section</key>
+	<string>Discussion Timer</string>
+	<key>settings.title</key>
+	<string>Settings</string>
+	<key>setup.playerCount.label</key>
+	<string>How many players?</string>
+	<key>setup.playerName.placeholder %lld</key>
+	<string>Player %lld</string>
+	<key>setup.players.accessibility %lld</key>
+	<string>%lld players</string>
+	<key>setup.startGame.button</key>
+	<string>Start Game →</string>
+	<key>setup.title</key>
+	<string>Player Setup</string>
+	<key>snakeReveal.closeEyes.accessibility</key>
+	<string>Everyone close your eyes. Snakes: wait for your tap cue. HOST: Tap when ready</string>
+	<key>snakeReveal.closeEyes.body</key>
+	<string>Snakes: wait for your tap cue</string>
+	<key>snakeReveal.closeEyes.headline</key>
+	<string>Everyone close your eyes</string>
+	<key>snakeReveal.correctAnswer.label</key>
+	<string>CORRECT ANSWER</string>
+	<key>snakeReveal.done.button</key>
+	<string>Done — Hide This Screen</string>
+	<key>snakeReveal.fellowSnakes.label</key>
+	<string>YOUR FELLOW SNAKES</string>
+	<key>snakeReveal.hostTap.caption</key>
+	<string>HOST: Tap when ready →</string>
+	<key>snakeReveal.openEyes.body</key>
+	<string>Snakes know the answer.
+The discussion begins.</string>
+	<key>snakeReveal.openEyes.headline</key>
+	<string>Everyone open your eyes</string>
+	<key>snakeReveal.pass.accessibility %@ %lld %lld</key>
+	<string>Pass to %@. Snake %lld of %lld. Tap to reveal secret</string>
+	<key>snakeReveal.reminder.losePoints</key>
+	<string>Any other vote = lose points.</string>
+	<key>snakeReveal.reminder.vote</key>
+	<string>Remember: vote "Snake" only.</string>
+	<key>snakeReveal.snakeBadge %lld %lld</key>
+	<string>Snake %lld of %lld</string>
+	<key>snakeReveal.startDiscussion.button</key>
+	<string>Start Discussion →</string>
+	<key>snakeReveal.tapToReveal.caption</key>
+	<string>Tap to reveal secret</string>
+	<key>snakeReveal.youAreSnake.label</key>
+	<string>You are a Snake 🐍</string>
+	<key>voting.confirmVote.button</key>
+	<string>Confirm Vote</string>
+	<key>voting.nowVoting.label</key>
+	<string>NOW VOTING</string>
+	<key>voting.playerBadge %lld %lld</key>
+	<string>Player %lld of %lld</string>
+	<key>voting.question.label</key>
+	<string>What is the correct answer?</string>
+	<key>voting.snake.forced.body</key>
+	<string>You must vote Snake.
+The humans cannot know you're a Snake until results.</string>
+	<key>voting.vote.accessibility %@ %@</key>
+	<string>Vote %@: %@</string>
+	<key>voting.voteSnake.button</key>
+	<string>Vote Snake</string>
+</dict>
+</plist>

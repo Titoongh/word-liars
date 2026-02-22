@@ -1,0 +1,24 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/ScaleTextureModifier.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Snakesss",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "TRUST NOBODY",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 69
+        }
+      }
+    ]
+  },
+  "version": 1
+}

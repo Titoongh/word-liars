@@ -1,0 +1,64 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssTheme.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Primitive Colors",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spacing",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Border Radius",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Glows",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Accent",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Gold",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Danger",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 272
+        }
+      }
+    ]
+  },
+  "version": 1
+}

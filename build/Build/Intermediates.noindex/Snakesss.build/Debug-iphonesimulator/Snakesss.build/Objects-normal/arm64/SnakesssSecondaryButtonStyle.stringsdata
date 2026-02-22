@@ -1,0 +1,24 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssSecondaryButtonStyle.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Game History",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Skip Discussion",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 33
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,37 @@
+{
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/ScaleTextureModifier.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/ScaleTextureModifier.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/ScaleTextureModifier.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/ScaleTextureModifier.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/ScaleTextureModifier.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/ScaleTextureModifier.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssAnswerButtonStyle.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssAnswerButtonStyle.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssAnswerButtonStyle.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssAnswerButtonStyle.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssAnswerButtonStyle.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssAnswerButtonStyle.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssPrimaryButtonStyle.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssPrimaryButtonStyle.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssPrimaryButtonStyle.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssPrimaryButtonStyle.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssPrimaryButtonStyle.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssPrimaryButtonStyle.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssSecondaryButtonStyle.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssSecondaryButtonStyle.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssSecondaryButtonStyle.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssSecondaryButtonStyle.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssSecondaryButtonStyle.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssSecondaryButtonStyle.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssVoteButtonStyle.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssVoteButtonStyle.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssVoteButtonStyle.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssVoteButtonStyle.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssVoteButtonStyle.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakesssVoteButtonStyle.swiftdeps"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/App/DemoGameRunner.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Initializing demo...",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.roundBadge %lld %lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.playerBadge %lld %lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 237
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.yourRole.label",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 251
+        }
+      },
+      {
+        "comment": "",
+        "key": "snakeReveal.youAreSnake.label",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 313
+        }
+      },
+      {
+        "comment": "",
+        "key": "snakeReveal.correctAnswer.label",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 320
+        }
+      },
+      {
+        "comment": "",
+        "key": "snakeReveal.fellowSnakes.label",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 346
+        }
+      },
+      {
+        "comment": "",
+        "key": "🐍 %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 352
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.nowVoting.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 404
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.playerBadge %lld %lld",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 409
+        }
+      },
+      {
+        "comment": "",
+        "key": "snakeReveal.youAreSnake.label",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 419
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.snake.forced.body",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 422
+        }
+      },
+      {
+        "comment": "",
+        "key": "🐍",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 428
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.voteSnake.button",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 429
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.question.label",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 447
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,120 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Services/SettingsManager.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "settings.timer.1min",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.timer.1min30",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.timer.2min",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.timer.3min",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Easy",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Medium",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 223
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hard",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mixed",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 225
+        }
+      },
+      {
+        "comment": "",
+        "key": "Accessible for everyone",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Standard trivia difficulty",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 234
+        }
+      },
+      {
+        "comment": "",
+        "key": "Obscure & specialized facts",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Varied difficulty each round",
+        "location": {
+          "startingColumn": 49,
+          "startingLine": 236
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.language.auto.label",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.language.auto.description",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 254
+        }
+      }
+    ]
+  },
+  "version": 1
+}

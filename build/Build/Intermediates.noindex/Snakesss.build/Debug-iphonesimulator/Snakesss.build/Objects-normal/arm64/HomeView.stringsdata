@@ -1,0 +1,80 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Home/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "home.settings.accessibility",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "home.studioStamp",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "🐍",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Snakesss",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "home.tagline",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "home.howToPlay.accessibility",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "home.newGame.button",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "home.gameHistory.button",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "home.howToPlay.button",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 88
+        }
+      }
+    ]
+  },
+  "version": 1
+}

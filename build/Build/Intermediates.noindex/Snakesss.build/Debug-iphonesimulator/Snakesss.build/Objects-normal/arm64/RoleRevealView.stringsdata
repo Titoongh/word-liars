@@ -1,0 +1,64 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/RoleRevealView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "roleReveal.holdHint",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.done.button",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "👁‍🗨",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.holdToReveal",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.yourRole.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.roundBadge %lld %lld",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 212
+        }
+      },
+      {
+        "comment": "",
+        "key": "roleReveal.playerBadge %lld %lld",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 215
+        }
+      }
+    ]
+  },
+  "version": 1
+}

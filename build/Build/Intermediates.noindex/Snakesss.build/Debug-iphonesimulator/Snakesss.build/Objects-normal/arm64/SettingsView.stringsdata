@@ -1,0 +1,160 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Settings/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "settings.rounds.section",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.timer.section",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.feedback.section",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.language.section",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Difficulty",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.categories.section",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 48
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.close.accessibility",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.title",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.subtitle",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 71
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.rounds.accessibility %lld",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.soundEffects.label",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 184
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.haptics.label",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 194
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "selected",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "selected",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 377
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 377
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.reset.button",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 465
+        }
+      }
+    ]
+  },
+  "version": 1
+}

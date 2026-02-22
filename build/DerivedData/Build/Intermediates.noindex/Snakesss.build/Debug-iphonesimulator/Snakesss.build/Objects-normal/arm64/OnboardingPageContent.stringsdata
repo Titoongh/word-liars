@@ -1,0 +1,368 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Onboarding/OnboardingPageContent.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Page 1: Game concept. Snakesss is a trivia and social deduction game where some players secretly know the truth.",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "🐍",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Snakesss",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "TRUST NOBODY",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page1.section.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page1.headline",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page1.body",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Page 2: The three roles — Human, Snake, and Mongoose — and what each role does.",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page2.section.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page2.subtitle",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.human.description",
+        "location": {
+          "startingColumn": 86,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.snake.description",
+        "location": {
+          "startingColumn": 86,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.mongoose.description",
+        "location": {
+          "startingColumn": 89,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ role",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.roleReveal.title",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.roleReveal.description",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.question.title",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.question.description",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.snakeReveal.title",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.snakeReveal.description",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.discussion.title",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.discussion.description",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.voting.title",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.voting.description",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.results.title",
+        "location": {
+          "startingColumn": 54,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.results.description",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "Page 3: Each round has 6 phases — Role Reveal, Question, Snake Reveal, Discussion, Voting, and Results.",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page3.section.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page3.subtitle",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "Phase %lld: %@. %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.correctVote.label",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.correctVote.description",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.snakeVote.label",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 264
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.snakeVote.description",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 264
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.mongooseBonus.label",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.mongooseBonus.description",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 265
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.wrongVote.label",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.wrongVote.description",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 266
+        }
+      },
+      {
+        "comment": "",
+        "key": "Page 4: Scoring rules — correct votes earn 4 points, snakes earn 1, and mongoose earns a 2-point bonus.",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 322
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.letsPlay.button",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 315
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page4.section.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 275
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.page4.subtitle",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 277
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.letsPlay.button",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 310
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ points: %@. %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 358
+        }
+      }
+    ]
+  },
+  "version": 1
+}

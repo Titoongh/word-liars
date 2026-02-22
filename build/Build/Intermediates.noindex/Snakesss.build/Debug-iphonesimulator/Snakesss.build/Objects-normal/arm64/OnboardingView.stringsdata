@@ -1,0 +1,56 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Onboarding/OnboardingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "onboarding.skip.accessibility",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.skip.button",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.skip.button",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.pageDots.accessibility %lld %lld",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.next.accessibility %lld %lld",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "onboarding.next.button",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 93
+        }
+      }
+    ]
+  },
+  "version": 1
+}

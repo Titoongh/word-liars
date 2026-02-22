@@ -1,0 +1,30 @@
+{
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/DiscussionTimerView.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/DiscussionTimerView.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/DiscussionTimerView.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/DiscussionTimerView.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/DiscussionTimerView.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/DiscussionTimerView.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/MongooseAnnouncementView.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/MongooseAnnouncementView.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/MongooseAnnouncementView.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/MongooseAnnouncementView.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/MongooseAnnouncementView.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/MongooseAnnouncementView.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/QuestionView.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/QuestionView.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/QuestionView.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/QuestionView.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/QuestionView.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/QuestionView.swiftdeps"
+  },
+  "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/SnakeRevealView.swift" : {
+    "const-values" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakeRevealView.swiftconstvalues",
+    "dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakeRevealView.d",
+    "diagnostics" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakeRevealView.dia",
+    "object" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakeRevealView.o",
+    "swift-dependencies" : "/Volumes/My Shared Files/GOBC-GAMES/word-liars/build/Build/Intermediates.noindex/Snakesss.build/Debug-iphonesimulator/Snakesss.build/Objects-normal/arm64/SnakeRevealView.swiftdeps"
+  }
+}

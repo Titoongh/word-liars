@@ -1,0 +1,72 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/RoleBadgeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "role.human.displayName",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 55
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.snake.displayName",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.mongoose.displayName",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.human.flavorText",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.snake.flavorText",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.mongoose.flavorText",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "🦦",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "mongoose.chip.label %@",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 96
+        }
+      }
+    ]
+  },
+  "version": 1
+}

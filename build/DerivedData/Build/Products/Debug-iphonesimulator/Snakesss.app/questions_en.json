@@ -1,0 +1,1562 @@
+[
+  {
+    "id": "en_q001",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "What is the chemical symbol for gold?",
+    "choices": {
+      "a": "Go",
+      "b": "Gd",
+      "c": "Au"
+    },
+    "answer": "C",
+    "funFact": "Gold's symbol 'Au' comes from the Latin word 'Aurum'. Gold is so malleable that one ounce can be beaten into a sheet covering 300 square feet. All the gold ever mined in human history would fill only about 3.5 Olympic swimming pools."
+  },
+  {
+    "id": "en_q002",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "How many chambers does the human heart have?",
+    "choices": {
+      "a": "2",
+      "b": "4",
+      "c": "6"
+    },
+    "answer": "B",
+    "funFact": "The heart has 4 chambers: two atria (upper) and two ventricles (lower). The right side pumps blood to the lungs, the left side to the rest of the body. Your heart beats about 100,000 times per day — about 3 billion times in a lifetime."
+  },
+  {
+    "id": "en_q003",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "choices": {
+      "a": "Oxygen",
+      "b": "Carbon dioxide",
+      "c": "Nitrogen"
+    },
+    "answer": "C",
+    "funFact": "Nitrogen makes up about 78% of Earth's atmosphere, oxygen 21%, and all other gases including CO₂ just 1%. Despite being all around us, nitrogen gas (N₂) is largely inert and was called 'azote' (lifeless) by early chemists."
+  },
+  {
+    "id": "en_q004",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "What planet is closest to the Sun?",
+    "choices": {
+      "a": "Venus",
+      "b": "Mercury",
+      "c": "Mars"
+    },
+    "answer": "B",
+    "funFact": "Mercury is the closest planet to the Sun but NOT the hottest — that's Venus, thanks to its thick greenhouse-gas atmosphere. Mercury has almost no atmosphere, so temperatures swing from 430°C on the sunlit side to -180°C in the dark."
+  },
+  {
+    "id": "en_q005",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "What is H₂O commonly known as?",
+    "choices": {
+      "a": "Hydrogen peroxide",
+      "b": "Water",
+      "c": "Salt water"
+    },
+    "answer": "B",
+    "funFact": "Water is the only natural substance found in all three states on Earth's surface: solid (ice), liquid, and gas (steam). It also has a unique property — it expands when it freezes, which is why ice floats and why frozen pipes burst."
+  },
+  {
+    "id": "en_q006",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "What is the powerhouse of the cell?",
+    "choices": {
+      "a": "The nucleus",
+      "b": "The mitochondria",
+      "c": "The ribosome"
+    },
+    "answer": "B",
+    "funFact": "Mitochondria produce ATP (adenosine triphosphate), the cell's energy currency, through cellular respiration. Intriguingly, mitochondria have their own DNA, suggesting they were once free-living bacteria that were 'absorbed' by larger cells about 2 billion years ago."
+  },
+  {
+    "id": "en_q007",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "What is the approximate age of the universe?",
+    "choices": {
+      "a": "4.6 billion years",
+      "b": "13.8 billion years",
+      "c": "100 billion years"
+    },
+    "answer": "B",
+    "funFact": "The universe is about 13.8 billion years old, determined by measuring cosmic microwave background radiation — the 'afterglow' of the Big Bang. Our solar system, by comparison, is relatively young at 4.6 billion years old."
+  },
+  {
+    "id": "en_q008",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Which planet has the most moons in our solar system (as of 2024)?",
+    "choices": {
+      "a": "Jupiter",
+      "b": "Uranus",
+      "c": "Saturn"
+    },
+    "answer": "C",
+    "funFact": "Saturn surpassed Jupiter as the moon leader in 2023 when astronomers discovered dozens of new moons, bringing Saturn's total to over 140. Many of these are tiny, captured asteroids. Jupiter comes in second with 95 confirmed moons."
+  },
+  {
+    "id": "en_q009",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "What is the hardest natural substance on Earth?",
+    "choices": {
+      "a": "Graphite",
+      "b": "Diamond",
+      "c": "Quartz"
+    },
+    "answer": "B",
+    "funFact": "Diamond scores 10 on the Mohs scale, the maximum. Interestingly, diamond and graphite are both made entirely of carbon — just arranged differently. Diamond is the hardest material, but it's also brittle: hit it sharply with a hammer and it will shatter."
+  },
+  {
+    "id": "en_q010",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "What is the name of the process by which plants make food using sunlight?",
+    "choices": {
+      "a": "Respiration",
+      "b": "Osmosis",
+      "c": "Photosynthesis"
+    },
+    "answer": "C",
+    "funFact": "Photosynthesis converts CO₂ and water into glucose and oxygen using light energy. All the oxygen we breathe was produced by photosynthesis. Early Earth had no free oxygen — it only appeared after photosynthetic bacteria evolved ~2.4 billion years ago."
+  },
+  {
+    "id": "en_q011",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "What is the smallest unit of matter that retains the chemical properties of an element?",
+    "choices": {
+      "a": "A proton",
+      "b": "An atom",
+      "c": "A molecule"
+    },
+    "answer": "B",
+    "funFact": "An atom of carbon is always carbon, regardless of how small you go — until you split it, at which point you have subatomic particles (protons, neutrons, electrons) and it's no longer carbon. The word 'atom' comes from Greek for 'uncuttable'."
+  },
+  {
+    "id": "en_q012",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "What is the Chandrasekhar limit, approximately?",
+    "choices": {
+      "a": "0.5 solar masses",
+      "b": "1.4 solar masses",
+      "c": "3 solar masses"
+    },
+    "answer": "B",
+    "funFact": "The Chandrasekhar limit (≈1.4 solar masses) is the maximum mass of a stable white dwarf star. Above this, the star collapses further into a neutron star or black hole. Subrahmanyan Chandrasekhar calculated this at age 19 on a ship voyage and won the Nobel Prize in 1983."
+  },
+  {
+    "id": "en_q013",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "What is the approximate number of neurons in the human brain?",
+    "choices": {
+      "a": "86 billion",
+      "b": "10 billion",
+      "c": "500 billion"
+    },
+    "answer": "A",
+    "funFact": "The human brain has approximately 86 billion neurons, each connected to thousands of others — creating about 100 trillion synaptic connections. This makes the brain more complex than any computer ever built, yet it runs on only about 20 watts of power."
+  },
+  {
+    "id": "en_q014",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "What is absolute zero in Celsius?",
+    "choices": {
+      "a": "-173°C",
+      "b": "-273°C",
+      "c": "-373°C"
+    },
+    "answer": "B",
+    "funFact": "Absolute zero (-273.15°C or 0 Kelvin) is the coldest temperature theoretically possible, where all molecular motion stops. Scientists have cooled atoms to within a billionth of a degree of absolute zero, but can never actually reach it."
+  },
+  {
+    "id": "en_q015",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "What percentage of your DNA do you share with a banana?",
+    "choices": {
+      "a": "About 20%",
+      "b": "About 60%",
+      "c": "About 95%"
+    },
+    "answer": "B",
+    "funFact": "Humans share about 60% of their DNA with bananas — because all living things evolved from common ancestors and share fundamental biological machinery. We share 98.7% with chimpanzees, 85% with mice, and even 31% with yeast."
+  },
+  {
+    "id": "en_q016",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "Who was the first President of the United States?",
+    "choices": {
+      "a": "Thomas Jefferson",
+      "b": "Benjamin Franklin",
+      "c": "George Washington"
+    },
+    "answer": "C",
+    "funFact": "George Washington was inaugurated on April 30, 1789. He is the only U.S. president to have been elected unanimously by the Electoral College — twice. He famously refused to become a king, setting the precedent of a peaceful transfer of power."
+  },
+  {
+    "id": "en_q017",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "In what year did World War I begin?",
+    "choices": {
+      "a": "1914",
+      "b": "1918",
+      "c": "1910"
+    },
+    "answer": "A",
+    "funFact": "WWI began on July 28, 1914, triggered by the assassination of Archduke Franz Ferdinand of Austria-Hungary in Sarajevo. The war lasted until November 11, 1918, killing an estimated 17-20 million people, including civilians."
+  },
+  {
+    "id": "en_q018",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "Which ancient wonder of the world is still standing today?",
+    "choices": {
+      "a": "The Hanging Gardens of Babylon",
+      "b": "The Great Pyramid of Giza",
+      "c": "The Colossus of Rhodes"
+    },
+    "answer": "B",
+    "funFact": "The Great Pyramid of Giza is the oldest and only surviving wonder of the ancient world. Built around 2560 BCE for Pharaoh Khufu, it was the tallest man-made structure for over 3,800 years until Lincoln Cathedral in England surpassed it in 1311."
+  },
+  {
+    "id": "en_q019",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "Who wrote the 95 Theses that sparked the Protestant Reformation?",
+    "choices": {
+      "a": "John Calvin",
+      "b": "Henry VIII",
+      "c": "Martin Luther"
+    },
+    "answer": "C",
+    "funFact": "Martin Luther nailed his 95 Theses to a church door in Wittenberg in 1517. He criticized the Catholic practice of selling indulgences. Thanks to the printing press — invented just 60 years earlier — his ideas spread across Europe rapidly."
+  },
+  {
+    "id": "en_q020",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "In what year did the Titanic sink?",
+    "choices": {
+      "a": "1908",
+      "b": "1912",
+      "c": "1916"
+    },
+    "answer": "B",
+    "funFact": "The Titanic sank on April 15, 1912, killing over 1,500 people. It was deemed 'unsinkable' by some media outlets, though its designers never used that term. The wreck was discovered in 1985 and lies 3,800 meters below the North Atlantic."
+  },
+  {
+    "id": "en_q021",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "Which empire was ruled by Genghis Khan?",
+    "choices": {
+      "a": "The Ottoman Empire",
+      "b": "The Mongol Empire",
+      "c": "The Han Dynasty"
+    },
+    "answer": "B",
+    "funFact": "At its peak, the Mongol Empire was the largest contiguous land empire in history, covering 24 million km². Genghis Khan killed so many people that historians estimate it temporarily cooled the Earth's climate by removing CO₂-absorbing farmland."
+  },
+  {
+    "id": "en_q022",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "What was the name of the ship on which Charles Darwin sailed to the Galapagos Islands?",
+    "choices": {
+      "a": "HMS Endeavour",
+      "b": "The Mayflower",
+      "c": "HMS Beagle"
+    },
+    "answer": "C",
+    "funFact": "Darwin sailed on HMS Beagle from 1831 to 1836. He was only 22 when he left England. His observations of finches and tortoises in the Galapagos helped develop his theory of evolution by natural selection, published in 'On the Origin of Species' in 1859."
+  },
+  {
+    "id": "en_q023",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "Which U.S. president was assassinated at Ford's Theatre in Washington D.C.?",
+    "choices": {
+      "a": "James Garfield",
+      "b": "Abraham Lincoln",
+      "c": "William McKinley"
+    },
+    "answer": "B",
+    "funFact": "Abraham Lincoln was shot by John Wilkes Booth on April 14, 1865, just 5 days after the Civil War effectively ended. He died the next morning. Lincoln abolished slavery and preserved the Union during the bloodiest conflict in American history."
+  },
+  {
+    "id": "en_q024",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "The Black Death pandemic of the 14th century was caused by which organism?",
+    "choices": {
+      "a": "A virus",
+      "b": "A bacterium (Yersinia pestis)",
+      "c": "A fungal infection"
+    },
+    "answer": "B",
+    "funFact": "The Black Death killed an estimated 30-60% of Europe's population between 1347-1351 — one of history's deadliest pandemics. The bacterium Yersinia pestis was spread primarily by fleas on rats. Ironically, the labor shortage it caused accelerated the end of feudalism."
+  },
+  {
+    "id": "en_q025",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "In what year did the first man walk on the Moon?",
+    "choices": {
+      "a": "1967",
+      "b": "1969",
+      "c": "1971"
+    },
+    "answer": "B",
+    "funFact": "Apollo 11 landed on the Moon on July 20, 1969. Neil Armstrong's first words were broadcast to 600 million viewers — the largest TV audience in history at the time. The Apollo guidance computer had less processing power than a modern USB key."
+  },
+  {
+    "id": "en_q026",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "In which year did the Byzantine Empire (Eastern Roman Empire) finally fall?",
+    "choices": {
+      "a": "1204",
+      "b": "1453",
+      "c": "1521"
+    },
+    "answer": "B",
+    "funFact": "The Byzantine Empire fell in 1453 when Ottoman Sultan Mehmed II captured Constantinople. This is often used as a marker for the end of the Middle Ages. The city was renamed Istanbul and became the Ottoman capital."
+  },
+  {
+    "id": "en_q027",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "Which civilization invented the concept of zero as a number (independently)?",
+    "choices": {
+      "a": "The Greeks",
+      "b": "The Babylonians and Maya",
+      "c": "The Romans"
+    },
+    "answer": "B",
+    "funFact": "The Babylonians had a placeholder zero by 300 BCE, and the Maya independently developed zero around 350 CE. However, the concept of zero as a proper number with arithmetic properties was developed by Indian mathematicians around 628 CE."
+  },
+  {
+    "id": "en_q028",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "What was the name of the treaty that ended World War I?",
+    "choices": {
+      "a": "The Treaty of Versailles",
+      "b": "The Treaty of Paris",
+      "c": "The Armistice of Compiègne"
+    },
+    "answer": "A",
+    "funFact": "The Treaty of Versailles (1919) imposed harsh reparations on Germany — 132 billion gold marks. Many historians argue these punitive terms contributed to the economic crisis and political instability that helped Hitler rise to power, making WWI a direct cause of WWII."
+  },
+  {
+    "id": "en_q029",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "Which ancient Greek city-state invented democracy around 508 BCE?",
+    "choices": {
+      "a": "Sparta",
+      "b": "Athens",
+      "c": "Corinth"
+    },
+    "answer": "B",
+    "funFact": "Athenian democracy, introduced by Cleisthenes around 508 BCE, allowed male citizens to vote directly on laws. However, it excluded women, slaves (35-40% of population), and foreigners. Of 300,000 inhabitants, only about 30,000 could vote."
+  },
+  {
+    "id": "en_q030",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "Which explorer was the first to circumnavigate the globe (completing the journey)?",
+    "choices": {
+      "a": "Ferdinand Magellan",
+      "b": "Juan Sebastián Elcano",
+      "c": "Vasco da Gama"
+    },
+    "answer": "B",
+    "funFact": "Although Magellan led the expedition, he was killed in the Philippines in 1521. Juan Sebastián Elcano completed the circumnavigation, returning to Spain in 1522 with only 18 of the original 270 crew members. Magellan is famous for it — but technically didn't finish."
+  },
+  {
+    "id": "en_q031",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "What is the capital of Japan?",
+    "choices": {
+      "a": "Osaka",
+      "b": "Kyoto",
+      "c": "Tokyo"
+    },
+    "answer": "C",
+    "funFact": "Tokyo became the capital in 1868 when Emperor Meiji moved there from Kyoto. The Tokyo metropolitan area, with ~37 million people, is the world's largest urban agglomeration. 'Tokyo' means 'Eastern Capital' in Japanese."
+  },
+  {
+    "id": "en_q032",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "On which continent is Egypt located?",
+    "choices": {
+      "a": "Asia",
+      "b": "Africa",
+      "c": "Middle East"
+    },
+    "answer": "B",
+    "funFact": "Egypt is located on the African continent, though part of the Sinai Peninsula is in Asia. This makes Egypt a transcontinental country. The Nile River, which flows through Egypt, is the longest river in the world at 6,650 km."
+  },
+  {
+    "id": "en_q033",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Which is the longest river in the world?",
+    "choices": {
+      "a": "The Amazon",
+      "b": "The Nile",
+      "c": "The Yangtze"
+    },
+    "answer": "B",
+    "funFact": "The Nile stretches 6,650 km through northeastern Africa. While its length is debated (some measurements favor the Amazon), the Nile is traditionally recognized as the longest. Ancient Egyptian civilization depended entirely on the Nile's annual flood cycle."
+  },
+  {
+    "id": "en_q034",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "What is the capital of Brazil?",
+    "choices": {
+      "a": "São Paulo",
+      "b": "Rio de Janeiro",
+      "c": "Brasília"
+    },
+    "answer": "C",
+    "funFact": "Brasília was purpose-built as the capital and inaugurated in 1960, designed by urban planner Lúcio Costa and architect Oscar Niemeyer. When seen from above, the city is shaped like an airplane or a bird. Rio de Janeiro was the capital before that."
+  },
+  {
+    "id": "en_q035",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Which ocean is the largest?",
+    "choices": {
+      "a": "The Atlantic Ocean",
+      "b": "The Indian Ocean",
+      "c": "The Pacific Ocean"
+    },
+    "answer": "C",
+    "funFact": "The Pacific Ocean covers more area (165 million km²) than all of Earth's landmasses combined. It contains more than half of the world's water. The name 'Pacific' means 'peaceful' — though it contains Earth's deepest trench and most of its active volcanoes."
+  },
+  {
+    "id": "en_q036",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Which country has the most natural UNESCO World Heritage Sites?",
+    "choices": {
+      "a": "Italy",
+      "b": "China",
+      "c": "Spain"
+    },
+    "answer": "A",
+    "funFact": "Italy tops the list with 58 UNESCO World Heritage Sites (as of 2023), just ahead of China. Italian sites include the historic centers of Rome, Venice, Florence, and the Cinque Terre, as well as the Dolomites and ancient Greek temples in Sicily."
+  },
+  {
+    "id": "en_q037",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "What is the name of the body of water between Australia and New Zealand?",
+    "choices": {
+      "a": "The Coral Sea",
+      "b": "The Tasman Sea",
+      "c": "The Timor Sea"
+    },
+    "answer": "B",
+    "funFact": "The Tasman Sea separates Australia and New Zealand, about 2,000 km apart at their closest points. It was named after Dutch explorer Abel Tasman, the first European to reach New Zealand and Tasmania (named after him)."
+  },
+  {
+    "id": "en_q038",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Which South American country is landlocked?",
+    "choices": {
+      "a": "Colombia",
+      "b": "Bolivia",
+      "c": "Ecuador"
+    },
+    "answer": "B",
+    "funFact": "Bolivia lost access to the sea after the War of the Pacific (1879-1884) against Chile. It remains a sore point — Bolivia still has a navy that trains on Lake Titicaca. Every year, Bolivia celebrates 'Day of the Sea' to commemorate the lost coastline."
+  },
+  {
+    "id": "en_q039",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Which mountain range separates Europe from Asia?",
+    "choices": {
+      "a": "The Alps",
+      "b": "The Carpathians",
+      "c": "The Ural Mountains"
+    },
+    "answer": "C",
+    "funFact": "The Ural Mountains form one of the traditional boundaries between Europe and Asia, stretching 2,500 km from the Arctic coast to Kazakhstan. However, the Europe-Asia boundary is somewhat arbitrary — Russia spans both continents, making it transcontinental."
+  },
+  {
+    "id": "en_q040",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "What is the smallest country in the world by area?",
+    "choices": {
+      "a": "Monaco",
+      "b": "Vatican City",
+      "c": "San Marino"
+    },
+    "answer": "B",
+    "funFact": "Vatican City is only 0.44 km² (110 acres) — smaller than most golf courses. Despite its tiny size, it has its own postal service, radio station, railway, and currency. It is the home of the Pope and the center of the Roman Catholic Church."
+  },
+  {
+    "id": "en_q041",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Which country has the most coastline in the world?",
+    "choices": {
+      "a": "Russia",
+      "b": "Norway",
+      "c": "Canada"
+    },
+    "answer": "C",
+    "funFact": "Canada has the world's longest coastline at 202,080 km — more than twice the circumference of the Earth. This includes the mainland coast plus the coastlines of its 52,455 islands. Canada borders three oceans: Atlantic, Pacific, and Arctic."
+  },
+  {
+    "id": "en_q042",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "The 'Ring of Fire' encircles which ocean?",
+    "choices": {
+      "a": "The Atlantic Ocean",
+      "b": "The Pacific Ocean",
+      "c": "The Indian Ocean"
+    },
+    "answer": "B",
+    "funFact": "The Pacific Ring of Fire is a 40,000 km horseshoe-shaped zone hosting 75% of the world's volcanoes and 90% of its earthquakes. Tectonic plates collide around the Pacific. Japan, Indonesia, Chile, and the U.S. Pacific Northwest are all within it."
+  },
+  {
+    "id": "en_q043",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "How many countries does the Amazon river pass through?",
+    "choices": {
+      "a": "2 countries",
+      "b": "4 countries",
+      "c": "9 countries"
+    },
+    "answer": "C",
+    "funFact": "The Amazon and its tributaries flow through 9 countries: Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana. The Amazon discharges 20% of all fresh water that flows into the world's oceans."
+  },
+  {
+    "id": "en_q044",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "What is the name of the tectonic plate on which most of North America sits?",
+    "choices": {
+      "a": "The Eurasian Plate",
+      "b": "The North American Plate",
+      "c": "The Pacific Plate"
+    },
+    "answer": "B",
+    "funFact": "The North American Plate moves westward about 2.3 cm per year. It grinds against the Pacific Plate along the San Andreas Fault in California, causing frequent earthquakes. Tectonic plates have been moving for over 3 billion years, continuously reshaping the continents."
+  },
+  {
+    "id": "en_q045",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Which African country has the most pyramids — more than Egypt?",
+    "choices": {
+      "a": "Sudan",
+      "b": "Ethiopia",
+      "c": "Libya"
+    },
+    "answer": "A",
+    "funFact": "Sudan has between 200-255 pyramids compared to Egypt's roughly 138. Built by the ancient Nubian kingdom of Kush (Meroë), they are generally smaller and steeper than Egyptian pyramids. Many remained unknown to the Western world until the 19th century."
+  },
+  {
+    "id": "en_q046",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "choices": {
+      "a": "Christopher Marlowe",
+      "b": "William Shakespeare",
+      "c": "Geoffrey Chaucer"
+    },
+    "answer": "B",
+    "funFact": "Shakespeare wrote Romeo and Juliet around 1594-1596. It has been adapted into over 24 operas, countless ballets, and hundreds of films. The story was not original to Shakespeare — he based it on a 1562 poem by Arthur Brooke."
+  },
+  {
+    "id": "en_q047",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Which TV show features characters named Ross, Rachel, Monica, Chandler, Joey, and Phoebe?",
+    "choices": {
+      "a": "How I Met Your Mother",
+      "b": "Friends",
+      "c": "Seinfeld"
+    },
+    "answer": "B",
+    "funFact": "Friends ran for 10 seasons (1994-2004) on NBC and remains one of the most-watched series in history. Jennifer Aniston's 'Rachel haircut' in Season 1 became a cultural phenomenon copied by millions worldwide."
+  },
+  {
+    "id": "en_q048",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "What is the name of Batman's butler?",
+    "choices": {
+      "a": "Alfred",
+      "b": "James",
+      "c": "Edwin"
+    },
+    "answer": "A",
+    "funFact": "Alfred Pennyworth has served as Bruce Wayne's butler since Batman first appeared in DC Comics in 1939. In many stories, Alfred is ex-SAS or ex-MI6, and is arguably the most competent member of the Bat-family."
+  },
+  {
+    "id": "en_q049",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Which artist painted 'The Starry Night' (1889)?",
+    "choices": {
+      "a": "Paul Gauguin",
+      "b": "Claude Monet",
+      "c": "Vincent van Gogh"
+    },
+    "answer": "C",
+    "funFact": "Van Gogh painted The Starry Night while in an asylum in Saint-Rémy-de-Provence. He painted it from memory, not directly observing the night sky. It now hangs in the Museum of Modern Art (MoMA) in New York."
+  },
+  {
+    "id": "en_q050",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "In which fictional city does the animated show 'The Simpsons' take place?",
+    "choices": {
+      "a": "Springfield",
+      "b": "Shelbyville",
+      "c": "Capital City"
+    },
+    "answer": "A",
+    "funFact": "The Simpsons has been running since 1989, making it the longest-running American animated series and primetime scripted TV series. Creator Matt Groening chose 'Springfield' because it's such a common American city name — giving the show a universal feel."
+  },
+  {
+    "id": "en_q051",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Which novelist wrote '1984' and 'Animal Farm'?",
+    "choices": {
+      "a": "Aldous Huxley",
+      "b": "George Orwell",
+      "c": "H.G. Wells"
+    },
+    "answer": "B",
+    "funFact": "George Orwell published Animal Farm in 1945 and 1984 in 1949, shortly before dying of tuberculosis. The term 'Orwellian' now describes authoritarian surveillance states. He named the language in 1984 'Newspeak' — words like 'doublethink' and 'Big Brother' entered everyday speech."
+  },
+  {
+    "id": "en_q052",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Which director made the film 'Jurassic Park' (1993)?",
+    "choices": {
+      "a": "James Cameron",
+      "b": "Ron Howard",
+      "c": "Steven Spielberg"
+    },
+    "answer": "C",
+    "funFact": "Jurassic Park revolutionized CGI in cinema. Spielberg originally planned to use stop-motion animation, but ILM's breakthrough digital dinosaurs were so convincing he used them throughout. The film held the box-office record until Titanic (1997)."
+  },
+  {
+    "id": "en_q053",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "What is the best-selling video game franchise of all time?",
+    "choices": {
+      "a": "Grand Theft Auto",
+      "b": "Call of Duty",
+      "c": "Mario"
+    },
+    "answer": "C",
+    "funFact": "The Mario franchise has sold over 800 million units across all games since Donkey Kong (1981). Mario was originally called 'Jumpman' and was named after Mario Segale, the landlord of Nintendo's American warehouse, who burst into a meeting demanding overdue rent."
+  },
+  {
+    "id": "en_q054",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Who wrote the novel 'Pride and Prejudice' (1813)?",
+    "choices": {
+      "a": "Charlotte Brontë",
+      "b": "Jane Austen",
+      "c": "Mary Shelley"
+    },
+    "answer": "B",
+    "funFact": "Jane Austen published Pride and Prejudice anonymously, credited only to 'A Lady'. She received £110 for the copyright. The novel's opening line — 'It is a truth universally acknowledged…' — is one of the most famous in English literature."
+  },
+  {
+    "id": "en_q055",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Which film won the first Academy Award for Best Picture in 1928?",
+    "choices": {
+      "a": "Sunrise",
+      "b": "Wings",
+      "c": "The Jazz Singer"
+    },
+    "answer": "B",
+    "funFact": "Wings (1927) was the only silent film ever to win Best Picture. The 1st Academy Awards ceremony lasted only 15 minutes and winners were announced 3 months in advance. Today, the ceremony runs over 3 hours with results kept secret."
+  },
+  {
+    "id": "en_q056",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "What novel begins with the line: 'Call me Ishmael'?",
+    "choices": {
+      "a": "The Old Man and the Sea",
+      "b": "Moby-Dick",
+      "c": "Billy Budd"
+    },
+    "answer": "B",
+    "funFact": "Herman Melville's Moby-Dick (1851) was a commercial failure during his lifetime. It wasn't until the 20th century that it became recognized as a masterpiece. The actual first words of the novel are 'Call me Ishmael' — one of the most recognized opening lines in literature."
+  },
+  {
+    "id": "en_q057",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "In Dante's 'Inferno', how many circles of Hell are there?",
+    "choices": {
+      "a": "7 circles",
+      "b": "9 circles",
+      "c": "12 circles"
+    },
+    "answer": "B",
+    "funFact": "Dante's Inferno describes 9 concentric circles of Hell, each for a different sin, with traitors at the very bottom frozen in ice. Written around 1308-1320, the Divine Comedy is considered the masterpiece of Italian literature and one of the greatest works of world literature."
+  },
+  {
+    "id": "en_q058",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "Which artist is famous for the 'Campbell's Soup Cans' series (1962)?",
+    "choices": {
+      "a": "Roy Lichtenstein",
+      "b": "Andy Warhol",
+      "c": "Jasper Johns"
+    },
+    "answer": "B",
+    "funFact": "Andy Warhol's Campbell's Soup Cans consisted of 32 paintings — one for each soup variety. When first exhibited, the gallery director displayed them on shelves like a supermarket. Warhol reportedly ate Campbell's soup for lunch every day for 20 years."
+  },
+  {
+    "id": "en_q059",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "Who composed the Four Seasons (Le Quattro Stagioni)?",
+    "choices": {
+      "a": "Johann Sebastian Bach",
+      "b": "Antonio Vivaldi",
+      "c": "George Frideric Handel"
+    },
+    "answer": "B",
+    "funFact": "Vivaldi composed The Four Seasons around 1716-1717. Each concerto is accompanied by a sonnet (probably written by Vivaldi himself) describing the season. Vivaldi wrote about 500 concertos — allegedly so similar that critics joked he wrote the same concerto 500 times."
+  },
+  {
+    "id": "en_q060",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "What is the name of the literary technique where a narrator addresses the reader directly as 'you'?",
+    "choices": {
+      "a": "Stream of consciousness",
+      "b": "Second-person narrative",
+      "c": "Epistolary narrative"
+    },
+    "answer": "B",
+    "funFact": "Second-person narrative is rare in literature but famously used in Italo Calvino's 'If on a winter's night a traveler' (1979) and in the Choose Your Own Adventure book series. It creates a unique sense of immersion by placing the reader inside the story."
+  },
+  {
+    "id": "en_q061",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "How many legs does a butterfly have?",
+    "choices": {
+      "a": "6",
+      "b": "8",
+      "c": "4"
+    },
+    "answer": "A",
+    "funFact": "Like all insects, butterflies have 6 legs. However, some species like monarchs only appear to have 4 because their front pair of legs is reduced and held close to the body. Butterflies taste with their feet — their taste sensors are in their legs."
+  },
+  {
+    "id": "en_q062",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "What do pandas primarily eat?",
+    "choices": {
+      "a": "Fish",
+      "b": "Bamboo",
+      "c": "Fruits"
+    },
+    "answer": "B",
+    "funFact": "Giant pandas eat up to 14 kg of bamboo daily — roughly 12-16 hours of eating. Despite being classified as carnivores, their diet is 99% bamboo. Their digestive systems are not well-adapted for plant material, which is why they must eat so much."
+  },
+  {
+    "id": "en_q063",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "Which is the largest land animal?",
+    "choices": {
+      "a": "The hippopotamus",
+      "b": "The African elephant",
+      "c": "The giraffe"
+    },
+    "answer": "B",
+    "funFact": "The African elephant can weigh up to 6 tonnes. Elephants are highly intelligent, self-aware (they recognize themselves in mirrors), and display complex social behaviors including mourning their dead. A baby elephant can walk within hours of birth."
+  },
+  {
+    "id": "en_q064",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "What gas do humans exhale?",
+    "choices": {
+      "a": "Nitrogen",
+      "b": "Carbon dioxide",
+      "c": "Oxygen"
+    },
+    "answer": "B",
+    "funFact": "Humans exhale mainly nitrogen (~78%) and carbon dioxide (~4%), plus some oxygen and water vapor. The CO₂ we breathe out is the byproduct of cellular respiration — cells burning glucose for energy."
+  },
+  {
+    "id": "en_q065",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "How long does it take the Earth to orbit the Sun?",
+    "choices": {
+      "a": "365 days (approx.)",
+      "b": "30 days",
+      "c": "100 days"
+    },
+    "answer": "A",
+    "funFact": "Earth takes 365.25 days to orbit the Sun — which is why we add a leap day every 4 years (with some exceptions). Earth travels at about 107,000 km/h in its orbit. We're constantly flying through space whether we feel it or not."
+  },
+  {
+    "id": "en_q066",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "What is the world's most venomous snake?",
+    "choices": {
+      "a": "The black mamba",
+      "b": "The king cobra",
+      "c": "The inland taipan"
+    },
+    "answer": "C",
+    "funFact": "The inland taipan (Oxyuranus microlepidotus) of Australia has the most toxic venom of any snake — a single bite contains enough venom to kill 100 adult humans. However, it is extremely shy and there are no confirmed human deaths from it. The black mamba is responsible for more deaths globally."
+  },
+  {
+    "id": "en_q067",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "What percentage of Earth's surface is covered by water?",
+    "choices": {
+      "a": "51%",
+      "b": "71%",
+      "c": "85%"
+    },
+    "answer": "B",
+    "funFact": "Earth's surface is 71% water, yet only 3% is freshwater — and two-thirds of that is locked in glaciers and ice caps. Less than 1% of all water on Earth is accessible fresh water for human use."
+  },
+  {
+    "id": "en_q068",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "What is the fastest-growing organism on Earth?",
+    "choices": {
+      "a": "Kelp seaweed",
+      "b": "Giant sequoia trees",
+      "c": "Blue-green algae"
+    },
+    "answer": "A",
+    "funFact": "Giant kelp (Macrocystis pyrifera) can grow up to 60 cm per day under optimal conditions, reaching heights of 45 meters. Kelp forests are among Earth's most productive ecosystems, providing habitat for thousands of species from sea otters to fish."
+  },
+  {
+    "id": "en_q069",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "How long can a garden snail sleep at once?",
+    "choices": {
+      "a": "24 hours",
+      "b": "3 years",
+      "c": "3 months"
+    },
+    "answer": "B",
+    "funFact": "Garden snails can hibernate for up to 3 years if environmental conditions are unfavorable. During this time, they seal their shell entrance with a layer of dried mucus called an epiphragm to prevent moisture loss."
+  },
+  {
+    "id": "en_q070",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "Which is the only mammal capable of true flight (not just gliding)?",
+    "choices": {
+      "a": "The flying squirrel",
+      "b": "The bat",
+      "c": "The flying lemur"
+    },
+    "answer": "B",
+    "funFact": "Bats are the only mammals with true powered flight. Their wings are modified hands — the word 'chiroptera' means 'hand-wing'. There are over 1,400 species of bats, making up about 20% of all mammal species. Most navigate using echolocation."
+  },
+  {
+    "id": "en_q071",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "What is the collective noun for a group of flamingos?",
+    "choices": {
+      "a": "A flock",
+      "b": "A flamboyance",
+      "c": "A colony"
+    },
+    "answer": "B",
+    "funFact": "A group of flamingos is called a 'flamboyance' — fitting for the most flamboyantly colored bird. Flamingos are pink because of carotenoid pigments in their food (algae and crustaceans). A flamingo fed a white diet will turn white."
+  },
+  {
+    "id": "en_q072",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "How many hearts does an octopus have?",
+    "choices": {
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "answer": "C",
+    "funFact": "An octopus has 3 hearts: two pump blood to the gills, one pumps it to the rest of the body. When an octopus swims, the main heart stops beating — which is why they prefer crawling. Their blood is blue, containing copper-based hemocyanin."
+  },
+  {
+    "id": "en_q073",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "What unique ability does the axolotl (Mexican walking fish) have?",
+    "choices": {
+      "a": "It can survive in both salt and fresh water",
+      "b": "It can regenerate its heart and brain",
+      "c": "It is completely deaf"
+    },
+    "answer": "B",
+    "funFact": "The axolotl can regenerate not just limbs, but also parts of its heart, spine, and even portions of its brain, with no scarring. Scientists are studying this ability for potential medical applications in humans. Axolotls are critically endangered in the wild near Mexico City."
+  },
+  {
+    "id": "en_q074",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "What is the maximum recorded lifespan of a Greenland shark?",
+    "choices": {
+      "a": "200 years",
+      "b": "272 years",
+      "c": "392 years"
+    },
+    "answer": "C",
+    "funFact": "Greenland sharks are the longest-lived vertebrates known, with some estimated at over 390 years old. They grow only 1 cm per year and don't reach sexual maturity until around 150 years old. Their flesh is toxic when fresh due to high levels of trimethylamine oxide."
+  },
+  {
+    "id": "en_q075",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "What is the term for the symbiotic relationship where one organism benefits and the other is unaffected?",
+    "choices": {
+      "a": "Mutualism",
+      "b": "Commensalism",
+      "c": "Parasitism"
+    },
+    "answer": "B",
+    "funFact": "Commensalism describes relationships like barnacles attaching to whales (barnacles get transport and food, whales are unaffected) or birds nesting in trees. True commensalism is rare — most relationships have some slight effect on both parties."
+  },
+  {
+    "id": "en_q076",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "How many players are on a basketball team on the court at one time?",
+    "choices": {
+      "a": "5",
+      "b": "6",
+      "c": "4"
+    },
+    "answer": "A",
+    "funFact": "Basketball teams field 5 players at a time. The game was invented in 1891 by James Naismith using peach baskets. The NBA was founded in 1946 and today features 30 teams. Michael Jordan is widely considered the greatest basketball player ever."
+  },
+  {
+    "id": "en_q077",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Which country hosts the Wimbledon tennis tournament?",
+    "choices": {
+      "a": "France",
+      "b": "England",
+      "c": "Australia"
+    },
+    "answer": "B",
+    "funFact": "Wimbledon, held at the All England Club in London, is the oldest tennis Grand Slam tournament, first played in 1877. It is the only Grand Slam still played on grass. Players must wear predominantly white clothing — a rule dating back to the 1800s."
+  },
+  {
+    "id": "en_q078",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "In which sport would you use a puck?",
+    "choices": {
+      "a": "Field hockey",
+      "b": "Ice hockey",
+      "c": "Lacrosse"
+    },
+    "answer": "B",
+    "funFact": "Ice hockey pucks are made of vulcanized rubber and weigh about 170 grams. They can travel at over 160 km/h when shot by professional players. Pucks are sometimes frozen before games to reduce bouncing on the ice."
+  },
+  {
+    "id": "en_q079",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "What is the maximum score in a single frame of bowling?",
+    "choices": {
+      "a": "200",
+      "b": "300",
+      "c": "250"
+    },
+    "answer": "B",
+    "funFact": "A perfect game of bowling scores 300 — 12 consecutive strikes. In the 10th frame, you can bowl 3 balls if you score a strike or spare. Only a few thousand perfect games are bowled each year in the U.S. despite millions of games played."
+  },
+  {
+    "id": "en_q080",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "How many gold medals did Usain Bolt win at the Olympics?",
+    "choices": {
+      "a": "6",
+      "b": "8",
+      "c": "10"
+    },
+    "answer": "B",
+    "funFact": "Usain Bolt won 8 Olympic gold medals across the 2008, 2012, and 2016 Games — all in the 100m, 200m, and 4x100m relay. His world record of 9.58s in the 100m was set in Berlin in 2009. He is considered the greatest sprinter of all time."
+  },
+  {
+    "id": "en_q081",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "In golf, what is the term for scoring 2 under par on a hole?",
+    "choices": {
+      "a": "Birdie",
+      "b": "Eagle",
+      "c": "Albatross"
+    },
+    "answer": "B",
+    "funFact": "Golf scoring terms use birds: birdie (-1), eagle (-2), albatross (-3, also called double eagle). The word 'birdie' originated in 1899 in Atlantic City when Ab Smith's shot was described as 'a bird of a shot'. The terms eagle and albatross followed by analogy."
+  },
+  {
+    "id": "en_q082",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "How many players are in a polo team?",
+    "choices": {
+      "a": "3",
+      "b": "4",
+      "c": "6"
+    },
+    "answer": "B",
+    "funFact": "Polo teams have 4 players on horseback, numbered by position (1-4). Players must change horses between periods (called chukkas) — there are typically 4-8 chukkas per match. A polo field is the largest in team sports, roughly 270m x 145m."
+  },
+  {
+    "id": "en_q083",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "Which country has won the most FIFA World Cups?",
+    "choices": {
+      "a": "Germany",
+      "b": "Argentina",
+      "c": "Brazil"
+    },
+    "answer": "C",
+    "funFact": "Brazil has won the FIFA World Cup 5 times (1958, 1962, 1970, 1994, 2002). They are the only team to have participated in every World Cup since 1930. Pelé is the only player to have won 3 World Cups."
+  },
+  {
+    "id": "en_q084",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "In which sport is the 'Fosbury Flop' technique used?",
+    "choices": {
+      "a": "Pole vault",
+      "b": "High jump",
+      "c": "Long jump"
+    },
+    "answer": "B",
+    "funFact": "Dick Fosbury pioneered the backward high jump technique at the 1968 Mexico Olympics, where he won gold. Before, jumpers went over face-down. His 'flop' was initially mocked as unorthodox but became universal by the 1980s."
+  },
+  {
+    "id": "en_q085",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "What is the exact distance of a marathon race?",
+    "choices": {
+      "a": "40 km",
+      "b": "42.195 km",
+      "c": "45 km"
+    },
+    "answer": "B",
+    "funFact": "The marathon's precise distance of 42.195 km was standardized in 1921. It was set based on the 1908 London Olympics course, which was extended to 26 miles 385 yards so runners could finish in front of the royal box. The legend of Pheidippides running from Marathon to Athens is largely mythology."
+  },
+  {
+    "id": "en_q086",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "Which country won the first-ever FIFA World Cup in 1930?",
+    "choices": {
+      "a": "Argentina",
+      "b": "Uruguay",
+      "c": "Brazil"
+    },
+    "answer": "B",
+    "funFact": "Uruguay hosted and won the inaugural World Cup in 1930, defeating Argentina 4-2 in the final. The tournament had only 13 teams. European teams largely boycotted due to the long sea voyage required — it took 2 weeks to travel from Europe to Uruguay."
+  },
+  {
+    "id": "en_q087",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "How many dimples does a standard golf ball have?",
+    "choices": {
+      "a": "108",
+      "b": "336",
+      "c": "500"
+    },
+    "answer": "B",
+    "funFact": "Most golf balls have between 300-500 dimples, with 336 being the most common number. The dimples create turbulence that reduces drag and allows the ball to travel up to twice as far as a smooth ball. Early golfers noticed older, bumped balls flew further."
+  },
+  {
+    "id": "en_q088",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "In fencing, which weapon scores points only with the tip (not the edge)?",
+    "choices": {
+      "a": "The sabre",
+      "b": "The épée",
+      "c": "The foil"
+    },
+    "answer": "C",
+    "funFact": "In foil fencing, points are scored only with the tip in the torso target area. In épée (whole body target), only the tip counts. The sabre allows both tip and edge hits, targeting above the waist. Fencing has been in every modern Olympics since 1896."
+  },
+  {
+    "id": "en_q089",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "In cricket, how many balls are in a standard over?",
+    "choices": {
+      "a": "4",
+      "b": "8",
+      "c": "6"
+    },
+    "answer": "C",
+    "funFact": "A cricket over consists of 6 balls bowled consecutively by the same bowler. This became standard internationally in 1979. Test matches can last up to 5 days with each team batting twice. The longest Test match ever played lasted 10 days (South Africa vs England, 1939)."
+  },
+  {
+    "id": "en_q090",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "What is the name of the trophy awarded to the winner of the NHL (ice hockey) championship?",
+    "choices": {
+      "a": "The Conn Smythe Trophy",
+      "b": "The Stanley Cup",
+      "c": "The Vezina Trophy"
+    },
+    "answer": "B",
+    "funFact": "The Stanley Cup, donated by Governor General Lord Stanley of Preston in 1892, is North America's oldest professional sports trophy. Unlike other trophies, the actual Cup is given to the champions, who each get a day with it. Players have filled it with beer, cereal, and holy water."
+  },
+  {
+    "id": "en_q091",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "What is the main ingredient in traditional guacamole?",
+    "choices": {
+      "a": "Tomatillo",
+      "b": "Avocado",
+      "c": "Jalapeño"
+    },
+    "answer": "B",
+    "funFact": "Guacamole comes from the Nahuatl 'ahuacamolli' (avocado sauce). Avocados originated in Mexico and Central America. The Hass avocado, the most common variety, is named after Rudolph Hass, who patented the tree in 1935. All Hass avocados descend from a single tree."
+  },
+  {
+    "id": "en_q092",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "From which animal does beef come?",
+    "choices": {
+      "a": "Pig",
+      "b": "Cow",
+      "c": "Lamb"
+    },
+    "answer": "B",
+    "funFact": "The English language uses different words for animals and their meat — cow/beef, pig/pork, sheep/mutton, deer/venison — because after the Norman conquest of 1066, the French-speaking nobility ate the meat while Anglo-Saxon farmers tended the live animals, giving us two sets of words."
+  },
+  {
+    "id": "en_q093",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "Which country is the world's largest producer of coffee?",
+    "choices": {
+      "a": "Colombia",
+      "b": "Vietnam",
+      "c": "Brazil"
+    },
+    "answer": "C",
+    "funFact": "Brazil has been the world's largest coffee producer for over 150 years, accounting for about a third of global supply. Coffee was introduced to Brazil in the 18th century. Legend says a Brazilian officer smuggled coffee seeds out of French Guiana by charming a French governor's wife."
+  },
+  {
+    "id": "en_q094",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "What gives red wine its color?",
+    "choices": {
+      "a": "The grape pulp",
+      "b": "Grape skins containing anthocyanins",
+      "c": "Oak barrel aging"
+    },
+    "answer": "B",
+    "funFact": "Red wine gets its color from anthocyanins in the grape skins, which remain in contact with the juice during fermentation. The juice inside most red grapes is actually clear — if you peel a red grape and press it, the juice is colorless."
+  },
+  {
+    "id": "en_q095",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "What type of pasta is shaped like small rice grains?",
+    "choices": {
+      "a": "Orzo",
+      "b": "Farfalle",
+      "c": "Fusilli"
+    },
+    "answer": "A",
+    "funFact": "Orzo means 'barley' in Italian because of its resemblance to the grain. It's technically a pasta, not a grain, made from semolina flour. Orzo is popular in Greek cuisine (where it's called kritharaki) and is often used in soups and salads."
+  },
+  {
+    "id": "en_q096",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "Which country invented the croissant?",
+    "choices": {
+      "a": "France",
+      "b": "Austria",
+      "c": "Switzerland"
+    },
+    "answer": "B",
+    "funFact": "The croissant was inspired by the Austrian kipferl, brought to France by Marie Antoinette (or according to another story, by August Zang's Viennese bakery in Paris in the 1830s). The French made it flakier by laminating the dough with butter, creating the iconic version we know today."
+  },
+  {
+    "id": "en_q097",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "What is the Scoville scale used to measure?",
+    "choices": {
+      "a": "Wine acidity",
+      "b": "The spiciness of chili peppers",
+      "c": "Coffee strength"
+    },
+    "answer": "B",
+    "funFact": "The Scoville scale measures capsaicin concentration in peppers. Bell peppers score 0, jalapeños 2,500-8,000, and the Carolina Reaper (the world's hottest pepper) over 2 million Scoville Heat Units. Pure capsaicin scores about 16 million SHU."
+  },
+  {
+    "id": "en_q098",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "What is the difference between baking soda and baking powder?",
+    "choices": {
+      "a": "Baking powder contains an acid, baking soda does not",
+      "b": "They are identical products",
+      "c": "Baking soda is sweeter"
+    },
+    "answer": "A",
+    "funFact": "Baking soda (sodium bicarbonate) needs an acid (like buttermilk or vinegar) to activate. Baking powder contains baking soda plus an acid and starch — it's 'self-contained'. Using the wrong one in baking can cause a flat cake or a metallic taste."
+  },
+  {
+    "id": "en_q099",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "From which plant is wasabi traditionally made?",
+    "choices": {
+      "a": "Horseradish",
+      "b": "Green mustard",
+      "c": "Wasabia japonica"
+    },
+    "answer": "C",
+    "funFact": "Real wasabi comes from Wasabia japonica, a plant that grows along cool mountain streams in Japan. It's extremely rare and expensive — most 'wasabi' served worldwide is actually dyed horseradish paste. Real wasabi's heat fades in about 15 minutes, unlike horseradish."
+  },
+  {
+    "id": "en_q100",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "What is the most consumed beverage in the world after water?",
+    "choices": {
+      "a": "Coffee",
+      "b": "Tea",
+      "c": "Beer"
+    },
+    "answer": "B",
+    "funFact": "Tea is the world's most consumed beverage after water, with about 3.5 billion cups drunk daily. Legend says it was discovered in China in 2737 BCE when leaves blew into Emperor Shen Nong's boiling water. Today China and India are the largest producers."
+  },
+  {
+    "id": "en_q101",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "What enzyme in pineapple breaks down protein and can prevent gelatin from setting?",
+    "choices": {
+      "a": "Papain",
+      "b": "Bromelain",
+      "c": "Amylase"
+    },
+    "answer": "B",
+    "funFact": "Bromelain is a protease enzyme found in fresh pineapple that digests protein — which is why fresh pineapple cannot be used in gelatin dishes (it breaks down the collagen). It also breaks down the proteins in your mouth, causing that tingling sensation when eating pineapple."
+  },
+  {
+    "id": "en_q102",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "Which fermentation method is used to make kimchi?",
+    "choices": {
+      "a": "Alcoholic fermentation",
+      "b": "Lacto-fermentation",
+      "c": "Acetic acid fermentation"
+    },
+    "answer": "B",
+    "funFact": "Kimchi is made through lacto-fermentation, where naturally occurring Lactobacillus bacteria convert sugars into lactic acid, preserving the vegetables and creating a probiotic-rich food. South Koreans eat an average of 40 lbs of kimchi per person per year."
+  },
+  {
+    "id": "en_q103",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "What is the Maillard reaction in cooking?",
+    "choices": {
+      "a": "The caramelization of sugars",
+      "b": "A chemical reaction between amino acids and sugars that produces browning and flavor",
+      "c": "The gelatinization of starch"
+    },
+    "answer": "B",
+    "funFact": "The Maillard reaction (discovered by Louis-Camille Maillard in 1912) occurs above ~140°C and creates hundreds of new flavor and aroma compounds. It's responsible for the flavor of bread crusts, seared steaks, coffee, chocolate, and toast. It's distinct from caramelization (pure sugar browning)."
+  },
+  {
+    "id": "en_q104",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "What is the world's most expensive spice by weight?",
+    "choices": {
+      "a": "Vanilla",
+      "b": "Saffron",
+      "c": "Cardamom"
+    },
+    "answer": "B",
+    "funFact": "Saffron costs up to $10,000 per kg because each crocus flower yields only 3 stigmas, and 150,000 flowers are needed for 1 kg of saffron — all hand-picked. Iran produces about 90% of the world's saffron. It takes its color and flavor from the carotenoid crocin."
+  },
+  {
+    "id": "en_q105",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "What process gives bourbon whiskey its distinctive flavor and amber color?",
+    "choices": {
+      "a": "Adding caramel coloring",
+      "b": "Aging in charred new oak barrels",
+      "c": "Distillation at high temperature"
+    },
+    "answer": "B",
+    "funFact": "By U.S. law, bourbon must be aged in new, charred American white oak barrels. The charring caramelizes the wood sugars, which leach into the spirit over time. Bourbon must be made in the U.S. from at least 51% corn mash. Scotland's Scotch whisky, by contrast, uses previously used barrels."
+  },
+  {
+    "id": "en_q106",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "What does 'CPU' stand for?",
+    "choices": {
+      "a": "Central Processing Unit",
+      "b": "Computer Power Unit",
+      "c": "Central Program Utility"
+    },
+    "answer": "A",
+    "funFact": "The CPU is the 'brain' of a computer, executing instructions from programs. The first commercial CPU was Intel's 4004 (1971), with 2,300 transistors. A modern high-end CPU contains over 100 billion transistors — a 43 million-fold increase in 50 years."
+  },
+  {
+    "id": "en_q107",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "Who co-founded Apple with Steve Jobs?",
+    "choices": {
+      "a": "Bill Gates",
+      "b": "Steve Wozniak",
+      "c": "Paul Allen"
+    },
+    "answer": "B",
+    "funFact": "Steve Wozniak designed Apple's first computers almost entirely by himself. He and Jobs founded Apple in a garage in 1976. Wozniak gave away his Apple stock to early employees and is known for his generosity — a stark contrast to Jobs' reputation."
+  },
+  {
+    "id": "en_q108",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "What does 'Wi-Fi' actually stand for?",
+    "choices": {
+      "a": "Wireless Fidelity",
+      "b": "Wide Frequency",
+      "c": "Nothing — it's a made-up marketing term"
+    },
+    "answer": "C",
+    "funFact": "Wi-Fi is not an acronym — it was invented by the brand consulting firm Interbrand and simply rhymes with 'Hi-Fi'. The Wi-Fi Alliance originally considered 'IEEE 802.11b Direct Sequence' as the name, which is why a catchy brand name was needed."
+  },
+  {
+    "id": "en_q109",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "What year was the World Wide Web made publicly available?",
+    "choices": {
+      "a": "1989",
+      "b": "1991",
+      "c": "1995"
+    },
+    "answer": "B",
+    "funFact": "Tim Berners-Lee invented the World Wide Web at CERN in 1989 and made it publicly available in 1991. The first website (still accessible at info.cern.ch) described the project itself. Berners-Lee deliberately chose not to patent the Web, making it free for everyone."
+  },
+  {
+    "id": "en_q110",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "What programming language was created by Guido van Rossum and first released in 1991?",
+    "choices": {
+      "a": "Java",
+      "b": "Ruby",
+      "c": "Python"
+    },
+    "answer": "C",
+    "funFact": "Python was named after Monty Python's Flying Circus, not the snake. Guido van Rossum wanted a name that was short, unique, and slightly mysterious. Python is now one of the most popular languages in the world, widely used in data science, AI, and web development."
+  },
+  {
+    "id": "en_q111",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "What is the name of Elon Musk's brain-computer interface company?",
+    "choices": {
+      "a": "Neuralink",
+      "b": "OpenBCI",
+      "c": "BrainGate"
+    },
+    "answer": "A",
+    "funFact": "Neuralink, founded in 2016, implanted its first chip in a human patient in 2024. The device, called 'Telepathy', allows people to control computers with their thoughts. The first recipient, who has quadriplegia, was able to move a computer cursor using only his mind."
+  },
+  {
+    "id": "en_q112",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "What is the name for the phenomenon where transistors on chips double approximately every two years?",
+    "choices": {
+      "a": "Shannon's Law",
+      "b": "Moore's Law",
+      "c": "Metcalfe's Law"
+    },
+    "answer": "B",
+    "funFact": "Moore's Law, observed by Intel co-founder Gordon Moore in 1965, predicted that transistor density would double roughly every two years. This drove 50 years of exponential improvement in computing power. Physicists believe we are approaching the physical limits of silicon-based transistors."
+  },
+  {
+    "id": "en_q113",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "What does 'GPS' stand for?",
+    "choices": {
+      "a": "Global Positioning System",
+      "b": "Geographic Positioning Satellite",
+      "c": "Guided Positioning Software"
+    },
+    "answer": "A",
+    "funFact": "GPS was developed by the U.S. military in the 1970s and made available to civilians in the 1980s. It uses signals from at least 4 satellites to calculate your position within meters. GPS needs to account for Einstein's theory of relativity — without corrections, it would drift by about 10 km per day."
+  },
+  {
+    "id": "en_q114",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "Which company developed the ChatGPT AI model?",
+    "choices": {
+      "a": "Google",
+      "b": "Meta",
+      "c": "OpenAI"
+    },
+    "answer": "C",
+    "funFact": "OpenAI launched ChatGPT in November 2022, reaching 100 million users in just 2 months — the fastest consumer product adoption in history. OpenAI was founded in 2015 as a nonprofit by Elon Musk, Sam Altman, and others. Microsoft has invested heavily in the company."
+  },
+  {
+    "id": "en_q115",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "What is 'open source' software?",
+    "choices": {
+      "a": "Free software with no copyright",
+      "b": "Software whose source code is publicly available for anyone to view and modify",
+      "c": "Software developed by a government"
+    },
+    "answer": "B",
+    "funFact": "Open source software allows anyone to view, modify, and distribute the code. Linux, the most widely used operating system (powering 96% of servers and Android), is open source. The Apache web server, Python, and Android are all open source projects."
+  },
+  {
+    "id": "en_q116",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "In cryptography, what is a 'hash function' used for?",
+    "choices": {
+      "a": "Encrypting data that can be decrypted later",
+      "b": "Converting data into a fixed-size output that cannot be reversed",
+      "c": "Compressing files for storage"
+    },
+    "answer": "B",
+    "funFact": "Hash functions produce a fixed-size 'fingerprint' of data. Change even one character and the hash changes completely. They're used for password storage (websites store your password's hash, not the password itself) and data integrity checks. SHA-256 underpins Bitcoin's security."
+  },
+  {
+    "id": "en_q117",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "What is the name of the theoretical maximum efficiency of any communication channel?",
+    "choices": {
+      "a": "Nyquist limit",
+      "b": "Shannon capacity",
+      "c": "Turing threshold"
+    },
+    "answer": "B",
+    "funFact": "Claude Shannon's 1948 paper 'A Mathematical Theory of Communication' founded information theory and defined the maximum rate at which information can be reliably transmitted over a channel. This Shannon capacity is the theoretical limit that all modern communication systems try to approach."
+  },
+  {
+    "id": "en_q118",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "What is the name of the theoretical model of computation invented by Alan Turing?",
+    "choices": {
+      "a": "Boolean automaton",
+      "b": "Turing machine",
+      "c": "Von Neumann architecture"
+    },
+    "answer": "B",
+    "funFact": "The Turing machine (1936) is a theoretical device that manipulates symbols on a strip of tape according to rules — the foundation of modern computer science. Turing proved that some mathematical problems are undecidable. Despite his contributions, Turing was prosecuted for homosexuality and died at 41."
+  },
+  {
+    "id": "en_q119",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "What is 'quantum supremacy' in computing?",
+    "choices": {
+      "a": "When a quantum computer performs a task faster than any classical computer could",
+      "b": "When a quantum computer achieves 100% accuracy",
+      "c": "When a quantum computer reaches 1,000 qubits"
+    },
+    "answer": "A",
+    "funFact": "Google claimed 'quantum supremacy' in 2019 when its 53-qubit Sycamore processor completed a specific task in 200 seconds that would take classical computers 10,000 years. IBM disputed this estimate. Quantum computers use qubits that can be in superposition (0 and 1 simultaneously)."
+  },
+  {
+    "id": "en_q120",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "What is the 'Byzantine Generals Problem' in distributed computing?",
+    "choices": {
+      "a": "How to synchronize clocks across a network",
+      "b": "How to reach consensus among nodes when some may be faulty or malicious",
+      "c": "How to encrypt data transmitted across multiple servers"
+    },
+    "answer": "B",
+    "funFact": "The Byzantine Generals Problem (1982) describes how distributed systems can reach consensus even when some components behave maliciously or incorrectly. Solving it is central to blockchain technology — Bitcoin's proof-of-work mechanism is one solution to this problem."
+  }
+]

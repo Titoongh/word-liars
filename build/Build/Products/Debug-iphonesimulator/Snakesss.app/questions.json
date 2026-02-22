@@ -1,0 +1,3252 @@
+[
+  {
+    "id": "q001",
+    "question": "Quel est l'élément chimique le plus abondant dans l'univers ?",
+    "choices": {
+      "a": "L'hélium",
+      "b": "L'oxygène",
+      "c": "L'hydrogène"
+    },
+    "answer": "C",
+    "funFact": "L'hydrogène représente environ 75% de la masse de l'univers. C'est aussi le combustible des étoiles comme notre Soleil.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q002",
+    "question": "Combien de paires de chromosomes possède un être humain ?",
+    "choices": {
+      "a": "23 paires",
+      "b": "46 paires",
+      "c": "22 paires"
+    },
+    "answer": "A",
+    "funFact": "Les humains ont 23 paires soit 46 chromosomes au total. Les chimpanzés en ont 24 paires — une de plus que nous !",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q003",
+    "question": "Sur quelle planète du système solaire une journée dure-t-elle plus longtemps que son année ?",
+    "choices": {
+      "a": "Mars",
+      "b": "Vénus",
+      "c": "Mercure"
+    },
+    "answer": "B",
+    "funFact": "Vénus met 243 jours terrestres pour tourner sur elle-même, mais seulement 225 jours pour faire le tour du Soleil. Sa journée est donc plus longue que son année !",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q004",
+    "question": "À quelle température (en °C) l'eau bout-elle au sommet de l'Everest ?",
+    "choices": {
+      "a": "85 °C",
+      "b": "100 °C",
+      "c": "70 °C"
+    },
+    "answer": "C",
+    "funFact": "À 8 849 m d'altitude, la pression atmosphérique est si faible que l'eau bout à environ 70 °C. Impossible d'y préparer un œuf dur correctement !",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q005",
+    "question": "Quel est le métal le plus léger ?",
+    "choices": {
+      "a": "L'aluminium",
+      "b": "Le lithium",
+      "c": "Le magnésium"
+    },
+    "answer": "B",
+    "funFact": "Le lithium est si léger qu'il flotte sur l'eau — et il est aussi réactif au contact de l'air, ce qui le rend difficile à stocker.",
+    "category": "Food & Drink",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q006",
+    "question": "Quelle est la plus grande cellule du corps humain ?",
+    "choices": {
+      "a": "Le neurone",
+      "b": "L'ovule",
+      "c": "Le globule rouge"
+    },
+    "answer": "B",
+    "funFact": "L'ovule humain mesure environ 0,1 mm de diamètre — visible à l'œil nu ! C'est la seule cellule humaine qu'on peut voir sans microscope.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q007",
+    "question": "De quelle couleur est le sang d'un poulpe ?",
+    "choices": {
+      "a": "Rouge",
+      "b": "Bleu",
+      "c": "Vert"
+    },
+    "answer": "B",
+    "funFact": "Le sang des poulpes contient de l'hémocyanine (à base de cuivre) au lieu de l'hémoglobine. Ce pigment bleu transporte l'oxygène plus efficacement dans l'eau froide.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q008",
+    "question": "Quel gaz représente environ 78 % de l'atmosphère terrestre ?",
+    "choices": {
+      "a": "L'oxygène",
+      "b": "Le dioxyde de carbone",
+      "c": "L'azote"
+    },
+    "answer": "C",
+    "funFact": "L'azote est inerte et inodore. L'oxygène, lui, ne représente que 21 % de l'air. Si l'air était pur oxygène, tout brûlerait instantanément.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q009",
+    "question": "Quel est le plus grand organe du corps humain ?",
+    "choices": {
+      "a": "Le foie",
+      "b": "Le cerveau",
+      "c": "La peau"
+    },
+    "answer": "C",
+    "funFact": "La peau adulte pèse entre 3,5 et 5 kg et couvre environ 2 m². C'est un organe vital qui régule la température et protège contre les infections.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q010",
+    "question": "Combien d'os compte la main humaine (doigts, paume et poignet inclus) ?",
+    "choices": {
+      "a": "27",
+      "b": "20",
+      "c": "32"
+    },
+    "answer": "A",
+    "funFact": "Les deux mains réunies représentent plus d'un quart des 206 os du squelette humain adulte. La main est l'une des structures les plus complexes du corps.",
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q011",
+    "question": "À quelle vitesse se propage le son dans l'air (en m/s) ?",
+    "choices": {
+      "a": "343 m/s",
+      "b": "1 000 m/s",
+      "c": "220 m/s"
+    },
+    "answer": "A",
+    "funFact": "La vitesse du son varie selon le milieu : elle est 4 fois plus rapide dans l'eau et 15 fois plus rapide dans l'acier que dans l'air.",
+    "category": "Food & Drink",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q012",
+    "question": "À quelle distance (en millions de km) le Soleil se trouve-t-il de la Terre ?",
+    "choices": {
+      "a": "150 millions de km",
+      "b": "100 millions de km",
+      "c": "200 millions de km"
+    },
+    "answer": "A",
+    "funFact": "Cette distance est appelée \"unité astronomique\" (UA). La lumière du Soleil met environ 8 minutes et 20 secondes pour nous atteindre.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q013",
+    "question": "Combien d'étoiles compte approximativement la Voie Lactée ?",
+    "choices": {
+      "a": "100 millions",
+      "b": "100 milliards",
+      "c": "100 000 milliards"
+    },
+    "answer": "B",
+    "funFact": "La Voie Lactée contient entre 100 et 400 milliards d'étoiles. Notre galaxie elle-même est l'une des 2 000 milliards de galaxies dans l'univers observable.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q014",
+    "question": "Combien d'yeux possède une abeille ?",
+    "choices": {
+      "a": "2",
+      "b": "3",
+      "c": "5"
+    },
+    "answer": "C",
+    "funFact": "Les abeilles ont 2 grands yeux composés (qui voient les couleurs et les UV) et 3 petits yeux simples appelés ocelles, qui détectent la luminosité.",
+    "category": "Nature",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q015",
+    "question": "Quelle est la plus petite planète du système solaire ?",
+    "choices": {
+      "a": "Mercure",
+      "b": "Mars",
+      "c": "Pluton"
+    },
+    "answer": "A",
+    "funFact": "Mercure est plus petite que certaines lunes de Jupiter et Saturne ! Depuis le déclassement de Pluton en 2006, Mercure est officiellement la plus petite planète.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q016",
+    "question": "En quelle année Christophe Colomb a-t-il atteint l'Amérique ?",
+    "choices": {
+      "a": "1492",
+      "b": "1498",
+      "c": "1488"
+    },
+    "answer": "A",
+    "funFact": "Colomb pensait avoir atteint les Indes ! Ce sont les Amérindiens qu'il appelait \"Indiens\". Il ne réalisa jamais qu'il avait découvert un nouveau continent.",
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q017",
+    "question": "Quel empire a été le plus grand en superficie dans toute l'Histoire ?",
+    "choices": {
+      "a": "L'Empire romain",
+      "b": "L'Empire britannique",
+      "c": "L'Empire mongol"
+    },
+    "answer": "B",
+    "funFact": "À son apogée vers 1920, l'Empire britannique couvrait environ 24 % des terres émergées, soit 35,5 millions de km². Un quart de la planète portait le drapeau britannique.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q018",
+    "question": "En quelle année Napoléon Bonaparte est-il décédé ?",
+    "choices": {
+      "a": "1815",
+      "b": "1821",
+      "c": "1825"
+    },
+    "answer": "B",
+    "funFact": "Napoléon est mort le 5 mai 1821 sur l'île de Sainte-Hélène. La cause exacte de sa mort reste débattue : certains historiens soupçonnent un empoisonnement à l'arsenic.",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q019",
+    "question": "En quelle année la Tour Eiffel a-t-elle été inaugurée ?",
+    "choices": {
+      "a": "1889",
+      "b": "1900",
+      "c": "1884"
+    },
+    "answer": "A",
+    "funFact": "La Tour Eiffel a été construite en seulement 2 ans, 2 mois et 5 jours pour l'Exposition universelle de 1889. Elle devait être détruite en 1909 mais a été sauvée grâce à son antenne radio.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q020",
+    "question": "Quel pays a lancé le premier satellite artificiel en orbite autour de la Terre ?",
+    "choices": {
+      "a": "Les États-Unis",
+      "b": "La France",
+      "c": "L'URSS"
+    },
+    "answer": "C",
+    "funFact": "Spoutnik 1 a été lancé par l'URSS le 4 octobre 1957. Il n'émettait qu'un simple bip radio, mais cela a déclenché la course à l'espace entre Soviétiques et Américains.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q021",
+    "question": "Combien d'épouses le roi Henri VIII d'Angleterre a-t-il eues ?",
+    "choices": {
+      "a": "4",
+      "b": "6",
+      "c": "8"
+    },
+    "answer": "B",
+    "funFact": "Le sort de ses épouses se résume ainsi : \"divorcée, décapitée, morte, divorcée, décapitée, survécue\". Anne Boleyn et Catherine Howard furent les deux décapitées.",
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q022",
+    "question": "En quelle année la Révolution française a-t-elle débuté ?",
+    "choices": {
+      "a": "1789",
+      "b": "1793",
+      "c": "1787"
+    },
+    "answer": "A",
+    "funFact": "La prise de la Bastille le 14 juillet 1789 est le symbole de la Révolution. La forteresse ne contenait que 7 prisonniers ce jour-là, dont 4 faussaires.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q023",
+    "question": "Quel était le vrai prénom de Staline ?",
+    "choices": {
+      "a": "Vladimir",
+      "b": "Iossif",
+      "c": "Nikolaï"
+    },
+    "answer": "B",
+    "funFact": "Son vrai nom était Iossif Vissarionovitch Djougachvili. \"Staline\" est un pseudonyme qu'il s'est choisi, signifiant \"homme d'acier\" en russe.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q024",
+    "question": "En quelle année s'est déroulée la Bataille de Waterloo ?",
+    "choices": {
+      "a": "1815",
+      "b": "1813",
+      "c": "1812"
+    },
+    "answer": "A",
+    "funFact": "La bataille du 18 juin 1815 dura moins de 9 heures. Napoléon fut exilé définitivement à Sainte-Hélène après cette défaite face aux armées de Wellington et Blücher.",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q025",
+    "question": "Quel pays a subi le plus grand nombre de pertes humaines lors de la Seconde Guerre mondiale ?",
+    "choices": {
+      "a": "L'Allemagne",
+      "b": "La Chine",
+      "c": "L'URSS"
+    },
+    "answer": "C",
+    "funFact": "L'URSS a perdu entre 26 et 27 millions de personnes, soit environ 14 % de sa population. Ces pertes colossales expliquent en partie la psychologie russe vis-à-vis de la guerre.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q026",
+    "question": "Qui a inventé l'imprimerie à caractères mobiles en Europe ?",
+    "choices": {
+      "a": "Léonard de Vinci",
+      "b": "Johann Gutenberg",
+      "c": "Nicolas Copernic"
+    },
+    "answer": "B",
+    "funFact": "Gutenberg a imprimé sa célèbre Bible vers 1455. Sa technique a révolutionné la diffusion du savoir — la technique existait en Chine depuis le XIe siècle, mais Gutenberg l'a développée indépendamment.",
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q027",
+    "question": "Quel pharaon a ordonné la construction de la Grande Pyramide de Gizeh ?",
+    "choices": {
+      "a": "Ramsès II",
+      "b": "Toutânkhamon",
+      "c": "Khéops"
+    },
+    "answer": "C",
+    "funFact": "Khéops a régné vers 2560 av. J.-C. La pyramide qui porte son nom a été la plus haute structure construite par l'homme pendant plus de 3 800 ans.",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q028",
+    "question": "Quelle civilisation ancienne a inventé l'écriture cunéiforme ?",
+    "choices": {
+      "a": "Les Égyptiens",
+      "b": "Les Babyloniens",
+      "c": "Les Sumériens"
+    },
+    "answer": "C",
+    "funFact": "L'écriture cunéiforme sumérienne, datant d'environ 3400 av. J.-C., est considérée comme la plus ancienne écriture du monde. Elle était gravée sur des tablettes d'argile.",
+    "category": "History",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q029",
+    "question": "En quelle année le mur de Berlin est-il tombé ?",
+    "choices": {
+      "a": "1987",
+      "b": "1991",
+      "c": "1989"
+    },
+    "answer": "C",
+    "funFact": "Le mur est tombé le 9 novembre 1989 après une conférence de presse improvisée où un officiel est-allemand a maladroitement annoncé l'ouverture des frontières \"immédiatement, sans délai\".",
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q030",
+    "question": "Qui était le premier président des États-Unis ?",
+    "choices": {
+      "a": "George Washington",
+      "b": "Benjamin Franklin",
+      "c": "Thomas Jefferson"
+    },
+    "answer": "A",
+    "funFact": "Washington a refusé d'être élu roi après la guerre d'indépendance. Son refus du pouvoir absolu est souvent cité comme l'un des actes fondateurs de la démocratie américaine.",
+    "category": "History",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q031",
+    "question": "Quel est le plus grand désert du monde en superficie ?",
+    "choices": {
+      "a": "Le Sahara",
+      "b": "L'Antarctique",
+      "c": "Le Gobi"
+    },
+    "answer": "B",
+    "funFact": "L'Antarctique est un désert polaire de 14,2 millions de km², presque deux fois plus grand que le Sahara (9,2 millions de km²). Un désert se définit par la faiblesse des précipitations, pas la chaleur.",
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q032",
+    "question": "Quelle est la capitale de l'Australie ?",
+    "choices": {
+      "a": "Sydney",
+      "b": "Melbourne",
+      "c": "Canberra"
+    },
+    "answer": "C",
+    "funFact": "Canberra a été construite de toutes pièces comme capitale fédérale en 1913 pour éviter la rivalité entre Sydney et Melbourne, qui voulaient toutes les deux être la capitale.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q033",
+    "question": "Quel pays était le plus peuplé du monde en 2024 ?",
+    "choices": {
+      "a": "La Chine",
+      "b": "Les États-Unis",
+      "c": "L'Inde"
+    },
+    "answer": "C",
+    "funFact": "L'Inde a dépassé la Chine en 2023 avec plus de 1,42 milliard d'habitants. La politique de l'enfant unique en Chine a ralenti sa croissance démographique pendant des décennies.",
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q034",
+    "question": "Quelle est la ville la plus peuplée du monde ?",
+    "choices": {
+      "a": "Tokyo",
+      "b": "Delhi",
+      "c": "Shanghai"
+    },
+    "answer": "A",
+    "funFact": "L'aire métropolitaine de Tokyo compte environ 37 millions d'habitants. C'est plus que la population entière du Canada !",
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q035",
+    "question": "Quel est le plus haut sommet d'Afrique ?",
+    "choices": {
+      "a": "Le Mont Kenya",
+      "b": "Le Kilimandjaro",
+      "c": "Le Mont Cameroun"
+    },
+    "answer": "B",
+    "funFact": "Le Kilimandjaro culmine à 5 895 m en Tanzanie. Paradoxalement, ses glaciers sommitaux fondent rapidement : on estime qu'ils auront disparu avant 2050.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q036",
+    "question": "Quelle mer est considérée comme la plus salée du monde ?",
+    "choices": {
+      "a": "La Mer Morte",
+      "b": "La Mer Rouge",
+      "c": "La Mer Caspienne"
+    },
+    "answer": "A",
+    "funFact": "La Mer Morte a une salinité d'environ 30 %, soit 10 fois plus que l'eau de mer ordinaire. On ne peut pas y couler : la densité de l'eau est trop élevée pour qu'on s'y noie.",
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q037",
+    "question": "Quel est le plus long tunnel ferroviaire du monde ?",
+    "choices": {
+      "a": "Le tunnel sous la Manche",
+      "b": "Le tunnel du Gothard",
+      "c": "Le tunnel de Seikan"
+    },
+    "answer": "B",
+    "funFact": "Le tunnel de base du Saint-Gothard en Suisse mesure 57,1 km. Ouvert en 2016, il a nécessité 17 ans de construction et 28 millions d'heures de travail.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q038",
+    "question": "Quelle est la rivière la plus longue d'Europe ?",
+    "choices": {
+      "a": "Le Danube",
+      "b": "Le Rhin",
+      "c": "La Volga"
+    },
+    "answer": "C",
+    "funFact": "La Volga mesure 3 531 km et se jette dans la mer Caspienne. Symbole national de la Russie, elle est souvent appelée \"Mère Volga\" par les Russes.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q039",
+    "question": "Dans quel pays se trouve le lac le plus profond du monde ?",
+    "choices": {
+      "a": "La Russie",
+      "b": "La Mongolie",
+      "c": "Le Canada"
+    },
+    "answer": "A",
+    "funFact": "Le lac Baïkal en Sibérie atteint 1 642 m de profondeur et contient à lui seul environ 20 % de toute l'eau douce non glacée de la planète.",
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q040",
+    "question": "Avec quel pays la France partage-t-elle sa plus longue frontière terrestre ?",
+    "choices": {
+      "a": "L'Espagne",
+      "b": "L'Italie",
+      "c": "La Belgique"
+    },
+    "answer": "A",
+    "funFact": "La frontière franco-espagnole mesure environ 646 km le long des Pyrénées. La frontière avec la Belgique est la deuxième plus longue avec 620 km.",
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q041",
+    "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+    "choices": {
+      "a": "Auckland",
+      "b": "Wellington",
+      "c": "Christchurch"
+    },
+    "answer": "B",
+    "funFact": "Wellington est la capitale la plus australe du monde. Beaucoup de gens pensent que c'est Auckland, qui est pourtant plus grande — une confusion classique !",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q042",
+    "question": "Quel est le seul pays traversé à la fois par l'équateur et le tropique du Capricorne ?",
+    "choices": {
+      "a": "L'Indonésie",
+      "b": "Le Brésil",
+      "c": "La Colombie"
+    },
+    "answer": "B",
+    "funFact": "Le Brésil est si immense qu'il couvre à la fois l'hémisphère nord (équateur) et le milieu de l'hémisphère sud (tropique du Capricorne). C'est le 5e plus grand pays du monde.",
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q043",
+    "question": "Quelle est la plus longue chaîne de montagnes au monde ?",
+    "choices": {
+      "a": "La Cordillère des Andes",
+      "b": "Les Rocheuses",
+      "c": "L'Himalaya"
+    },
+    "answer": "A",
+    "funFact": "Les Andes s'étendent sur environ 7 000 km le long de la côte ouest de l'Amérique du Sud, traversant 7 pays. Elles abritent Aconcagua, le plus haut sommet hors d'Asie.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q044",
+    "question": "Quel est le plus grand pays du monde en superficie ?",
+    "choices": {
+      "a": "La Russie",
+      "b": "Le Canada",
+      "c": "La Chine"
+    },
+    "answer": "A",
+    "funFact": "La Russie couvre 17,1 millions de km², soit environ deux fois la superficie des États-Unis. Elle s'étend sur 11 fuseaux horaires différents.",
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q045",
+    "question": "Dans quel océan se trouve la fosse la plus profonde du monde ?",
+    "choices": {
+      "a": "L'océan Atlantique",
+      "b": "L'océan Indien",
+      "c": "L'océan Pacifique"
+    },
+    "answer": "C",
+    "funFact": "La fosse des Mariannes dans l'océan Pacifique atteint 11 034 m de profondeur. Si on y plaçait l'Everest, il y aurait encore plus de 2 km d'eau au-dessus de son sommet.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q046",
+    "question": "Dans quelle ville fictive se déroule la série \"Stranger Things\" ?",
+    "choices": {
+      "a": "Hawkins",
+      "b": "Springfield",
+      "c": "Riverdale"
+    },
+    "answer": "A",
+    "funFact": "Hawkins est une ville fictive d'Indiana. Les frères Duffer se sont inspirés de Montauk (New York) et de l'atmosphère des années 80 pour créer l'univers de la série.",
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q047",
+    "question": "Quel est le vrai nom de Lady Gaga ?",
+    "choices": {
+      "a": "Stefani Germanotta",
+      "b": "Christina Ciccone",
+      "c": "Valentina Ricci"
+    },
+    "answer": "A",
+    "funFact": "Son pseudonyme \"Lady Gaga\" vient de la chanson \"Radio Ga Ga\" de Queen. Son manager a envoyé un SMS avec ce surnom par erreur, et il lui est resté.",
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q048",
+    "question": "Combien de saisons comporte la série \"Breaking Bad\" ?",
+    "choices": {
+      "a": "6",
+      "b": "5",
+      "c": "4"
+    },
+    "answer": "B",
+    "funFact": "La série de Vince Gilligan a été diffusée de 2008 à 2013. Bryan Cranston, qui jouait Walter White, était surtout connu avant pour son rôle comique dans \"Malcolm\" !",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q049",
+    "question": "Quel acteur joue Tony Stark / Iron Man dans les films Marvel ?",
+    "choices": {
+      "a": "Chris Evans",
+      "b": "Robert Downey Jr.",
+      "c": "Mark Ruffalo"
+    },
+    "answer": "B",
+    "funFact": "Robert Downey Jr. a failli ne pas obtenir le rôle car les studios avaient des réserves sur son passé. C'est le réalisateur Jon Favreau qui a insisté pour lui donner sa chance.",
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q050",
+    "question": "Dans quel pays Justin Bieber est-il né ?",
+    "choices": {
+      "a": "Les États-Unis",
+      "b": "Le Canada",
+      "c": "L'Australie"
+    },
+    "answer": "B",
+    "funFact": "Justin Bieber est né à London, en Ontario (Canada) en 1994. Il a été découvert à 13 ans grâce à ses vidéos YouTube par le manager de talents Scooter Braun.",
+    "category": "Geography",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q051",
+    "question": "Quelle est la série Netflix la plus regardée de tous les temps en nombre d'heures de visionnage ?",
+    "choices": {
+      "a": "Stranger Things",
+      "b": "Squid Game",
+      "c": "Wednesday"
+    },
+    "answer": "B",
+    "funFact": "Squid Game a cumulé 1,65 milliard d'heures de visionnage dans ses 28 premiers jours — un record absolu pour Netflix. La série sud-coréenne a été vue dans 94 pays.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q052",
+    "question": "Quel est le vrai prénom de Madonna ?",
+    "choices": {
+      "a": "Maria",
+      "b": "Louise",
+      "c": "Sandra"
+    },
+    "answer": "B",
+    "funFact": "Son nom complet est Madonna Louise Ciccone. Elle a adopté le prénom de sa mère qui est décédée d'un cancer du sein quand Madonna avait 5 ans.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q053",
+    "question": "Combien d'Oscars le film \"Titanic\" (1997) a-t-il remportés ?",
+    "choices": {
+      "a": "11",
+      "b": "8",
+      "c": "13"
+    },
+    "answer": "A",
+    "funFact": "\"Titanic\" a égalé le record de \"Ben-Hur\" (1959) avec 11 Oscars. Le film a coûté 200 millions de dollars, ce qui en faisait alors le film le plus cher de l'Histoire.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q054",
+    "question": "Quel acteur a incarné James Bond le plus grand nombre de fois ?",
+    "choices": {
+      "a": "Sean Connery",
+      "b": "Roger Moore",
+      "c": "Daniel Craig"
+    },
+    "answer": "B",
+    "funFact": "Roger Moore a joué Bond dans 7 films entre 1973 et 1985. Il était également célèbre pour ses sourcils expressifs et son humour pince-sans-rire.",
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q055",
+    "question": "Quel est le pseudonyme artistique de Marshall Mathers ?",
+    "choices": {
+      "a": "Jay-Z",
+      "b": "Eminem",
+      "c": "50 Cent"
+    },
+    "answer": "B",
+    "funFact": "\"Eminem\" vient des initiales M&M (Marshall Mathers). Né à Detroit en 1972, il a été l'artiste solo le plus vendu des années 2000 malgré le fait d'être blanc dans un genre à dominante noire.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q056",
+    "question": "Quel jeu vidéo est le plus vendu au monde en tant que titre unique ?",
+    "choices": {
+      "a": "Minecraft",
+      "b": "Tetris (Game Boy)",
+      "c": "GTA V"
+    },
+    "answer": "A",
+    "funFact": "Minecraft a vendu plus de 238 millions de copies sur toutes les plateformes. Il a été créé par le Suédois Markus \"Notch\" Persson et vendu à Microsoft pour 2,5 milliards de dollars.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q057",
+    "question": "Quelle chanteuse est surnommée \"Mother Monster\" par ses fans ?",
+    "choices": {
+      "a": "Rihanna",
+      "b": "Katy Perry",
+      "c": "Lady Gaga"
+    },
+    "answer": "C",
+    "funFact": "Lady Gaga appelle ses fans les \"Little Monsters\". Elle a créé ce surnom en signe d'appartenance et de solidarité avec ceux qui se sentaient différents ou marginalisés.",
+    "category": "Culture",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q058",
+    "question": "Quel est le vrai prénom de Snoop Dogg ?",
+    "choices": {
+      "a": "Curtis",
+      "b": "Calvin",
+      "c": "DeAndre"
+    },
+    "answer": "B",
+    "funFact": "Son nom complet est Calvin Cordozar Broadus Jr. Son surnom \"Snoop Dogg\" lui a été donné par sa mère qui trouvait qu'il ressemblait à Snoopy, le personnage de Peanuts.",
+    "category": "Food & Drink",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q059",
+    "question": "En quelle année la plateforme YouTube a-t-elle été fondée ?",
+    "choices": {
+      "a": "2003",
+      "b": "2005",
+      "c": "2007"
+    },
+    "answer": "B",
+    "funFact": "YouTube a été fondé le 14 février 2005 (Saint-Valentin !) par trois anciens employés de PayPal. Google l'a rachetée dès 2006 pour 1,65 milliard de dollars.",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q060",
+    "question": "Quel groupe a vendu le plus d'albums de tous les temps ?",
+    "choices": {
+      "a": "Les Rolling Stones",
+      "b": "Les Beatles",
+      "c": "ABBA"
+    },
+    "answer": "B",
+    "funFact": "Les Beatles ont vendu entre 600 millions et 1 milliard d'albums. Ils restent le groupe le plus influent de l'histoire de la musique pop, avec des records qui n'ont jamais été battus.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q061",
+    "question": "En quelle année la France a-t-elle remporté sa première Coupe du Monde de football ?",
+    "choices": {
+      "a": "1994",
+      "b": "1998",
+      "c": "2002"
+    },
+    "answer": "B",
+    "funFact": "La France a battu le Brésil 3-0 en finale le 12 juillet 1998 au Stade de France. Zinédine Zidane a marqué deux buts de la tête. Les Bleus avaient alors 23 joueurs nés en France métropolitaine ou dans les DOM-TOM.",
+    "category": "Sports",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q062",
+    "question": "Quel pays a remporté le plus de médailles d'or aux Jeux olympiques d'été (total cumulé) ?",
+    "choices": {
+      "a": "La Russie / URSS",
+      "b": "La Chine",
+      "c": "Les États-Unis"
+    },
+    "answer": "C",
+    "funFact": "Les États-Unis totalisent plus de 1 000 médailles d'or aux JO d'été. Michael Phelps à lui seul en a remporté 23, soit plus que de nombreuses nations entières.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q063",
+    "question": "Quelle est la distance exacte d'un marathon ?",
+    "choices": {
+      "a": "42,195 km",
+      "b": "40 km",
+      "c": "45 km"
+    },
+    "answer": "A",
+    "funFact": "Cette distance bizarre vient des JO de 1908 à Londres : la course a été allongée pour que les coureurs partent du château de Windsor et arrivent devant la loge royale au stade olympique.",
+    "category": "Sports",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q064",
+    "question": "Qui détient le record du monde du 100 mètres sprint ?",
+    "choices": {
+      "a": "Usain Bolt",
+      "b": "Carl Lewis",
+      "c": "Justin Gatlin"
+    },
+    "answer": "A",
+    "funFact": "Usain Bolt a couru le 100m en 9,58 secondes lors des Mondiaux de Berlin en 2009. À cette vitesse, il atteignait environ 44,72 km/h à son pic de vitesse maximale.",
+    "category": "Sports",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q065",
+    "question": "Dans quel sport peut-on réaliser un \"albatros\" ?",
+    "choices": {
+      "a": "Le football américain",
+      "b": "Le golf",
+      "c": "Le tennis"
+    },
+    "answer": "B",
+    "funFact": "Au golf, un albatros signifie réaliser un trou en 3 coups sous le par. C'est encore plus rare qu'un eagle (2 sous le par). On l'appelle aussi \"double eagle\" aux États-Unis.",
+    "category": "Sports",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q066",
+    "question": "Combien de sets faut-il gagner pour remporter un match de Grand Chelem masculin en tennis ?",
+    "choices": {
+      "a": "2",
+      "b": "3",
+      "c": "4"
+    },
+    "answer": "B",
+    "funFact": "Les matchs masculins en Grand Chelem se jouent au meilleur des 5 sets, il faut donc en gagner 3. Les femmes jouent au meilleur des 3 sets, soit 2 sets à gagner.",
+    "category": "Sports",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q067",
+    "question": "En quelle année se sont déroulés les premiers Jeux olympiques modernes ?",
+    "choices": {
+      "a": "1900",
+      "b": "1888",
+      "c": "1896"
+    },
+    "answer": "C",
+    "funFact": "Les premiers JO modernes ont eu lieu à Athènes en 1896, organisés par le baron Pierre de Coubertin. 14 nations ont participé et seuls des hommes pouvaient concourir.",
+    "category": "Sports",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q068",
+    "question": "Quel est le surnom de l'équipe de rugby à XV de Nouvelle-Zélande ?",
+    "choices": {
+      "a": "Les All Blacks",
+      "b": "Les Springboks",
+      "c": "Les Wallabies"
+    },
+    "answer": "A",
+    "funFact": "Les All Blacks sont connus pour leur redoutable Haka, une danse guerrière maorie exécutée avant chaque match. Le \"Ka Mate\" est le plus célèbre.",
+    "category": "Sports",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q069",
+    "question": "Combien de joueurs par équipe évoluent sur un terrain de basketball ?",
+    "choices": {
+      "a": "6",
+      "b": "5",
+      "c": "7"
+    },
+    "answer": "B",
+    "funFact": "Le basketball a été inventé en 1891 par le Canadien James Naismith. Les premiers matchs utilisaient des paniers à pêches comme buts — et quelqu'un devait grimper récupérer le ballon après chaque panier !",
+    "category": "Sports",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q070",
+    "question": "Dans quelle ville se sont tenus les Jeux olympiques d'été 2024 ?",
+    "choices": {
+      "a": "Los Angeles",
+      "b": "Brisbane",
+      "c": "Paris"
+    },
+    "answer": "C",
+    "funFact": "Paris 2024 était la troisième fois que la France accueillait les JO d'été (1900 et 1924). La cérémonie d'ouverture sur la Seine a rassemblé environ 10 000 athlètes sur des bateaux.",
+    "category": "Sports",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q071",
+    "question": "Combien de cœurs possède un poulpe ?",
+    "choices": {
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "answer": "C",
+    "funFact": "Un poulpe a 3 cœurs : 2 cœurs branchiaux qui pompent le sang vers les branchies, et 1 cœur systémique qui distribue le sang oxygéné dans le corps. Quand il nage, ce dernier s'arrête !",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q072",
+    "question": "Quel insecte est responsable du plus grand nombre de morts humaines chaque année ?",
+    "choices": {
+      "a": "L'abeille",
+      "b": "Le moustique",
+      "c": "La guêpe"
+    },
+    "answer": "B",
+    "funFact": "Le moustique tue entre 700 000 et 1 million de personnes par an, principalement via le paludisme. Les requins, eux, tuent moins de 10 personnes par an en moyenne.",
+    "category": "Nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q073",
+    "question": "Combien de temps un escargot peut-il hiberner sans s'alimenter ?",
+    "choices": {
+      "a": "3 mois",
+      "b": "Jusqu'à 3 ans",
+      "c": "1 an"
+    },
+    "answer": "B",
+    "funFact": "Les escargots peuvent entrer en estivation (comme l'hibernation mais en été) ou en hibernation pendant des années. Ils scellent leur coquille avec du mucus séché pour éviter la déshydratation.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q074",
+    "question": "De quelle couleur est le sang d'un homard vivant ?",
+    "choices": {
+      "a": "Rouge",
+      "b": "Bleu",
+      "c": "Incolore"
+    },
+    "answer": "B",
+    "funFact": "Comme le poulpe, le homard possède de l'hémocyanine à base de cuivre dans son sang, le rendant bleu. Ce pigment devient incolore quand il n'est pas oxygéné.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q075",
+    "question": "Quel est le seul mammifère naturellement capable de voler (pas seulement planer) ?",
+    "choices": {
+      "a": "La chauve-souris",
+      "b": "L'écureuil volant",
+      "c": "Le colugo"
+    },
+    "answer": "A",
+    "funFact": "Il existe plus de 1 400 espèces de chauves-souris, soit environ 20 % de toutes les espèces de mammifères. Elles constituent le deuxième ordre de mammifères le plus diversifié après les rongeurs.",
+    "category": "Nature",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q076",
+    "question": "Quel animal terrestre possède la période de gestation la plus longue ?",
+    "choices": {
+      "a": "L'éléphant",
+      "b": "La baleine bleue",
+      "c": "Le rhinocéros"
+    },
+    "answer": "A",
+    "funFact": "L'éléphante d'Afrique est gestante pendant environ 22 mois (640 à 660 jours). À la naissance, le bébé éléphant pèse déjà environ 100 kg !",
+    "category": "Nature",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q077",
+    "question": "De quelle couleur est la peau d'un ours polaire sous sa fourrure blanche ?",
+    "choices": {
+      "a": "Blanche",
+      "b": "Rose",
+      "c": "Noire"
+    },
+    "answer": "C",
+    "funFact": "La peau noire de l'ours polaire absorbe la chaleur du soleil. Sa fourrure, en réalité transparente et creuse, diffuse et réfléchit la lumière, ce qui lui donne son apparence blanche.",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q078",
+    "question": "Quel est le mammifère venimeux le plus connu dans la nature ?",
+    "choices": {
+      "a": "Le hérisson",
+      "b": "L'ornithorynque",
+      "c": "La taupe à queue velue"
+    },
+    "answer": "B",
+    "funFact": "Le mâle ornithorynque possède des éperons venimeux sur les pattes arrière. Son venin est suffisamment puissant pour tuer un chien, et provoque une douleur intense et durable chez l'humain.",
+    "category": "Nature",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q079",
+    "question": "Combien de dents possède un être humain adulte (dents de sagesse incluses) ?",
+    "choices": {
+      "a": "28",
+      "b": "32",
+      "c": "36"
+    },
+    "answer": "B",
+    "funFact": "Les 32 dents comprennent 8 incisives, 4 canines, 8 prémolaires et 12 molaires (dont 4 dents de sagesse). Beaucoup de personnes n'ont pas leurs 4 dents de sagesse ou les font retirer.",
+    "category": "Food & Drink",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q080",
+    "question": "Quel est l'animal terrestre le plus lourd du monde ?",
+    "choices": {
+      "a": "L'éléphant d'Afrique",
+      "b": "Le rhinocéros blanc",
+      "c": "L'hippopotame"
+    },
+    "answer": "A",
+    "funFact": "Un éléphant d'Afrique mâle peut peser jusqu'à 6 000 kg. Malgré leur taille, les éléphants peuvent courir à 25 km/h et nager sur de longues distances en utilisant leur trompe comme tuba.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q081",
+    "question": "En quelle année Apple a-t-il lancé le premier iPhone ?",
+    "choices": {
+      "a": "2006",
+      "b": "2007",
+      "c": "2008"
+    },
+    "answer": "B",
+    "funFact": "Steve Jobs a présenté l'iPhone le 9 janvier 2007 en disant qu'Apple allait \"réinventer le téléphone\". Les premiers acheteurs ont fait la queue pendant des jours devant les Apple Stores.",
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q082",
+    "question": "Qui sont les co-fondateurs de Microsoft ?",
+    "choices": {
+      "a": "Steve Jobs et Steve Wozniak",
+      "b": "Larry Page et Sergey Brin",
+      "c": "Bill Gates et Paul Allen"
+    },
+    "answer": "C",
+    "funFact": "Bill Gates et Paul Allen ont fondé Microsoft en 1975 à Albuquerque (Nouveau-Mexique). Ils se connaissaient depuis le lycée où ils passaient leurs nuits à programmer sur les ordinateurs de l'école.",
+    "category": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q083",
+    "question": "En quelle année Google a-t-il été fondé ?",
+    "choices": {
+      "a": "2000",
+      "b": "1998",
+      "c": "1995"
+    },
+    "answer": "B",
+    "funFact": "Larry Page et Sergey Brin ont fondé Google en 1998 dans un garage de Menlo Park. Le nom vient du mot \"googol\" (10 puissance 100), reflétant leur ambition d'organiser l'immensité du web.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q084",
+    "question": "Quel pays compte le plus grand nombre d'internautes au monde ?",
+    "choices": {
+      "a": "Les États-Unis",
+      "b": "L'Inde",
+      "c": "La Chine"
+    },
+    "answer": "C",
+    "funFact": "La Chine compte plus d'un milliard d'internautes, mais son internet est très censuré. Le \"Grand Firewall de Chine\" bloque Google, Facebook, YouTube et la plupart des sites occidentaux.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q085",
+    "question": "Qui a déposé le premier brevet officiel du téléphone ?",
+    "choices": {
+      "a": "Alexander Graham Bell",
+      "b": "Thomas Edison",
+      "c": "Nikola Tesla"
+    },
+    "answer": "A",
+    "funFact": "Bell a déposé son brevet le 14 février 1876 — quelques heures seulement avant Elisha Gray. L'inventeur Antonio Meucci avait pourtant déposé une caveat en 1871 mais manquait d'argent pour le renouveler.",
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q086",
+    "question": "Quel système d'exploitation pour smartphone a été développé par Google ?",
+    "choices": {
+      "a": "iOS",
+      "b": "Android",
+      "c": "Windows Phone"
+    },
+    "answer": "B",
+    "funFact": "Android a été créé par Android Inc. en 2003, puis racheté par Google en 2005. Il équipe aujourd'hui environ 72 % des smartphones dans le monde.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q087",
+    "question": "Quel langage de programmation était le plus populaire en 2023 selon l'index TIOBE ?",
+    "choices": {
+      "a": "Python",
+      "b": "Java",
+      "c": "C++"
+    },
+    "answer": "A",
+    "funFact": "Python a été créé en 1991 par le Néerlandais Guido van Rossum. Son nom vient du groupe comique Monty Python, dont Van Rossum était fan. Il est maintenant le langage n°1 grâce à l'IA et la data science.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q088",
+    "question": "En quelle année ARPANET, l'ancêtre d'Internet, a-t-il été créé ?",
+    "choices": {
+      "a": "1969",
+      "b": "1975",
+      "c": "1980"
+    },
+    "answer": "A",
+    "funFact": "Le premier message envoyé sur ARPANET en 1969 était \"lo\" — le système a planté avant d'envoyer \"login\". Pas un début très glorieux pour ce qui allait devenir Internet !",
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q089",
+    "question": "Quel est le nom du premier navigateur web graphique grand public ?",
+    "choices": {
+      "a": "Netscape",
+      "b": "Mosaic",
+      "c": "Internet Explorer"
+    },
+    "answer": "B",
+    "funFact": "Mosaic a été développé en 1993 par Marc Andreessen. C'est lui qui a eu l'idée d'intégrer les images directement dans les pages web. Andreessen a ensuite cofondé Netscape.",
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q090",
+    "question": "Combien de bits contient un octet ?",
+    "choices": {
+      "a": "4",
+      "b": "8",
+      "c": "16"
+    },
+    "answer": "B",
+    "funFact": "Un octet (byte) contient 8 bits, ce qui permet de coder 256 valeurs différentes (de 0 à 255). Le terme \"octet\" vient du latin \"octo\" (huit). En anglais, on dit \"byte\" mais parfois aussi \"octet\".",
+    "category": "Technology",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q091",
+    "question": "Quelle épice est la plus chère au monde au kilogramme ?",
+    "choices": {
+      "a": "La vanille",
+      "b": "Le safran",
+      "c": "Le poivre de Sichuan"
+    },
+    "answer": "B",
+    "funFact": "Le safran peut coûter entre 5 000 et 10 000 € le kilo. Il faut environ 150 000 fleurs de crocus récoltées à la main pour produire 1 kg de safran — d'où son prix astronomique.",
+    "category": "Geography",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q092",
+    "question": "Dans quel pays le croissant a-t-il été inventé sous sa forme originelle ?",
+    "choices": {
+      "a": "En France",
+      "b": "En Autriche",
+      "c": "En Belgique"
+    },
+    "answer": "B",
+    "funFact": "Le croissant vient du \"Kipferl\" autrichien. C'est Marie-Antoinette, princesse autrichienne, qui aurait popularisé cette viennoiserie en France. La forme en croissant rappelait le croissant de lune ottomane.",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q093",
+    "question": "De quel fruit est principalement composé le guacamole ?",
+    "choices": {
+      "a": "L'avocat",
+      "b": "La mangue",
+      "c": "La papaye"
+    },
+    "answer": "A",
+    "funFact": "L'avocat est techniquement un fruit à noyau (une drupe), comme la pêche ou la cerise. Le guacamole est préparé depuis plus de 500 ans au Mexique ; \"ahuacamolli\" en nahuatl signifie \"sauce d'avocat\".",
+    "category": "Food & Drink",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q094",
+    "question": "Quel pays est le premier producteur mondial de café ?",
+    "choices": {
+      "a": "La Colombie",
+      "b": "L'Éthiopie",
+      "c": "Le Brésil"
+    },
+    "answer": "C",
+    "funFact": "Le Brésil produit environ 35 % du café mondial. Le café arabica vient d'Éthiopie, où une légende dit qu'un berger nommé Kaldi a découvert ses effets stimulants en observant ses chèvres.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q095",
+    "question": "Quelle herbe aromatique est la base du pesto génois traditionnel ?",
+    "choices": {
+      "a": "Le persil",
+      "b": "Le basilic",
+      "c": "La coriandre"
+    },
+    "answer": "B",
+    "funFact": "Le pesto alla genovese traditionnel contient du basilic, de l'huile d'olive, des pignons de pin, de l'ail et du fromage pecorino ou parmesan. \"Pesto\" vient du verbe \"pestare\" (écraser en italien).",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q096",
+    "question": "Combien de litres de lait faut-il approximativement pour produire 1 kg de fromage ?",
+    "choices": {
+      "a": "5 litres",
+      "b": "10 litres",
+      "c": "20 litres"
+    },
+    "answer": "B",
+    "funFact": "Il faut environ 10 litres de lait pour 1 kg de fromage à pâte dure comme le comté. Pour le fromage frais, c'est moins (4-5 litres). C'est pourquoi le fromage est toujours plus cher que le lait.",
+    "category": "Food & Drink",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q097",
+    "question": "Quelle boisson est la plus consommée dans le monde après l'eau ?",
+    "choices": {
+      "a": "Le café",
+      "b": "Le thé",
+      "c": "La bière"
+    },
+    "answer": "B",
+    "funFact": "Le thé est consommé depuis plus de 5 000 ans en Chine. Il représente environ 3 millions de tonnes produites par an dans le monde. La légende dit qu'il fut découvert en 2737 av. J.-C. par l'Empereur Shen Nong.",
+    "category": "Food & Drink",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q098",
+    "question": "Combien de bulles contient approximativement une flûte de champagne ?",
+    "choices": {
+      "a": "100 000",
+      "b": "1 million",
+      "c": "10 millions"
+    },
+    "answer": "B",
+    "funFact": "Une flûte de champagne contient environ 1 million de bulles. Chaque bulle se forme sur un minuscule point d'impureté ou une fibre sur la paroi du verre. C'est pourquoi le type de verre change tout !",
+    "category": "Science",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q099",
+    "question": "Quel fromage est indispensable dans un tiramisu traditionnel ?",
+    "choices": {
+      "a": "La ricotta",
+      "b": "Le mascarpone",
+      "c": "Le cream cheese"
+    },
+    "answer": "B",
+    "funFact": "Le tiramisu (\"remonte-moi\" en italien) vient du Frioul, dans le nord-est de l'Italie. La recette date des années 1960. Le mascarpone est un fromage frais très crémeux au goût doux, originaire de Lombardie.",
+    "category": "Food & Drink",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q100",
+    "question": "Quel piment est utilisé dans la sauce Tabasco originale ?",
+    "choices": {
+      "a": "Le piment de Cayenne",
+      "b": "Le piment Tabasco",
+      "c": "Le jalapeño"
+    },
+    "answer": "B",
+    "funFact": "La sauce Tabasco est fabriquée depuis 1868 sur Avery Island en Louisiane par la famille McIlhenny. Les piments sont vieillis dans des fûts de chêne pendant 3 ans avant d'être transformés en sauce.",
+    "category": "Food & Drink",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q101",
+    "question": "Quel est le vrai prénom du rappeur Drake ?",
+    "choices": {
+      "a": "Aubrey",
+      "b": "Marcus",
+      "c": "Darnell"
+    },
+    "answer": "A",
+    "funFact": "Drake s'appelle Aubrey Drake Graham. Il est né à Toronto en 1986. Avant de devenir rappeur, il jouait Jimmy Brooks dans la série canadienne \"Degrassi: The Next Generation\".",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q102",
+    "question": "En quelle année Michael Jackson est-il décédé ?",
+    "choices": {
+      "a": "2007",
+      "b": "2011",
+      "c": "2009"
+    },
+    "answer": "C",
+    "funFact": "Michael Jackson est décédé le 25 juin 2009 d'un arrêt cardiaque causé par une overdose de propofol. Il était en pleine préparation de sa tournée \"This Is It\" à Londres.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q103",
+    "question": "Quel instrument le musicien Yo-Yo Ma joue-t-il ?",
+    "choices": {
+      "a": "Le violon",
+      "b": "Le violoncelle",
+      "c": "La contrebasse"
+    },
+    "answer": "B",
+    "funFact": "Yo-Yo Ma est né à Paris de parents chinois et a grandi à New York. Enfant prodige, il s'est produit à 7 ans devant les présidents Kennedy et Eisenhower. Son violoncelle Stradivarius vaut plusieurs millions de dollars.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q104",
+    "question": "Dans quel pays Bob Marley est-il né ?",
+    "choices": {
+      "a": "Cuba",
+      "b": "La Jamaïque",
+      "c": "Trinité-et-Tobago"
+    },
+    "answer": "B",
+    "funFact": "Bob Marley est né le 6 février 1945 à Nine Mile, en Jamaïque. Sa musique reggae a fait le tour du monde et il est l'une des figures musicales les plus reconnaissables de l'histoire.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q105",
+    "question": "Quel grand compositeur classique est devenu sourd au cours de sa vie ?",
+    "choices": {
+      "a": "Wolfgang Amadeus Mozart",
+      "b": "Johann Sebastian Bach",
+      "c": "Ludwig van Beethoven"
+    },
+    "answer": "C",
+    "funFact": "Beethoven a commencé à perdre l'ouïe vers 26 ans et était complètement sourd à 44 ans. Il composait en ressentant les vibrations à travers son piano et le sol. Sa 9e Symphonie a été composée alors qu'il était totalement sourd.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q106",
+    "question": "Combien de symphonies Ludwig van Beethoven a-t-il composées au total ?",
+    "choices": {
+      "a": "7",
+      "b": "9",
+      "c": "12"
+    },
+    "answer": "B",
+    "funFact": "La 9e Symphonie de Beethoven est la plus célèbre de l'histoire de la musique classique. Son dernier mouvement, le \"Chœur de la Joie\", est devenu l'hymne officiel de l'Union européenne.",
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q107",
+    "question": "Quel est le titre du premier album de Daft Punk ?",
+    "choices": {
+      "a": "Discovery",
+      "b": "Homework",
+      "c": "Random Access Memories"
+    },
+    "answer": "B",
+    "funFact": "\"Homework\" est sorti en 1997 avec des titres comme \"Da Funk\" et \"Around the World\". Thomas Bangalter et Guy-Manuel de Homem-Christo ont adopté leurs casques de robots après avoir lu que les robots ne se voient pas en interview.",
+    "category": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q108",
+    "question": "En quelle année le groupe ABBA a-t-il remporté le Concours Eurovision de la chanson ?",
+    "choices": {
+      "a": "1974",
+      "b": "1972",
+      "c": "1976"
+    },
+    "answer": "A",
+    "funFact": "ABBA a gagné l'Eurovision à Brighton (Royaume-Uni) en 1974 avec \"Waterloo\". C'est cette victoire qui les a propulsés vers une carrière internationale fulgurante.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q109",
+    "question": "Quelle chanteuse américaine est surnommée \"Queen Bey\" par ses fans ?",
+    "choices": {
+      "a": "Rihanna",
+      "b": "Beyoncé",
+      "c": "Mariah Carey"
+    },
+    "answer": "B",
+    "funFact": "Beyoncé Knowles-Carter a vendu plus de 100 millions de disques dans le monde. Elle est la femme la plus récompensée de l'histoire des Grammy Awards avec 32 victoires.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q110",
+    "question": "Dans quelle ville le groupe The Beatles a-t-il été fondé ?",
+    "choices": {
+      "a": "Liverpool",
+      "b": "Manchester",
+      "c": "Londres"
+    },
+    "answer": "A",
+    "funFact": "The Beatles se sont formés à Liverpool en 1960. John Lennon, Paul McCartney et George Harrison fréquentaient les mêmes clubs. Ringo Starr les a rejoints en 1962, peu avant leur percée internationale.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q111",
+    "question": "Quel film a remporté l'Oscar du meilleur film lors de la cérémonie de 2020 ?",
+    "choices": {
+      "a": "Joker",
+      "b": "1917",
+      "c": "Parasite"
+    },
+    "answer": "C",
+    "funFact": "\"Parasite\" du réalisateur Bong Joon-ho est devenu le premier film non anglophone à remporter l'Oscar du meilleur film. Il a aussi gagné l'Oscar du meilleur réalisateur et du meilleur scénario original.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q112",
+    "question": "Qui a réalisé le film \"Pulp Fiction\" (1994) ?",
+    "choices": {
+      "a": "Martin Scorsese",
+      "b": "Quentin Tarantino",
+      "c": "David Fincher"
+    },
+    "answer": "B",
+    "funFact": "\"Pulp Fiction\" a été présenté à Cannes en 1994 où il a remporté la Palme d'Or. Tarantino avait un budget de seulement 8 millions de dollars — le film en a rapporté 213 millions dans le monde.",
+    "category": "Science",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q113",
+    "question": "Dans quel film entend-on la célèbre réplique \"I'll be back\" ?",
+    "choices": {
+      "a": "RoboCop",
+      "b": "Terminator",
+      "c": "Predator"
+    },
+    "answer": "B",
+    "funFact": "Arnold Schwarzenegger a prononcé cette phrase dans Terminator (1984). Le réalisateur James Cameron voulait que Schwarzenegger dise \"I will be back\", mais il a insisté pour \"I'll\" — et c'est devenu l'une des répliques les plus cultes du cinéma.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q114",
+    "question": "En quelle année est sorti le premier film de la saga Star Wars ?",
+    "choices": {
+      "a": "1977",
+      "b": "1975",
+      "c": "1980"
+    },
+    "answer": "A",
+    "funFact": "\"Star Wars: Episode IV — A New Hope\" est sorti le 25 mai 1977. George Lucas était si peu confiant dans le succès du film qu'il a cédé ses droits sur les marchandises dérivées — une erreur qui lui a coûté des milliards !",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q115",
+    "question": "Quel film détient actuellement le record absolu du box-office mondial ?",
+    "choices": {
+      "a": "Avengers: Endgame",
+      "b": "Avatar",
+      "c": "Titanic"
+    },
+    "answer": "B",
+    "funFact": "Avatar (2009) a rapporté 2,923 milliards de dollars, notamment grâce à une ressortie en 2022. James Cameron a aussi réalisé Titanic (3e) et détient donc la 1re et 3e place du box-office mondial.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q116",
+    "question": "Qui a réalisé la trilogie cinématographique \"Le Seigneur des Anneaux\" ?",
+    "choices": {
+      "a": "Steven Spielberg",
+      "b": "James Cameron",
+      "c": "Peter Jackson"
+    },
+    "answer": "C",
+    "funFact": "Peter Jackson a filmé les trois films simultanément en Nouvelle-Zélande entre 1999 et 2000. La trilogie a remporté 17 Oscars au total, dont 11 pour \"Le Retour du Roi\" — le record toujours partagé avec Titanic et Ben-Hur.",
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q117",
+    "question": "Dans quel pays se déroule le film \"Parasite\" de Bong Joon-ho ?",
+    "choices": {
+      "a": "Le Japon",
+      "b": "La Chine",
+      "c": "La Corée du Sud"
+    },
+    "answer": "C",
+    "funFact": "\"Parasite\" explore les inégalités de classe dans la société coréenne à travers deux familles aux antipodes sociaux. Le film aborde la \"semi-basement culture\" (banjiha), un type de logement précaire typique de Séoul.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q118",
+    "question": "Quel acteur joue le rôle principal dans \"Forrest Gump\" (1994) ?",
+    "choices": {
+      "a": "Tom Cruise",
+      "b": "Kevin Costner",
+      "c": "Tom Hanks"
+    },
+    "answer": "C",
+    "funFact": "Tom Hanks a remporté l'Oscar du meilleur acteur pour \"Forrest Gump\", son deuxième Oscar consécutif après \"Philadelphia\" (1993). John Travolta et Bill Murray avaient refusé le rôle avant lui.",
+    "category": "Food & Drink",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q119",
+    "question": "En quelle année est sorti \"Titanic\" de James Cameron ?",
+    "choices": {
+      "a": "1995",
+      "b": "1997",
+      "c": "1999"
+    },
+    "answer": "B",
+    "funFact": "\"Titanic\" devait sortir en juillet 1997 mais les effets spéciaux ont retardé sa sortie à décembre 1997. Paramount avait menacé de retirer son financement — le film a finalement rapporté 2,25 milliards de dollars.",
+    "category": "Geography",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q120",
+    "question": "Qui joue le rôle du Joker dans le film \"Joker\" de 2019 ?",
+    "choices": {
+      "a": "Joaquin Phoenix",
+      "b": "Heath Ledger",
+      "c": "Jared Leto"
+    },
+    "answer": "A",
+    "funFact": "Joaquin Phoenix a perdu 24 kg pour le rôle. Son interprétation lui a valu l'Oscar du meilleur acteur. Heath Ledger avait joué le Joker dans \"The Dark Knight\" (2008) et a reçu l'Oscar à titre posthume.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q121",
+    "question": "Qui a écrit le roman \"Les Misérables\" ?",
+    "choices": {
+      "a": "Gustave Flaubert",
+      "b": "Victor Hugo",
+      "c": "Émile Zola"
+    },
+    "answer": "B",
+    "funFact": "Victor Hugo a mis 12 ans à écrire \"Les Misérables\", publié en 1862. Le personnage de Jean Valjean s'inspire d'un forçat réel nommé Pierre Maurin, condamné pour avoir volé du pain.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q122",
+    "question": "Qui a écrit le roman \"L'Étranger\" (1942) ?",
+    "choices": {
+      "a": "Jean-Paul Sartre",
+      "b": "Albert Camus",
+      "c": "André Gide"
+    },
+    "answer": "B",
+    "funFact": "Albert Camus a écrit \"L'Étranger\" à seulement 29 ans. C'est l'un des romans français les plus traduits et les plus lus au monde. Camus a reçu le Prix Nobel de littérature en 1957.",
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q123",
+    "question": "Quelle autrice française a remporté le Prix Nobel de littérature en 2022 ?",
+    "choices": {
+      "a": "Amélie Nothomb",
+      "b": "Annie Ernaux",
+      "c": "Leïla Slimani"
+    },
+    "answer": "B",
+    "funFact": "Annie Ernaux est la première Française à remporter le Nobel de littérature. Connue pour ses récits autobiographiques, son œuvre \"Les Années\" est souvent considérée comme une \"autobiographie collective\" de la France du XXe siècle.",
+    "category": "Culture",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q124",
+    "question": "Combien de romans composent la saga originale \"Harry Potter\" de J.K. Rowling ?",
+    "choices": {
+      "a": "7",
+      "b": "8",
+      "c": "6"
+    },
+    "answer": "A",
+    "funFact": "J.K. Rowling a eu l'idée de Harry Potter en 1990, dans un train entre Manchester et Londres. Elle était au chômage et a écrit le premier tome dans des cafés d'Édimbourg pour se réchauffer.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q125",
+    "question": "Qui a créé le personnage de Sherlock Holmes ?",
+    "choices": {
+      "a": "Arthur Conan Doyle",
+      "b": "Agatha Christie",
+      "c": "Edgar Allan Poe"
+    },
+    "answer": "A",
+    "funFact": "Arthur Conan Doyle s'est inspiré de son professeur de médecine, le Dr Joseph Bell, pour créer Holmes. Il a tenté de tuer le personnage en 1893 pour se consacrer à d'autres écrits — le tollé public l'a forcé à le ressusciter.",
+    "category": "Culture",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q126",
+    "question": "Combien de couleurs compte l'arc-en-ciel ?",
+    "choices": {
+      "a": "6",
+      "b": "8",
+      "c": "7"
+    },
+    "answer": "C",
+    "funFact": "Les 7 couleurs de l'arc-en-ciel sont : rouge, orange, jaune, vert, bleu, indigo, violet. Newton a choisi 7 couleurs pour faire un parallèle avec les 7 notes de musique — l'indigo et le violet sont souvent difficiles à distinguer.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q127",
+    "question": "Quelle est la monnaie officielle du Japon ?",
+    "choices": {
+      "a": "Le yuan",
+      "b": "Le yen",
+      "c": "Le won"
+    },
+    "answer": "B",
+    "funFact": "Le yen japonais (¥) est l'une des trois monnaies de réserve mondiales avec le dollar et l'euro. Le yuan est la monnaie chinoise et le won est la monnaie coréenne.",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q128",
+    "question": "Quelle est la religion la plus pratiquée dans le monde ?",
+    "choices": {
+      "a": "L'islam",
+      "b": "Le christianisme",
+      "c": "L'hindouisme"
+    },
+    "answer": "B",
+    "funFact": "Le christianisme rassemble environ 2,4 milliards de croyants, soit 31 % de la population mondiale. L'islam est la deuxième religion avec environ 1,9 milliard de fidèles.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q129",
+    "question": "Quelle est la durée d'un mandat présidentiel en France depuis la réforme de 2000 ?",
+    "choices": {
+      "a": "5 ans",
+      "b": "4 ans",
+      "c": "7 ans"
+    },
+    "answer": "A",
+    "funFact": "Avant 2000, le mandat présidentiel français durait 7 ans (septennat). La réforme par référendum a ramené cette durée à 5 ans (quinquennat). Les 7 ans persistaient depuis 1873 !",
+    "category": "History",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q130",
+    "question": "Quelle langue compte le plus grand nombre de locuteurs natifs dans le monde ?",
+    "choices": {
+      "a": "Le mandarin",
+      "b": "L'espagnol",
+      "c": "L'anglais"
+    },
+    "answer": "A",
+    "funFact": "Le mandarin est parlé en langue maternelle par environ 920 millions de personnes, principalement en Chine. En revanche, l'anglais est la langue la plus parlée au total (natifs + apprenants) avec plus de 1,5 milliard de locuteurs.",
+    "category": "Science",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q131",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "Quel est l'os le plus long du corps humain ?",
+    "choices": {
+      "a": "Le tibia",
+      "b": "L'humérus",
+      "c": "Le fémur"
+    },
+    "answer": "C",
+    "funFact": "Le fémur mesure en moyenne 48 cm chez un adulte. Il est aussi l'os le plus solide du corps — il peut supporter une pression de 1 700 kg par cm²."
+  },
+  {
+    "id": "q132",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "Quelle planète est surnommée 'la planète rouge' ?",
+    "choices": {
+      "a": "Mars",
+      "b": "Jupiter",
+      "c": "Neptune"
+    },
+    "answer": "A",
+    "funFact": "Mars doit sa couleur rouge à l'oxyde de fer (rouille) qui recouvre sa surface. Ses deux petites lunes, Phobos et Deimos, sont probablement des astéroïdes capturés."
+  },
+  {
+    "id": "q133",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "Qui a formulé la loi de la gravitation universelle au XVIIe siècle ?",
+    "choices": {
+      "a": "Albert Einstein",
+      "b": "Isaac Newton",
+      "c": "Galilée"
+    },
+    "answer": "B",
+    "funFact": "La légende dit que Newton eut l'idée en voyant tomber une pomme. Il a publié sa loi en 1687 dans les Principia Mathematica, l'un des livres scientifiques les plus influents de l'histoire."
+  },
+  {
+    "id": "q134",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "Quel gaz les plantes produisent-elles lors de la photosynthèse ?",
+    "choices": {
+      "a": "Le dioxyde de carbone",
+      "b": "L'azote",
+      "c": "L'oxygène"
+    },
+    "answer": "C",
+    "funFact": "Les plantes absorbent du CO₂ et de la lumière pour produire du glucose et libérer de l'O₂. Sans la photosynthèse, notre atmosphère ne contiendrait pratiquement pas d'oxygène."
+  },
+  {
+    "id": "q135",
+    "category": "Science",
+    "difficulty": "easy",
+    "question": "Comment appelle-t-on la structure en double hélice qui porte notre information génétique ?",
+    "choices": {
+      "a": "L'ADN",
+      "b": "L'ARN",
+      "c": "Les protéines"
+    },
+    "answer": "A",
+    "funFact": "La double hélice de l'ADN a été décrite par Watson et Crick en 1953, grâce aux clichés de Rosalind Franklin. Si l'ADN d'une seule cellule était déroulé, il mesurerait environ 2 mètres."
+  },
+  {
+    "id": "q136",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Qui a découvert la pénicilline en 1928 ?",
+    "choices": {
+      "a": "Louis Pasteur",
+      "b": "Alexander Fleming",
+      "c": "Robert Koch"
+    },
+    "answer": "B",
+    "funFact": "Fleming a découvert la pénicilline par accident : il avait oublié une boîte de Pétri pendant ses vacances et en revenant remarqua qu'une moisissure avait tué les bactéries environnantes."
+  },
+  {
+    "id": "q137",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+    "choices": {
+      "a": "300 000 km/s",
+      "b": "150 000 km/s",
+      "c": "30 000 km/s"
+    },
+    "answer": "A",
+    "funFact": "La vitesse exacte est 299 792 458 m/s. La lumière met environ 8 minutes 20 secondes pour aller du Soleil à la Terre, et 1,3 seconde pour atteindre la Lune."
+  },
+  {
+    "id": "q138",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Combien d'os compte le squelette humain adulte ?",
+    "choices": {
+      "a": "208",
+      "b": "196",
+      "c": "206"
+    },
+    "answer": "C",
+    "funFact": "Un bébé naît avec environ 270 à 300 os ; beaucoup fusionnent pendant la croissance pour arriver à 206. Les mains et les pieds regroupent plus de la moitié de ces os."
+  },
+  {
+    "id": "q139",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Quel élément chimique a pour symbole 'Fe' dans le tableau périodique ?",
+    "choices": {
+      "a": "Le fluorure",
+      "b": "Le fer",
+      "c": "Le francium"
+    },
+    "answer": "B",
+    "funFact": "Le symbole 'Fe' vient du latin Ferrum. Le fer est l'élément le plus abondant dans le noyau terrestre et c'est lui qui donne à notre sang sa couleur rouge via l'hémoglobine."
+  },
+  {
+    "id": "q140",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Quel est le pH de l'eau pure à 25°C ?",
+    "choices": {
+      "a": "7 (neutre)",
+      "b": "5 (légèrement acide)",
+      "c": "9 (légèrement basique)"
+    },
+    "answer": "A",
+    "funFact": "Le pH mesure l'acidité sur une échelle de 0 à 14. En dessous de 7 c'est acide (citron = 2), au-dessus c'est basique (eau de javel = 13). L'eau pure est exactement à 7."
+  },
+  {
+    "id": "q141",
+    "category": "Science",
+    "difficulty": "medium",
+    "question": "Quelle est la formule chimique du sel de table (chlorure de sodium) ?",
+    "choices": {
+      "a": "NaOH",
+      "b": "KCl",
+      "c": "NaCl"
+    },
+    "answer": "C",
+    "funFact": "NaCl (Natrium + Chlorum) est formé d'ions sodium positifs et chlorure négatifs. La mer contient environ 35 g de sel par litre. Sans sel, nos neurones ne pourraient pas fonctionner."
+  },
+  {
+    "id": "q142",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "Quelle est la durée de demi-vie du carbone-14 ?",
+    "choices": {
+      "a": "1 500 ans",
+      "b": "5 730 ans",
+      "c": "12 000 ans"
+    },
+    "answer": "B",
+    "funFact": "La datation au carbone-14 repose sur ce principe : un organisme mort ne renouvelle plus son C14, qui se désintègre à une vitesse connue. Cette méthode permet de dater des matières organiques jusqu'à ~50 000 ans."
+  },
+  {
+    "id": "q143",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "Quelle est la température approximative à la surface visible du Soleil ?",
+    "choices": {
+      "a": "5 500°C",
+      "b": "1 500°C",
+      "c": "15 000°C"
+    },
+    "answer": "A",
+    "funFact": "La surface du Soleil (photosphère) est à environ 5 500°C, mais son couronne externe dépasse le million de degrés — une anomalie encore non entièrement expliquée par les scientifiques."
+  },
+  {
+    "id": "q144",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "Combien de grammes pèse approximativement le cerveau humain adulte ?",
+    "choices": {
+      "a": "900 g",
+      "b": "2 200 g",
+      "c": "1 400 g"
+    },
+    "answer": "C",
+    "funFact": "Le cerveau pèse environ 1 300 à 1 500 g et contient environ 86 milliards de neurones. Malgré ses 2 % du poids corporel, il consomme environ 20 % de l'énergie totale du corps."
+  },
+  {
+    "id": "q145",
+    "category": "Science",
+    "difficulty": "hard",
+    "question": "Quel physicien a énoncé le principe d'incertitude en 1927 ?",
+    "choices": {
+      "a": "Niels Bohr",
+      "b": "Werner Heisenberg",
+      "c": "Erwin Schrödinger"
+    },
+    "answer": "B",
+    "funFact": "Le principe d'Heisenberg stipule qu'on ne peut pas connaître simultanément avec précision la position et la vitesse d'une particule quantique. Plus on mesure l'une, plus l'autre devient incertaine."
+  },
+  {
+    "id": "q146",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "En quelle année la Seconde Guerre mondiale a-t-elle pris fin ?",
+    "choices": {
+      "a": "1945",
+      "b": "1943",
+      "c": "1947"
+    },
+    "answer": "A",
+    "funFact": "La guerre se termina le 8 mai 1945 en Europe (capitulation de l'Allemagne) et le 2 septembre 1945 dans le Pacifique après les bombes atomiques sur Hiroshima et Nagasaki."
+  },
+  {
+    "id": "q147",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "Qui a peint la Joconde (Mona Lisa) ?",
+    "choices": {
+      "a": "Michel-Ange",
+      "b": "Léonard de Vinci",
+      "c": "Raphaël"
+    },
+    "answer": "B",
+    "funFact": "Léonard de Vinci a peint la Joconde entre 1503 et 1519. Exposée au Louvre, elle est la toile la plus visitée au monde. Son sourire énigmatique a fasciné les historiens pendant des siècles."
+  },
+  {
+    "id": "q148",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "Quel pays a construit la Grande Muraille ?",
+    "choices": {
+      "a": "La Mongolie",
+      "b": "Le Japon",
+      "c": "La Chine"
+    },
+    "answer": "C",
+    "funFact": "La Grande Muraille s'étend sur plus de 21 000 km. Sa construction s'est étalée sur plusieurs dynasties (du IIIe siècle av. J.-C. au XVIIe siècle). La légende qu'on la voit de l'espace est fausse."
+  },
+  {
+    "id": "q149",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "En quelle année a eu lieu le Débarquement allié en Normandie (Jour J) ?",
+    "choices": {
+      "a": "1942",
+      "b": "1943",
+      "c": "1944"
+    },
+    "answer": "C",
+    "funFact": "Le 6 juin 1944, environ 156 000 soldats alliés ont débarqué sur 5 plages normandes. C'est la plus grande opération amphibie de l'histoire militaire et un tournant décisif de la guerre."
+  },
+  {
+    "id": "q150",
+    "category": "History",
+    "difficulty": "easy",
+    "question": "Qui fut le premier être humain à marcher sur la Lune ?",
+    "choices": {
+      "a": "Neil Armstrong",
+      "b": "Buzz Aldrin",
+      "c": "Youri Gagarine"
+    },
+    "answer": "A",
+    "funFact": "Neil Armstrong posa le pied sur la Lune le 21 juillet 1969 (heure française) en prononçant : 'C'est un petit pas pour l'homme, un bond de géant pour l'humanité.' Buzz Aldrin le rejoignit quelques minutes plus tard."
+  },
+  {
+    "id": "q151",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "En quelle année Jeanne d'Arc fut-elle brûlée sur le bûcher à Rouen ?",
+    "choices": {
+      "a": "1421",
+      "b": "1431",
+      "c": "1441"
+    },
+    "answer": "B",
+    "funFact": "Jeanne d'Arc avait seulement 19 ans lorsqu'elle fut exécutée. Elle fut réhabilitée en 1456 et canonisée en 1920. Elle est l'une des deux patronnes de la France avec Thérèse de Lisieux."
+  },
+  {
+    "id": "q152",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "Quel roi de France a été surnommé 'le Roi-Soleil' ?",
+    "choices": {
+      "a": "Louis XIII",
+      "b": "François Ier",
+      "c": "Louis XIV"
+    },
+    "answer": "C",
+    "funFact": "Louis XIV régna 72 ans (1643-1715), le règne le plus long de l'histoire de France. Il fit construire Versailles et centralisa le pouvoir : 'L'État, c'est moi.' Sa cour comptait jusqu'à 20 000 personnes."
+  },
+  {
+    "id": "q153",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "En quelle année l'Empire romain d'Occident a-t-il officiellement chuté ?",
+    "choices": {
+      "a": "476",
+      "b": "380",
+      "c": "568"
+    },
+    "answer": "A",
+    "funFact": "En 476, le chef barbare Odoacre déposa le dernier empereur romain Romulus Augustule. L'Empire romain d'Orient (byzantin) survécut presque mille ans de plus jusqu'à la prise de Constantinople en 1453."
+  },
+  {
+    "id": "q154",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "Quel général carthaginois a traversé les Alpes avec des éléphants pour attaquer Rome ?",
+    "choices": {
+      "a": "Scipion l'Africain",
+      "b": "Hannibal Barca",
+      "c": "Hamilcar Barca"
+    },
+    "answer": "B",
+    "funFact": "En 218 av. J.-C., Hannibal traversa les Alpes avec 37 éléphants de guerre. Il remporta plusieurs victoires spectaculaires contre Rome mais ne put jamais prendre la ville. Son expédition reste un exploit militaire légendaire."
+  },
+  {
+    "id": "q155",
+    "category": "History",
+    "difficulty": "medium",
+    "question": "Qui a rédigé la Déclaration d'indépendance américaine de 1776 ?",
+    "choices": {
+      "a": "George Washington",
+      "b": "Benjamin Franklin",
+      "c": "Thomas Jefferson"
+    },
+    "answer": "C",
+    "funFact": "Thomas Jefferson avait 33 ans quand il rédigea la Déclaration. Paradoxalement, cet homme qui écrivit 'tous les hommes sont créés égaux' possédait plus de 600 esclaves au cours de sa vie."
+  },
+  {
+    "id": "q156",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "Combien d'années a réellement duré la guerre de Cent Ans ?",
+    "choices": {
+      "a": "100 ans exactement",
+      "b": "116 ans",
+      "c": "89 ans"
+    },
+    "answer": "B",
+    "funFact": "La guerre de Cent Ans s'est déroulée de 1337 à 1453, soit 116 ans. Elle opposa la France et l'Angleterre pour la succession au trône français. Jeanne d'Arc y joua un rôle décisif avant d'être capturée."
+  },
+  {
+    "id": "q157",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "Quel empereur romain a fait du christianisme la religion officielle de l'Empire en 380 ?",
+    "choices": {
+      "a": "Théodose Ier",
+      "b": "Constantin Ier",
+      "c": "Dioclétien"
+    },
+    "answer": "A",
+    "funFact": "Constantin Ier légalisa le christianisme en 313 avec l'Édit de Milan. C'est Théodose Ier qui, avec l'Édit de Thessalonique en 380, en fit la religion d'État et interdit les autres cultes."
+  },
+  {
+    "id": "q158",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "En quelle année le Code de Hammurabi a-t-il approximativement été rédigé ?",
+    "choices": {
+      "a": "vers 3000 av. J.-C.",
+      "b": "vers 500 av. J.-C.",
+      "c": "vers 1754 av. J.-C."
+    },
+    "answer": "C",
+    "funFact": "Le Code de Hammurabi est l'un des plus anciens ensembles de lois connus. Gravé sur une stèle de diorite, il contient 282 lois avec des peines souvent basées sur la règle du talion ('œil pour œil')."
+  },
+  {
+    "id": "q159",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "Quel traité, signé en 1648, mit fin à la guerre de Trente Ans ?",
+    "choices": {
+      "a": "Le traité de Vienne",
+      "b": "Le traité de Paris",
+      "c": "Les traités de Westphalie"
+    },
+    "answer": "C",
+    "funFact": "Les traités de Westphalie (Osnabrück et Münster) sont considérés comme la naissance du système des États-nations modernes. Ils posèrent le principe de souveraineté nationale encore utilisé aujourd'hui."
+  },
+  {
+    "id": "q160",
+    "category": "History",
+    "difficulty": "hard",
+    "question": "En quelle année Napoléon Bonaparte fut-il exilé pour la première fois (à l'île d'Elbe) ?",
+    "choices": {
+      "a": "1812",
+      "b": "1814",
+      "c": "1815"
+    },
+    "answer": "B",
+    "funFact": "Après sa première abdication en 1814, Napoléon fut exilé à l'île d'Elbe dont il devint souverain. Il s'en échappa après 300 jours pour les Cent-Jours, avant d'être définitivement exilé à Sainte-Hélène après Waterloo."
+  },
+  {
+    "id": "q161",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Quelle est la capitale de l'Espagne ?",
+    "choices": {
+      "a": "Madrid",
+      "b": "Barcelone",
+      "c": "Séville"
+    },
+    "answer": "A",
+    "funFact": "Madrid est la capitale la plus haute d'Europe continentale, à 667 m d'altitude. Elle est aussi le seul endroit au monde où la capitale n'est pas la ville principale du pays — selon certains, c'est Barcelone qui en est le moteur économique."
+  },
+  {
+    "id": "q162",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Sur quel continent se trouve l'Amazonie ?",
+    "choices": {
+      "a": "L'Afrique",
+      "b": "L'Amérique du Sud",
+      "c": "L'Asie"
+    },
+    "answer": "B",
+    "funFact": "La forêt amazonienne couvre 5,5 millions de km² et abrite environ 10 % de toutes les espèces vivantes du monde. Le Brésil en possède 60 %, le reste étant partagé entre 8 autres pays."
+  },
+  {
+    "id": "q163",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Quelle est la capitale du Canada ?",
+    "choices": {
+      "a": "Toronto",
+      "b": "Montréal",
+      "c": "Ottawa"
+    },
+    "answer": "C",
+    "funFact": "Ottawa a été choisie comme capitale par la reine Victoria en 1857 pour sa position géographique entre l'Ontario anglophone et le Québec francophone — et parce qu'elle était difficile à attaquer depuis les États-Unis."
+  },
+  {
+    "id": "q164",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Quel océan sépare l'Europe de l'Amérique du Nord ?",
+    "choices": {
+      "a": "L'océan Atlantique",
+      "b": "L'océan Pacifique",
+      "c": "L'océan Arctique"
+    },
+    "answer": "A",
+    "funFact": "L'océan Atlantique tire son nom du Titan Atlas de la mythologie grecque. Avec 106 millions de km², c'est le deuxième plus grand océan. Le Gulf Stream, l'un de ses courants, réchauffe considérablement l'Europe de l'Ouest."
+  },
+  {
+    "id": "q165",
+    "category": "Geography",
+    "difficulty": "easy",
+    "question": "Quelle est la capitale de l'Allemagne ?",
+    "choices": {
+      "a": "Munich",
+      "b": "Berlin",
+      "c": "Francfort"
+    },
+    "answer": "B",
+    "funFact": "Berlin est la plus grande ville d'Allemagne avec 3,7 millions d'habitants. Divisée pendant 28 ans par le Mur (1961-1989), elle est aujourd'hui l'une des capitales culturelles les plus dynamiques d'Europe."
+  },
+  {
+    "id": "q166",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Quelle est la plus grande île du monde ?",
+    "choices": {
+      "a": "La Nouvelle-Guinée",
+      "b": "Bornéo",
+      "c": "Le Groenland"
+    },
+    "answer": "C",
+    "funFact": "Le Groenland (2 166 086 km²) est si grand qu'il est parfois considéré comme un continent. Recouvert à 80 % par un inlandsis, si sa glace fondait entièrement, le niveau des mers monterait de 7 mètres."
+  },
+  {
+    "id": "q167",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Dans combien de pays le français est-il une langue officielle ?",
+    "choices": {
+      "a": "29 pays",
+      "b": "21 pays",
+      "c": "35 pays"
+    },
+    "answer": "A",
+    "funFact": "Avec 29 pays membres, l'Organisation internationale de la Francophonie compte environ 321 millions de locuteurs du français. Le français est la 5e langue la plus parlée au monde et s'étend sur 5 continents."
+  },
+  {
+    "id": "q168",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Quel pays possède le plus grand nombre de lacs d'eau douce au monde ?",
+    "choices": {
+      "a": "La Russie",
+      "b": "Le Canada",
+      "c": "Les États-Unis"
+    },
+    "answer": "B",
+    "funFact": "Le Canada abrite environ 60 % des lacs du monde — plus de 3 millions de lacs naturels de plus d'un hectare. La superficie totale des lacs canadiens dépasse celle de certains pays européens."
+  },
+  {
+    "id": "q169",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Quel détroit sépare l'Europe de l'Afrique ?",
+    "choices": {
+      "a": "Le détroit de Bosphore",
+      "b": "Le détroit de Magellan",
+      "c": "Le détroit de Gibraltar"
+    },
+    "answer": "C",
+    "funFact": "Le détroit de Gibraltar ne mesure que 14 km à son point le plus étroit. Les Phéniciens et les Grecs anciens l'appelaient les 'Colonnes d'Hercule'. Chaque jour, environ 300 navires l'empruntent."
+  },
+  {
+    "id": "q170",
+    "category": "Geography",
+    "difficulty": "medium",
+    "question": "Quel est le plus long fleuve d'Asie ?",
+    "choices": {
+      "a": "Le Yangtsé",
+      "b": "Le Gange",
+      "c": "Le Mékong"
+    },
+    "answer": "A",
+    "funFact": "Le Yangtsé (Chang Jiang) mesure 6 300 km et traverse la Chine d'ouest en est. Il est aussi le site du barrage des Trois-Gorges, la plus grande centrale hydroélectrique du monde."
+  },
+  {
+    "id": "q171",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Quel est le pays le plus densément peuplé du monde, hors micro-États ?",
+    "choices": {
+      "a": "L'Inde",
+      "b": "Le Bangladesh",
+      "c": "Le Rwanda"
+    },
+    "answer": "B",
+    "funFact": "Le Bangladesh compte environ 170 millions d'habitants sur seulement 147 000 km², soit une densité supérieure à 1 100 habitants/km². À titre de comparaison, la France a 118 habitants/km²."
+  },
+  {
+    "id": "q172",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Sur combien de fuseaux horaires la Russie s'étend-elle ?",
+    "choices": {
+      "a": "9 fuseaux",
+      "b": "13 fuseaux",
+      "c": "11 fuseaux"
+    },
+    "answer": "C",
+    "funFact": "La Russie s'étend sur 11 fuseaux horaires, de UTC+2 à UTC+12. Quand il est midi à Moscou, il est déjà 21h à Petropavlovsk-Kamtchatski, à l'extrémité orientale du pays."
+  },
+  {
+    "id": "q173",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Quelle est la longueur approximative de la frontière entre les États-Unis et le Canada ?",
+    "choices": {
+      "a": "8 891 km",
+      "b": "5 000 km",
+      "c": "12 000 km"
+    },
+    "answer": "A",
+    "funFact": "La frontière américano-canadienne est la plus longue frontière internationale non militarisée du monde. Elle traverse des prairies, des forêts et des lacs — mais aussi des maisons et même des villes coupées en deux !"
+  },
+  {
+    "id": "q174",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Quel pays africain n'a jamais été colonisé par une puissance européenne ?",
+    "choices": {
+      "a": "La Somalie",
+      "b": "L'Éthiopie",
+      "c": "Le Libéria"
+    },
+    "answer": "B",
+    "funFact": "L'Éthiopie a repoussé l'Italie lors de la bataille d'Adoua en 1896 — la première victoire d'une armée africaine face à une puissance coloniale européenne. Seule l'occupation italienne de 1936 à 1941 interrompit cette indépendance."
+  },
+  {
+    "id": "q175",
+    "category": "Geography",
+    "difficulty": "hard",
+    "question": "Quelle est la superficie approximative du désert du Sahara en millions de km² ?",
+    "choices": {
+      "a": "5,5 millions de km²",
+      "b": "12 millions de km²",
+      "c": "9,2 millions de km²"
+    },
+    "answer": "C",
+    "funFact": "Le Sahara a la taille des États-Unis. Contrairement aux idées reçues, seulement 25 % du Sahara est composé de sable (erg). Le reste est constitué de roches (reg et hamada) et de montagnes."
+  },
+  {
+    "id": "q176",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Qui a peint la voûte de la chapelle Sixtine ?",
+    "choices": {
+      "a": "Michel-Ange",
+      "b": "Léonard de Vinci",
+      "c": "Raphaël"
+    },
+    "answer": "A",
+    "funFact": "Michel-Ange peignit la chapelle Sixtine entre 1508 et 1512 sous le pape Jules II. Il travailla allongé sur des échafaudages, souffrant de douleurs cervicales. Il avait 33 ans au début du chantier."
+  },
+  {
+    "id": "q177",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Dans quelle ville se trouve le Musée du Louvre ?",
+    "choices": {
+      "a": "Rome",
+      "b": "Londres",
+      "c": "Paris"
+    },
+    "answer": "C",
+    "funFact": "Le Louvre est le musée le plus visité du monde avec environ 9 millions de visiteurs par an. Son bâtiment était une forteresse médiévale puis un palais royal avant de devenir un musée en 1793."
+  },
+  {
+    "id": "q178",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Qui a écrit 'Don Quichotte' (1605), considéré comme le premier roman moderne ?",
+    "choices": {
+      "a": "William Shakespeare",
+      "b": "Miguel de Cervantes",
+      "c": "Dante Alighieri"
+    },
+    "answer": "B",
+    "funFact": "Cervantes a écrit Don Quichotte en prison, sans doute pour rembourser ses dettes. Le roman est l'œuvre littéraire la plus traduite au monde après la Bible. Le personnage Don Quichotte a donné le verbe 'donquichottesque'."
+  },
+  {
+    "id": "q179",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Quel personnage Disney est une sirène ?",
+    "choices": {
+      "a": "Ariel",
+      "b": "Raiponce",
+      "c": "Belle"
+    },
+    "answer": "A",
+    "funFact": "Ariel est la protagoniste de 'La Petite Sirène' (1989), adapté du conte d'Andersen. Le film marqua le début de la 'Renaissance Disney' après des années difficiles pour le studio."
+  },
+  {
+    "id": "q180",
+    "category": "Culture",
+    "difficulty": "easy",
+    "question": "Qui a composé l'opéra 'La Flûte enchantée' (1791) ?",
+    "choices": {
+      "a": "Beethoven",
+      "b": "Bach",
+      "c": "Mozart"
+    },
+    "answer": "C",
+    "funFact": "Mozart composa 'La Flûte enchantée' quelques mois avant sa mort à 35 ans. C'est l'un des opéras les plus joués au monde. La célèbre aria 'La Reine de la Nuit' exige des notes parmi les plus hautes du répertoire lyrique."
+  },
+  {
+    "id": "q181",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "En quelle année le film 'Avatar' de James Cameron est-il sorti en salles ?",
+    "choices": {
+      "a": "2007",
+      "b": "2009",
+      "c": "2011"
+    },
+    "answer": "B",
+    "funFact": "Avatar (2009) a tenu le record du film le plus rentable de l'histoire pendant 12 ans. Sa suite, Avatar: La Voie de l'eau (2022), a également dépassé les 2 milliards de dollars au box-office mondial."
+  },
+  {
+    "id": "q182",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Quel écrivain américain a créé le personnage de Jay Gatsby ?",
+    "choices": {
+      "a": "Ernest Hemingway",
+      "b": "F. Scott Fitzgerald",
+      "c": "John Steinbeck"
+    },
+    "answer": "B",
+    "funFact": "F. Scott Fitzgerald publia 'Gatsby le Magnifique' en 1925. Le livre fut un échec commercial du vivant de l'auteur. Ce n'est qu'après la Seconde Guerre mondiale, distribué aux soldats américains, qu'il devint un classique."
+  },
+  {
+    "id": "q183",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Quel est le vrai prénom de Molière, dramaturge français du XVIIe siècle ?",
+    "choices": {
+      "a": "Pierre",
+      "b": "Louis",
+      "c": "Jean-Baptiste"
+    },
+    "answer": "C",
+    "funFact": "Jean-Baptiste Poquelin adopta le pseudonyme 'Molière' pour ne pas embarrasser son père, tapissier du roi. Il mourut sur scène en 1673 lors d'une représentation du Malade imaginaire — une pièce où il jouait un hypocondriaque."
+  },
+  {
+    "id": "q184",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Dans quel pays est né le personnage de Tintin ?",
+    "choices": {
+      "a": "La France",
+      "b": "La Belgique",
+      "c": "La Suisse"
+    },
+    "answer": "B",
+    "funFact": "Tintin a été créé par le Belge Hergé (Georges Remi) en 1929. Les albums ont été traduits en plus de 100 langues et ont inspiré le film de Steven Spielberg en 2011. La Belgique honore Hergé avec un musée à Louvain-la-Neuve."
+  },
+  {
+    "id": "q185",
+    "category": "Culture",
+    "difficulty": "medium",
+    "question": "Qui a réalisé le film 'Schindler's List' (1993) ?",
+    "choices": {
+      "a": "Steven Spielberg",
+      "b": "Francis Ford Coppola",
+      "c": "Stanley Kubrick"
+    },
+    "answer": "A",
+    "funFact": "Steven Spielberg a remporté l'Oscar du meilleur réalisateur pour ce film, qu'il tourna en noir et blanc. Il a déclaré n'avoir pas touché un centime de ses royalties, les versant à la Shoah Foundation qu'il créa."
+  },
+  {
+    "id": "q186",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "Combien de tableaux Vincent van Gogh a-t-il vendus de son vivant ?",
+    "choices": {
+      "a": "12 tableaux",
+      "b": "47 tableaux",
+      "c": "1 seul tableau"
+    },
+    "answer": "C",
+    "funFact": "Van Gogh a vendu un unique tableau de son vivant : 'La Vigne rouge' (1888), pour 400 francs. Après sa mort, ses œuvres sont devenues les plus chères du monde. 'Portrait du Dr Gachet' a été vendu 82,5 M$ en 1990."
+  },
+  {
+    "id": "q187",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "En quelle année Marcel Proust publia-t-il le premier volume d''À la recherche du temps perdu' ?",
+    "choices": {
+      "a": "1905",
+      "b": "1913",
+      "c": "1921"
+    },
+    "answer": "B",
+    "funFact": "Proust publia 'Du côté de chez Swann' à compte d'auteur en 1913, après avoir essuyé plusieurs refus d'éditeurs. L'œuvre complète compte 7 volumes et 3 000 pages. Il mourut en 1922 sans avoir terminé la révision des derniers tomes."
+  },
+  {
+    "id": "q188",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "Quel philosophe grec est l'auteur de 'La République', dialogue sur la justice et la cité idéale ?",
+    "choices": {
+      "a": "Platon",
+      "b": "Aristote",
+      "c": "Socrate"
+    },
+    "answer": "A",
+    "funFact": "Dans 'La République', Platon imagine un État idéal dirigé par des philosophes-rois. Il y décrit aussi la célèbre 'allégorie de la caverne', métaphore de notre rapport à la réalité et à l'ignorance."
+  },
+  {
+    "id": "q189",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "En quelle année la construction de la cathédrale Notre-Dame de Paris a-t-elle débuté ?",
+    "choices": {
+      "a": "1096",
+      "b": "1215",
+      "c": "1163"
+    },
+    "answer": "C",
+    "funFact": "La construction de Notre-Dame commença en 1163 sous l'évêque Maurice de Sully et dura environ 200 ans. L'incendie du 15 avril 2019 détruisit sa flèche et une partie de la voûte. La restauration devrait se terminer en 2025."
+  },
+  {
+    "id": "q190",
+    "category": "Culture",
+    "difficulty": "hard",
+    "question": "Qui est l'auteur de la sculpture 'Le Penseur' (1902) ?",
+    "choices": {
+      "a": "Donatello",
+      "b": "Auguste Rodin",
+      "c": "Gian Lorenzo Bernini"
+    },
+    "answer": "B",
+    "funFact": "Le Penseur de Rodin était à l'origine une figure plus petite faisant partie des 'Portes de l'Enfer', représentant Dante contemplant son poème. Il en existe environ 28 exemplaires en bronze dans le monde."
+  },
+  {
+    "id": "q191",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "Quel est le plus grand animal du monde ?",
+    "choices": {
+      "a": "La baleine bleue",
+      "b": "L'éléphant d'Afrique",
+      "c": "Le grand requin blanc"
+    },
+    "answer": "A",
+    "funFact": "La baleine bleue peut atteindre 30 mètres de longueur et peser jusqu'à 180 tonnes — soit l'équivalent de 30 éléphants. Son cœur pèse environ 180 kg et ses battements peuvent être entendus à 3 km."
+  },
+  {
+    "id": "q192",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "Combien de pattes possède une araignée ?",
+    "choices": {
+      "a": "6 pattes",
+      "b": "10 pattes",
+      "c": "8 pattes"
+    },
+    "answer": "C",
+    "funFact": "Les araignées ont 8 pattes — ce sont des arachnides, pas des insectes (qui en ont 6). En plus de leurs pattes, elles possèdent 2 pédipalpes qui ressemblent à de petites pattes, servant à la reproduction et à manipuler la nourriture."
+  },
+  {
+    "id": "q193",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "Quel animal terrestre est le plus rapide au monde ?",
+    "choices": {
+      "a": "Le lion",
+      "b": "Le guépard",
+      "c": "Le cheval"
+    },
+    "answer": "B",
+    "funFact": "Le guépard peut atteindre 112 km/h en quelques secondes, mais ne peut maintenir cette vitesse que sur de courtes distances (300-400 m). Après une course, il doit se reposer 15 minutes avant de manger pour éviter l'hyperthermie."
+  },
+  {
+    "id": "q194",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "De quelle couleur sont les feuilles des plantes grâce à la chlorophylle ?",
+    "choices": {
+      "a": "Vert",
+      "b": "Jaune",
+      "c": "Bleu"
+    },
+    "answer": "A",
+    "funFact": "La chlorophylle absorbe les longueurs d'onde rouge et bleue de la lumière solaire, mais réfléchit le vert — d'où la couleur verte des plantes. En automne, quand la chlorophylle disparaît, les pigments jaunes et oranges deviennent visibles."
+  },
+  {
+    "id": "q195",
+    "category": "Nature",
+    "difficulty": "easy",
+    "question": "Quel est le plus grand primate du monde ?",
+    "choices": {
+      "a": "Le chimpanzé",
+      "b": "L'orang-outan",
+      "c": "Le gorille"
+    },
+    "answer": "C",
+    "funFact": "Le gorille des plaines orientales peut peser jusqu'à 220 kg et mesurer 1,80 m debout. Malgré leur apparence intimidante, les gorilles sont des animaux plutôt pacifiques et herbivores."
+  },
+  {
+    "id": "q196",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "Quel arbre produit les glands que mangent les écureuils et les cerfs ?",
+    "choices": {
+      "a": "Le chêne",
+      "b": "Le hêtre",
+      "c": "Le châtaignier"
+    },
+    "answer": "A",
+    "funFact": "Un chêne commence à produire des glands vers 20-25 ans et peut en produire jusqu'à 70 000 par an. Ces glands nourrissent des dizaines d'espèces animales. Certains chênes vivent plus de 1 000 ans."
+  },
+  {
+    "id": "q197",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "Quelle est la durée de gestation d'un éléphant d'Afrique ?",
+    "choices": {
+      "a": "Environ 12 mois",
+      "b": "Environ 18 mois",
+      "c": "Environ 22 mois"
+    },
+    "answer": "C",
+    "funFact": "Avec 22 mois, l'éléphant a la gestation la plus longue de tous les mammifères terrestres. Les éléphanteaux naissent déjà bien développés, capables de marcher quelques heures après leur naissance."
+  },
+  {
+    "id": "q198",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "Quelle plante pousse à la vitesse record de 91 cm par jour ?",
+    "choices": {
+      "a": "L'eucalyptus",
+      "b": "Le bambou",
+      "c": "Le saule pleureur"
+    },
+    "answer": "B",
+    "funFact": "Techniquement une graminée géante, le bambou est la plante qui pousse le plus vite au monde. Il est aussi l'un des matériaux les plus résistants : sa résistance à la traction dépasse celle de l'acier doux."
+  },
+  {
+    "id": "q199",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "Quel est le seul mammifère naturellement dépourvu de la capacité de vomir ?",
+    "choices": {
+      "a": "L'éléphant",
+      "b": "Le rat",
+      "c": "Le dauphin"
+    },
+    "answer": "B",
+    "funFact": "Les rats ne peuvent pas vomir car ils manquent de la musculature diaphragmatique nécessaire et leur estomac est séparé de l'œsophage par un sphincter très fort. C'est pourquoi les appâts empoisonnés sont efficaces contre eux."
+  },
+  {
+    "id": "q200",
+    "category": "Nature",
+    "difficulty": "medium",
+    "question": "Quel est le mammifère marin qui peut plonger le plus profondément ?",
+    "choices": {
+      "a": "L'orque",
+      "b": "Le cachalot",
+      "c": "Le dauphin commun"
+    },
+    "answer": "B",
+    "funFact": "Le cachalot (Physeter macrocephalus) peut plonger à plus de 2 000 m de profondeur et rester en apnée pendant 90 minutes. Son cerveau est le plus grand de tous les animaux : il peut peser jusqu'à 9 kg."
+  },
+  {
+    "id": "q201",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "Quel animal microscopique peut survivre dans le vide spatial sans aucune protection ?",
+    "choices": {
+      "a": "Le tardigrade",
+      "b": "La blatte",
+      "c": "La planaire"
+    },
+    "answer": "A",
+    "funFact": "Le tardigrade (ou 'ours d'eau') mesure 0,1 à 1,5 mm. En état de cryptobiose, il peut survivre à des températures de -272°C à +150°C, au vide spatial, à des radiations létales et à des pressions extrêmes."
+  },
+  {
+    "id": "q202",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "Combien d'espèces d'insectes sont approximativement répertoriées sur Terre ?",
+    "choices": {
+      "a": "100 000 espèces",
+      "b": "500 000 espèces",
+      "c": "Plus d'un million d'espèces"
+    },
+    "answer": "C",
+    "funFact": "On a décrit plus d'un million d'espèces d'insectes, et les entomologistes estiment qu'il en existe entre 5 et 10 millions encore non découvertes. Les coléoptères (scarabées) représentent à eux seuls 400 000 espèces."
+  },
+  {
+    "id": "q203",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "Quel est l'arbre individuel vivant le plus ancien connu sur Terre ?",
+    "choices": {
+      "a": "Un baobab africain",
+      "b": "Un pin de Bristlecone surnommé 'Mathusalem'",
+      "c": "Un séquoia géant en Californie"
+    },
+    "answer": "B",
+    "funFact": "Mathusalem, un pin de Bristlecone (Pinus longaeva) dans les Montagnes Blanches de Californie, aurait environ 5 000 ans. Son emplacement exact est gardé secret pour le protéger. Il était déjà vieux quand les Égyptiens construisirent les pyramides."
+  },
+  {
+    "id": "q204",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "Quelle pieuvre est l'une des plus venimeuses au monde, reconnaissable à ses anneaux bleus ?",
+    "choices": {
+      "a": "La pieuvre géante du Pacifique",
+      "b": "La pieuvre mimétique",
+      "c": "La pieuvre à anneaux bleus"
+    },
+    "answer": "C",
+    "funFact": "La pieuvre à anneaux bleus (Hapalochlaena) ne mesure que 12 cm mais contient assez de tétrodotoxine pour tuer 26 adultes. Il n'existe pas d'antidote. Ses anneaux bleus s'illuminent quand elle se sent menacée — un avertissement."
+  },
+  {
+    "id": "q205",
+    "category": "Nature",
+    "difficulty": "hard",
+    "question": "Quel est le nom scientifique de la capacité de certains animaux à régénérer des membres perdus ?",
+    "choices": {
+      "a": "La métamorphose",
+      "b": "L'épimorphose",
+      "c": "L'autotomie"
+    },
+    "answer": "B",
+    "funFact": "L'épimorphose désigne la régénération complète d'un membre amputé, observée chez les salamandres, axolotls et étoiles de mer. Les chercheurs étudient ce mécanisme pour de futures applications médicales humaines."
+  },
+  {
+    "id": "q206",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Combien de joueurs compose une équipe de football (soccer) sur le terrain ?",
+    "choices": {
+      "a": "10 joueurs",
+      "b": "11 joueurs",
+      "c": "12 joueurs"
+    },
+    "answer": "B",
+    "funFact": "Le règlement du football prévoit 11 joueurs par équipe, dont un gardien de but. Une équipe peut jouer avec un minimum de 7 joueurs. Le football est le sport le plus pratiqué au monde avec plus de 250 millions de joueurs."
+  },
+  {
+    "id": "q207",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Dans quel sport utilise-t-on une raquette et un volant (shuttlecock) ?",
+    "choices": {
+      "a": "Le badminton",
+      "b": "Le squash",
+      "c": "Le tennis de table"
+    },
+    "answer": "A",
+    "funFact": "Le volant de badminton peut atteindre des vitesses de 493 km/h — record lors d'un smash en compétition. C'est l'objet sportif qui se déplace le plus vite dans le monde du sport."
+  },
+  {
+    "id": "q208",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Quelle est la durée réglementaire d'un match de football en minutes ?",
+    "choices": {
+      "a": "80 minutes",
+      "b": "100 minutes",
+      "c": "90 minutes"
+    },
+    "answer": "C",
+    "funFact": "Un match de football dure 2 × 45 minutes, plus le temps additionnel (arrêts de jeu). En compétitions officielles, en cas d'égalité, on joue des prolongations de 2 × 15 min, puis éventuellement une séance de tirs au but."
+  },
+  {
+    "id": "q209",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Dans quel pays ont eu lieu les premiers Jeux olympiques modernes (1896) ?",
+    "choices": {
+      "a": "L'Italie",
+      "b": "La Grèce",
+      "c": "L'Égypte"
+    },
+    "answer": "B",
+    "funFact": "Les premiers JO modernes se tinrent à Athènes en 1896. Ils regroupaient 241 athlètes de 14 nations et 9 sports. Ils furent organisés à l'initiative du Français Pierre de Coubertin, inspiré par les Jeux antiques d'Olympie."
+  },
+  {
+    "id": "q210",
+    "category": "Sports",
+    "difficulty": "easy",
+    "question": "Combien de points vaut un essai au rugby à XV ?",
+    "choices": {
+      "a": "5 points",
+      "b": "3 points",
+      "c": "7 points"
+    },
+    "answer": "A",
+    "funFact": "Un essai vaut 5 points, puis la transformation (coup de pied entre les poteaux) en rapporte 2 supplémentaires. La pénalité vaut 3 points et le drop-goal aussi 3. Les règles ont beaucoup évolué depuis les origines du rugby en 1823."
+  },
+  {
+    "id": "q211",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "En quelle année le Tour de France cycliste a-t-il été créé ?",
+    "choices": {
+      "a": "1896",
+      "b": "1914",
+      "c": "1903"
+    },
+    "answer": "C",
+    "funFact": "Le premier Tour de France fut organisé par le journal L'Auto en 1903 pour augmenter ses ventes face à son concurrent Le Vélo. Il comptait 6 étapes et 60 participants. Maurice Garin remporta cette première édition."
+  },
+  {
+    "id": "q212",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "Quel pays a remporté le plus de Coupes du Monde de football (jusqu'en 2024) ?",
+    "choices": {
+      "a": "L'Allemagne (4 fois)",
+      "b": "Le Brésil (5 fois)",
+      "c": "L'Italie (4 fois)"
+    },
+    "answer": "B",
+    "funFact": "Le Brésil est le seul pays à avoir participé à toutes les phases finales de Coupe du Monde depuis 1930. Ses 5 titres (1958, 1962, 1970, 1994, 2002) en font la nation la plus titrée de l'histoire."
+  },
+  {
+    "id": "q213",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "En quelle année Tiger Woods a-t-il remporté son premier Masters d'Augusta ?",
+    "choices": {
+      "a": "1997",
+      "b": "2000",
+      "c": "1995"
+    },
+    "answer": "A",
+    "funFact": "Tiger Woods avait 21 ans quand il remporta Augusta 1997 avec un record de 18 coups sous le par. Il termina 12 coups devant le deuxième. Ce fut le début d'une domination qui lui valut 15 titres du Grand Chelem en golf."
+  },
+  {
+    "id": "q214",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "Combien de mètres mesure une piscine olympique ?",
+    "choices": {
+      "a": "25 mètres",
+      "b": "33 mètres",
+      "c": "50 mètres"
+    },
+    "answer": "C",
+    "funFact": "Une piscine olympique mesure 50 m × 25 m et a une profondeur minimale de 2 mètres. Elle est divisée en 8 ou 10 couloirs. Les bassins de 25 m sont dits 'petits bassins' et servent pour les championnats en eau courte."
+  },
+  {
+    "id": "q215",
+    "category": "Sports",
+    "difficulty": "medium",
+    "question": "Quel pays a remporté le plus de médailles aux Jeux olympiques d'hiver de tous les temps ?",
+    "choices": {
+      "a": "La Norvège",
+      "b": "Les États-Unis",
+      "c": "L'Allemagne"
+    },
+    "answer": "A",
+    "funFact": "La Norvège domine le tableau des médailles olympiques d'hiver avec plus de 400 médailles totales. Le ski de fond et le biathlon constituent leur spécialité. Certains Norvégiens plaisantent qu'ils naissent avec des skis aux pieds."
+  },
+  {
+    "id": "q216",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "En quelle année les femmes ont-elles participé aux Jeux olympiques modernes pour la première fois ?",
+    "choices": {
+      "a": "1896",
+      "b": "1900",
+      "c": "1912"
+    },
+    "answer": "B",
+    "funFact": "Lors des JO de Paris 1900, 22 femmes participèrent sur 997 athlètes, dans le tennis et le golf. Pierre de Coubertin était personnellement opposé à leur participation. Les femmes représentent aujourd'hui environ 49 % des athlètes olympiques."
+  },
+  {
+    "id": "q217",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "Quel nageur détient le record du plus grand nombre de médailles olympiques de l'histoire ?",
+    "choices": {
+      "a": "Mark Spitz",
+      "b": "Ryan Lochte",
+      "c": "Michael Phelps"
+    },
+    "answer": "C",
+    "funFact": "Michael Phelps a remporté 28 médailles olympiques (23 d'or) entre 2000 et 2016. Pour mettre en perspective : son record de 23 médailles d'or dépasse le total de 174 pays aux JO. Il était aussi connu pour sa consommation de 12 000 calories par jour à l'entraînement."
+  },
+  {
+    "id": "q218",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "Quel est le poids réglementaire du marteau en athlétisme (compétition masculine) ?",
+    "choices": {
+      "a": "7,26 kg",
+      "b": "5 kg",
+      "c": "10 kg"
+    },
+    "answer": "A",
+    "funFact": "Le marteau masculin pèse 7,26 kg et mesure 117 à 121,5 cm. En compétition féminine, il pèse 4 kg. Le record du monde masculin est de 86,74 m, établi par le Soviétique Yuri Sedykh en 1986 — un record vieux de presque 40 ans."
+  },
+  {
+    "id": "q219",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "En quelle année et par qui le basketball a-t-il été inventé ?",
+    "choices": {
+      "a": "1885, par James Naismith",
+      "b": "1891, par James Naismith",
+      "c": "1891, par William Morgan"
+    },
+    "answer": "B",
+    "funFact": "James Naismith, professeur d'éducation physique canadien, inventa le basketball en décembre 1891 à Springfield (Massachusetts). Pour les premiers matchs, il utilisait des paniers à pêches vides fixés à une galerie à 3,05 m du sol."
+  },
+  {
+    "id": "q220",
+    "category": "Sports",
+    "difficulty": "hard",
+    "question": "Dans quel sport l'ère 'Open' a-t-elle débuté en 1968, permettant aux professionnels de concourir aux Grands Chelems ?",
+    "choices": {
+      "a": "Le golf",
+      "b": "Le cyclisme",
+      "c": "Le tennis"
+    },
+    "answer": "C",
+    "funFact": "Avant 1968, les Grands Chelems de tennis étaient réservés aux amateurs. L'ère Open a débuté en 1968, permettant aux professionnels de participer. Wimbledon, Roland-Garros, l'US Open et l'Open d'Australie furent les premiers à adopter ce format."
+  },
+  {
+    "id": "q221",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "De quel pays vient la pizza telle qu'on la connaît aujourd'hui ?",
+    "choices": {
+      "a": "L'Italie",
+      "b": "La Grèce",
+      "c": "L'Espagne"
+    },
+    "answer": "A",
+    "funFact": "La pizza moderna est née à Naples au XIXe siècle. La pizza Margherita fut créée en 1889 en l'honneur de la reine Margherite de Savoie, avec des couleurs du drapeau italien : rouge (tomate), blanc (mozzarella), vert (basilic)."
+  },
+  {
+    "id": "q222",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "Quel est le principal grain fermenté utilisé pour fabriquer la bière ?",
+    "choices": {
+      "a": "Le blé",
+      "b": "Le maïs",
+      "c": "L'orge malté"
+    },
+    "answer": "C",
+    "funFact": "L'orge malté est le principal ingrédient de la bière, avec l'eau, le houblon et la levure. La bière est l'une des plus anciennes boissons alcoolisées : des traces datant de 5 000 ans avant J.-C. ont été trouvées en Mésopotamie."
+  },
+  {
+    "id": "q223",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "De quel pays vient le sushi ?",
+    "choices": {
+      "a": "La Chine",
+      "b": "Le Japon",
+      "c": "La Corée du Sud"
+    },
+    "answer": "B",
+    "funFact": "Le sushi a des origines dans le narezushi, une technique de conservation du poisson dans du riz fermenté venue d'Asie du Sud-Est. Le sushi moderne avec du riz vinaigré a été popularisé à Tokyo (anciennement Edo) au XIXe siècle."
+  },
+  {
+    "id": "q224",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "Dans quelle cuisine nationale trouve-t-on le plat traditionnel 'paella' ?",
+    "choices": {
+      "a": "Espagnole",
+      "b": "Italienne",
+      "c": "Portugaise"
+    },
+    "answer": "A",
+    "funFact": "La paella est originaire de la région de Valence en Espagne. La recette traditionnelle contient du riz, du safran, des légumes, du poulet et du lapin — pas de fruits de mer comme on le croit souvent à l'étranger."
+  },
+  {
+    "id": "q225",
+    "category": "Food & Drink",
+    "difficulty": "easy",
+    "question": "Quelle épice donne sa couleur jaune-orangée au curry et au lait doré ?",
+    "choices": {
+      "a": "Le safran",
+      "b": "Le paprika",
+      "c": "Le curcuma"
+    },
+    "answer": "C",
+    "funFact": "Le curcuma contient de la curcumine, un puissant antioxydant aux propriétés anti-inflammatoires. L'Inde produit et consomme 80 % du curcuma mondial. Il est utilisé depuis 4 000 ans en médecine ayurvédique."
+  },
+  {
+    "id": "q226",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "Dans quelle région française le camembert est-il originaire ?",
+    "choices": {
+      "a": "La Bretagne",
+      "b": "La Normandie",
+      "c": "La Bourgogne"
+    },
+    "answer": "B",
+    "funFact": "Selon la légende, le camembert fut créé en 1791 par Marie Harel, une fermière normande de Camembert. Napoléon Bonaparte en aurait été un grand amateur. L'AOP Camembert de Normandie garantit une fabrication au lait cru."
+  },
+  {
+    "id": "q227",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "De quel pays est originaire le tiramisu ?",
+    "choices": {
+      "a": "L'Italie",
+      "b": "L'Espagne",
+      "c": "La Grèce"
+    },
+    "answer": "A",
+    "funFact": "Le tiramisu (littéralement 'tire-moi vers le haut') est originaire de Vénétie (Italie), probablement inventé dans les années 1960-70. La dispute entre les restaurants de Treviso et de Frioul sur son invention n'est toujours pas tranchée."
+  },
+  {
+    "id": "q228",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "Quel pays consomme le plus de fromage par habitant dans le monde ?",
+    "choices": {
+      "a": "La Grèce",
+      "b": "L'Italie",
+      "c": "La France"
+    },
+    "answer": "C",
+    "funFact": "Les Français consomment environ 27 kg de fromage par personne et par an. La France produit plus de 1 000 variétés de fromages. Le général de Gaulle demandait : 'Comment voulez-vous gouverner un pays qui a 246 variétés de fromage ?'"
+  },
+  {
+    "id": "q229",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "Combien de calories contient approximativement un gramme d'alcool pur ?",
+    "choices": {
+      "a": "4 kcal (comme les glucides)",
+      "b": "7 kcal",
+      "c": "9 kcal (comme les lipides)"
+    },
+    "answer": "B",
+    "funFact": "L'alcool (éthanol) apporte 7 kcal par gramme — entre les glucides (4 kcal/g) et les lipides (9 kcal/g). Un verre de vin de 15 cl contient environ 90-100 kcal. Ces calories sont qualifiées de 'calories vides' car sans apport nutritif."
+  },
+  {
+    "id": "q230",
+    "category": "Food & Drink",
+    "difficulty": "medium",
+    "question": "Quels sont les trois ingrédients de base d'une sauce béchamel ?",
+    "choices": {
+      "a": "Crème fraîche, beurre, sel",
+      "b": "Œufs, beurre, farine",
+      "c": "Beurre, farine et lait"
+    },
+    "answer": "C",
+    "funFact": "La béchamel est l'une des 5 sauces mères de la cuisine française classique, codifiées par Escoffier. Son nom viendrait du marquis Louis de Béchamel, maître d'hôtel de Louis XIV — bien que la recette existait déjà avant lui."
+  },
+  {
+    "id": "q231",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "Dans quelle région italienne est produit le Parmigiano-Reggiano (parmesan) AOP ?",
+    "choices": {
+      "a": "L'Émilie-Romagne",
+      "b": "La Toscane",
+      "c": "La Lombardie"
+    },
+    "answer": "A",
+    "funFact": "Le Parmigiano-Reggiano est affiné un minimum de 12 mois, souvent 24 ou 36 mois. Une meule pèse environ 40 kg et nécessite 550 litres de lait. Il ne peut être produit que dans un périmètre délimité autour de Parme et Reggio Emilia."
+  },
+  {
+    "id": "q232",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "Combien d'années minimum doit vieillir un cognac pour être classé 'XO' (Extra Old) selon la réglementation française ?",
+    "choices": {
+      "a": "6 ans",
+      "b": "15 ans",
+      "c": "10 ans"
+    },
+    "answer": "C",
+    "funFact": "Depuis 2018, le cognac XO doit vieillir au minimum 10 ans en fûts de chêne. Les appellations VS (Very Special) requièrent 2 ans minimum, VSOP 4 ans. Le cognac est produit exclusivement en Charente, dans l'ouest de la France."
+  },
+  {
+    "id": "q233",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "Quel est le pays d'origine de la sauce Worcestershire ?",
+    "choices": {
+      "a": "Les États-Unis",
+      "b": "L'Angleterre",
+      "c": "L'Inde"
+    },
+    "answer": "B",
+    "funFact": "La sauce Worcestershire fut créée dans la ville anglaise de Worcester vers 1837 par les pharmaciens Lea & Perrins, inspirée d'une recette rapportée des Indes. Sa recette exacte reste un secret commercial, mais elle contient anchois, tamarin, vinaigre et mélasse."
+  },
+  {
+    "id": "q234",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "Quel est le nom de la technique de conservation des aliments par congélation rapide suivie d'une évaporation sous vide ?",
+    "choices": {
+      "a": "La pasteurisation",
+      "b": "La lyophilisation",
+      "c": "La stérilisation"
+    },
+    "answer": "B",
+    "funFact": "La lyophilisation (freeze-drying) élimine jusqu'à 95 % de l'eau d'un aliment tout en préservant ses nutriments et sa saveur. Inventée dans les années 1940 pour les médicaments, elle est utilisée pour le café soluble, les aliments de randonnée et les repas spatiaux."
+  },
+  {
+    "id": "q235",
+    "category": "Food & Drink",
+    "difficulty": "hard",
+    "question": "Quel fromage bleu français bénéficie de la plus ancienne AOC fromagère, accordée en 1925 ?",
+    "choices": {
+      "a": "Le gorgonzola",
+      "b": "Le bleu d'Auvergne",
+      "c": "Le roquefort"
+    },
+    "answer": "C",
+    "funFact": "Le roquefort, affiné dans les grottes naturelles de Combalou à Roquefort-sur-Soulzon (Aveyron), a obtenu la première AOC fromagère française en 1925. Selon la légende, il fut découvert par un berger qui oublia son casse-croûte dans une grotte et retrouva son fromage transformé des semaines plus tard."
+  },
+  {
+    "id": "q236",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "Quel est le nom de l'assistant vocal intégré aux appareils Apple ?",
+    "choices": {
+      "a": "Cortana",
+      "b": "Alexa",
+      "c": "Siri"
+    },
+    "answer": "C",
+    "funFact": "Siri a été lancé en octobre 2011 avec l'iPhone 4S. Son nom vient du norvégien et signifie 'belle femme victorieuse'. Siri a été développé à l'origine par SRI International avant d'être racheté par Apple."
+  },
+  {
+    "id": "q237",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "Qui a fondé Amazon en 1994 dans un garage de Seattle ?",
+    "choices": {
+      "a": "Jeff Bezos",
+      "b": "Elon Musk",
+      "c": "Larry Page"
+    },
+    "answer": "A",
+    "funFact": "Jeff Bezos a commencé Amazon comme librairie en ligne. Son nom vient du fleuve Amazone, le plus grand au monde, pour symboliser l'ambition du projet. Amazon est aujourd'hui l'une des entreprises les plus valorisées de l'histoire."
+  },
+  {
+    "id": "q238",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "Quel réseau social a été créé par Mark Zuckerberg en 2004 dans sa chambre d'université ?",
+    "choices": {
+      "a": "Twitter",
+      "b": "Facebook",
+      "c": "MySpace"
+    },
+    "answer": "B",
+    "funFact": "Facebook a démarré comme réseau interne de Harvard. Zuckerberg avait 19 ans lors de sa création. Le réseau compte aujourd'hui plus de 3 milliards d'utilisateurs actifs mensuels, ce qui en fait la plus grande communauté jamais créée."
+  },
+  {
+    "id": "q239",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "Que signifie l'acronyme 'USB' en anglais ?",
+    "choices": {
+      "a": "Universal Serial Bus",
+      "b": "Ultra Speed Broadband",
+      "c": "Unified System Bus"
+    },
+    "answer": "A",
+    "funFact": "L'USB a été développé en 1996 par un consortium d'entreprises incluant Intel, IBM et Microsoft. Il a été conçu pour standardiser et simplifier la connexion des périphériques aux ordinateurs, remplaçant une multitude de connecteurs propriétaires."
+  },
+  {
+    "id": "q240",
+    "category": "Technology",
+    "difficulty": "easy",
+    "question": "Quel moteur de recherche est le plus utilisé dans le monde ?",
+    "choices": {
+      "a": "Bing",
+      "b": "Google",
+      "c": "Yahoo"
+    },
+    "answer": "B",
+    "funFact": "Google traite plus de 8,5 milliards de recherches par jour, soit plus de 99 000 par seconde. Son nom est une variation de 'googol' (10^100), reflétant l'ambition d'organiser l'immense quantité d'informations sur le web."
+  },
+  {
+    "id": "q241",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "En quelle année Elon Musk a-t-il fondé SpaceX ?",
+    "choices": {
+      "a": "1998",
+      "b": "2005",
+      "c": "2002"
+    },
+    "answer": "C",
+    "funFact": "SpaceX a été fondé en 2002 avec un objectif ambitieux : rendre l'humanité multiplanétaire. En 2015, SpaceX fut la première entreprise à réussir l'atterrissage d'un premier étage de fusée réutilisable — révolutionnant l'industrie spatiale."
+  },
+  {
+    "id": "q242",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "Quel langage de programmation est principalement utilisé pour le développement web côté client (navigateur) ?",
+    "choices": {
+      "a": "JavaScript",
+      "b": "Python",
+      "c": "PHP"
+    },
+    "answer": "A",
+    "funFact": "JavaScript a été créé en 10 jours en 1995 par Brendan Eich. Malgré son nom, il n'a aucun rapport avec Java. C'est le seul langage natif exécuté directement dans les navigateurs web, le rendant indispensable au développement front-end."
+  },
+  {
+    "id": "q243",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "Quel format d'image utilise une compression 'avec perte' (lossy) qui réduit la qualité à chaque enregistrement ?",
+    "choices": {
+      "a": "PNG",
+      "b": "JPEG",
+      "c": "BMP"
+    },
+    "answer": "B",
+    "funFact": "Le JPEG (Joint Photographic Experts Group, 1992) compresse les images en éliminant des détails peu visibles à l'œil nu. Le PNG est sans perte mais plus lourd. Réenregistrer un JPEG plusieurs fois dégrade visiblement l'image."
+  },
+  {
+    "id": "q244",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "Quel protocole sécurise les échanges sur internet (représenté par le cadenas dans le navigateur) ?",
+    "choices": {
+      "a": "HTTPS",
+      "b": "FTP",
+      "c": "SMTP"
+    },
+    "answer": "A",
+    "funFact": "HTTPS (HyperText Transfer Protocol Secure) chiffre les données entre le navigateur et le serveur via TLS. Avant 2018, seuls 50 % des sites utilisaient HTTPS ; Google Chrome a alors commencé à signaler les sites HTTP comme 'non sécurisés'."
+  },
+  {
+    "id": "q245",
+    "category": "Technology",
+    "difficulty": "medium",
+    "question": "Quelle entreprise a créé le système d'exploitation Android pour smartphones ?",
+    "choices": {
+      "a": "Samsung",
+      "b": "Google",
+      "c": "Microsoft"
+    },
+    "answer": "B",
+    "funFact": "Android a été développé par Android Inc. et racheté par Google en 2005. Lancé en 2008, il équipe aujourd'hui environ 72 % des smartphones dans le monde. Son mascotte verte n'a pas de nom officiel, mais les fans l'appellent 'Andy'."
+  },
+  {
+    "id": "q246",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "En quelle année le premier email de l'histoire a-t-il été envoyé, et par qui ?",
+    "choices": {
+      "a": "1971, par Ray Tomlinson",
+      "b": "1983, par Vint Cerf",
+      "c": "1969, par Tim Berners-Lee"
+    },
+    "answer": "A",
+    "funFact": "Ray Tomlinson envoya le premier email en 1971 sur ARPANET. Il est aussi l'inventeur du symbole '@' pour séparer le nom de l'utilisateur de l'adresse du serveur. Il avoua ne plus se souvenir du contenu exact de ce premier message historique."
+  },
+  {
+    "id": "q247",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "Combien de bits contient une adresse IPv4 (comme 192.168.1.1) ?",
+    "choices": {
+      "a": "16 bits",
+      "b": "64 bits",
+      "c": "32 bits"
+    },
+    "answer": "C",
+    "funFact": "Une adresse IPv4 contient 32 bits, ce qui permet environ 4,3 milliards d'adresses. Ce nombre s'est avéré insuffisant : les adresses IPv4 sont épuisées depuis 2011. IPv6 utilise 128 bits, offrant 340 milliards de milliards de milliards d'adresses."
+  },
+  {
+    "id": "q248",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "Quel est le nom du premier ver informatique à grande échelle, créé en 1988 par un étudiant de Cornell ?",
+    "choices": {
+      "a": "Le virus Elk Cloner",
+      "b": "Le ver Morris",
+      "c": "Le virus Jerusalem"
+    },
+    "answer": "B",
+    "funFact": "Robert Morris créa ce ver pour mesurer la taille d'internet. Un bug le rendit incontrôlable : il infecta 6 000 machines (10 % d'internet à l'époque) et causa des millions de dollars de dégâts. Morris fut condamné et est aujourd'hui professeur au MIT."
+  },
+  {
+    "id": "q249",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "Qui a inventé le World Wide Web (WWW) en 1989, distinct d'Internet ?",
+    "choices": {
+      "a": "Tim Berners-Lee",
+      "b": "Vint Cerf",
+      "c": "Bill Gates"
+    },
+    "answer": "A",
+    "funFact": "Tim Berners-Lee, physicien britannique au CERN, inventa le Web pour partager des documents scientifiques. Il développa HTML, HTTP et les URLs. Contrairement à beaucoup d'inventeurs, il a délibérément rendu son invention libre de droits."
+  },
+  {
+    "id": "q250",
+    "category": "Technology",
+    "difficulty": "hard",
+    "question": "Quel est le nom du premier disque dur commercial, commercialisé par IBM en 1956 ?",
+    "choices": {
+      "a": "IBM 305 RAMAC",
+      "b": "IBM 350 RAMAC",
+      "c": "IBM 1301"
+    },
+    "answer": "B",
+    "funFact": "L'IBM 350 RAMAC (Random Access Method of Accounting and Control) pesait une tonne, occupait la taille d'un réfrigérateur double et stockait… 5 Mo de données. Loué 3 200 $ par mois (l'équivalent de 35 000 $ aujourd'hui), il fut l'ancêtre de tous les disques durs modernes."
+  }
+]

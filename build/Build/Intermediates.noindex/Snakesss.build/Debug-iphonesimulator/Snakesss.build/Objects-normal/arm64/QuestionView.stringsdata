@@ -1,0 +1,32 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/QuestionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "question.roundBadge %lld",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "question.placePhone.instructions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "question.snakesCloseEyes.button",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 67
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>12</integer>
+	<key>logs</key>
+	<dict>
+		<key>530CE344-0345-4352-A60D-18C48FAA40D3</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>530CE344-0345-4352-A60D-18C48FAA40D3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Snakesss project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Snakesss</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning project Snakesss with scheme Snakesss</string>
+			<key>timeStartedRecording</key>
+			<real>793463763.79369998</real>
+			<key>timeStoppedRecording</key>
+			<real>793463764.476982</real>
+			<key>title</key>
+			<string>Cleaning project Snakesss with scheme Snakesss</string>
+			<key>uniqueIdentifier</key>
+			<string>530CE344-0345-4352-A60D-18C48FAA40D3</string>
+		</dict>
+		<key>C7454F1C-1088-4882-B9BA-48AE889AD3A7</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C7454F1C-1088-4882-B9BA-48AE889AD3A7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Snakesss project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Snakesss</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Snakesss with scheme Snakesss</string>
+			<key>timeStartedRecording</key>
+			<real>793463764.48818099</real>
+			<key>timeStoppedRecording</key>
+			<real>793463839.746593</real>
+			<key>title</key>
+			<string>Building project Snakesss with scheme Snakesss</string>
+			<key>uniqueIdentifier</key>
+			<string>C7454F1C-1088-4882-B9BA-48AE889AD3A7</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

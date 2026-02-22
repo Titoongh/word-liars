@@ -1,0 +1,88 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/History/HistoryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "history.title",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.done.button",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "🎮",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.empty.headline",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.empty.body",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.delete.button",
+        "location": {
+          "startingColumn": 57,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.noWinner",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.rounds %lld %lld",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏆",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "history.pts %lld",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 126
+        }
+      }
+    ]
+  },
+  "version": 1
+}

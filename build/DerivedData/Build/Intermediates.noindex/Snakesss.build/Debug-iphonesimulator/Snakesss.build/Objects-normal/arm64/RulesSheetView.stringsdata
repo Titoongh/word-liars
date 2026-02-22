@@ -1,0 +1,304 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Onboarding/RulesSheetView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "rules.title",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.roles.section.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.roles.subtitle",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.rounds.section.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.rounds.subtitle",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.roleReveal.title",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.roleReveal.description",
+        "location": {
+          "startingColumn": 117,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.question.title",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.question.description",
+        "location": {
+          "startingColumn": 117,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.snakeReveal.title",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.snakeReveal.description",
+        "location": {
+          "startingColumn": 117,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.discussion.title",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.discussion.description",
+        "location": {
+          "startingColumn": 117,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.voting.title",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.voting.description",
+        "location": {
+          "startingColumn": 117,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.results.title",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "phase.results.description",
+        "location": {
+          "startingColumn": 117,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.scoring.section.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.scoring.subtitle",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.correctVote.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.correctVote.description",
+        "location": {
+          "startingColumn": 100,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.snakeVote.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.snakeVote.description",
+        "location": {
+          "startingColumn": 100,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.mongooseBonus.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.mongooseBonus.description",
+        "location": {
+          "startingColumn": 100,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.wrongVote.label",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "scoring.wrongVote.description",
+        "location": {
+          "startingColumn": 100,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.dismiss.accessibility",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.gotIt.button",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "rules.close.accessibility",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.human.description",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.snake.description",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "role.mongoose.description",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ role",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Phase %lld: %@. %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 256
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ points: %@. %@",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 301
+        }
+      }
+    ]
+  },
+  "version": 1
+}

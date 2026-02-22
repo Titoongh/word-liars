@@ -1,0 +1,40 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/MongooseAnnouncementView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "🦦",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "mongoose.verifyCaption",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "mongoose.seeQuestion.button",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "mongoose.announcement.label",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 29
+        }
+      }
+    ]
+  },
+  "version": 1
+}

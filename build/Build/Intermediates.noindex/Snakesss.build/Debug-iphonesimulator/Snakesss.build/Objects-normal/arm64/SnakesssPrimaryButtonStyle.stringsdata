@@ -1,0 +1,32 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Theme/SnakesssPrimaryButtonStyle.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "New Game",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start Game →",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 59
+        }
+      },
+      {
+        "comment": "",
+        "key": "Disabled",
+        "location": {
+          "startingColumn": 1,
+          "startingLine": 59
+        }
+      }
+    ]
+  },
+  "version": 1
+}

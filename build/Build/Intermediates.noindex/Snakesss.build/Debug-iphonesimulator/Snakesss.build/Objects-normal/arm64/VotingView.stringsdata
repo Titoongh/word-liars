@@ -1,0 +1,96 @@
+{
+  "source": "/Volumes/My Shared Files/GOBC-GAMES/word-liars/Snakesss/Views/Game/VotingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "passPhone.tapToVote.caption",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.confirmVote.button",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.nowVoting.label",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.playerBadge %lld %lld",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.question.label",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.vote.accessibility %@ %@",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "snakeReveal.youAreSnake.label",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.snake.forced.body",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vote Snake",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "🐍",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "voting.voteSnake.button",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 152
+        }
+      }
+    ]
+  },
+  "version": 1
+}
