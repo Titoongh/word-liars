@@ -57,12 +57,16 @@ final class GameViewModel {
         players: [Player],
         questionService: QuestionService = QuestionService(),
         roleService: any RoleAssigning = RoleService(),
-        scoringService: ScoringService = ScoringService()
+        scoringService: ScoringService = ScoringService(),
+        totalRounds: Int? = nil,
+        timerDuration: Int? = nil
     ) {
         let settings = SettingsManager.shared
-        self.totalRounds = settings.roundCount
-        self.timerDuration = settings.timerDuration
-        self.discussionTimeRemaining = settings.timerDuration
+        let rounds = totalRounds ?? settings.roundCount
+        let timer = timerDuration ?? settings.timerDuration
+        self.totalRounds = rounds
+        self.timerDuration = timer
+        self.discussionTimeRemaining = timer
         self.players = players
         self.questionService = questionService
         self.roleService = roleService

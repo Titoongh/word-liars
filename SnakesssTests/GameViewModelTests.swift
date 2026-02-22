@@ -385,4 +385,337 @@ final class GameViewModelTests: XCTestCase {
         vm.startRound()
         XCTAssertEqual(vm.snakeIndices, [1, 2])
     }
+
+    // MARK: - STORY-046: Scoring Edge Cases
+
+    /// All non-snake players vote correctly → snakes earn 0, humans share points.
+    func testAllCorrectVotesScenario() {
+        // 4 players: H, S, S, M — answer A
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let vm = makeVM(roles: roles, answer: "A")
+        vm.showQuestion()
+        vm.startVoting()
+        vm.submitVote(.a, voterIndex: 0)     // human correct
+        vm.submitVote(.snake, voterIndex: 1) // snake must vote snake
+        vm.submitVote(.snake, voterIndex: 2) // snake must vote snake
+        vm.submitVote(.a, voterIndex: 3)     // mongoose correct
+
+        // 2 correct non-snake voters → each earns 2 pts
+        XCTAssertEqual(vm.players[0].totalScore, 2)  // human
+        XCTAssertEqual(vm.players[3].totalScore, 2)  // mongoose
+        // 0 incorrect non-snakes → snakes earn 0
+        XCTAssertEqual(vm.players[1].totalScore, 0)
+        XCTAssertEqual(vm.players[2].totalScore, 0)
+    }
+
+    /// All non-snake players vote incorrectly → snakes earn maximum points.
+    func testAllIncorrectVotesScenario() {
+        // 4 players: H, S, S, M — answer A, everyone votes B
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let vm = makeVM(roles: roles, answer: "A")
+        vm.showQuestion()
+        vm.startVoting()
+        vm.submitVote(.b, voterIndex: 0)     // human incorrect
+        vm.submitVote(.snake, voterIndex: 1) // snake votes snake
+        vm.submitVote(.snake, voterIndex: 2) // snake votes snake
+        vm.submitVote(.b, voterIndex: 3)     // mongoose incorrect
+
+        // 2 incorrect non-snakes → each snake earns 2 pts
+        XCTAssertEqual(vm.players[0].totalScore, 0)
+        XCTAssertEqual(vm.players[3].totalScore, 0)
+        XCTAssertEqual(vm.players[1].totalScore, 2)  // snake
+        XCTAssertEqual(vm.players[2].totalScore, 2)  // snake
+    }
+
+    // MARK: - Player Count Edge Cases
+
+    func testFourPlayerGame() {
+        // 4 = minimum player count per RoleService distribution table
+        let vm = makeVM(playerCount: 4)
+        XCTAssertEqual(vm.players.count, 4)
+        XCTAssertNotNil(vm.players[0].role)
+    }
+
+    func testEightPlayerGame() {
+        // 8 = maximum player count per RoleService distribution table: 3H, 4S, 1M
+        let players = makePlayers(count: 8)
+        let qs = makeQuestionService()
+        let vm = GameViewModel(players: players, questionService: qs)
+
+        XCTAssertEqual(vm.players.count, 8)
+        // All roles must be assigned
+        for player in vm.players {
+            XCTAssertNotNil(player.role)
+        }
+        // Distribution: 3 humans + 4 snakes + 1 mongoose = 8
+        let humanCount = vm.players.filter { $0.role == .human }.count
+        let snakeCount = vm.players.filter { $0.role == .snake }.count
+        let mongooseCount = vm.players.filter { $0.role == .mongoose }.count
+        XCTAssertEqual(humanCount, 3)
+        XCTAssertEqual(snakeCount, 4)
+        XCTAssertEqual(mongooseCount, 1)
+    }
+
+    // MARK: - Custom Round Count
+
+    func testThreeRoundGameEndsAfterThreeRounds() {
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let players = makePlayers(count: 4)
+        let qs = makeQuestionService()
+        let vm = GameViewModel(
+            players: players,
+            questionService: qs,
+            roleService: StubRoleService(fixedRoles: roles),
+            totalRounds: 3
+        )
+        XCTAssertEqual(vm.totalRounds, 3)
+
+        // Play 3 rounds
+        for round in 1...3 {
+            if round > 1 { vm.nextRound() }  // startRound for rounds 2+
+            vm.showQuestion()
+            vm.startVoting()
+            vm.submitVote(.a, voterIndex: 0)
+            vm.submitVote(.snake, voterIndex: 1)
+            vm.submitVote(.snake, voterIndex: 2)
+            vm.submitVote(.a, voterIndex: 3)
+        }
+        XCTAssertEqual(vm.phase, .roundResults)
+        vm.nextRound()
+        XCTAssertEqual(vm.phase, .gameEnd)
+        XCTAssertEqual(vm.roundResults.count, 3)
+    }
+
+    func testNineRoundGameEndsAfterNineRounds() {
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let players = makePlayers(count: 4)
+        let qs = makeQuestionService()
+        let vm = GameViewModel(
+            players: players,
+            questionService: qs,
+            roleService: StubRoleService(fixedRoles: roles),
+            totalRounds: 9
+        )
+        XCTAssertEqual(vm.totalRounds, 9)
+
+        for round in 1...9 {
+            if round > 1 { vm.nextRound() }
+            vm.showQuestion()
+            vm.startVoting()
+            vm.submitVote(.a, voterIndex: 0)
+            vm.submitVote(.snake, voterIndex: 1)
+            vm.submitVote(.snake, voterIndex: 2)
+            vm.submitVote(.a, voterIndex: 3)
+        }
+        vm.nextRound()
+        XCTAssertEqual(vm.phase, .gameEnd)
+        XCTAssertEqual(vm.roundResults.count, 9)
+    }
+
+    // MARK: - Custom Timer Duration
+
+    func testCustomTimerDurationSetsDiscussionRemaining() {
+        let players = makePlayers(count: 4)
+        let qs = makeQuestionService()
+        let vm = GameViewModel(
+            players: players,
+            questionService: qs,
+            timerDuration: 60
+        )
+        XCTAssertEqual(vm.timerDuration, 60)
+        XCTAssertEqual(vm.discussionTimeRemaining, 60)
+    }
+
+    func testStartDiscussionResetsToCustomTimer() {
+        let players = makePlayers(count: 4)
+        let qs = makeQuestionService()
+        let vm = GameViewModel(
+            players: players,
+            questionService: qs,
+            totalRounds: 6,
+            timerDuration: 90
+        )
+        vm.startDiscussion()
+        XCTAssertEqual(vm.discussionTimeRemaining, 90)
+        vm.cancelTimer()
+    }
+
+    // MARK: - Phase Transition Ordering
+
+    func testPhasesTransitionInValidOrder() {
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let vm = makeVM(roles: roles)
+
+        // Post-init: roleReveal
+        XCTAssertEqual(vm.phase, .roleReveal(playerIndex: 0))
+
+        // Reveal all 4 roles → mongooseAnnouncement
+        for i in 0..<4 { vm.revealNextRole(currentIndex: i) }
+        XCTAssertEqual(vm.phase, .mongooseAnnouncement)
+
+        // Show question
+        vm.showQuestion()
+        XCTAssertEqual(vm.phase, .question)
+
+        // Snake reveal → all snakes
+        vm.startSnakeReveal()
+        XCTAssertEqual(vm.phase, .snakeReveal(snakeIndex: 0))
+        vm.revealNextSnake(currentSnakeIndex: 0)
+        XCTAssertEqual(vm.phase, .snakeReveal(snakeIndex: 1))
+        vm.revealNextSnake(currentSnakeIndex: 1)
+        XCTAssertEqual(vm.phase, .discussion)
+
+        // Skip to voting
+        vm.skipDiscussion()
+        XCTAssertEqual(vm.phase, .voting(playerIndex: 0))
+
+        // Vote all players → roundResults
+        vm.submitVote(.a, voterIndex: 0)
+        vm.submitVote(.snake, voterIndex: 1)
+        vm.submitVote(.snake, voterIndex: 2)
+        vm.submitVote(.a, voterIndex: 3)
+        XCTAssertEqual(vm.phase, .roundResults)
+    }
+
+    // MARK: - Snake Forced Vote (Scoring)
+
+    func testSnakeForcedVoteEarnsPointsWhenNonSnakesVoteWrong() {
+        // Verify snakes benefit when non-snakes vote incorrectly
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let vm = makeVM(roles: roles, answer: "A")
+        vm.showQuestion()
+        vm.startVoting()
+        vm.submitVote(.c, voterIndex: 0)     // human incorrect
+        vm.submitVote(.snake, voterIndex: 1) // snake
+        vm.submitVote(.snake, voterIndex: 2) // snake
+        vm.submitVote(.c, voterIndex: 3)     // mongoose incorrect
+
+        // 2 incorrect non-snakes → each snake earns 2
+        XCTAssertEqual(vm.players[1].totalScore, 2)
+        XCTAssertEqual(vm.players[2].totalScore, 2)
+    }
+
+    func testSnakeVotingSnakeEarnsPointsBasedOnWrongNonSnakes() {
+        // Only 1 non-snake player wrong → each snake earns 1
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let vm = makeVM(roles: roles, answer: "A")
+        vm.showQuestion()
+        vm.startVoting()
+        vm.submitVote(.b, voterIndex: 0)     // human incorrect
+        vm.submitVote(.snake, voterIndex: 1) // snake
+        vm.submitVote(.snake, voterIndex: 2) // snake
+        vm.submitVote(.a, voterIndex: 3)     // mongoose correct
+
+        // 1 incorrect non-snake → each snake earns 1
+        XCTAssertEqual(vm.players[1].totalScore, 1)
+        XCTAssertEqual(vm.players[2].totalScore, 1)
+    }
+
+    // MARK: - Question Uniqueness
+
+    func testQuestionUniquenessWithinGame() {
+        // Build a pool of 6 distinct questions
+        let pool: [Question] = (1...6).map { i in
+            Question(
+                id: "q\(i)",
+                question: "Question \(i)?",
+                choices: Question.Choices(a: "A\(i)", b: "B\(i)", c: "C\(i)"),
+                answer: "A",
+                funFact: nil,
+                category: nil
+            )
+        }
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let qs = QuestionService(questions: pool)
+        let players = makePlayers(count: 4)
+        let vm = GameViewModel(
+            players: players,
+            questionService: qs,
+            roleService: StubRoleService(fixedRoles: roles),
+            totalRounds: 6
+        )
+
+        var seenIDs: Set<String> = []
+        for round in 1...6 {
+            if round > 1 { vm.nextRound() }
+            vm.showQuestion()
+            guard let qID = vm.currentQuestion?.id else {
+                XCTFail("No question set in round \(round)")
+                return
+            }
+            XCTAssertFalse(seenIDs.contains(qID), "Duplicate question in round \(round): \(qID)")
+            seenIDs.insert(qID)
+
+            vm.startVoting()
+            vm.submitVote(.a, voterIndex: 0)
+            vm.submitVote(.snake, voterIndex: 1)
+            vm.submitVote(.snake, voterIndex: 2)
+            vm.submitVote(.a, voterIndex: 3)
+        }
+        XCTAssertEqual(seenIDs.count, 6)
+    }
+
+    // MARK: - Play-Again Resets State
+
+    func testPlayAgainResetsStateCorrectly() {
+        // Simulate "play again" by creating a fresh VM with the same players (as GameView does)
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let originalVM = makeVM(roles: roles)
+        originalVM.showQuestion()
+        originalVM.startVoting()
+        originalVM.submitVote(.a, voterIndex: 0)
+        originalVM.submitVote(.snake, voterIndex: 1)
+        originalVM.submitVote(.snake, voterIndex: 2)
+        originalVM.submitVote(.a, voterIndex: 3)
+        // originalVM is in roundResults, players have scores
+
+        // Fresh game — same players, new VM (mirrors GameView.restartGame())
+        let freshPlayers = makePlayers(count: 4)
+        let qs = makeQuestionService()
+        let freshVM = GameViewModel(
+            players: freshPlayers,
+            questionService: qs,
+            roleService: StubRoleService(fixedRoles: roles)
+        )
+
+        // State is fully reset
+        XCTAssertEqual(freshVM.currentRound, 1)
+        XCTAssertEqual(freshVM.roundResults.count, 0)
+        XCTAssertEqual(freshVM.phase, .roleReveal(playerIndex: 0))
+        for player in freshVM.players {
+            XCTAssertEqual(player.totalScore, 0)
+            XCTAssertNil(player.currentVote)
+        }
+    }
+
+    // MARK: - New-Game from GameEnd
+
+    func testNewGameFromGameEndViaFreshVM() {
+        // New-game creates an entirely fresh VM — verify initial state is clean
+        let players = makePlayers(count: 4)
+        let qs = makeQuestionService()
+        let vm = GameViewModel(players: players, questionService: qs)
+
+        XCTAssertEqual(vm.currentRound, 1)
+        XCTAssertTrue(vm.roundResults.isEmpty)
+        XCTAssertEqual(vm.phase, .roleReveal(playerIndex: 0))
+    }
+
+    // MARK: - Votes Recorded Correctly
+
+    func testAllVotesRecordedCorrectlyForEachPlayer() {
+        let roles: [Role] = [.human, .snake, .snake, .mongoose]
+        let vm = makeVM(roles: roles)
+        vm.showQuestion()
+        vm.startVoting()
+        vm.submitVote(.a, voterIndex: 0)
+        vm.submitVote(.snake, voterIndex: 1)
+        vm.submitVote(.c, voterIndex: 2)
+        vm.submitVote(.b, voterIndex: 3)
+
+        XCTAssertEqual(vm.players[0].currentVote, .a)
+        XCTAssertEqual(vm.players[1].currentVote, .snake)
+        XCTAssertEqual(vm.players[2].currentVote, .c)
+        XCTAssertEqual(vm.players[3].currentVote, .b)
+    }
 }
