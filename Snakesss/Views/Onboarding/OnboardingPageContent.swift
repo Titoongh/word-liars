@@ -35,15 +35,15 @@ struct OnboardingPage1View: View {
 
                 // Concept card
                 VStack(alignment: .leading, spacing: SnakesssSpacing.spacing4) {
-                    Text("WHAT IS THIS GAME?")
+                    Text("onboarding.page1.section.label")
                         .microStyle(color: SnakesssTheme.textMuted)
                         .frame(maxWidth: .infinity, alignment: .leading)
 
-                    Text("Trivia meets Social Deduction")
+                    Text("onboarding.page1.headline")
                         .font(SnakesssTypography.headline)
                         .foregroundStyle(SnakesssTheme.textPrimary)
 
-                    Text("Answer trivia questions, vote on the right answer — but watch out. Some players secretly know the truth and will try to lead you astray.")
+                    Text("onboarding.page1.body")
                         .font(SnakesssTypography.body)
                         .foregroundStyle(SnakesssTheme.textSecondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -77,18 +77,18 @@ struct OnboardingPage2View: View {
                 Spacer(minLength: SnakesssSpacing.spacing6)
 
                 VStack(spacing: SnakesssSpacing.spacing2) {
-                    Text("THE ROLES")
+                    Text("onboarding.page2.section.label")
                         .microStyle(color: SnakesssTheme.textMuted)
-                    Text("Who are you playing as?")
+                    Text("onboarding.page2.subtitle")
                         .font(SnakesssTypography.headline)
                         .foregroundStyle(SnakesssTheme.textPrimary)
                         .accessibilityAddTraits(.isHeader)
                 }
 
                 VStack(spacing: SnakesssSpacing.spacing3) {
-                    RoleExplanationCard(role: .human, description: "You don't know the answer. Listen carefully, find clues, and vote for what you believe is correct.")
-                    RoleExplanationCard(role: .snake, description: "You know the correct answer — but keep it secret! Mislead the group and vote snake to earn points.")
-                    RoleExplanationCard(role: .mongoose, description: "You don't know the answer, but your identity is public. You're a trusted ally helping humans find the truth.")
+                    RoleExplanationCard(role: .human, description: String(localized: "role.human.description"))
+                    RoleExplanationCard(role: .snake, description: String(localized: "role.snake.description"))
+                    RoleExplanationCard(role: .mongoose, description: String(localized: "role.mongoose.description"))
                 }
                 .padding(.horizontal, SnakesssSpacing.screenPadding)
 
@@ -141,14 +141,14 @@ private struct RoleExplanationCard: View {
 
 /// Page 3 — Visual summary of the 6 game phases.
 struct OnboardingPage3View: View {
-    private let phases: [(icon: String, title: String, description: String)] = [
-        ("person.fill",            "Role Reveal",     "Each player secretly sees their role card."),
-        ("questionmark.circle",    "Question",        "A trivia question is shown to everyone."),
-        ("eye.slash.fill",         "Snake Reveal",    "Snakes secretly learn the correct answer."),
-        ("timer",                  "Discussion",      "2 minutes to discuss and debate answers."),
-        ("hand.point.up.left.fill","Voting",          "Each player votes for their chosen answer."),
-        ("trophy.fill",            "Results",         "Votes, roles, and points are revealed."),
-    ]
+    private var phases: [(icon: String, title: String, description: String)] {[
+        ("person.fill",            String(localized: "phase.roleReveal.title"),    String(localized: "phase.roleReveal.description")),
+        ("questionmark.circle",    String(localized: "phase.question.title"),      String(localized: "phase.question.description")),
+        ("eye.slash.fill",         String(localized: "phase.snakeReveal.title"),   String(localized: "phase.snakeReveal.description")),
+        ("timer",                  String(localized: "phase.discussion.title"),    String(localized: "phase.discussion.description")),
+        ("hand.point.up.left.fill",String(localized: "phase.voting.title"),        String(localized: "phase.voting.description")),
+        ("trophy.fill",            String(localized: "phase.results.title"),       String(localized: "phase.results.description")),
+    ]}
 
     var body: some View {
         ScrollView {
@@ -156,9 +156,9 @@ struct OnboardingPage3View: View {
                 Spacer(minLength: SnakesssSpacing.spacing6)
 
                 VStack(spacing: SnakesssSpacing.spacing2) {
-                    Text("EACH ROUND")
+                    Text("onboarding.page3.section.label")
                         .microStyle(color: SnakesssTheme.textMuted)
-                    Text("6 phases per round")
+                    Text("onboarding.page3.subtitle")
                         .font(SnakesssTypography.headline)
                         .foregroundStyle(SnakesssTheme.textPrimary)
                         .accessibilityAddTraits(.isHeader)
@@ -259,12 +259,12 @@ private struct PhaseRow: View {
 struct OnboardingPage4View: View {
     var onComplete: (() -> Void)? = nil
 
-    private let scoringRules: [(points: String, label: String, description: String, color: Color)] = [
-        ("+4", "Correct Vote",       "Human or Mongoose votes the right answer.",         SnakesssTheme.truthGold),
-        ("+1", "Snake Vote",         "Snakes automatically earn 1 point per round.",      SnakesssTheme.snakeColor),
-        ("+2", "Mongoose Bonus",     "Mongoose earns extra points for a correct vote.",   SnakesssTheme.mongooseColor),
-        ("+0", "Wrong Vote",         "No points for incorrect answers.",                  SnakesssTheme.textMuted),
-    ]
+    private var scoringRules: [(points: String, label: String, description: String, color: Color)] {[
+        ("+4", String(localized: "scoring.correctVote.label"),    String(localized: "scoring.correctVote.description"),    SnakesssTheme.truthGold),
+        ("+1", String(localized: "scoring.snakeVote.label"),      String(localized: "scoring.snakeVote.description"),      SnakesssTheme.snakeColor),
+        ("+2", String(localized: "scoring.mongooseBonus.label"),  String(localized: "scoring.mongooseBonus.description"),  SnakesssTheme.mongooseColor),
+        ("+0", String(localized: "scoring.wrongVote.label"),      String(localized: "scoring.wrongVote.description"),      SnakesssTheme.textMuted),
+    ]}
 
     var body: some View {
         ScrollView {
@@ -272,9 +272,9 @@ struct OnboardingPage4View: View {
                 Spacer(minLength: SnakesssSpacing.spacing6)
 
                 VStack(spacing: SnakesssSpacing.spacing2) {
-                    Text("SCORING")
+                    Text("onboarding.page4.section.label")
                         .microStyle(color: SnakesssTheme.textMuted)
-                    Text("How to earn points")
+                    Text("onboarding.page4.subtitle")
                         .font(SnakesssTypography.headline)
                         .foregroundStyle(SnakesssTheme.textPrimary)
                         .accessibilityAddTraits(.isHeader)
@@ -307,12 +307,12 @@ struct OnboardingPage4View: View {
                         SnakesssHaptic.success()
                         onComplete()
                     } label: {
-                        Text("Let's Play! 🐍")
+                        Text("onboarding.letsPlay.button")
                             .frame(maxWidth: .infinity)
                     }
                     .buttonStyle(SnakesssPrimaryButtonStyle())
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
-                    .accessibilityLabel("Let's Play! Start the game.")
+                    .accessibilityLabel(String(localized: "onboarding.letsPlay.button"))
                 }
 
                 Spacer(minLength: SnakesssSpacing.spacing8)

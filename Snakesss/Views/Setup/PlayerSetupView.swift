@@ -18,7 +18,7 @@ struct PlayerSetupView: View {
 
             VStack(spacing: 0) {
                 // Header
-                Text("Player Setup")
+                Text("setup.title")
                     .font(SnakesssTypography.headline)
                     .foregroundStyle(SnakesssTheme.textPrimary)
                     .padding(.top, SnakesssSpacing.spacing8)
@@ -46,7 +46,7 @@ struct PlayerSetupView: View {
                         viewModel: GameViewModel(players: setupVM.createPlayers())
                     )
                 ) {
-                    Text("Start Game →")
+                    Text("setup.startGame.button")
                         .font(SnakesssTypography.bodyLarge)
                         .foregroundStyle(SnakesssTheme.bgBase)
                         .frame(maxWidth: .infinity)
@@ -76,7 +76,7 @@ struct PlayerSetupView: View {
 
     private var playerCountPicker: some View {
         VStack(spacing: SnakesssSpacing.spacing2) {
-            Text("How many players?")
+            Text("setup.playerCount.label")
                 .font(SnakesssTypography.label)
                 .foregroundStyle(SnakesssTheme.textSecondary)
 
@@ -93,24 +93,23 @@ struct PlayerSetupView: View {
                     .fontWeight(isActive ? .heavy : .semibold)
                     .foregroundStyle(
                         isActive
-                            ? SnakesssTheme.accentPrimary   // M5: active → accentPrimary
-                            : SnakesssTheme.textMuted        // M5: inactive → textMuted
+                            ? SnakesssTheme.accentPrimary
+                            : SnakesssTheme.textMuted
                     )
                     .frame(width: 44, height: 44)
                     .background(
-                        Capsule() // M5: Circle → Capsule
+                        Capsule()
                             .fill(SnakesssTheme.bgElevated)
                             .overlay(
-                                Capsule() // M5: Capsule border
+                                Capsule()
                                     .strokeBorder(
                                         isActive
-                                            ? SnakesssTheme.accentPrimary  // M5: active → accentPrimary
-                                            : SnakesssTheme.borderSubtle,  // M5: inactive → borderSubtle
-                                        lineWidth: 2 // M5: 2pt border
+                                            ? SnakesssTheme.accentPrimary
+                                            : SnakesssTheme.borderSubtle,
+                                        lineWidth: 2
                                     )
                             )
                     )
-                    // M5: 12px glow on active
                     .shadow(
                         color: isActive ? SnakesssTheme.accentGlow : .clear,
                         radius: 12, x: 0, y: 0
@@ -118,7 +117,7 @@ struct PlayerSetupView: View {
                     .contentShape(Capsule())
                     .scaleEffect(isActive ? 1.1 : 1.0)
                     .animation(SnakesssAnimation.bouncy, value: setupVM.playerCount)
-                    .accessibilityLabel("\(count) players")
+                    .accessibilityLabel(String(localized: "setup.players.accessibility \(count)"))
                     .accessibilityAddTraits(isActive ? .isSelected : [])
                 }
             }
@@ -141,7 +140,8 @@ struct PlayerSetupView: View {
                     .foregroundStyle(SnakesssTheme.accentPrimary)
             }
 
-            TextField("Player \(index + 1)", text: Binding(
+            TextField(String(localized: "setup.playerName.placeholder \(index + 1)"),
+                      text: Binding(
                 get: {
                     index < setupVM.playerNames.count ? setupVM.playerNames[index] : ""
                 },

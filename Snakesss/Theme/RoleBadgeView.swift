@@ -3,11 +3,6 @@ import SwiftUI
 // MARK: - Role Badge View
 
 /// Capsule-shaped role badge chip for the results screen and overlays.
-/// - Shape: Capsule
-/// - Fill: role-color @15%
-/// - Border: 1pt role-color
-/// - Text: role-color micro weight 700
-/// - Contents: emoji + role name
 struct RoleBadgeView: View {
     let role: Role
 
@@ -57,9 +52,9 @@ extension Role {
 
     var displayName: String {
         switch self {
-        case .human:    return "Human"
-        case .snake:    return "Snake"
-        case .mongoose: return "Mongoose"
+        case .human:    return String(localized: "role.human.displayName")
+        case .snake:    return String(localized: "role.snake.displayName")
+        case .mongoose: return String(localized: "role.mongoose.displayName")
         }
     }
 
@@ -81,9 +76,9 @@ extension Role {
 
     var flavorText: String {
         switch self {
-        case .human:    return "You don't know the answer.\nFind the truth."
-        case .snake:    return "You know the answer.\nLead them astray."
-        case .mongoose: return "You don't know the answer.\nYour identity is public."
+        case .human:    return String(localized: "role.human.flavorText")
+        case .snake:    return String(localized: "role.snake.flavorText")
+        case .mongoose: return String(localized: "role.mongoose.flavorText")
         }
     }
 }
@@ -91,7 +86,6 @@ extension Role {
 // MARK: - Mongoose Announcement Chip
 
 /// Amber chip shown persistently on screens where the Mongoose's identity is public.
-/// Displays: "🦦 [Name] is the Truth Mongoose"
 struct MongooseChipView: View {
     let mongooseName: String
 
@@ -99,7 +93,7 @@ struct MongooseChipView: View {
         HStack(spacing: SnakesssSpacing.spacing2) {
             Text("🦦")
                 .font(.system(size: 14))
-            Text("\(mongooseName) is the Truth Mongoose")
+            Text(String(localized: "mongoose.chip.label \(mongooseName)"))
                 .font(SnakesssTypography.label)
                 .foregroundStyle(SnakesssTheme.mongooseColor)
         }

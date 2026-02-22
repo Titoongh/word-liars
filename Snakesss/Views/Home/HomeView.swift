@@ -29,7 +29,7 @@ struct HomeView: View {
                                 .font(.system(size: 22))
                                 .foregroundStyle(SnakesssTheme.textMuted)
                         }
-                        .accessibilityLabel("Settings")
+                        .accessibilityLabel(Text("home.settings.accessibility"))
                         .padding(.top, SnakesssSpacing.spacing6)
                         .padding(.trailing, SnakesssSpacing.screenPadding)
                     }
@@ -50,7 +50,7 @@ struct HomeView: View {
                             .foregroundStyle(SnakesssTheme.accentPrimary)
                             .accentGlow()
 
-                        Text("TRUST NOBODY")
+                        Text("home.tagline")
                             .microStyle(color: SnakesssTheme.textMuted)
                     }
 
@@ -67,7 +67,7 @@ struct HomeView: View {
                     // Action buttons
                     VStack(spacing: SnakesssSpacing.spacing3) {
                         NavigationLink(destination: PlayerSetupView()) {
-                            Text("New Game")
+                            Text("home.newGame.button")
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(SnakesssPrimaryButtonStyle())
@@ -75,7 +75,7 @@ struct HomeView: View {
                         Button {
                             showingHistory = true
                         } label: {
-                            Text("Game History")
+                            Text("home.gameHistory.button")
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(SnakesssSecondaryButtonStyle())
@@ -84,16 +84,19 @@ struct HomeView: View {
                             SnakesssHaptic.light()
                             showingHowToPlay = true
                         } label: {
-                            Label("How to Play", systemImage: "questionmark.circle")
-                                .frame(maxWidth: .infinity)
+                            Label(
+                                title: { Text("home.howToPlay.button") },
+                                icon: { Image(systemName: "questionmark.circle") }
+                            )
+                            .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(SnakesssSecondaryButtonStyle())
-                        .accessibilityLabel("How to Play — open rules reference")
+                        .accessibilityLabel(Text("home.howToPlay.accessibility"))
                     }
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
 
                     // Studio stamp
-                    Text("GOBC GAMES")
+                    Text("home.studioStamp")
                         .microStyle(color: SnakesssTheme.textMuted.opacity(0.5))
                         .padding(.top, SnakesssSpacing.spacing6)
                         .padding(.bottom, SnakesssSpacing.spacing12)

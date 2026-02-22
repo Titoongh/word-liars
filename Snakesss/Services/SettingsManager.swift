@@ -186,10 +186,10 @@ final class SettingsManager {
     /// Human-readable label for a timer duration value.
     nonisolated static func timerLabel(for seconds: Int) -> String {
         switch seconds {
-        case 60:  return "1 min"
-        case 90:  return "1:30"
-        case 120: return "2 min"
-        case 180: return "3 min"
+        case 60:  return String(localized: "settings.timer.1min")
+        case 90:  return String(localized: "settings.timer.1min30")
+        case 120: return String(localized: "settings.timer.2min")
+        case 180: return String(localized: "settings.timer.3min")
         default:  return "\(seconds)s"
         }
     }

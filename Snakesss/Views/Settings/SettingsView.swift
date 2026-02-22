@@ -20,17 +20,17 @@ struct SettingsView: View {
                     header
 
                     // Rounds section
-                    settingsSection(title: "Rounds") {
+                    settingsSection(title: String(localized: "settings.rounds.section")) {
                         roundCountPicker
                     }
 
                     // Timer section
-                    settingsSection(title: "Discussion Timer") {
+                    settingsSection(title: String(localized: "settings.timer.section")) {
                         timerDurationPicker
                     }
 
                     // Audio & Haptics section
-                    settingsSection(title: "Feedback") {
+                    settingsSection(title: String(localized: "settings.feedback.section")) {
                         feedbackToggles
                     }
 
@@ -40,7 +40,7 @@ struct SettingsView: View {
                     }
 
                     // Categories section
-                    settingsSection(title: String(localized: "Question Categories")) {
+                    settingsSection(title: String(localized: "settings.categories.section")) {
                         categoriesSection
                     }
 
@@ -60,10 +60,10 @@ struct SettingsView: View {
     private var header: some View {
         HStack {
             VStack(alignment: .leading, spacing: SnakesssSpacing.spacing1) {
-                Text("Settings")
+                Text("settings.title")
                     .font(SnakesssTypography.headline)
                     .foregroundStyle(SnakesssTheme.textPrimary)
-                Text("Customize your game")
+                Text("settings.subtitle")
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textSecondary)
             }
@@ -75,7 +75,7 @@ struct SettingsView: View {
                     .font(.system(size: 28))
                     .foregroundStyle(SnakesssTheme.textMuted)
             }
-            .accessibilityLabel("Close settings")
+            .accessibilityLabel(String(localized: "settings.close.accessibility"))
         }
     }
 
@@ -126,7 +126,7 @@ struct SettingsView: View {
                 }
                 .scaleEffect(isActive ? 1.05 : 1.0)
                 .animation(SnakesssAnimation.bouncy, value: settings.roundCount)
-                .accessibilityLabel("\(count) rounds")
+                .accessibilityLabel(String(localized: "settings.rounds.accessibility \(count)"))
                 .accessibilityAddTraits(isActive ? .isSelected : [])
             }
         }
@@ -176,7 +176,7 @@ struct SettingsView: View {
     private var feedbackToggles: some View {
         VStack(spacing: SnakesssSpacing.spacing2) {
             settingsToggleRow(
-                label: "Sound Effects",
+                label: String(localized: "settings.soundEffects.label"),
                 icon: "speaker.wave.2.fill",
                 isOn: Binding(
                     get: { settings.soundEnabled },
@@ -186,7 +186,7 @@ struct SettingsView: View {
             Divider()
                 .overlay(SnakesssTheme.borderSubtle)
             settingsToggleRow(
-                label: "Haptics",
+                label: String(localized: "settings.haptics.label"),
                 icon: "hand.tap.fill",
                 isOn: Binding(
                     get: { settings.hapticsEnabled },
@@ -371,7 +371,7 @@ struct SettingsView: View {
         }
         .buttonStyle(.plain)
         .accessibilityLabel(category)
-        .accessibilityValue(isEnabled ? "enabled" : "disabled")
+        .accessibilityValue(String(localized: isEnabled ? "settings.category.enabled" : "settings.category.disabled"))
         .accessibilityAddTraits(isEnabled ? .isSelected : [])
     }
 
@@ -384,7 +384,7 @@ struct SettingsView: View {
                 settings.resetToDefaults()
             }
         } label: {
-            Text("Reset to Defaults")
+            Text("settings.reset.button")
                 .font(SnakesssTypography.label)
                 .fontWeight(.bold)
                 .foregroundStyle(SnakesssTheme.accentPrimary)

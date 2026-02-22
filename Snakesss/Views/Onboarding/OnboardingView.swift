@@ -26,16 +26,16 @@ struct OnboardingView: View {
                 HStack {
                     Spacer()
                     if currentPage < totalPages - 1 {
-                        Button("Skip") {
+                        Button(LocalizedStringKey("onboarding.skip.button")) {
                             SnakesssHaptic.light()
                             completeOnboarding()
                         }
                         .font(SnakesssTypography.label)
                         .foregroundStyle(SnakesssTheme.textMuted)
-                        .accessibilityLabel("Skip onboarding introduction")
+                        .accessibilityLabel(String(localized: "onboarding.skip.accessibility"))
                     } else {
                         // Invisible spacer to keep layout stable
-                        Text("Skip")
+                        Text("onboarding.skip.button")
                             .font(SnakesssTypography.label)
                             .hidden()
                             .accessibilityHidden(true)
@@ -80,7 +80,7 @@ struct OnboardingView: View {
                                 )
                         }
                     }
-                    .accessibilityLabel("Page \(currentPage + 1) of \(totalPages)")
+                    .accessibilityLabel(String(localized: "onboarding.pageDots.accessibility \(currentPage + 1) \(totalPages)"))
 
                     // Next button — hidden on last page (page 4 has its own CTA)
                     if currentPage < totalPages - 1 {
@@ -90,12 +90,12 @@ struct OnboardingView: View {
                                 currentPage += 1
                             }
                         } label: {
-                            Text("Next")
+                            Text("onboarding.next.button")
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(SnakesssPrimaryButtonStyle())
                         .padding(.horizontal, SnakesssSpacing.screenPadding)
-                        .accessibilityLabel("Next page, page \(currentPage + 2) of \(totalPages)")
+                        .accessibilityLabel(String(localized: "onboarding.next.accessibility \(currentPage + 2) \(totalPages)"))
                     } else {
                         // Spacer matching button height for consistent layout
                         Spacer()

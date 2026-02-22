@@ -25,7 +25,7 @@ struct VotingView: View {
             } else {
                 PassPhoneOverlay(
                     playerName: player.name,
-                    caption: "Tap to begin voting",
+                    caption: "passPhone.tapToVote.caption",
                     onTap: {
                         withAnimation(SnakesssAnimation.reveal) {
                             isRevealed = true
@@ -50,14 +50,14 @@ struct VotingView: View {
             // S2: 3-line header — micro + playerName + caption
             VStack(spacing: SnakesssSpacing.spacing2) {
                 // Line 1: "NOW VOTING" — micro
-                Text("NOW VOTING")
+                Text("voting.nowVoting.label")
                     .microStyle(color: SnakesssTheme.textMuted)
                 // Line 2: player name — playerName typography (32pt Heavy)
                 Text(player.name)
                     .font(SnakesssTypography.playerName)
                     .foregroundStyle(SnakesssTheme.textPrimary)
                 // Line 3: "Player X of Y" — caption, muted
-                Text("Player \(playerIndex + 1) of \(totalPlayers)")
+                Text(String(localized: "voting.playerBadge \(playerIndex + 1) \(totalPlayers)"))
                     .font(SnakesssTypography.caption)
                     .foregroundStyle(SnakesssTheme.textMuted)
             }
@@ -74,7 +74,7 @@ struct VotingView: View {
             Spacer()
 
             // Confirm button (active only when a vote is selected)
-            Button("Confirm Vote") {
+            Button(LocalizedStringKey("voting.confirmVote.button")) {
                 guard let vote = selectedVote else { return }
                 SnakesssHaptic.medium()
                 AudioService.shared.playSound(.voteConfirm)  // STORY-025
@@ -97,7 +97,7 @@ struct VotingView: View {
 
     private var humanVotingContent: some View {
         VStack(spacing: SnakesssSpacing.spacing6) {
-            Text("What is the correct answer?")
+            Text("voting.question.label")
                 .font(SnakesssTypography.label)
                 .foregroundStyle(SnakesssTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -123,18 +123,18 @@ struct VotingView: View {
             VoteButtonContent(letter: letter, answer: text)
         }
         .buttonStyle(SnakesssVoteButtonStyle(isSelected: selectedVote == vote))
-        .accessibilityLabel("Vote \(letter): \(text)")
+        .accessibilityLabel(String(localized: "voting.vote.accessibility \(letter) \(text)"))
     }
 
     // MARK: - Snake Voting (forced)
 
     private var snakeVotingContent: some View {
         VStack(spacing: SnakesssSpacing.spacing6) {
-            Text("You are a Snake 🐍")
+            Text("snakeReveal.youAreSnake.label")
                 .font(SnakesssTypography.headline)
                 .foregroundStyle(SnakesssTheme.snakeColor)
 
-            Text("You must vote Snake.\nThe humans cannot know you're a Snake until results.")
+            Text("voting.snake.forced.body")
                 .font(SnakesssTypography.body)
                 .foregroundStyle(SnakesssTheme.textSecondary)
                 .multilineTextAlignment(.center)
@@ -149,7 +149,7 @@ struct VotingView: View {
                 VStack(spacing: SnakesssSpacing.spacing2) {
                     Text("🐍")
                         .font(.system(size: 48))
-                    Text("Vote Snake")
+                    Text("voting.voteSnake.button")
                         .font(SnakesssTypography.bodyLarge)
                         .foregroundStyle(SnakesssTheme.snakeColor)
                 }

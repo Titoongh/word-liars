@@ -22,11 +22,11 @@ struct RoundResultsView: View {
                 VStack(spacing: SnakesssSpacing.spacing6) {
                     // Header (step 2: 300ms)
                     VStack(spacing: SnakesssSpacing.spacing2) {
-                        Text("Round \(result.roundNumber) Results")
+                        Text(String(localized: "results.roundBadge \(result.roundNumber)"))
                             .microStyle(color: SnakesssTheme.textMuted)
                             .padding(.top, SnakesssSpacing.spacing8)
 
-                        Text("The Answer")
+                        Text("results.theAnswer.headline")
                             .font(SnakesssTypography.headline)
                             .foregroundStyle(SnakesssTheme.textPrimary)
                     }
@@ -46,7 +46,7 @@ struct RoundResultsView: View {
 
                     // Player breakdown (rows stagger at step 3+, 80ms each)
                     VStack(spacing: SnakesssSpacing.spacing2) {
-                        Text("How Everyone Did")
+                        Text("results.howEveryoneDid.label")
                             .font(SnakesssTypography.label)
                             .foregroundStyle(SnakesssTheme.textSecondary)
                             .opacity(visibleStep >= 3 ? 1 : 0)
@@ -66,7 +66,7 @@ struct RoundResultsView: View {
 
                     // Continue button (fades in last)
                     let buttonStep = scoreStep + 1
-                    Button(isLastRound ? "See Final Results" : "Next Round →") {
+                    Button(LocalizedStringKey(isLastRound ? "results.seeFinalResults.button" : "results.nextRound.button")) {
                         onNext()
                     }
                     .buttonStyle(SnakesssPrimaryButtonStyle())
@@ -130,7 +130,7 @@ struct RoundResultsView: View {
                 .multilineTextAlignment(.center)
 
             HStack(spacing: SnakesssSpacing.spacing3) {
-                Text("Correct:")
+                Text("results.correct.label")
                     .font(SnakesssTypography.label)
                     .foregroundStyle(SnakesssTheme.textMuted)
 
@@ -244,7 +244,7 @@ struct RoundResultsView: View {
 
     private var scoreboardCard: some View {
         VStack(spacing: SnakesssSpacing.spacing3) {
-            Text("Scores After Round \(result.roundNumber)")
+            Text(String(localized: "results.scoresAfterRound.label \(result.roundNumber)"))
                 .font(SnakesssTypography.label)
                 .foregroundStyle(SnakesssTheme.textSecondary)
 
@@ -254,7 +254,7 @@ struct RoundResultsView: View {
                         .font(SnakesssTypography.body)
                         .foregroundStyle(SnakesssTheme.textPrimary)
                     Spacer()
-                    Text("\(player.totalScore) pts")
+                    Text(String(localized: "results.pts \(player.totalScore)"))
                         .font(SnakesssTypography.bodyLarge)
                         .foregroundStyle(SnakesssTheme.accentPrimary)
                         .contentTransition(.numericText())

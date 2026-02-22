@@ -19,12 +19,20 @@ final class QuestionService {
     }
 
     private static func loadFromBundle() -> [Question] {
-        guard let url = Bundle.main.url(forResource: "questions", withExtension: "json"),
+        let resource = localeQuestionsResource()
+        guard let url = Bundle.main.url(forResource: resource, withExtension: "json"),
               let data = try? Data(contentsOf: url),
               let questions = try? JSONDecoder().decode([Question].self, from: data) else {
             return []
         }
         return questions
+    }
+
+    /// Returns the questions JSON file name appropriate for the current locale.
+    /// Falls back to French questions for any non-English locale.
+    private static func localeQuestionsResource() -> String {
+        let preferred = Bundle.main.preferredLocalizations.first ?? "fr"
+        return preferred.hasPrefix("en") ? "questions_en" : "questions"
     }
 
     var remainingCount: Int {
