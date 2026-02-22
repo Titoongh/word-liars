@@ -28,11 +28,15 @@ final class QuestionService {
         return questions
     }
 
-    /// Returns the questions JSON file name appropriate for the current locale.
-    /// Falls back to French questions for any non-English locale.
+    /// Returns the questions JSON file name appropriate for the current language setting.
+    /// When set to "auto", falls back to device locale; French for any non-English locale.
     private static func localeQuestionsResource() -> String {
-        let preferred = Bundle.main.preferredLocalizations.first ?? "fr"
-        return preferred.hasPrefix("en") ? "questions_en" : "questions"
+        let language = SettingsManager.shared.language
+        if language == "auto" {
+            let preferred = Bundle.main.preferredLocalizations.first ?? "fr"
+            return preferred.hasPrefix("en") ? "questions_en" : "questions"
+        }
+        return language.hasPrefix("en") ? "questions_en" : "questions"
     }
 
     var remainingCount: Int {

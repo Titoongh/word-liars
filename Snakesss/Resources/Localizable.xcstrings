@@ -1,1075 +1,2715 @@
 {
   "sourceLanguage" : "fr",
   "strings" : {
+    "" : {
 
-    "home.settings.accessibility" : {
-      "comment" : "Settings gear icon accessibility label",
+    },
+    "%@ points: %@. %@" : {
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Paramètres" } }
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ points: %2$@. %3$@"
+          }
+        }
       }
     },
-    "home.tagline" : {
-      "comment" : "App tagline shown on home screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "TRUST NOBODY" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "FAITES CONFIANCE À PERSONNE" } }
-      }
-    },
-    "home.newGame.button" : {
-      "comment" : "New game button label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "New Game" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nouvelle Partie" } }
-      }
-    },
-    "home.gameHistory.button" : {
-      "comment" : "Game history button label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Game History" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Historique des parties" } }
-      }
-    },
-    "home.howToPlay.button" : {
-      "comment" : "How to Play button label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to Play" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Comment jouer" } }
-      }
-    },
-    "home.howToPlay.accessibility" : {
-      "comment" : "How to Play button extended accessibility label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to Play — open rules reference" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Comment jouer — ouvrir les règles" } }
-      }
-    },
-    "home.studioStamp" : {
-      "comment" : "Studio credit shown at bottom of home screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "GOBC GAMES" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "GOBC GAMES" } }
-      }
-    },
+    "%@ role" : {
 
-    "setup.title" : {
-      "comment" : "Player setup screen title",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Player Setup" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Configuration" } }
-      }
     },
-    "setup.playerCount.label" : {
-      "comment" : "Label above player count picker",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How many players?" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Combien de joueurs ?" } }
-      }
-    },
-    "setup.playerName.placeholder %lld" : {
-      "comment" : "Placeholder text for player name field. %lld = player number",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Player %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Joueur %lld" } }
-      }
-    },
-    "setup.startGame.button" : {
-      "comment" : "Start game button label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start Game →" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Commencer →" } }
-      }
-    },
-    "setup.players.accessibility %lld" : {
-      "comment" : "Player count button accessibility label. %lld = count",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld players" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld joueurs" } }
-      }
-    },
+    "%lld" : {
 
-    "role.human.displayName" : {
-      "comment" : "Display name for the Human role",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Human" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Humain" } }
-      }
     },
-    "role.snake.displayName" : {
-      "comment" : "Display name for the Snake role",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snake" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Serpent" } }
-      }
-    },
-    "role.mongoose.displayName" : {
-      "comment" : "Display name for the Mongoose role",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mongoose" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mangouste" } }
-      }
-    },
-    "role.human.flavorText" : {
-      "comment" : "Short flavor text on role reveal card for Human",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You don't know the answer.\nFind the truth." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu ne connais pas la réponse.\nTrouve la vérité." } }
-      }
-    },
-    "role.snake.flavorText" : {
-      "comment" : "Short flavor text on role reveal card for Snake",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You know the answer.\nLead them astray." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu connais la réponse.\nÉgare-les." } }
-      }
-    },
-    "role.mongoose.flavorText" : {
-      "comment" : "Short flavor text on role reveal card for Mongoose",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You don't know the answer.\nYour identity is public." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu ne connais pas la réponse.\nTon identité est publique." } }
-      }
-    },
-    "role.human.description" : {
-      "comment" : "Long description for Human role in onboarding and rules",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You don't know the answer. Listen carefully, find clues, and vote for what you believe is correct." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu ne connais pas la réponse. Écoute attentivement, cherche des indices et vote pour ce que tu crois être correct." } }
-      }
-    },
-    "role.snake.description" : {
-      "comment" : "Long description for Snake role in onboarding and rules",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You know the correct answer — but keep it secret! Mislead the group and vote snake to earn points." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu connais la bonne réponse — mais garde-la secrète ! Égare le groupe et vote serpent pour gagner des points." } }
-      }
-    },
-    "role.mongoose.description" : {
-      "comment" : "Long description for Mongoose role in onboarding and rules",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You don't know the answer, but your identity is public. You're a trusted ally helping humans find the truth." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu ne connais pas la réponse, mais ton identité est publique. Tu es un allié de confiance qui aide les humains à trouver la vérité." } }
-      }
-    },
+    "+%lld" : {
 
-    "passPhone.passTo.label" : {
-      "comment" : "PASS TO label on pass-phone interstitial",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pass to" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer à" } }
-      }
     },
-    "passPhone.tapToRevealRole.caption" : {
-      "comment" : "Caption on pass-phone interstitial for role reveal",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap to reveal your role" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Appuyer pour révéler ton rôle" } }
-      }
-    },
-    "passPhone.tapToVote.caption" : {
-      "comment" : "Caption on pass-phone interstitial for voting",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap to begin voting" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Appuyer pour commencer à voter" } }
-      }
-    },
-    "passPhone.passTo.accessibility %@" : {
-      "comment" : "Accessibility label for pass-phone overlay. %@ = player name",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pass to %@" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer à %@" } }
-      }
-    },
+    "🎮" : {
 
-    "roleReveal.holdHint" : {
-      "comment" : "Hint below role card: hold to reveal, release to hide",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hold to reveal · Release to hide" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Maintenir pour révéler · Relâcher pour cacher" } }
-      }
     },
-    "roleReveal.done.button" : {
-      "comment" : "Done button on role reveal screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done — Pass the phone" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Terminé — Passer le téléphone" } }
-      }
-    },
-    "roleReveal.holdToReveal" : {
-      "comment" : "Micro label on blank card face",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "HOLD TO REVEAL" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "MAINTENIR POUR RÉVÉLER" } }
-      }
-    },
-    "roleReveal.yourRole.label" : {
-      "comment" : "YOUR ROLE micro label on revealed role card",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "YOUR ROLE" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "TON RÔLE" } }
-      }
-    },
-    "roleReveal.roundBadge %lld %lld" : {
-      "comment" : "Round badge on role reveal. %lld = current round, %lld = total rounds",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Round %lld of %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Round %lld sur %lld" } }
-      }
-    },
-    "roleReveal.playerBadge %lld %lld" : {
-      "comment" : "Player badge on role reveal. %lld = player number, %lld = total players",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Player %lld of %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Joueur %lld sur %lld" } }
-      }
-    },
+    "🏆" : {
 
-    "mongoose.announcement.label" : {
-      "comment" : "Label before mongoose player name on announcement screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "The Truth Mongoose is..." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "La Mangouste de la Vérité est..." } }
-      }
     },
-    "mongoose.verifyCaption" : {
-      "comment" : "Caption below mongoose chip on announcement screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Everyone can verify this." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tout le monde peut le vérifier." } }
-      }
-    },
-    "mongoose.seeQuestion.button" : {
-      "comment" : "Button to proceed to the question screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "See the Question →" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Voir la Question →" } }
-      }
-    },
-    "mongoose.chip.label %@" : {
-      "comment" : "Mongoose chip label shown on question/discussion screens. %@ = mongoose player name",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ is the Truth Mongoose" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ est la Mangouste de la Vérité" } }
-      }
-    },
+    "🐍" : {
 
-    "question.roundBadge %lld" : {
-      "comment" : "Round badge on question screen. %lld = round number",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Round %lld — Question" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Round %lld — Question" } }
-      }
     },
-    "question.placePhone.instructions" : {
-      "comment" : "Instructions below question card to place phone in center",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "📵 Place phone in the center\nDiscuss before voting begins" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "📵 Placez le téléphone au centre\nDiscutez avant de voter" } }
-      }
-    },
-    "question.snakesCloseEyes.button" : {
-      "comment" : "Button to proceed to snake reveal / eyes-close phase",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snakes — Close Your Eyes" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Serpents — Fermez les yeux" } }
-      }
-    },
+    "🐍 %@" : {
 
-    "snakeReveal.closeEyes.headline" : {
-      "comment" : "Headline on eyes-closed prompt screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Everyone close your eyes" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tout le monde ferme les yeux" } }
-      }
     },
-    "snakeReveal.closeEyes.body" : {
-      "comment" : "Body text on eyes-closed prompt screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snakes: wait for your tap cue" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Serpents : attendez votre signal" } }
-      }
-    },
-    "snakeReveal.hostTap.caption" : {
-      "comment" : "Caption for host to tap when ready",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "HOST: Tap when ready →" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "HÔTE : Appuyez quand vous êtes prêt →" } }
-      }
-    },
-    "snakeReveal.snakeBadge %lld %lld" : {
-      "comment" : "Snake badge on pass screen. %lld = snake number, %lld = total snakes",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snake %lld of %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Serpent %lld sur %lld" } }
-      }
-    },
-    "snakeReveal.tapToReveal.caption" : {
-      "comment" : "Caption on snake pass screen to tap and reveal",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap to reveal secret" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Appuyer pour révéler le secret" } }
-      }
-    },
-    "snakeReveal.youAreSnake.label" : {
-      "comment" : "Label shown to a snake player on their reveal screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You are a Snake 🐍" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu es un Serpent 🐍" } }
-      }
-    },
-    "snakeReveal.correctAnswer.label" : {
-      "comment" : "Micro label above the correct answer on snake reveal",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "CORRECT ANSWER" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "BONNE RÉPONSE" } }
-      }
-    },
-    "snakeReveal.fellowSnakes.label" : {
-      "comment" : "Micro label above co-snake list",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "YOUR FELLOW SNAKES" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "TES COMPLICES SERPENTS" } }
-      }
-    },
-    "snakeReveal.reminder.vote" : {
-      "comment" : "Reminder to snakes to only vote Snake",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remember: vote \"Snake\" only." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Rappel : vote uniquement \"Serpent\"." } }
-      }
-    },
-    "snakeReveal.reminder.losePoints" : {
-      "comment" : "Warning that any other vote loses points",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Any other vote = lose points." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tout autre vote = perdre des points." } }
-      }
-    },
-    "snakeReveal.done.button" : {
-      "comment" : "Done button on snake reveal screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done — Hide This Screen" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Terminé — Cacher cet écran" } }
-      }
-    },
-    "snakeReveal.openEyes.headline" : {
-      "comment" : "Headline on open-eyes screen (last snake done)",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Everyone open your eyes" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tout le monde ouvre les yeux" } }
-      }
-    },
-    "snakeReveal.openEyes.body" : {
-      "comment" : "Body text on open-eyes screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snakes know the answer.\nThe discussion begins." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les serpents connaissent la réponse.\nLa discussion commence." } }
-      }
-    },
-    "snakeReveal.startDiscussion.button" : {
-      "comment" : "Button to start discussion phase",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start Discussion →" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Commencer la discussion →" } }
-      }
-    },
-    "snakeReveal.closeEyes.accessibility" : {
-      "comment" : "Accessibility label for entire close-eyes screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Everyone close your eyes. Snakes: wait for your tap cue. HOST: Tap when ready" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tout le monde ferme les yeux. Serpents : attendez votre signal. HÔTE : Appuyez quand vous êtes prêt" } }
-      }
-    },
-    "snakeReveal.pass.accessibility %@ %lld %lld" : {
-      "comment" : "Accessibility label for snake pass screen. %@ = name, %lld = index, %lld = total",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pass to %@. Snake %lld of %lld. Tap to reveal secret" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer à %@. Serpent %lld sur %lld. Appuyer pour révéler le secret" } }
-      }
-    },
+    "👁‍🗨" : {
 
+    },
+    "💡" : {
+
+    },
+    "🦦" : {
+
+    },
+    "Accessible for everyone" : {
+
+    },
+    "Difficulty" : {
+
+    },
     "discussion.header" : {
       "comment" : "Header label on discussion timer screen",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Discussion" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Discussion" } }
-      }
-    },
-    "discussion.skip.button" : {
-      "comment" : "Skip discussion and go to vote button",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Skip Discussion → Vote" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer la discussion → Voter" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discussion"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discussion"
+          }
+        }
       }
     },
     "discussion.remaining.label" : {
       "comment" : "Timer label: 'remaining' shown below countdown",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "remaining" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "restant" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "remaining"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "restant"
+          }
+        }
       }
     },
+    "discussion.skip.button" : {
+      "comment" : "Skip discussion and go to vote button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip Discussion → Vote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer la discussion → Voter"
+          }
+        }
+      }
+    },
+    "Easy" : {
 
-    "voting.nowVoting.label" : {
-      "comment" : "NOW VOTING micro label on voting screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "NOW VOTING" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "EN TRAIN DE VOTER" } }
-      }
-    },
-    "voting.playerBadge %lld %lld" : {
-      "comment" : "Player caption on voting screen. %lld = player number, %lld = total",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Player %lld of %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Joueur %lld sur %lld" } }
-      }
-    },
-    "voting.question.label" : {
-      "comment" : "Label asking player to choose the correct answer",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "What is the correct answer?" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Quelle est la bonne réponse ?" } }
-      }
-    },
-    "voting.snake.forced.body" : {
-      "comment" : "Explanation for snake players about forced vote",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "You must vote Snake.\nThe humans cannot know you're a Snake until results." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tu dois voter Serpent.\nLes humains ne savent pas que tu es un Serpent avant les résultats." } }
-      }
-    },
-    "voting.voteSnake.button" : {
-      "comment" : "Vote snake button label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Vote Snake" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Voter Serpent" } }
-      }
-    },
-    "voting.confirmVote.button" : {
-      "comment" : "Confirm vote button label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Confirm Vote" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Confirmer le vote" } }
-      }
-    },
-    "voting.vote.accessibility %@ %@" : {
-      "comment" : "Vote button accessibility label. %@ = letter, %@ = answer text",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Vote %@: %@" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Voter %@ : %@" } }
-      }
-    },
-
-    "results.roundBadge %lld" : {
-      "comment" : "Round results badge. %lld = round number",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Round %lld Results" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Résultats du round %lld" } }
-      }
-    },
-    "results.theAnswer.headline" : {
-      "comment" : "The Answer headline on round results",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "The Answer" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "La réponse" } }
-      }
-    },
-    "results.correct.label" : {
-      "comment" : "Correct label preceding the correct answer letter",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Correct:" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Correct :" } }
-      }
-    },
-    "results.howEveryoneDid.label" : {
-      "comment" : "Section header for player results",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How Everyone Did" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Résultats de chacun" } }
-      }
-    },
-    "results.scoresAfterRound.label %lld" : {
-      "comment" : "Scoreboard title. %lld = round number",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scores After Round %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Scores après le round %lld" } }
-      }
-    },
-    "results.pts %lld" : {
-      "comment" : "Points display in scoreboard. %lld = score",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts" } }
-      }
-    },
-    "results.seeFinalResults.button" : {
-      "comment" : "Button after last round to see final results",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "See Final Results" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Voir les résultats finaux" } }
-      }
-    },
-    "results.nextRound.button" : {
-      "comment" : "Button to proceed to next round",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Next Round →" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Round suivant →" } }
-      }
-    },
-
-    "gameEnd.winner.label" : {
-      "comment" : "WINNER micro label on game end screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "WINNER" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "GAGNANT" } }
-      }
-    },
-    "gameEnd.tie.headline" : {
-      "comment" : "It's a tie headline on game end screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "It's a Tie!" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Égalité !" } }
-      }
-    },
-    "gameEnd.ptsEach %lld" : {
-      "comment" : "Points each label on tie screen. %lld = score",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts each" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts chacun" } }
-      }
     },
     "gameEnd.finalScores.label" : {
       "comment" : "Final scores section header on game end screen",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Final Scores" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Scores finaux" } }
-      }
-    },
-    "gameEnd.winnerPts %lld" : {
-      "comment" : "Winner's points on game end screen. %lld = score",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts" } }
-      }
-    },
-    "gameEnd.playAgain.button" : {
-      "comment" : "Play again with same players button",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Play Again (Same Players)" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Rejouer (mêmes joueurs)" } }
-      }
-    },
-    "gameEnd.newGame.button" : {
-      "comment" : "New game button on game end screen",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "New Game" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Nouvelle Partie" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Final Scores"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scores finaux"
+          }
+        }
       }
     },
     "gameEnd.home.button" : {
       "comment" : "Home text button on game end screen",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Accueil" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accueil"
+          }
+        }
       }
     },
-
-    "history.title" : {
-      "comment" : "Game history navigation title",
+    "gameEnd.newGame.button" : {
+      "comment" : "New game button on game end screen",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Game History" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Historique des parties" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Game"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle Partie"
+          }
+        }
+      }
+    },
+    "gameEnd.playAgain.button" : {
+      "comment" : "Play again with same players button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Play Again (Same Players)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rejouer (mêmes joueurs)"
+          }
+        }
+      }
+    },
+    "gameEnd.ptsEach %lld" : {
+      "comment" : "Points each label on tie screen. %lld = score",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts each"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts chacun"
+          }
+        }
+      }
+    },
+    "gameEnd.tie.headline" : {
+      "comment" : "It's a tie headline on game end screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It's a Tie!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Égalité !"
+          }
+        }
+      }
+    },
+    "gameEnd.winner.label" : {
+      "comment" : "WINNER micro label on game end screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WINNER"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GAGNANT"
+          }
+        }
+      }
+    },
+    "gameEnd.winnerPts %lld" : {
+      "comment" : "Winner's points on game end screen. %lld = score",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts"
+          }
+        }
+      }
+    },
+    "Hard" : {
+
+    },
+    "history.delete.button" : {
+      "comment" : "Swipe-to-delete action label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
+          }
+        }
       }
     },
     "history.done.button" : {
       "comment" : "Done button to dismiss history sheet",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Terminé" } }
-      }
-    },
-    "history.empty.headline" : {
-      "comment" : "Empty state headline when no games played",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No games played yet" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucune partie jouée" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé"
+          }
+        }
       }
     },
     "history.empty.body" : {
       "comment" : "Empty state body text",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Start your first game!" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Commencez votre première partie !" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start your first game!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencez votre première partie !"
+          }
+        }
       }
     },
-    "history.delete.button" : {
-      "comment" : "Swipe-to-delete action label",
+    "history.empty.headline" : {
+      "comment" : "Empty state headline when no games played",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Delete" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Supprimer" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No games played yet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune partie jouée"
+          }
+        }
       }
     },
     "history.noWinner" : {
       "comment" : "Fallback when no winner is recorded",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No winner" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucun gagnant" } }
-      }
-    },
-    "history.rounds %lld %lld" : {
-      "comment" : "History row rounds and players badge. %lld = rounds, %lld = players",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld rounds · %lld players" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld rounds · %lld joueurs" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No winner"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun gagnant"
+          }
+        }
       }
     },
     "history.pts %lld" : {
       "comment" : "Points display in history row. %lld = score",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld pts" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts"
+          }
+        }
       }
     },
+    "history.rounds %lld %lld" : {
+      "comment" : "History row rounds and players badge. %lld = rounds, %lld = players",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld rounds · %lld players"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld rounds · %lld joueurs"
+          }
+        }
+      }
+    },
+    "history.title" : {
+      "comment" : "Game history navigation title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game History"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historique des parties"
+          }
+        }
+      }
+    },
+    "home.gameHistory.button" : {
+      "comment" : "Game history button label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game History"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Historique des parties"
+          }
+        }
+      }
+    },
+    "home.howToPlay.accessibility" : {
+      "comment" : "How to Play button extended accessibility label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to Play — open rules reference"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment jouer — ouvrir les règles"
+          }
+        }
+      }
+    },
+    "home.howToPlay.button" : {
+      "comment" : "How to Play button label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to Play"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment jouer"
+          }
+        }
+      }
+    },
+    "home.newGame.button" : {
+      "comment" : "New game button label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Game"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle Partie"
+          }
+        }
+      }
+    },
+    "home.settings.accessibility" : {
+      "comment" : "Settings gear icon accessibility label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        }
+      }
+    },
+    "home.studioStamp" : {
+      "comment" : "Studio credit shown at bottom of home screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GOBC GAMES"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GOBC GAMES"
+          }
+        }
+      }
+    },
+    "home.tagline" : {
+      "comment" : "App tagline shown on home screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TRUST NOBODY"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAITES CONFIANCE À PERSONNE"
+          }
+        }
+      }
+    },
+    "Medium" : {
 
-    "settings.title" : {
-      "comment" : "Settings screen title",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Paramètres" } }
-      }
     },
-    "settings.subtitle" : {
-      "comment" : "Settings subtitle",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Customize your game" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Personnalisez votre partie" } }
-      }
-    },
-    "settings.close.accessibility" : {
-      "comment" : "Accessibility label for close settings button",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close settings" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Fermer les paramètres" } }
-      }
-    },
-    "settings.rounds.section" : {
-      "comment" : "Rounds section header in settings",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rounds" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Rounds" } }
-      }
-    },
-    "settings.timer.section" : {
-      "comment" : "Discussion timer section header in settings",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Discussion Timer" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Minuterie de discussion" } }
-      }
-    },
-    "settings.feedback.section" : {
-      "comment" : "Feedback section header in settings",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Feedback" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Retours" } }
-      }
-    },
-    "settings.categories.section" : {
-      "comment" : "Question categories section header in settings",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Question Categories" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Catégories de questions" } }
-      }
-    },
-    "settings.soundEffects.label" : {
-      "comment" : "Sound effects toggle label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sound Effects" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Effets sonores" } }
-      }
-    },
-    "settings.haptics.label" : {
-      "comment" : "Haptics toggle label",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Haptics" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Haptique" } }
-      }
-    },
-    "settings.reset.button" : {
-      "comment" : "Reset to defaults button",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reset to Defaults" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réinitialiser par défaut" } }
-      }
-    },
-    "settings.rounds.accessibility %lld" : {
-      "comment" : "Accessibility label for round count button. %lld = count",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld rounds" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%lld rounds" } }
-      }
-    },
-    "settings.category.enabled" : {
-      "comment" : "Accessibility value when category is enabled",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "enabled" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "activé" } }
-      }
-    },
-    "settings.category.disabled" : {
-      "comment" : "Accessibility value when category is disabled",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "disabled" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "désactivé" } }
-      }
-    },
-    "settings.timer.1min" : {
-      "comment" : "Timer option label: 1 minute",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "1 min" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "1 min" } }
-      }
-    },
-    "settings.timer.1min30" : {
-      "comment" : "Timer option label: 1 minute 30 seconds",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "1:30" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "1:30" } }
-      }
-    },
-    "settings.timer.2min" : {
-      "comment" : "Timer option label: 2 minutes",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "2 min" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "2 min" } }
-      }
-    },
-    "settings.timer.3min" : {
-      "comment" : "Timer option label: 3 minutes",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "3 min" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "3 min" } }
-      }
-    },
+    "Mixed" : {
 
-    "onboarding.skip.button" : {
-      "comment" : "Skip onboarding button",
+    },
+    "mongoose.announcement.label" : {
+      "comment" : "Label before mongoose player name on announcement screen",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Skip" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Truth Mongoose is..."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Mangouste de la Vérité est..."
+          }
+        }
       }
     },
-    "onboarding.skip.accessibility" : {
-      "comment" : "Accessibility label for skip button",
+    "mongoose.chip.label %@" : {
+      "comment" : "Mongoose chip label shown on question/discussion screens. %@ = mongoose player name",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Skip onboarding introduction" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Passer l'introduction" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ is the Truth Mongoose"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ est la Mangouste de la Vérité"
+          }
+        }
       }
     },
-    "onboarding.next.button" : {
-      "comment" : "Next page button in onboarding",
+    "mongoose.seeQuestion.button" : {
+      "comment" : "Button to proceed to the question screen",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Next" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suivant" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See the Question →"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir la Question →"
+          }
+        }
+      }
+    },
+    "mongoose.verifyCaption" : {
+      "comment" : "Caption below mongoose chip on announcement screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Everyone can verify this."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout le monde peut le vérifier."
+          }
+        }
+      }
+    },
+    "Obscure & specialized facts" : {
+
+    },
+    "onboarding.letsPlay.button" : {
+      "comment" : "Let's Play button at end of onboarding",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's Play! 🐍"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On joue ! 🐍"
+          }
+        }
       }
     },
     "onboarding.next.accessibility %lld %lld" : {
       "comment" : "Accessibility label for next button. %lld = next page, %lld = total",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Next page, page %lld of %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Page suivante, page %lld sur %lld" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next page, page %lld of %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page suivante, page %lld sur %lld"
+          }
+        }
       }
     },
-    "onboarding.pageDots.accessibility %lld %lld" : {
-      "comment" : "Accessibility label for page indicator dots. %lld = current, %lld = total",
+    "onboarding.next.button" : {
+      "comment" : "Next page button in onboarding",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Page %lld of %lld" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Page %lld sur %lld" } }
-      }
-    },
-    "onboarding.page1.section.label" : {
-      "comment" : "Section label on onboarding page 1",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "WHAT IS THIS GAME?" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "C'EST QUOI CE JEU ?" } }
-      }
-    },
-    "onboarding.page1.headline" : {
-      "comment" : "Headline on onboarding page 1",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Trivia meets Social Deduction" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Trivia et déduction sociale" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
+          }
+        }
       }
     },
     "onboarding.page1.body" : {
       "comment" : "Body text on onboarding page 1",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Answer trivia questions, vote on the right answer — but watch out. Some players secretly know the truth and will try to lead you astray." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Répondez à des questions de culture générale, votez pour la bonne réponse — mais attention. Certains joueurs connaissent secrètement la vérité et essaieront de vous égarer." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Answer trivia questions, vote on the right answer — but watch out. Some players secretly know the truth and will try to lead you astray."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Répondez à des questions de culture générale, votez pour la bonne réponse — mais attention. Certains joueurs connaissent secrètement la vérité et essaieront de vous égarer."
+          }
+        }
+      }
+    },
+    "onboarding.page1.headline" : {
+      "comment" : "Headline on onboarding page 1",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trivia meets Social Deduction"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trivia et déduction sociale"
+          }
+        }
+      }
+    },
+    "onboarding.page1.section.label" : {
+      "comment" : "Section label on onboarding page 1",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WHAT IS THIS GAME?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C'EST QUOI CE JEU ?"
+          }
+        }
       }
     },
     "onboarding.page2.section.label" : {
       "comment" : "Section label on onboarding page 2",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "THE ROLES" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "LES RÔLES" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "THE ROLES"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LES RÔLES"
+          }
+        }
       }
     },
     "onboarding.page2.subtitle" : {
       "comment" : "Subtitle on onboarding page 2",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Who are you playing as?" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Quel rôle jouez-vous ?" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Who are you playing as?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel rôle jouez-vous ?"
+          }
+        }
       }
     },
     "onboarding.page3.section.label" : {
       "comment" : "Section label on onboarding page 3",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "EACH ROUND" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "CHAQUE ROUND" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EACH ROUND"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CHAQUE ROUND"
+          }
+        }
       }
     },
     "onboarding.page3.subtitle" : {
       "comment" : "Subtitle on onboarding page 3",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "6 phases per round" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "6 phases par round" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 phases per round"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 phases par round"
+          }
+        }
       }
     },
     "onboarding.page4.section.label" : {
       "comment" : "Section label on onboarding page 4 (scoring)",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "SCORING" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "SCORE" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SCORING"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SCORE"
+          }
+        }
       }
     },
     "onboarding.page4.subtitle" : {
       "comment" : "Subtitle on onboarding page 4",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to earn points" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Comment gagner des points" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to earn points"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment gagner des points"
+          }
+        }
       }
     },
-    "onboarding.letsPlay.button" : {
-      "comment" : "Let's Play button at end of onboarding",
+    "onboarding.pageDots.accessibility %lld %lld" : {
+      "comment" : "Accessibility label for page indicator dots. %lld = current, %lld = total",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Let's Play! 🐍" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "On joue ! 🐍" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page %lld of %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page %lld sur %lld"
+          }
+        }
       }
     },
+    "onboarding.skip.accessibility" : {
+      "comment" : "Accessibility label for skip button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip onboarding introduction"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer l'introduction"
+          }
+        }
+      }
+    },
+    "onboarding.skip.button" : {
+      "comment" : "Skip onboarding button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer"
+          }
+        }
+      }
+    },
+    "Page 1: Game concept. Snakesss is a trivia and social deduction game where some players secretly know the truth." : {
 
-    "phase.roleReveal.title" : {
-      "comment" : "Phase 1 title in onboarding/rules",
+    },
+    "Page 2: The three roles — Human, Snake, and Mongoose — and what each role does." : {
+
+    },
+    "Page 3: Each round has 6 phases — Role Reveal, Question, Snake Reveal, Discussion, Voting, and Results." : {
+
+    },
+    "Page 4: Scoring rules — correct votes earn 4 points, snakes earn 1, and mongoose earns a 2-point bonus." : {
+
+    },
+    "passPhone.passTo.accessibility %@" : {
+      "comment" : "Accessibility label for pass-phone overlay. %@ = player name",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Role Reveal" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Révélation des rôles" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pass to %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer à %@"
+          }
+        }
       }
     },
-    "phase.roleReveal.description" : {
-      "comment" : "Phase 1 description in onboarding/rules",
+    "passPhone.passTo.label" : {
+      "comment" : "PASS TO label on pass-phone interstitial",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Each player secretly sees their role card." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Chaque joueur voit secrètement sa carte de rôle." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pass to"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer à"
+          }
+        }
       }
     },
-    "phase.question.title" : {
-      "comment" : "Phase 2 title in onboarding/rules",
+    "passPhone.tapToRevealRole.caption" : {
+      "comment" : "Caption on pass-phone interstitial for role reveal",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Question" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Question" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to reveal your role"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyer pour révéler ton rôle"
+          }
+        }
       }
     },
-    "phase.question.description" : {
-      "comment" : "Phase 2 description in onboarding/rules",
+    "passPhone.tapToVote.caption" : {
+      "comment" : "Caption on pass-phone interstitial for voting",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "A trivia question is shown to everyone." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Une question est montrée à tous les joueurs." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to begin voting"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyer pour commencer à voter"
+          }
+        }
       }
     },
-    "phase.snakeReveal.title" : {
-      "comment" : "Phase 3 title in onboarding/rules",
+    "Phase %lld: %@. %@" : {
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snake Reveal" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Révélation des Serpents" } }
-      }
-    },
-    "phase.snakeReveal.description" : {
-      "comment" : "Phase 3 description in onboarding/rules",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snakes secretly learn the correct answer." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les serpents apprennent secrètement la bonne réponse." } }
-      }
-    },
-    "phase.discussion.title" : {
-      "comment" : "Phase 4 title in onboarding/rules",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Discussion" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Discussion" } }
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Phase %1$lld: %2$@. %3$@"
+          }
+        }
       }
     },
     "phase.discussion.description" : {
       "comment" : "Phase 4 description in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "2 minutes to discuss and debate answers." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "2 minutes pour débattre des réponses." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 minutes to discuss and debate answers."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 minutes pour débattre des réponses."
+          }
+        }
       }
     },
-    "phase.voting.title" : {
-      "comment" : "Phase 5 title in onboarding/rules",
+    "phase.discussion.title" : {
+      "comment" : "Phase 4 title in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Voting" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vote" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discussion"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discussion"
+          }
+        }
       }
     },
-    "phase.voting.description" : {
-      "comment" : "Phase 5 description in onboarding/rules",
+    "phase.question.description" : {
+      "comment" : "Phase 2 description in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Each player votes for their chosen answer." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Chaque joueur vote pour la réponse choisie." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A trivia question is shown to everyone."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une question est montrée à tous les joueurs."
+          }
+        }
       }
     },
-    "phase.results.title" : {
-      "comment" : "Phase 6 title in onboarding/rules",
+    "phase.question.title" : {
+      "comment" : "Phase 2 title in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Results" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Résultats" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Question"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Question"
+          }
+        }
       }
     },
     "phase.results.description" : {
       "comment" : "Phase 6 description in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Votes, roles, and points are revealed." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Votes, rôles et points sont révélés." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votes, roles, and points are revealed."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votes, rôles et points sont révélés."
+          }
+        }
       }
     },
-
-    "scoring.correctVote.label" : {
-      "comment" : "Correct vote scoring rule label",
+    "phase.results.title" : {
+      "comment" : "Phase 6 title in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Correct Vote" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vote correct" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Results"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résultats"
+          }
+        }
       }
     },
-    "scoring.correctVote.description" : {
-      "comment" : "Correct vote scoring rule description",
+    "phase.roleReveal.description" : {
+      "comment" : "Phase 1 description in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Human or Mongoose votes the right answer." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Humain ou Mangouste vote la bonne réponse." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each player secretly sees their role card."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque joueur voit secrètement sa carte de rôle."
+          }
+        }
       }
     },
-    "scoring.snakeVote.label" : {
-      "comment" : "Snake vote scoring rule label",
+    "phase.roleReveal.title" : {
+      "comment" : "Phase 1 title in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snake Vote" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vote Serpent" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Role Reveal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Révélation des rôles"
+          }
+        }
       }
     },
-    "scoring.snakeVote.description" : {
-      "comment" : "Snake vote scoring rule description",
+    "phase.snakeReveal.description" : {
+      "comment" : "Phase 3 description in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Snakes automatically earn 1 point per round." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Les serpents gagnent automatiquement 1 point par round." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snakes secretly learn the correct answer."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les serpents apprennent secrètement la bonne réponse."
+          }
+        }
       }
     },
-    "scoring.mongooseBonus.label" : {
-      "comment" : "Mongoose bonus scoring rule label",
+    "phase.snakeReveal.title" : {
+      "comment" : "Phase 3 title in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mongoose Bonus" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bonus Mangouste" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snake Reveal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Révélation des Serpents"
+          }
+        }
       }
     },
-    "scoring.mongooseBonus.description" : {
-      "comment" : "Mongoose bonus scoring rule description",
+    "phase.voting.description" : {
+      "comment" : "Phase 5 description in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Mongoose earns extra points for a correct vote." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "La Mangouste gagne des points supplémentaires pour un vote correct." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each player votes for their chosen answer."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque joueur vote pour la réponse choisie."
+          }
+        }
       }
     },
-    "scoring.wrongVote.label" : {
-      "comment" : "Wrong vote scoring rule label",
+    "phase.voting.title" : {
+      "comment" : "Phase 5 title in onboarding/rules",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Wrong Vote" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vote incorrect" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voting"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vote"
+          }
+        }
       }
     },
-    "scoring.wrongVote.description" : {
-      "comment" : "Wrong vote scoring rule description",
+    "question.placePhone.instructions" : {
+      "comment" : "Instructions below question card to place phone in center",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No points for incorrect answers." } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucun point pour les mauvaises réponses." } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📵 Place phone in the center\nDiscuss before voting begins"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "📵 Placez le téléphone au centre\nDiscutez avant de voter"
+          }
+        }
       }
     },
-
-    "rules.title" : {
-      "comment" : "How to Play navigation title",
+    "question.roundBadge %lld" : {
+      "comment" : "Round badge on question screen. %lld = round number",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to Play" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Comment jouer" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Round %lld — Question"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Round %lld — Question"
+          }
+        }
       }
     },
-    "rules.roles.section.label" : {
-      "comment" : "Roles section micro label in rules",
+    "question.snakesCloseEyes.button" : {
+      "comment" : "Button to proceed to snake reveal / eyes-close phase",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "THE ROLES" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "LES RÔLES" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snakes — Close Your Eyes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serpents — Fermez les yeux"
+          }
+        }
       }
     },
-    "rules.roles.subtitle" : {
-      "comment" : "Roles section subtitle in rules",
+    "results.correct.label" : {
+      "comment" : "Correct label preceding the correct answer letter",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Who are you playing as?" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Quel rôle jouez-vous ?" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct :"
+          }
+        }
       }
     },
-    "rules.rounds.section.label" : {
-      "comment" : "Each round section micro label in rules",
+    "results.howEveryoneDid.label" : {
+      "comment" : "Section header for player results",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "EACH ROUND" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "CHAQUE ROUND" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How Everyone Did"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résultats de chacun"
+          }
+        }
       }
     },
-    "rules.rounds.subtitle" : {
-      "comment" : "Each round section subtitle in rules",
+    "results.nextRound.button" : {
+      "comment" : "Button to proceed to next round",
+      "extractionState" : "stale",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "6 phases per round" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "6 phases par round" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next Round →"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Round suivant →"
+          }
+        }
       }
     },
-    "rules.scoring.section.label" : {
-      "comment" : "Scoring section micro label in rules",
+    "results.pts %lld" : {
+      "comment" : "Points display in scoreboard. %lld = score",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "SCORING" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "SCORE" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pts"
+          }
+        }
       }
     },
-    "rules.scoring.subtitle" : {
-      "comment" : "Scoring section subtitle in rules",
+    "results.roundBadge %lld" : {
+      "comment" : "Round results badge. %lld = round number",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "How to earn points" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Comment gagner des points" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Round %lld Results"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Résultats du round %lld"
+          }
+        }
       }
     },
-    "rules.gotIt.button" : {
-      "comment" : "Dismiss button on rules sheet",
+    "results.scoresAfterRound.label %lld" : {
+      "comment" : "Scoreboard title. %lld = round number",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Got it!" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Compris !" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scores After Round %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scores après le round %lld"
+          }
+        }
       }
     },
-    "rules.dismiss.accessibility" : {
-      "comment" : "Accessibility label for dismiss rules button",
+    "results.seeFinalResults.button" : {
+      "comment" : "Button after last round to see final results",
+      "extractionState" : "stale",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dismiss rules sheet" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Fermer les règles" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See Final Results"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir les résultats finaux"
+          }
+        }
+      }
+    },
+    "results.theAnswer.headline" : {
+      "comment" : "The Answer headline on round results",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Answer"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La réponse"
+          }
+        }
+      }
+    },
+    "role.human.description" : {
+      "comment" : "Long description for Human role in onboarding and rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You don't know the answer. Listen carefully, find clues, and vote for what you believe is correct."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu ne connais pas la réponse. Écoute attentivement, cherche des indices et vote pour ce que tu crois être correct."
+          }
+        }
+      }
+    },
+    "role.human.displayName" : {
+      "comment" : "Display name for the Human role",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Human"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Humain"
+          }
+        }
+      }
+    },
+    "role.human.flavorText" : {
+      "comment" : "Short flavor text on role reveal card for Human",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You don't know the answer.\nFind the truth."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu ne connais pas la réponse.\nTrouve la vérité."
+          }
+        }
+      }
+    },
+    "role.mongoose.description" : {
+      "comment" : "Long description for Mongoose role in onboarding and rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You don't know the answer, but your identity is public. You're a trusted ally helping humans find the truth."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu ne connais pas la réponse, mais ton identité est publique. Tu es un allié de confiance qui aide les humains à trouver la vérité."
+          }
+        }
+      }
+    },
+    "role.mongoose.displayName" : {
+      "comment" : "Display name for the Mongoose role",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mongoose"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mangouste"
+          }
+        }
+      }
+    },
+    "role.mongoose.flavorText" : {
+      "comment" : "Short flavor text on role reveal card for Mongoose",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You don't know the answer.\nYour identity is public."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu ne connais pas la réponse.\nTon identité est publique."
+          }
+        }
+      }
+    },
+    "role.snake.description" : {
+      "comment" : "Long description for Snake role in onboarding and rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You know the correct answer — but keep it secret! Mislead the group and vote snake to earn points."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu connais la bonne réponse — mais garde-la secrète ! Égare le groupe et vote serpent pour gagner des points."
+          }
+        }
+      }
+    },
+    "role.snake.displayName" : {
+      "comment" : "Display name for the Snake role",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snake"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serpent"
+          }
+        }
+      }
+    },
+    "role.snake.flavorText" : {
+      "comment" : "Short flavor text on role reveal card for Snake",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You know the answer.\nLead them astray."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu connais la réponse.\nÉgare-les."
+          }
+        }
+      }
+    },
+    "roleReveal.done.button" : {
+      "comment" : "Done button on role reveal screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done — Pass the phone"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé — Passer le téléphone"
+          }
+        }
+      }
+    },
+    "roleReveal.holdHint" : {
+      "comment" : "Hint below role card: hold to reveal, release to hide",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold to reveal · Release to hide"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maintenir pour révéler · Relâcher pour cacher"
+          }
+        }
+      }
+    },
+    "roleReveal.holdToReveal" : {
+      "comment" : "Micro label on blank card face",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HOLD TO REVEAL"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MAINTENIR POUR RÉVÉLER"
+          }
+        }
+      }
+    },
+    "roleReveal.playerBadge %lld %lld" : {
+      "comment" : "Player badge on role reveal. %lld = player number, %lld = total players",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Player %lld of %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Joueur %lld sur %lld"
+          }
+        }
+      }
+    },
+    "roleReveal.roundBadge %lld %lld" : {
+      "comment" : "Round badge on role reveal. %lld = current round, %lld = total rounds",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Round %lld of %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Round %lld sur %lld"
+          }
+        }
+      }
+    },
+    "roleReveal.yourRole.label" : {
+      "comment" : "YOUR ROLE micro label on revealed role card",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YOUR ROLE"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TON RÔLE"
+          }
+        }
       }
     },
     "rules.close.accessibility" : {
       "comment" : "Accessibility label for close (x) button in rules navigation bar",
       "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close How to Play" } },
-        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Fermer Comment jouer" } }
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close How to Play"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer Comment jouer"
+          }
+        }
+      }
+    },
+    "rules.dismiss.accessibility" : {
+      "comment" : "Accessibility label for dismiss rules button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dismiss rules sheet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer les règles"
+          }
+        }
+      }
+    },
+    "rules.gotIt.button" : {
+      "comment" : "Dismiss button on rules sheet",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Got it!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compris !"
+          }
+        }
+      }
+    },
+    "rules.roles.section.label" : {
+      "comment" : "Roles section micro label in rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "THE ROLES"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LES RÔLES"
+          }
+        }
+      }
+    },
+    "rules.roles.subtitle" : {
+      "comment" : "Roles section subtitle in rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Who are you playing as?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quel rôle jouez-vous ?"
+          }
+        }
+      }
+    },
+    "rules.rounds.section.label" : {
+      "comment" : "Each round section micro label in rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EACH ROUND"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CHAQUE ROUND"
+          }
+        }
+      }
+    },
+    "rules.rounds.subtitle" : {
+      "comment" : "Each round section subtitle in rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 phases per round"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6 phases par round"
+          }
+        }
+      }
+    },
+    "rules.scoring.section.label" : {
+      "comment" : "Scoring section micro label in rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SCORING"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SCORE"
+          }
+        }
+      }
+    },
+    "rules.scoring.subtitle" : {
+      "comment" : "Scoring section subtitle in rules",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to earn points"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment gagner des points"
+          }
+        }
+      }
+    },
+    "rules.title" : {
+      "comment" : "How to Play navigation title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How to Play"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment jouer"
+          }
+        }
+      }
+    },
+    "scoring.correctVote.description" : {
+      "comment" : "Correct vote scoring rule description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Human or Mongoose votes the right answer."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Humain ou Mangouste vote la bonne réponse."
+          }
+        }
+      }
+    },
+    "scoring.correctVote.label" : {
+      "comment" : "Correct vote scoring rule label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct Vote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vote correct"
+          }
+        }
+      }
+    },
+    "scoring.mongooseBonus.description" : {
+      "comment" : "Mongoose bonus scoring rule description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mongoose earns extra points for a correct vote."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Mangouste gagne des points supplémentaires pour un vote correct."
+          }
+        }
+      }
+    },
+    "scoring.mongooseBonus.label" : {
+      "comment" : "Mongoose bonus scoring rule label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mongoose Bonus"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bonus Mangouste"
+          }
+        }
+      }
+    },
+    "scoring.snakeVote.description" : {
+      "comment" : "Snake vote scoring rule description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snakes automatically earn 1 point per round."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les serpents gagnent automatiquement 1 point par round."
+          }
+        }
+      }
+    },
+    "scoring.snakeVote.label" : {
+      "comment" : "Snake vote scoring rule label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snake Vote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vote Serpent"
+          }
+        }
+      }
+    },
+    "scoring.wrongVote.description" : {
+      "comment" : "Wrong vote scoring rule description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No points for incorrect answers."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun point pour les mauvaises réponses."
+          }
+        }
+      }
+    },
+    "scoring.wrongVote.label" : {
+      "comment" : "Wrong vote scoring rule label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wrong Vote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vote incorrect"
+          }
+        }
+      }
+    },
+    "selected" : {
+
+    },
+    "settings.language.auto.description" : {
+      "comment" : "Description for Auto language option — follows device locale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Follow device language"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue de l'appareil"
+          }
+        }
+      }
+    },
+    "settings.language.auto.label" : {
+      "comment" : "Label for the Auto language option in settings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto"
+          }
+        }
+      }
+    },
+    "settings.language.section" : {
+      "comment" : "Language section header in settings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        }
+      }
+    },
+    "settings.categories.section" : {
+      "comment" : "Question categories section header in settings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Question Categories"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catégories de questions"
+          }
+        }
+      }
+    },
+    "settings.category.disabled" : {
+      "comment" : "Accessibility value when category is disabled",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "disabled"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "désactivé"
+          }
+        }
+      }
+    },
+    "settings.category.enabled" : {
+      "comment" : "Accessibility value when category is enabled",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "enabled"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "activé"
+          }
+        }
+      }
+    },
+    "settings.close.accessibility" : {
+      "comment" : "Accessibility label for close settings button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close settings"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer les paramètres"
+          }
+        }
+      }
+    },
+    "settings.feedback.section" : {
+      "comment" : "Feedback section header in settings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retours"
+          }
+        }
+      }
+    },
+    "settings.haptics.label" : {
+      "comment" : "Haptics toggle label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haptics"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haptique"
+          }
+        }
+      }
+    },
+    "settings.reset.button" : {
+      "comment" : "Reset to defaults button",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset to Defaults"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réinitialiser par défaut"
+          }
+        }
+      }
+    },
+    "settings.rounds.accessibility %lld" : {
+      "comment" : "Accessibility label for round count button. %lld = count",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld rounds"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld rounds"
+          }
+        }
+      }
+    },
+    "settings.rounds.section" : {
+      "comment" : "Rounds section header in settings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounds"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounds"
+          }
+        }
+      }
+    },
+    "settings.soundEffects.label" : {
+      "comment" : "Sound effects toggle label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound Effects"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effets sonores"
+          }
+        }
+      }
+    },
+    "settings.subtitle" : {
+      "comment" : "Settings subtitle",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customize your game"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personnalisez votre partie"
+          }
+        }
+      }
+    },
+    "settings.timer.1min" : {
+      "comment" : "Timer option label: 1 minute",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 min"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 min"
+          }
+        }
+      }
+    },
+    "settings.timer.1min30" : {
+      "comment" : "Timer option label: 1 minute 30 seconds",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1:30"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1:30"
+          }
+        }
+      }
+    },
+    "settings.timer.2min" : {
+      "comment" : "Timer option label: 2 minutes",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 min"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2 min"
+          }
+        }
+      }
+    },
+    "settings.timer.3min" : {
+      "comment" : "Timer option label: 3 minutes",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 min"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 min"
+          }
+        }
+      }
+    },
+    "settings.timer.section" : {
+      "comment" : "Discussion timer section header in settings",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discussion Timer"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minuterie de discussion"
+          }
+        }
+      }
+    },
+    "settings.title" : {
+      "comment" : "Settings screen title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        }
+      }
+    },
+    "setup.playerCount.label" : {
+      "comment" : "Label above player count picker",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How many players?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Combien de joueurs ?"
+          }
+        }
+      }
+    },
+    "setup.playerName.placeholder %lld" : {
+      "comment" : "Placeholder text for player name field. %lld = player number",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Player %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Joueur %lld"
+          }
+        }
+      }
+    },
+    "setup.players.accessibility %lld" : {
+      "comment" : "Player count button accessibility label. %lld = count",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld players"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld joueurs"
+          }
+        }
+      }
+    },
+    "setup.startGame.button" : {
+      "comment" : "Start game button label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Game →"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer →"
+          }
+        }
+      }
+    },
+    "setup.title" : {
+      "comment" : "Player setup screen title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Player Setup"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuration"
+          }
+        }
+      }
+    },
+    "snakeReveal.closeEyes.accessibility" : {
+      "comment" : "Accessibility label for entire close-eyes screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Everyone close your eyes. Snakes: wait for your tap cue. HOST: Tap when ready"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout le monde ferme les yeux. Serpents : attendez votre signal. HÔTE : Appuyez quand vous êtes prêt"
+          }
+        }
+      }
+    },
+    "snakeReveal.closeEyes.body" : {
+      "comment" : "Body text on eyes-closed prompt screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snakes: wait for your tap cue"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serpents : attendez votre signal"
+          }
+        }
+      }
+    },
+    "snakeReveal.closeEyes.headline" : {
+      "comment" : "Headline on eyes-closed prompt screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Everyone close your eyes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout le monde ferme les yeux"
+          }
+        }
+      }
+    },
+    "snakeReveal.correctAnswer.label" : {
+      "comment" : "Micro label above the correct answer on snake reveal",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CORRECT ANSWER"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BONNE RÉPONSE"
+          }
+        }
+      }
+    },
+    "snakeReveal.done.button" : {
+      "comment" : "Done button on snake reveal screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done — Hide This Screen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminé — Cacher cet écran"
+          }
+        }
+      }
+    },
+    "snakeReveal.fellowSnakes.label" : {
+      "comment" : "Micro label above co-snake list",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "YOUR FELLOW SNAKES"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TES COMPLICES SERPENTS"
+          }
+        }
+      }
+    },
+    "snakeReveal.hostTap.caption" : {
+      "comment" : "Caption for host to tap when ready",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HOST: Tap when ready →"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HÔTE : Appuyez quand vous êtes prêt →"
+          }
+        }
+      }
+    },
+    "snakeReveal.openEyes.body" : {
+      "comment" : "Body text on open-eyes screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snakes know the answer.\nThe discussion begins."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les serpents connaissent la réponse.\nLa discussion commence."
+          }
+        }
+      }
+    },
+    "snakeReveal.openEyes.headline" : {
+      "comment" : "Headline on open-eyes screen (last snake done)",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Everyone open your eyes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout le monde ouvre les yeux"
+          }
+        }
+      }
+    },
+    "snakeReveal.pass.accessibility %@ %lld %lld" : {
+      "comment" : "Accessibility label for snake pass screen. %@ = name, %lld = index, %lld = total",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pass to %@. Snake %lld of %lld. Tap to reveal secret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer à %@. Serpent %lld sur %lld. Appuyer pour révéler le secret"
+          }
+        }
+      }
+    },
+    "snakeReveal.reminder.losePoints" : {
+      "comment" : "Warning that any other vote loses points",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Any other vote = lose points."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tout autre vote = perdre des points."
+          }
+        }
+      }
+    },
+    "snakeReveal.reminder.vote" : {
+      "comment" : "Reminder to snakes to only vote Snake",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remember: vote \"Snake\" only."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappel : vote uniquement \"Serpent\"."
+          }
+        }
+      }
+    },
+    "snakeReveal.snakeBadge %lld %lld" : {
+      "comment" : "Snake badge on pass screen. %lld = snake number, %lld = total snakes",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snake %lld of %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serpent %lld sur %lld"
+          }
+        }
+      }
+    },
+    "snakeReveal.startDiscussion.button" : {
+      "comment" : "Button to start discussion phase",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Discussion →"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commencer la discussion →"
+          }
+        }
+      }
+    },
+    "snakeReveal.tapToReveal.caption" : {
+      "comment" : "Caption on snake pass screen to tap and reveal",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to reveal secret"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyer pour révéler le secret"
+          }
+        }
+      }
+    },
+    "snakeReveal.youAreSnake.label" : {
+      "comment" : "Label shown to a snake player on their reveal screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You are a Snake 🐍"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu es un Serpent 🐍"
+          }
+        }
+      }
+    },
+    "Snakesss" : {
+
+    },
+    "Standard trivia difficulty" : {
+
+    },
+    "TRUST NOBODY" : {
+
+    },
+    "Varied difficulty each round" : {
+
+    },
+    "Vote Snake" : {
+
+    },
+    "voting.confirmVote.button" : {
+      "comment" : "Confirm vote button label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm Vote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmer le vote"
+          }
+        }
+      }
+    },
+    "voting.nowVoting.label" : {
+      "comment" : "NOW VOTING micro label on voting screen",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NOW VOTING"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EN TRAIN DE VOTER"
+          }
+        }
+      }
+    },
+    "voting.playerBadge %lld %lld" : {
+      "comment" : "Player caption on voting screen. %lld = player number, %lld = total",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Player %lld of %lld"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Joueur %lld sur %lld"
+          }
+        }
+      }
+    },
+    "voting.question.label" : {
+      "comment" : "Label asking player to choose the correct answer",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What is the correct answer?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle est la bonne réponse ?"
+          }
+        }
+      }
+    },
+    "voting.snake.forced.body" : {
+      "comment" : "Explanation for snake players about forced vote",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You must vote Snake.\nThe humans cannot know you're a Snake until results."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu dois voter Serpent.\nLes humains ne savent pas que tu es un Serpent avant les résultats."
+          }
+        }
+      }
+    },
+    "voting.vote.accessibility %@ %@" : {
+      "comment" : "Vote button accessibility label. %@ = letter, %@ = answer text",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vote %@: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voter %@ : %@"
+          }
+        }
+      }
+    },
+    "voting.voteSnake.button" : {
+      "comment" : "Vote snake button label",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vote Snake"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voter Serpent"
+          }
+        }
       }
     }
-
   },
   "version" : "1.0"
 }

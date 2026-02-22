@@ -24,6 +24,7 @@ final class SettingsManager {
         static let hapticsEnabled     = "snakesss.settings.hapticsEnabled"
         static let enabledCategories  = "snakesss.settings.enabledCategories"
         static let difficulty         = "snakesss.settings.difficulty"
+        static let language           = "snakesss.settings.language"
     }
 
     // MARK: - Available Values
@@ -31,6 +32,7 @@ final class SettingsManager {
     nonisolated static let roundCountOptions:    [Int] = [3, 6, 9]
     nonisolated static let timerDurationOptions: [Int] = [60, 90, 120, 180]
     nonisolated static let difficultyOptions:    [String] = ["easy", "medium", "hard", "mixed"]
+    nonisolated static let languageOptions:      [String] = ["auto", "fr", "en"]
 
     /// All question categories available in the question pool.
     nonisolated static let allCategories: [String] = [
@@ -53,6 +55,7 @@ final class SettingsManager {
         static let hapticsEnabled    = true
         static let enabledCategories = Set(SettingsManager.allCategories)
         static let difficulty        = "mixed"
+        static let language          = "auto"
     }
 
     // MARK: - Store
@@ -109,6 +112,17 @@ final class SettingsManager {
         }
     }
 
+    /// Selected language: "auto", "fr", or "en". Default: "auto" (follows device locale).
+    /// When not "auto", also overrides AppleLanguages so UI strings switch after a restart.
+    var language: String {
+        didSet {
+            store.set(language, forKey: Keys.language)
+            let override: [String]? = (language == "auto") ? nil : [language]
+            UserDefaults.standard.set(override, forKey: "AppleLanguages")
+            AppLogger.settings.info("language changed to \(self.language)")
+        }
+    }
+
     // MARK: - Init
 
     private init() {
@@ -119,6 +133,7 @@ final class SettingsManager {
         self.hapticsEnabled = Self.loadBool(forKey: Keys.hapticsEnabled, default: Defaults.hapticsEnabled, from: .standard)
         self.enabledCategories = Self.loadEnabledCategories(from: .standard)
         self.difficulty = Self.loadDifficulty(from: .standard)
+        self.language = Self.loadLanguage(from: .standard)
     }
 
     /// Internal init for testing — accepts a custom UserDefaults store.
@@ -130,6 +145,7 @@ final class SettingsManager {
         self.hapticsEnabled = Self.loadBool(forKey: Keys.hapticsEnabled, default: Defaults.hapticsEnabled, from: store)
         self.enabledCategories = Self.loadEnabledCategories(from: store)
         self.difficulty = Self.loadDifficulty(from: store)
+        self.language = Self.loadLanguage(from: store)
     }
 
     // MARK: - Reset
@@ -142,6 +158,7 @@ final class SettingsManager {
         hapticsEnabled    = Defaults.hapticsEnabled
         enabledCategories = Defaults.enabledCategories
         difficulty        = Defaults.difficulty
+        language          = Defaults.language
         AppLogger.settings.info("Settings reset to defaults")
     }
 
@@ -181,6 +198,11 @@ final class SettingsManager {
         return difficultyOptions.contains(saved) ? saved : Defaults.difficulty
     }
 
+    private static func loadLanguage(from store: UserDefaults) -> String {
+        let saved = store.string(forKey: Keys.language) ?? ""
+        return languageOptions.contains(saved) ? saved : Defaults.language
+    }
+
     // MARK: - Labels
 
     /// Human-readable label for a timer duration value.
@@ -213,6 +235,26 @@ final class SettingsManager {
         case "hard":   return String(localized: "Obscure & specialized facts")
         case "mixed":  return String(localized: "Varied difficulty each round")
         default:       return ""
+        }
+    }
+
+    /// Human-readable label for a language value.
+    nonisolated static func languageLabel(for value: String) -> String {
+        switch value {
+        case "auto": return String(localized: "settings.language.auto.label")
+        case "fr":   return "Français"
+        case "en":   return "English"
+        default:     return value
+        }
+    }
+
+    /// Short description for each language option shown in SettingsView.
+    nonisolated static func languageDescription(for value: String) -> String {
+        switch value {
+        case "auto": return String(localized: "settings.language.auto.description")
+        case "fr":   return "Questions et interface en français"
+        case "en":   return "Questions and interface in English"
+        default:     return ""
         }
     }
 }
