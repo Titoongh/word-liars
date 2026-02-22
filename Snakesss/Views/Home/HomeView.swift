@@ -6,6 +6,7 @@ import SwiftUI
 struct HomeView: View {
     @State private var showingHistory = false
     @State private var showingSettings = false
+    @State private var showingHowToPlay = false
     @State private var coordinator = GameNavigationCoordinator()
     @ScaledMetric(relativeTo: .largeTitle) private var displayFontSize: CGFloat = 52
 
@@ -78,6 +79,16 @@ struct HomeView: View {
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(SnakesssSecondaryButtonStyle())
+
+                        Button {
+                            SnakesssHaptic.light()
+                            showingHowToPlay = true
+                        } label: {
+                            Label("How to Play", systemImage: "questionmark.circle")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(SnakesssSecondaryButtonStyle())
+                        .accessibilityLabel("How to Play — open rules reference")
                     }
                     .padding(.horizontal, SnakesssSpacing.screenPadding)
 
@@ -95,6 +106,9 @@ struct HomeView: View {
             .sheet(isPresented: $showingSettings) {
                 SettingsView()
                     .presentationBackground(SnakesssTheme.bgBase)
+            }
+            .sheet(isPresented: $showingHowToPlay) {
+                RulesSheetView()
             }
         }
         .environment(coordinator)
