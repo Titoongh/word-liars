@@ -9,7 +9,8 @@
     },
     "answer": "C",
     "funFact": "L'hydrogène représente environ 75% de la masse de l'univers. C'est aussi le combustible des étoiles comme notre Soleil.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q002",
@@ -21,7 +22,8 @@
     },
     "answer": "A",
     "funFact": "Les humains ont 23 paires soit 46 chromosomes au total. Les chimpanzés en ont 24 paires — une de plus que nous !",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q003",
@@ -33,7 +35,8 @@
     },
     "answer": "B",
     "funFact": "Vénus met 243 jours terrestres pour tourner sur elle-même, mais seulement 225 jours pour faire le tour du Soleil. Sa journée est donc plus longue que son année !",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q004",
@@ -45,7 +48,8 @@
     },
     "answer": "C",
     "funFact": "À 8 849 m d'altitude, la pression atmosphérique est si faible que l'eau bout à environ 70 °C. Impossible d'y préparer un œuf dur correctement !",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q005",
@@ -57,7 +61,8 @@
     },
     "answer": "B",
     "funFact": "Le lithium est si léger qu'il flotte sur l'eau — et il est aussi réactif au contact de l'air, ce qui le rend difficile à stocker.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "hard"
   },
   {
     "id": "q006",
@@ -69,7 +74,8 @@
     },
     "answer": "B",
     "funFact": "L'ovule humain mesure environ 0,1 mm de diamètre — visible à l'œil nu ! C'est la seule cellule humaine qu'on peut voir sans microscope.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q007",
@@ -81,7 +87,8 @@
     },
     "answer": "B",
     "funFact": "Le sang des poulpes contient de l'hémocyanine (à base de cuivre) au lieu de l'hémoglobine. Ce pigment bleu transporte l'oxygène plus efficacement dans l'eau froide.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q008",
@@ -93,7 +100,8 @@
     },
     "answer": "C",
     "funFact": "L'azote est inerte et inodore. L'oxygène, lui, ne représente que 21 % de l'air. Si l'air était pur oxygène, tout brûlerait instantanément.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q009",
@@ -105,7 +113,8 @@
     },
     "answer": "C",
     "funFact": "La peau adulte pèse entre 3,5 et 5 kg et couvre environ 2 m². C'est un organe vital qui régule la température et protège contre les infections.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q010",
@@ -117,7 +126,8 @@
     },
     "answer": "A",
     "funFact": "Les deux mains réunies représentent plus d'un quart des 206 os du squelette humain adulte. La main est l'une des structures les plus complexes du corps.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "hard"
   },
   {
     "id": "q011",
@@ -129,7 +139,8 @@
     },
     "answer": "A",
     "funFact": "La vitesse du son varie selon le milieu : elle est 4 fois plus rapide dans l'eau et 15 fois plus rapide dans l'acier que dans l'air.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "hard"
   },
   {
     "id": "q012",
@@ -141,7 +152,8 @@
     },
     "answer": "A",
     "funFact": "Cette distance est appelée \"unité astronomique\" (UA). La lumière du Soleil met environ 8 minutes et 20 secondes pour nous atteindre.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q013",
@@ -153,7 +165,8 @@
     },
     "answer": "B",
     "funFact": "La Voie Lactée contient entre 100 et 400 milliards d'étoiles. Notre galaxie elle-même est l'une des 2 000 milliards de galaxies dans l'univers observable.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q014",
@@ -165,7 +178,8 @@
     },
     "answer": "C",
     "funFact": "Les abeilles ont 2 grands yeux composés (qui voient les couleurs et les UV) et 3 petits yeux simples appelés ocelles, qui détectent la luminosité.",
-    "category": "Nature"
+    "category": "Nature",
+    "difficulty": "hard"
   },
   {
     "id": "q015",
@@ -177,7 +191,8 @@
     },
     "answer": "A",
     "funFact": "Mercure est plus petite que certaines lunes de Jupiter et Saturne ! Depuis le déclassement de Pluton en 2006, Mercure est officiellement la plus petite planète.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q016",
@@ -189,7 +204,8 @@
     },
     "answer": "A",
     "funFact": "Colomb pensait avoir atteint les Indes ! Ce sont les Amérindiens qu'il appelait \"Indiens\". Il ne réalisa jamais qu'il avait découvert un nouveau continent.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "easy"
   },
   {
     "id": "q017",
@@ -201,7 +217,8 @@
     },
     "answer": "B",
     "funFact": "À son apogée vers 1920, l'Empire britannique couvrait environ 24 % des terres émergées, soit 35,5 millions de km². Un quart de la planète portait le drapeau britannique.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q018",
@@ -213,7 +230,8 @@
     },
     "answer": "B",
     "funFact": "Napoléon est mort le 5 mai 1821 sur l'île de Sainte-Hélène. La cause exacte de sa mort reste débattue : certains historiens soupçonnent un empoisonnement à l'arsenic.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q019",
@@ -225,7 +243,8 @@
     },
     "answer": "A",
     "funFact": "La Tour Eiffel a été construite en seulement 2 ans, 2 mois et 5 jours pour l'Exposition universelle de 1889. Elle devait être détruite en 1909 mais a été sauvée grâce à son antenne radio.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q020",
@@ -237,7 +256,8 @@
     },
     "answer": "C",
     "funFact": "Spoutnik 1 a été lancé par l'URSS le 4 octobre 1957. Il n'émettait qu'un simple bip radio, mais cela a déclenché la course à l'espace entre Soviétiques et Américains.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q021",
@@ -249,7 +269,8 @@
     },
     "answer": "B",
     "funFact": "Le sort de ses épouses se résume ainsi : \"divorcée, décapitée, morte, divorcée, décapitée, survécue\". Anne Boleyn et Catherine Howard furent les deux décapitées.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "easy"
   },
   {
     "id": "q022",
@@ -261,7 +282,8 @@
     },
     "answer": "A",
     "funFact": "La prise de la Bastille le 14 juillet 1789 est le symbole de la Révolution. La forteresse ne contenait que 7 prisonniers ce jour-là, dont 4 faussaires.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q023",
@@ -273,7 +295,8 @@
     },
     "answer": "B",
     "funFact": "Son vrai nom était Iossif Vissarionovitch Djougachvili. \"Staline\" est un pseudonyme qu'il s'est choisi, signifiant \"homme d'acier\" en russe.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q024",
@@ -285,7 +308,8 @@
     },
     "answer": "A",
     "funFact": "La bataille du 18 juin 1815 dura moins de 9 heures. Napoléon fut exilé définitivement à Sainte-Hélène après cette défaite face aux armées de Wellington et Blücher.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q025",
@@ -297,7 +321,8 @@
     },
     "answer": "C",
     "funFact": "L'URSS a perdu entre 26 et 27 millions de personnes, soit environ 14 % de sa population. Ces pertes colossales expliquent en partie la psychologie russe vis-à-vis de la guerre.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q026",
@@ -309,7 +334,8 @@
     },
     "answer": "B",
     "funFact": "Gutenberg a imprimé sa célèbre Bible vers 1455. Sa technique a révolutionné la diffusion du savoir — la technique existait en Chine depuis le XIe siècle, mais Gutenberg l'a développée indépendamment.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "easy"
   },
   {
     "id": "q027",
@@ -321,7 +347,8 @@
     },
     "answer": "C",
     "funFact": "Khéops a régné vers 2560 av. J.-C. La pyramide qui porte son nom a été la plus haute structure construite par l'homme pendant plus de 3 800 ans.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q028",
@@ -333,7 +360,8 @@
     },
     "answer": "C",
     "funFact": "L'écriture cunéiforme sumérienne, datant d'environ 3400 av. J.-C., est considérée comme la plus ancienne écriture du monde. Elle était gravée sur des tablettes d'argile.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "hard"
   },
   {
     "id": "q029",
@@ -345,7 +373,8 @@
     },
     "answer": "C",
     "funFact": "Le mur est tombé le 9 novembre 1989 après une conférence de presse improvisée où un officiel est-allemand a maladroitement annoncé l'ouverture des frontières \"immédiatement, sans délai\".",
-    "category": "History"
+    "category": "History",
+    "difficulty": "easy"
   },
   {
     "id": "q030",
@@ -357,7 +386,8 @@
     },
     "answer": "A",
     "funFact": "Washington a refusé d'être élu roi après la guerre d'indépendance. Son refus du pouvoir absolu est souvent cité comme l'un des actes fondateurs de la démocratie américaine.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "easy"
   },
   {
     "id": "q031",
@@ -369,7 +399,8 @@
     },
     "answer": "B",
     "funFact": "L'Antarctique est un désert polaire de 14,2 millions de km², presque deux fois plus grand que le Sahara (9,2 millions de km²). Un désert se définit par la faiblesse des précipitations, pas la chaleur.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "hard"
   },
   {
     "id": "q032",
@@ -381,7 +412,8 @@
     },
     "answer": "C",
     "funFact": "Canberra a été construite de toutes pièces comme capitale fédérale en 1913 pour éviter la rivalité entre Sydney et Melbourne, qui voulaient toutes les deux être la capitale.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q033",
@@ -393,7 +425,8 @@
     },
     "answer": "C",
     "funFact": "L'Inde a dépassé la Chine en 2023 avec plus de 1,42 milliard d'habitants. La politique de l'enfant unique en Chine a ralenti sa croissance démographique pendant des décennies.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "easy"
   },
   {
     "id": "q034",
@@ -405,7 +438,8 @@
     },
     "answer": "A",
     "funFact": "L'aire métropolitaine de Tokyo compte environ 37 millions d'habitants. C'est plus que la population entière du Canada !",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "easy"
   },
   {
     "id": "q035",
@@ -417,7 +451,8 @@
     },
     "answer": "B",
     "funFact": "Le Kilimandjaro culmine à 5 895 m en Tanzanie. Paradoxalement, ses glaciers sommitaux fondent rapidement : on estime qu'ils auront disparu avant 2050.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q036",
@@ -429,7 +464,8 @@
     },
     "answer": "A",
     "funFact": "La Mer Morte a une salinité d'environ 30 %, soit 10 fois plus que l'eau de mer ordinaire. On ne peut pas y couler : la densité de l'eau est trop élevée pour qu'on s'y noie.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "hard"
   },
   {
     "id": "q037",
@@ -441,7 +477,8 @@
     },
     "answer": "B",
     "funFact": "Le tunnel de base du Saint-Gothard en Suisse mesure 57,1 km. Ouvert en 2016, il a nécessité 17 ans de construction et 28 millions d'heures de travail.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q038",
@@ -453,7 +490,8 @@
     },
     "answer": "C",
     "funFact": "La Volga mesure 3 531 km et se jette dans la mer Caspienne. Symbole national de la Russie, elle est souvent appelée \"Mère Volga\" par les Russes.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q039",
@@ -465,7 +503,8 @@
     },
     "answer": "A",
     "funFact": "Le lac Baïkal en Sibérie atteint 1 642 m de profondeur et contient à lui seul environ 20 % de toute l'eau douce non glacée de la planète.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "hard"
   },
   {
     "id": "q040",
@@ -477,7 +516,8 @@
     },
     "answer": "A",
     "funFact": "La frontière franco-espagnole mesure environ 646 km le long des Pyrénées. La frontière avec la Belgique est la deuxième plus longue avec 620 km.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "hard"
   },
   {
     "id": "q041",
@@ -489,7 +529,8 @@
     },
     "answer": "B",
     "funFact": "Wellington est la capitale la plus australe du monde. Beaucoup de gens pensent que c'est Auckland, qui est pourtant plus grande — une confusion classique !",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q042",
@@ -501,7 +542,8 @@
     },
     "answer": "B",
     "funFact": "Le Brésil est si immense qu'il couvre à la fois l'hémisphère nord (équateur) et le milieu de l'hémisphère sud (tropique du Capricorne). C'est le 5e plus grand pays du monde.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "hard"
   },
   {
     "id": "q043",
@@ -513,7 +555,8 @@
     },
     "answer": "A",
     "funFact": "Les Andes s'étendent sur environ 7 000 km le long de la côte ouest de l'Amérique du Sud, traversant 7 pays. Elles abritent Aconcagua, le plus haut sommet hors d'Asie.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q044",
@@ -525,7 +568,8 @@
     },
     "answer": "A",
     "funFact": "La Russie couvre 17,1 millions de km², soit environ deux fois la superficie des États-Unis. Elle s'étend sur 11 fuseaux horaires différents.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "easy"
   },
   {
     "id": "q045",
@@ -537,7 +581,8 @@
     },
     "answer": "C",
     "funFact": "La fosse des Mariannes dans l'océan Pacifique atteint 11 034 m de profondeur. Si on y plaçait l'Everest, il y aurait encore plus de 2 km d'eau au-dessus de son sommet.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q046",
@@ -549,7 +594,8 @@
     },
     "answer": "A",
     "funFact": "Hawkins est une ville fictive d'Indiana. Les frères Duffer se sont inspirés de Montauk (New York) et de l'atmosphère des années 80 pour créer l'univers de la série.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "easy"
   },
   {
     "id": "q047",
@@ -561,7 +607,8 @@
     },
     "answer": "A",
     "funFact": "Son pseudonyme \"Lady Gaga\" vient de la chanson \"Radio Ga Ga\" de Queen. Son manager a envoyé un SMS avec ce surnom par erreur, et il lui est resté.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "easy"
   },
   {
     "id": "q048",
@@ -573,7 +620,8 @@
     },
     "answer": "B",
     "funFact": "La série de Vince Gilligan a été diffusée de 2008 à 2013. Bryan Cranston, qui jouait Walter White, était surtout connu avant pour son rôle comique dans \"Malcolm\" !",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q049",
@@ -585,7 +633,8 @@
     },
     "answer": "B",
     "funFact": "Robert Downey Jr. a failli ne pas obtenir le rôle car les studios avaient des réserves sur son passé. C'est le réalisateur Jon Favreau qui a insisté pour lui donner sa chance.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "easy"
   },
   {
     "id": "q050",
@@ -597,7 +646,8 @@
     },
     "answer": "B",
     "funFact": "Justin Bieber est né à London, en Ontario (Canada) en 1994. Il a été découvert à 13 ans grâce à ses vidéos YouTube par le manager de talents Scooter Braun.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "easy"
   },
   {
     "id": "q051",
@@ -609,7 +659,8 @@
     },
     "answer": "B",
     "funFact": "Squid Game a cumulé 1,65 milliard d'heures de visionnage dans ses 28 premiers jours — un record absolu pour Netflix. La série sud-coréenne a été vue dans 94 pays.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q052",
@@ -621,7 +672,8 @@
     },
     "answer": "B",
     "funFact": "Son nom complet est Madonna Louise Ciccone. Elle a adopté le prénom de sa mère qui est décédée d'un cancer du sein quand Madonna avait 5 ans.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q053",
@@ -633,7 +685,8 @@
     },
     "answer": "A",
     "funFact": "\"Titanic\" a égalé le record de \"Ben-Hur\" (1959) avec 11 Oscars. Le film a coûté 200 millions de dollars, ce qui en faisait alors le film le plus cher de l'Histoire.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q054",
@@ -645,7 +698,8 @@
     },
     "answer": "B",
     "funFact": "Roger Moore a joué Bond dans 7 films entre 1973 et 1985. Il était également célèbre pour ses sourcils expressifs et son humour pince-sans-rire.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "hard"
   },
   {
     "id": "q055",
@@ -657,7 +711,8 @@
     },
     "answer": "B",
     "funFact": "\"Eminem\" vient des initiales M&M (Marshall Mathers). Né à Detroit en 1972, il a été l'artiste solo le plus vendu des années 2000 malgré le fait d'être blanc dans un genre à dominante noire.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q056",
@@ -669,7 +724,8 @@
     },
     "answer": "A",
     "funFact": "Minecraft a vendu plus de 238 millions de copies sur toutes les plateformes. Il a été créé par le Suédois Markus \"Notch\" Persson et vendu à Microsoft pour 2,5 milliards de dollars.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q057",
@@ -681,7 +737,8 @@
     },
     "answer": "C",
     "funFact": "Lady Gaga appelle ses fans les \"Little Monsters\". Elle a créé ce surnom en signe d'appartenance et de solidarité avec ceux qui se sentaient différents ou marginalisés.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "easy"
   },
   {
     "id": "q058",
@@ -693,7 +750,8 @@
     },
     "answer": "B",
     "funFact": "Son nom complet est Calvin Cordozar Broadus Jr. Son surnom \"Snoop Dogg\" lui a été donné par sa mère qui trouvait qu'il ressemblait à Snoopy, le personnage de Peanuts.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "medium"
   },
   {
     "id": "q059",
@@ -705,7 +763,8 @@
     },
     "answer": "B",
     "funFact": "YouTube a été fondé le 14 février 2005 (Saint-Valentin !) par trois anciens employés de PayPal. Google l'a rachetée dès 2006 pour 1,65 milliard de dollars.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q060",
@@ -717,7 +776,8 @@
     },
     "answer": "B",
     "funFact": "Les Beatles ont vendu entre 600 millions et 1 milliard d'albums. Ils restent le groupe le plus influent de l'histoire de la musique pop, avec des records qui n'ont jamais été battus.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q061",
@@ -729,7 +789,8 @@
     },
     "answer": "B",
     "funFact": "La France a battu le Brésil 3-0 en finale le 12 juillet 1998 au Stade de France. Zinédine Zidane a marqué deux buts de la tête. Les Bleus avaient alors 23 joueurs nés en France métropolitaine ou dans les DOM-TOM.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "easy"
   },
   {
     "id": "q062",
@@ -741,7 +802,8 @@
     },
     "answer": "C",
     "funFact": "Les États-Unis totalisent plus de 1 000 médailles d'or aux JO d'été. Michael Phelps à lui seul en a remporté 23, soit plus que de nombreuses nations entières.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q063",
@@ -753,7 +815,8 @@
     },
     "answer": "A",
     "funFact": "Cette distance bizarre vient des JO de 1908 à Londres : la course a été allongée pour que les coureurs partent du château de Windsor et arrivent devant la loge royale au stade olympique.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "easy"
   },
   {
     "id": "q064",
@@ -765,7 +828,8 @@
     },
     "answer": "A",
     "funFact": "Usain Bolt a couru le 100m en 9,58 secondes lors des Mondiaux de Berlin en 2009. À cette vitesse, il atteignait environ 44,72 km/h à son pic de vitesse maximale.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "easy"
   },
   {
     "id": "q065",
@@ -777,7 +841,8 @@
     },
     "answer": "B",
     "funFact": "Au golf, un albatros signifie réaliser un trou en 3 coups sous le par. C'est encore plus rare qu'un eagle (2 sous le par). On l'appelle aussi \"double eagle\" aux États-Unis.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "hard"
   },
   {
     "id": "q066",
@@ -789,7 +854,8 @@
     },
     "answer": "B",
     "funFact": "Les matchs masculins en Grand Chelem se jouent au meilleur des 5 sets, il faut donc en gagner 3. Les femmes jouent au meilleur des 3 sets, soit 2 sets à gagner.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "medium"
   },
   {
     "id": "q067",
@@ -801,7 +867,8 @@
     },
     "answer": "C",
     "funFact": "Les premiers JO modernes ont eu lieu à Athènes en 1896, organisés par le baron Pierre de Coubertin. 14 nations ont participé et seuls des hommes pouvaient concourir.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "medium"
   },
   {
     "id": "q068",
@@ -813,7 +880,8 @@
     },
     "answer": "A",
     "funFact": "Les All Blacks sont connus pour leur redoutable Haka, une danse guerrière maorie exécutée avant chaque match. Le \"Ka Mate\" est le plus célèbre.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "medium"
   },
   {
     "id": "q069",
@@ -825,7 +893,8 @@
     },
     "answer": "B",
     "funFact": "Le basketball a été inventé en 1891 par le Canadien James Naismith. Les premiers matchs utilisaient des paniers à pêches comme buts — et quelqu'un devait grimper récupérer le ballon après chaque panier !",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "easy"
   },
   {
     "id": "q070",
@@ -837,7 +906,8 @@
     },
     "answer": "C",
     "funFact": "Paris 2024 était la troisième fois que la France accueillait les JO d'été (1900 et 1924). La cérémonie d'ouverture sur la Seine a rassemblé environ 10 000 athlètes sur des bateaux.",
-    "category": "Sports"
+    "category": "Sports",
+    "difficulty": "medium"
   },
   {
     "id": "q071",
@@ -849,7 +919,8 @@
     },
     "answer": "C",
     "funFact": "Un poulpe a 3 cœurs : 2 cœurs branchiaux qui pompent le sang vers les branchies, et 1 cœur systémique qui distribue le sang oxygéné dans le corps. Quand il nage, ce dernier s'arrête !",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q072",
@@ -861,7 +932,8 @@
     },
     "answer": "B",
     "funFact": "Le moustique tue entre 700 000 et 1 million de personnes par an, principalement via le paludisme. Les requins, eux, tuent moins de 10 personnes par an en moyenne.",
-    "category": "Nature"
+    "category": "Nature",
+    "difficulty": "easy"
   },
   {
     "id": "q073",
@@ -873,7 +945,8 @@
     },
     "answer": "B",
     "funFact": "Les escargots peuvent entrer en estivation (comme l'hibernation mais en été) ou en hibernation pendant des années. Ils scellent leur coquille avec du mucus séché pour éviter la déshydratation.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q074",
@@ -885,7 +958,8 @@
     },
     "answer": "B",
     "funFact": "Comme le poulpe, le homard possède de l'hémocyanine à base de cuivre dans son sang, le rendant bleu. Ce pigment devient incolore quand il n'est pas oxygéné.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q075",
@@ -897,7 +971,8 @@
     },
     "answer": "A",
     "funFact": "Il existe plus de 1 400 espèces de chauves-souris, soit environ 20 % de toutes les espèces de mammifères. Elles constituent le deuxième ordre de mammifères le plus diversifié après les rongeurs.",
-    "category": "Nature"
+    "category": "Nature",
+    "difficulty": "easy"
   },
   {
     "id": "q076",
@@ -909,7 +984,8 @@
     },
     "answer": "A",
     "funFact": "L'éléphante d'Afrique est gestante pendant environ 22 mois (640 à 660 jours). À la naissance, le bébé éléphant pèse déjà environ 100 kg !",
-    "category": "Nature"
+    "category": "Nature",
+    "difficulty": "hard"
   },
   {
     "id": "q077",
@@ -921,7 +997,8 @@
     },
     "answer": "C",
     "funFact": "La peau noire de l'ours polaire absorbe la chaleur du soleil. Sa fourrure, en réalité transparente et creuse, diffuse et réfléchit la lumière, ce qui lui donne son apparence blanche.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q078",
@@ -933,7 +1010,8 @@
     },
     "answer": "B",
     "funFact": "Le mâle ornithorynque possède des éperons venimeux sur les pattes arrière. Son venin est suffisamment puissant pour tuer un chien, et provoque une douleur intense et durable chez l'humain.",
-    "category": "Nature"
+    "category": "Nature",
+    "difficulty": "hard"
   },
   {
     "id": "q079",
@@ -945,7 +1023,8 @@
     },
     "answer": "B",
     "funFact": "Les 32 dents comprennent 8 incisives, 4 canines, 8 prémolaires et 12 molaires (dont 4 dents de sagesse). Beaucoup de personnes n'ont pas leurs 4 dents de sagesse ou les font retirer.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "medium"
   },
   {
     "id": "q080",
@@ -957,7 +1036,8 @@
     },
     "answer": "A",
     "funFact": "Un éléphant d'Afrique mâle peut peser jusqu'à 6 000 kg. Malgré leur taille, les éléphants peuvent courir à 25 km/h et nager sur de longues distances en utilisant leur trompe comme tuba.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q081",
@@ -969,7 +1049,8 @@
     },
     "answer": "B",
     "funFact": "Steve Jobs a présenté l'iPhone le 9 janvier 2007 en disant qu'Apple allait \"réinventer le téléphone\". Les premiers acheteurs ont fait la queue pendant des jours devant les Apple Stores.",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "easy"
   },
   {
     "id": "q082",
@@ -981,7 +1062,8 @@
     },
     "answer": "C",
     "funFact": "Bill Gates et Paul Allen ont fondé Microsoft en 1975 à Albuquerque (Nouveau-Mexique). Ils se connaissaient depuis le lycée où ils passaient leurs nuits à programmer sur les ordinateurs de l'école.",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "easy"
   },
   {
     "id": "q083",
@@ -993,7 +1075,8 @@
     },
     "answer": "B",
     "funFact": "Larry Page et Sergey Brin ont fondé Google en 1998 dans un garage de Menlo Park. Le nom vient du mot \"googol\" (10 puissance 100), reflétant leur ambition d'organiser l'immensité du web.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q084",
@@ -1005,7 +1088,8 @@
     },
     "answer": "C",
     "funFact": "La Chine compte plus d'un milliard d'internautes, mais son internet est très censuré. Le \"Grand Firewall de Chine\" bloque Google, Facebook, YouTube et la plupart des sites occidentaux.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q085",
@@ -1017,7 +1101,8 @@
     },
     "answer": "A",
     "funFact": "Bell a déposé son brevet le 14 février 1876 — quelques heures seulement avant Elisha Gray. L'inventeur Antonio Meucci avait pourtant déposé une caveat en 1871 mais manquait d'argent pour le renouveler.",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "hard"
   },
   {
     "id": "q086",
@@ -1029,7 +1114,8 @@
     },
     "answer": "B",
     "funFact": "Android a été créé par Android Inc. en 2003, puis racheté par Google en 2005. Il équipe aujourd'hui environ 72 % des smartphones dans le monde.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q087",
@@ -1041,7 +1127,8 @@
     },
     "answer": "A",
     "funFact": "Python a été créé en 1991 par le Néerlandais Guido van Rossum. Son nom vient du groupe comique Monty Python, dont Van Rossum était fan. Il est maintenant le langage n°1 grâce à l'IA et la data science.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q088",
@@ -1053,7 +1140,8 @@
     },
     "answer": "A",
     "funFact": "Le premier message envoyé sur ARPANET en 1969 était \"lo\" — le système a planté avant d'envoyer \"login\". Pas un début très glorieux pour ce qui allait devenir Internet !",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "hard"
   },
   {
     "id": "q089",
@@ -1065,7 +1153,8 @@
     },
     "answer": "B",
     "funFact": "Mosaic a été développé en 1993 par Marc Andreessen. C'est lui qui a eu l'idée d'intégrer les images directement dans les pages web. Andreessen a ensuite cofondé Netscape.",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "medium"
   },
   {
     "id": "q090",
@@ -1077,7 +1166,8 @@
     },
     "answer": "B",
     "funFact": "Un octet (byte) contient 8 bits, ce qui permet de coder 256 valeurs différentes (de 0 à 255). Le terme \"octet\" vient du latin \"octo\" (huit). En anglais, on dit \"byte\" mais parfois aussi \"octet\".",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "hard"
   },
   {
     "id": "q091",
@@ -1089,7 +1179,8 @@
     },
     "answer": "B",
     "funFact": "Le safran peut coûter entre 5 000 et 10 000 € le kilo. Il faut environ 150 000 fleurs de crocus récoltées à la main pour produire 1 kg de safran — d'où son prix astronomique.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "hard"
   },
   {
     "id": "q092",
@@ -1101,7 +1192,8 @@
     },
     "answer": "B",
     "funFact": "Le croissant vient du \"Kipferl\" autrichien. C'est Marie-Antoinette, princesse autrichienne, qui aurait popularisé cette viennoiserie en France. La forme en croissant rappelait le croissant de lune ottomane.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q093",
@@ -1113,7 +1205,8 @@
     },
     "answer": "A",
     "funFact": "L'avocat est techniquement un fruit à noyau (une drupe), comme la pêche ou la cerise. Le guacamole est préparé depuis plus de 500 ans au Mexique ; \"ahuacamolli\" en nahuatl signifie \"sauce d'avocat\".",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "easy"
   },
   {
     "id": "q094",
@@ -1125,7 +1218,8 @@
     },
     "answer": "C",
     "funFact": "Le Brésil produit environ 35 % du café mondial. Le café arabica vient d'Éthiopie, où une légende dit qu'un berger nommé Kaldi a découvert ses effets stimulants en observant ses chèvres.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q095",
@@ -1137,7 +1231,8 @@
     },
     "answer": "B",
     "funFact": "Le pesto alla genovese traditionnel contient du basilic, de l'huile d'olive, des pignons de pin, de l'ail et du fromage pecorino ou parmesan. \"Pesto\" vient du verbe \"pestare\" (écraser en italien).",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q096",
@@ -1149,7 +1244,8 @@
     },
     "answer": "B",
     "funFact": "Il faut environ 10 litres de lait pour 1 kg de fromage à pâte dure comme le comté. Pour le fromage frais, c'est moins (4-5 litres). C'est pourquoi le fromage est toujours plus cher que le lait.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "hard"
   },
   {
     "id": "q097",
@@ -1161,7 +1257,8 @@
     },
     "answer": "B",
     "funFact": "Le thé est consommé depuis plus de 5 000 ans en Chine. Il représente environ 3 millions de tonnes produites par an dans le monde. La légende dit qu'il fut découvert en 2737 av. J.-C. par l'Empereur Shen Nong.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "easy"
   },
   {
     "id": "q098",
@@ -1173,7 +1270,8 @@
     },
     "answer": "B",
     "funFact": "Une flûte de champagne contient environ 1 million de bulles. Chaque bulle se forme sur un minuscule point d'impureté ou une fibre sur la paroi du verre. C'est pourquoi le type de verre change tout !",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "hard"
   },
   {
     "id": "q099",
@@ -1185,7 +1283,8 @@
     },
     "answer": "B",
     "funFact": "Le tiramisu (\"remonte-moi\" en italien) vient du Frioul, dans le nord-est de l'Italie. La recette date des années 1960. Le mascarpone est un fromage frais très crémeux au goût doux, originaire de Lombardie.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "hard"
   },
   {
     "id": "q100",
@@ -1197,7 +1296,8 @@
     },
     "answer": "B",
     "funFact": "La sauce Tabasco est fabriquée depuis 1868 sur Avery Island en Louisiane par la famille McIlhenny. Les piments sont vieillis dans des fûts de chêne pendant 3 ans avant d'être transformés en sauce.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "hard"
   },
   {
     "id": "q101",
@@ -1209,7 +1309,8 @@
     },
     "answer": "A",
     "funFact": "Drake s'appelle Aubrey Drake Graham. Il est né à Toronto en 1986. Avant de devenir rappeur, il jouait Jimmy Brooks dans la série canadienne \"Degrassi: The Next Generation\".",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q102",
@@ -1221,7 +1322,8 @@
     },
     "answer": "C",
     "funFact": "Michael Jackson est décédé le 25 juin 2009 d'un arrêt cardiaque causé par une overdose de propofol. Il était en pleine préparation de sa tournée \"This Is It\" à Londres.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q103",
@@ -1233,7 +1335,8 @@
     },
     "answer": "B",
     "funFact": "Yo-Yo Ma est né à Paris de parents chinois et a grandi à New York. Enfant prodige, il s'est produit à 7 ans devant les présidents Kennedy et Eisenhower. Son violoncelle Stradivarius vaut plusieurs millions de dollars.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q104",
@@ -1245,7 +1348,8 @@
     },
     "answer": "B",
     "funFact": "Bob Marley est né le 6 février 1945 à Nine Mile, en Jamaïque. Sa musique reggae a fait le tour du monde et il est l'une des figures musicales les plus reconnaissables de l'histoire.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q105",
@@ -1257,7 +1361,8 @@
     },
     "answer": "C",
     "funFact": "Beethoven a commencé à perdre l'ouïe vers 26 ans et était complètement sourd à 44 ans. Il composait en ressentant les vibrations à travers son piano et le sol. Sa 9e Symphonie a été composée alors qu'il était totalement sourd.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q106",
@@ -1269,7 +1374,8 @@
     },
     "answer": "B",
     "funFact": "La 9e Symphonie de Beethoven est la plus célèbre de l'histoire de la musique classique. Son dernier mouvement, le \"Chœur de la Joie\", est devenu l'hymne officiel de l'Union européenne.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "hard"
   },
   {
     "id": "q107",
@@ -1281,7 +1387,8 @@
     },
     "answer": "B",
     "funFact": "\"Homework\" est sorti en 1997 avec des titres comme \"Da Funk\" et \"Around the World\". Thomas Bangalter et Guy-Manuel de Homem-Christo ont adopté leurs casques de robots après avoir lu que les robots ne se voient pas en interview.",
-    "category": "Technology"
+    "category": "Technology",
+    "difficulty": "medium"
   },
   {
     "id": "q108",
@@ -1293,7 +1400,8 @@
     },
     "answer": "A",
     "funFact": "ABBA a gagné l'Eurovision à Brighton (Royaume-Uni) en 1974 avec \"Waterloo\". C'est cette victoire qui les a propulsés vers une carrière internationale fulgurante.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q109",
@@ -1305,7 +1413,8 @@
     },
     "answer": "B",
     "funFact": "Beyoncé Knowles-Carter a vendu plus de 100 millions de disques dans le monde. Elle est la femme la plus récompensée de l'histoire des Grammy Awards avec 32 victoires.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q110",
@@ -1317,7 +1426,8 @@
     },
     "answer": "A",
     "funFact": "The Beatles se sont formés à Liverpool en 1960. John Lennon, Paul McCartney et George Harrison fréquentaient les mêmes clubs. Ringo Starr les a rejoints en 1962, peu avant leur percée internationale.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q111",
@@ -1329,7 +1439,8 @@
     },
     "answer": "C",
     "funFact": "\"Parasite\" du réalisateur Bong Joon-ho est devenu le premier film non anglophone à remporter l'Oscar du meilleur film. Il a aussi gagné l'Oscar du meilleur réalisateur et du meilleur scénario original.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q112",
@@ -1341,7 +1452,8 @@
     },
     "answer": "B",
     "funFact": "\"Pulp Fiction\" a été présenté à Cannes en 1994 où il a remporté la Palme d'Or. Tarantino avait un budget de seulement 8 millions de dollars — le film en a rapporté 213 millions dans le monde.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "easy"
   },
   {
     "id": "q113",
@@ -1353,7 +1465,8 @@
     },
     "answer": "B",
     "funFact": "Arnold Schwarzenegger a prononcé cette phrase dans Terminator (1984). Le réalisateur James Cameron voulait que Schwarzenegger dise \"I will be back\", mais il a insisté pour \"I'll\" — et c'est devenu l'une des répliques les plus cultes du cinéma.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q114",
@@ -1365,7 +1478,8 @@
     },
     "answer": "A",
     "funFact": "\"Star Wars: Episode IV — A New Hope\" est sorti le 25 mai 1977. George Lucas était si peu confiant dans le succès du film qu'il a cédé ses droits sur les marchandises dérivées — une erreur qui lui a coûté des milliards !",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q115",
@@ -1377,7 +1491,8 @@
     },
     "answer": "B",
     "funFact": "Avatar (2009) a rapporté 2,923 milliards de dollars, notamment grâce à une ressortie en 2022. James Cameron a aussi réalisé Titanic (3e) et détient donc la 1re et 3e place du box-office mondial.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q116",
@@ -1389,7 +1504,8 @@
     },
     "answer": "C",
     "funFact": "Peter Jackson a filmé les trois films simultanément en Nouvelle-Zélande entre 1999 et 2000. La trilogie a remporté 17 Oscars au total, dont 11 pour \"Le Retour du Roi\" — le record toujours partagé avec Titanic et Ben-Hur.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "hard"
   },
   {
     "id": "q117",
@@ -1401,7 +1517,8 @@
     },
     "answer": "C",
     "funFact": "\"Parasite\" explore les inégalités de classe dans la société coréenne à travers deux familles aux antipodes sociaux. Le film aborde la \"semi-basement culture\" (banjiha), un type de logement précaire typique de Séoul.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q118",
@@ -1413,7 +1530,8 @@
     },
     "answer": "C",
     "funFact": "Tom Hanks a remporté l'Oscar du meilleur acteur pour \"Forrest Gump\", son deuxième Oscar consécutif après \"Philadelphia\" (1993). John Travolta et Bill Murray avaient refusé le rôle avant lui.",
-    "category": "Food & Drink"
+    "category": "Food & Drink",
+    "difficulty": "medium"
   },
   {
     "id": "q119",
@@ -1425,7 +1543,8 @@
     },
     "answer": "B",
     "funFact": "\"Titanic\" devait sortir en juillet 1997 mais les effets spéciaux ont retardé sa sortie à décembre 1997. Paramount avait menacé de retirer son financement — le film a finalement rapporté 2,25 milliards de dollars.",
-    "category": "Geography"
+    "category": "Geography",
+    "difficulty": "medium"
   },
   {
     "id": "q120",
@@ -1437,7 +1556,8 @@
     },
     "answer": "A",
     "funFact": "Joaquin Phoenix a perdu 24 kg pour le rôle. Son interprétation lui a valu l'Oscar du meilleur acteur. Heath Ledger avait joué le Joker dans \"The Dark Knight\" (2008) et a reçu l'Oscar à titre posthume.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q121",
@@ -1449,7 +1569,8 @@
     },
     "answer": "B",
     "funFact": "Victor Hugo a mis 12 ans à écrire \"Les Misérables\", publié en 1862. Le personnage de Jean Valjean s'inspire d'un forçat réel nommé Pierre Maurin, condamné pour avoir volé du pain.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q122",
@@ -1461,7 +1582,8 @@
     },
     "answer": "B",
     "funFact": "Albert Camus a écrit \"L'Étranger\" à seulement 29 ans. C'est l'un des romans français les plus traduits et les plus lus au monde. Camus a reçu le Prix Nobel de littérature en 1957.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "hard"
   },
   {
     "id": "q123",
@@ -1473,7 +1595,8 @@
     },
     "answer": "B",
     "funFact": "Annie Ernaux est la première Française à remporter le Nobel de littérature. Connue pour ses récits autobiographiques, son œuvre \"Les Années\" est souvent considérée comme une \"autobiographie collective\" de la France du XXe siècle.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "hard"
   },
   {
     "id": "q124",
@@ -1485,7 +1608,8 @@
     },
     "answer": "A",
     "funFact": "J.K. Rowling a eu l'idée de Harry Potter en 1990, dans un train entre Manchester et Londres. Elle était au chômage et a écrit le premier tome dans des cafés d'Édimbourg pour se réchauffer.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q125",
@@ -1497,7 +1621,8 @@
     },
     "answer": "A",
     "funFact": "Arthur Conan Doyle s'est inspiré de son professeur de médecine, le Dr Joseph Bell, pour créer Holmes. Il a tenté de tuer le personnage en 1893 pour se consacrer à d'autres écrits — le tollé public l'a forcé à le ressusciter.",
-    "category": "Culture"
+    "category": "Culture",
+    "difficulty": "medium"
   },
   {
     "id": "q126",
@@ -1509,7 +1634,8 @@
     },
     "answer": "C",
     "funFact": "Les 7 couleurs de l'arc-en-ciel sont : rouge, orange, jaune, vert, bleu, indigo, violet. Newton a choisi 7 couleurs pour faire un parallèle avec les 7 notes de musique — l'indigo et le violet sont souvent difficiles à distinguer.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q127",
@@ -1521,7 +1647,8 @@
     },
     "answer": "B",
     "funFact": "Le yen japonais (¥) est l'une des trois monnaies de réserve mondiales avec le dollar et l'euro. Le yuan est la monnaie chinoise et le won est la monnaie coréenne.",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q128",
@@ -1533,7 +1660,8 @@
     },
     "answer": "B",
     "funFact": "Le christianisme rassemble environ 2,4 milliards de croyants, soit 31 % de la population mondiale. L'islam est la deuxième religion avec environ 1,9 milliard de fidèles.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   },
   {
     "id": "q129",
@@ -1545,7 +1673,8 @@
     },
     "answer": "A",
     "funFact": "Avant 2000, le mandat présidentiel français durait 7 ans (septennat). La réforme par référendum a ramené cette durée à 5 ans (quinquennat). Les 7 ans persistaient depuis 1873 !",
-    "category": "History"
+    "category": "History",
+    "difficulty": "medium"
   },
   {
     "id": "q130",
@@ -1557,6 +1686,7 @@
     },
     "answer": "A",
     "funFact": "Le mandarin est parlé en langue maternelle par environ 920 millions de personnes, principalement en Chine. En revanche, l'anglais est la langue la plus parlée au total (natifs + apprenants) avec plus de 1,5 milliard de locuteurs.",
-    "category": "Science"
+    "category": "Science",
+    "difficulty": "medium"
   }
 ]
